@@ -15,7 +15,11 @@ so there is one definition of what a shippable bundle is.
     python scripts/package_catalyst.py
 
 Writes catalyst/sutra.zip. Does not upload. Deployment is a console action, see
-catalyst/DEPLOY.md.
+docs/deploy.md.
+
+The catalyst/ directory is a build output and is not committed. This creates it
+when it runs and .gitignore keeps it out of history, because a 900 KB binary
+that changes on every build is not something a repository should carry.
 """
 
 from __future__ import annotations
@@ -118,7 +122,7 @@ def main() -> int:
 
     print(f"\nREADY  {OUT}")
     print("\nUpload through the Catalyst console. Do not create a new app.")
-    print("App sutra, deployment default. See catalyst/DEPLOY.md.")
+    print("App sutra, deployment default. See docs/deploy.md.")
     return 0
 
 

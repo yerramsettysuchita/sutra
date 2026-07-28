@@ -35,6 +35,12 @@ data/corpus_gender/
 data/corpus_vocab/
 data/corpus_scale/
 
+# ---- the deploy bundle -----------------------------------------------------
+# `make package` writes catalyst/sutra.zip. It is a build output, it is 900 KB,
+# and it changes on every build. docs/deploy.md says how to produce and upload
+# one, which is more useful in a repository than the artefact itself.
+catalyst/
+
 # ---- benchmark run output --------------------------------------------------
 # The task, the gold set and the scorer are committed. What a submission
 # produces is not.

@@ -662,7 +662,6 @@ engine/           policy, normalise, block, features, linkage, cluster,
 eval/             report.py, questions.py, build_db.py, validate_sql.py
 web/              React, TypeScript, Vite. Nine screens, no mock data
 benchmark/        IERB-P, the public task, gold set, baseline and scorer
-catalyst/         deploy bundle and instructions
 docs/             architecture, decisions, ethics, build status
 ```
 
@@ -673,7 +672,7 @@ docs/             architecture, decisions, ethics, build status
 - Architecture, [docs/architecture.md](docs/architecture.md)
 - Decisions, [docs/decisions.md](docs/decisions.md), {adrs} ADRs
 - Ethics, [docs/ethics.md](docs/ethics.md)
-- Deployment, [catalyst/DEPLOY.md](catalyst/DEPLOY.md)
+- Deployment, [docs/deploy.md](docs/deploy.md)
 - Benchmark, [benchmark/README.md](benchmark/README.md) and
   [the leaderboard](benchmark/leaderboard.md)
 

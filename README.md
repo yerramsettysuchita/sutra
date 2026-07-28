@@ -228,7 +228,7 @@ flowchart LR
     C --> X
     X --> F["web/public/data<br/>static JSON"]
     F --> B["vite build"]
-    B --> Z["catalyst/sutra.zip"]
+    B --> Z["sutra.zip<br/>build output, not committed"]
     RP --> RM["scripts/build_readme.py<br/>this file"]
 
     style Z stroke-width:3px
@@ -238,6 +238,9 @@ flowchart LR
 Nothing in the deployed bundle computes anything. The client fetches JSON the
 engine already wrote. That is ADR 002 and it is why five of six Catalyst
 services show as not used.
+
+The zip is a build output rather than a committed file. `make package` writes it
+and `docs/deploy.md` says what to do with it.
 
 
 ---
@@ -586,7 +589,6 @@ engine/           policy, normalise, block, features, linkage, cluster,
 eval/             report.py, questions.py, build_db.py, validate_sql.py
 web/              React, TypeScript, Vite. Nine screens, no mock data
 benchmark/        IERB-P, the public task, gold set, baseline and scorer
-catalyst/         deploy bundle and instructions
 docs/             architecture, decisions, ethics, build status
 ```
 
@@ -597,7 +599,7 @@ docs/             architecture, decisions, ethics, build status
 - Architecture, [docs/architecture.md](docs/architecture.md)
 - Decisions, [docs/decisions.md](docs/decisions.md), 30 ADRs
 - Ethics, [docs/ethics.md](docs/ethics.md)
-- Deployment, [catalyst/DEPLOY.md](catalyst/DEPLOY.md)
+- Deployment, [docs/deploy.md](docs/deploy.md)
 - Benchmark, [benchmark/README.md](benchmark/README.md) and
   [the leaderboard](benchmark/leaderboard.md)
 
