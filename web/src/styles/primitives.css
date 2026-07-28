@@ -1,0 +1,395 @@
+/* ---------------------------------------------------------------- Panel */
+/*
+ * Panel backgrounds stay white. Colour enters through the eyebrow, a 3px rule
+ * across the top edge, and nowhere else. That is what keeps the page
+ * colourful without any large saturated area.
+ */
+
+.panel {
+  position: relative;
+  background: var(--surface);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--lift);
+  break-inside: avoid;
+}
+
+.panel__eyebrow {
+  height: var(--eyebrow);
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: var(--line-strong);
+}
+
+.panel__eyebrow--resolved {
+  background: var(--resolved-mid);
+}
+.panel__eyebrow--review {
+  background: var(--review-mid);
+}
+.panel__eyebrow--conflict {
+  background: var(--conflict-mid);
+}
+.panel__eyebrow--signal {
+  background: var(--signal-mid);
+}
+.panel__eyebrow--official {
+  background: var(--official-mid);
+}
+.panel__eyebrow--navy {
+  background: var(--navy);
+}
+
+.panel__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-4);
+  padding: var(--s-3) var(--s-4);
+  border-bottom: var(--hairline) solid var(--line);
+}
+
+.panel__title {
+  font-family: var(--font-ui);
+  font-size: var(--t-title);
+  font-weight: 600;
+  letter-spacing: -0.011em;
+  color: var(--ink);
+}
+
+/* The one line that says what the number means and why it matters. This is
+   the strongest thing on the page and it is never optional. */
+.panel__note {
+  font-size: var(--t-small);
+  color: var(--ink-2);
+  max-width: 68ch;
+  line-height: 1.5;
+}
+
+.panel__body {
+  padding: var(--s-4);
+}
+
+.panel__body--flush {
+  padding: 0;
+}
+
+.panel__body--flush .panel__note {
+  padding: var(--s-3) var(--s-4) 0;
+}
+
+/* ----------------------------------------------------------------- Rule */
+
+.rule {
+  border: 0;
+  border-top: var(--hairline) solid var(--line);
+  margin: var(--s-4) 0;
+}
+
+.rule--tight {
+  margin: var(--s-3) 0;
+}
+
+/* --------------------------------------------------------------- Metric */
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  min-width: 0;
+}
+
+.metric__label {
+  font-size: var(--t-micro);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 600;
+}
+
+.metric__value {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--t-metric);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: var(--tracking-data);
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.metric__value--sm {
+  font-size: 1.0625rem;
+}
+
+.metric__unit {
+  font-size: 0.6em;
+  color: var(--ink-3);
+  margin-left: 0.15em;
+}
+
+.metric__caption {
+  font-size: var(--t-small);
+  color: var(--ink-2);
+  line-height: 1.45;
+}
+
+/* Readouts take their triad's deep shade. Deep is the only text shade. */
+.metric--resolved .metric__value {
+  color: var(--resolved-deep);
+}
+.metric--review .metric__value {
+  color: var(--review-deep);
+}
+.metric--conflict .metric__value {
+  color: var(--conflict-deep);
+}
+.metric--signal .metric__value {
+  color: var(--signal-deep);
+}
+.metric--official .metric__value {
+  color: var(--official-deep);
+}
+.metric--navy .metric__value {
+  color: var(--navy);
+}
+
+.metric-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: var(--s-5) var(--s-4);
+}
+
+/* ------------------------------------------------------------ StatusPill */
+/* Tint background, deep text, 1px mid border. Colour never carries the
+   meaning alone, every chip states its status in words. */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 0.1rem var(--s-2);
+  border-radius: 2px;
+  border: var(--hairline) solid;
+  font-size: var(--t-micro);
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  white-space: nowrap;
+}
+
+.pill__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+
+.pill--resolved {
+  background: var(--resolved-tint);
+  border-color: var(--resolved-mid);
+  color: var(--resolved-deep);
+}
+.pill--review {
+  background: var(--review-tint);
+  border-color: var(--review-mid);
+  color: var(--review-deep);
+}
+.pill--conflict {
+  background: var(--conflict-tint);
+  border-color: var(--conflict-mid);
+  color: var(--conflict-deep);
+}
+.pill--signal {
+  background: var(--signal-tint);
+  border-color: var(--signal-mid);
+  color: var(--signal-deep);
+}
+.pill--official {
+  background: var(--official-tint);
+  border-color: var(--official-mid);
+  color: var(--official-deep);
+}
+.pill--neutral {
+  background: var(--sunken);
+  border-color: var(--line-strong);
+  color: var(--ink-2);
+}
+
+/* ------------------------------------------------------------- DataTable */
+/* Sunken header row, one hairline per row, no zebra. */
+
+.table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--t-small);
+}
+
+.table caption {
+  text-align: left;
+  padding: var(--s-3) var(--s-4);
+  font-size: var(--t-small);
+  color: var(--ink-2);
+  line-height: 1.5;
+}
+
+.table th,
+.table td {
+  padding: 0.42rem var(--s-4);
+  text-align: left;
+  border-bottom: var(--hairline) solid var(--line);
+  vertical-align: baseline;
+  color: var(--ink);
+}
+
+.table thead th {
+  font-size: var(--t-micro);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-2);
+  font-weight: 600;
+  white-space: nowrap;
+  background: var(--sunken);
+  border-top: var(--hairline) solid var(--line-strong);
+  border-bottom: var(--hairline) solid var(--line-strong);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table tbody tr:last-child td,
+.table tbody tr:last-child th {
+  border-bottom: 0;
+}
+
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+  background: var(--sunken);
+}
+
+.table .num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  letter-spacing: var(--tracking-data);
+  white-space: nowrap;
+}
+
+.table .name {
+  font-family: var(--font-mono);
+  letter-spacing: var(--tracking-data);
+  font-weight: 500;
+}
+
+/* Bars use mid at full saturation. aria-hidden, the neighbouring cell already
+   carries the number. */
+.table__bar {
+  display: block;
+  height: 6px;
+  min-width: 2px;
+  background: var(--signal-mid);
+  border-radius: 1px;
+}
+
+.table__bar--resolved {
+  background: var(--resolved-mid);
+}
+.table__bar--official {
+  background: var(--official-mid);
+}
+.table__bar--review {
+  background: var(--review-mid);
+}
+.table__bar--dim {
+  background: var(--line-strong);
+}
+
+/* ---------------------------------------------------------- ProvenanceBar */
+/* Official tint. Seed, corpus timestamp, blocking timestamp, files read. */
+
+.provenance {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s-1) var(--s-4);
+  padding: var(--s-2) var(--s-4);
+  background: var(--official-tint);
+  border: var(--hairline) solid var(--line-strong);
+  border-top: 0;
+  border-radius: 0 0 var(--radius) var(--radius);
+  font-family: var(--font-mono);
+  font-size: var(--t-micro);
+  letter-spacing: var(--tracking-data);
+  color: var(--official-deep);
+}
+
+.provenance__item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--s-2);
+  min-width: 0;
+}
+
+.provenance__key {
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  font-weight: 600;
+  opacity: 0.75;
+}
+
+.provenance__value {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+/* ------------------------------------------------------------ AuditStrip */
+/* Compact copy, pinned to the bottom. The full record lives under the
+   masthead. */
+
+.audit-strip {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  height: var(--strip-height);
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: 0 var(--s-4);
+  background: var(--surface);
+  border-top: var(--hairline) solid var(--line-strong);
+  font-family: var(--font-mono);
+  font-size: var(--t-micro);
+  letter-spacing: var(--tracking-data);
+  color: var(--ink-2);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.audit-strip__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  flex: none;
+}
+
+.audit-strip__key {
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  font-weight: 600;
+}
+
+.audit-strip__value {
+  color: var(--ink);
+}
+
+.audit-strip__sep {
+  color: var(--line-strong);
+  flex: none;
+}

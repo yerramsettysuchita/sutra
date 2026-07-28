@@ -1,0 +1,47 @@
+{
+  "generator": "sutra.data.generator",
+  "seed": 4471,
+  "generated_at": "2026-07-28T21:58:15+00:00",
+  "co_offending_preset": "moderate",
+  "co_offending_parameters": {
+    "gang_share": 0.38,
+    "prefer_gang": 0.35,
+    "gang_fill": 0.7
+  },
+  "name_vocabulary": 86,
+  "dyad_recurrence": {
+    "dyads": 4451,
+    "recurring": 190,
+    "rate_pct": 4.269,
+    "max_repeats": 5
+  },
+  "corpus_start": "2021-01-01",
+  "corpus_end": "2026-06-30",
+  "bns_transition": "2024-07-01",
+  "requested_cases": 5000,
+  "counts": {
+    "districts": 31,
+    "units": 404,
+    "police_stations": 294,
+    "employees": 2518,
+    "acts": 8,
+    "sections": 45,
+    "cases": 5000,
+    "accused_rows": 7611,
+    "victims": 688,
+    "complainants": 5000,
+    "arrests": 4714,
+    "chargesheets": 4623,
+    "act_section_links": 7169,
+    "true_persons": 3863,
+    "true_persons_appearing": 3840,
+    "undetected_cases": 450,
+    "collision_groups": 110,
+    "gangs": 197
+  },
+  "excluded_from_features": [
+    "CasteID",
+    "ReligionID",
+    "OccupationID"
+  ]
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+# Copied from data/corpus by scripts/sync-corpus.mjs at predev and prebuild.
+# Build output, not source.
+public/corpus/
+
+# Vendored typefaces are NOT ignored. They are committed deliberately, because
+# the Catalyst CSP blocks external hosts and a clone without them builds a
+# portal that renders in a fallback face. See public/fonts/ATTRIBUTION.md.
+
+*.tsbuildinfo
+.vite/

@@ -1,0 +1,9 @@
+RankID,RankName,RankAbbr,SeniorityOrder
+1,Police Constable,PC,1
+2,Head Constable,HC,2
+3,Assistant Sub Inspector,ASI,3
+4,Sub Inspector,SI,4
+5,Police Sub Inspector,PSI,5
+6,Circle Police Inspector,CPI,6
+7,Deputy Superintendent,DySP,7
+8,Superintendent of Police,SP,8

@@ -1,0 +1,84 @@
+==============================================================================
+THE SAME ENGINE, OVER VICTIM AND COMPLAINANTDETAILS
+==============================================================================
+
+    Layers 1 to 5, imported from the modules the accused pipeline
+    uses. No second implementation, so the figures are comparable.
+
+------------------------------------------------------------------------------
+Victim.csv
+------------------------------------------------------------------------------
+
+    policy guard   raw header REJECTED, carrying CasteID, ReligionID, OccupationID
+    policy guard   projected header accepted, 6 columns reach the features
+
+    rows                       688
+    true people                544
+    hidden by fragmentation    144   rows that are somebody already in the table
+    candidate pairs         12,004
+    reduction ratio         0.9492
+    pairs completeness      93.00%
+
+    threshold                4.858
+    clusters formed            688
+
+    fit                                    prec   recall       F1
+    unsupervised, cost weighted, ships   0.0000   0.0000   0.0000
+    unsupervised, equal cost cut         0.0000   0.0000   0.0000
+    oracle, m and u from ground truth    0.5233   0.4500   0.4839
+
+    The features separate and the fit does not. The signals carry
+    enough to reach F1 0.4839 when m and u come from
+    labels, and the unsupervised estimator recovers none of it.
+    Layer 4 estimates m from leave one out seeds, which needs
+    several independent channels to corroborate each other. This
+    table has one fewer than Accused, because the relational
+    signal has nothing to compute from, and the estimator does not
+    degrade gracefully below that. See ADR 024.
+
+------------------------------------------------------------------------------
+ComplainantDetails.csv
+------------------------------------------------------------------------------
+
+    policy guard   this table carries no protected column
+
+    rows                     5,000
+    true people              3,884
+    hidden by fragmentation  1,116   rows that are somebody already in the table
+    candidate pairs        628,500
+    reduction ratio         0.9497
+    pairs completeness      94.29%
+    contact channels    phone, address   columns this table has and Accused does not
+
+    threshold                4.362
+    clusters formed          4,995
+
+    fit                                    prec   recall       F1
+    unsupervised, cost weighted, ships   0.8000   0.0024   0.0047
+    unsupervised, equal cost cut         0.6065   0.2661   0.3699
+    oracle, m and u from ground truth    1.0000   0.9571   0.9781
+
+    The features separate and the fit does not. The signals carry
+    enough to reach F1 0.9781 when m and u come from
+    labels, and the unsupervised estimator recovers none of it.
+    Layer 4 estimates m from leave one out seeds, which needs
+    several independent channels to corroborate each other. This
+    table has one fewer than Accused, because the relational
+    signal has nothing to compute from, and the estimator does not
+    degrade gracefully below that. See ADR 024.
+
+==============================================================================
+ALL THREE TABLES
+==============================================================================
+
+    table                      rows   people   hidden    prec  recall      F1
+
+    Accused.csv               7,611    3,840    3,771  0.7901  0.3692  0.5033
+    Victim.csv                  688      544      144  0.0000  0.0000  0.0000
+    ComplainantDetails.csv    5,000    3,884    1,116  0.8000  0.0024  0.0047
+
+    13,299 person bearing rows across the three tables collapse
+    to 8,268 actual people. 5,031 rows are somebody the
+    record already holds, and 5,651 same person relationships
+    exist that no join on the raw KSP schema can see, because there is
+    no column to join on.

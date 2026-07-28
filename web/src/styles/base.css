@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  color-scheme: light;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: var(--t-body);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  padding-bottom: var(--strip-height);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: var(--leading-tight);
+  color: var(--ink);
+}
+
+/* Every number, identifier, crime number, SQL fragment and file path. */
+.mono,
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: var(--tracking-data);
+}
+
+.kn {
+  font-family: var(--font-kannada);
+}
+
+/* --------------------------------------------------------------- Kannada
+ *
+ * When the interface is in Kannada the two faces have to coexist inside one
+ * sentence, because identifiers, metrics and file paths never translate. So
+ * Noto Sans Kannada is appended to the interface stack rather than replacing
+ * it. Latin glyphs still come from Inter Tight, Kannada glyphs fall through to
+ * Noto, and no element has to be marked up per string.
+ *
+ * Kannada carries matras above and below the baseline and the odd conjunct
+ * stacks two consonants, so a line box tuned for Latin clips. Leading is
+ * opened by roughly a fifth wherever chrome text sits, and the tight display
+ * leading is relaxed the most because that is where the clipping showed.
+ * Nothing else about the type scale moves, so the density stays as designed.
+ */
+html[data-lang='kn'] body,
+html[data-lang='kn'] button,
+html[data-lang='kn'] input,
+html[data-lang='kn'] select {
+  font-family: 'Inter Tight', 'Noto Sans Kannada', system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+html[data-lang='kn'] h1,
+html[data-lang='kn'] h2,
+html[data-lang='kn'] h3,
+html[data-lang='kn'] .panel__title,
+html[data-lang='kn'] .subhead__title,
+html[data-lang='kn'] .rail__label {
+  line-height: 1.45;
+}
+
+/* Table headers, pills and the audit strip are the tightest boxes on the page
+   and the ones most likely to clip a matra. */
+html[data-lang='kn'] .table th,
+html[data-lang='kn'] .pill,
+html[data-lang='kn'] .rail__hint,
+html[data-lang='kn'] .metric__label,
+html[data-lang='kn'] .provenance__key,
+html[data-lang='kn'] .audit-strip__key {
+  line-height: 1.6;
+}
+
+/* Data never changes face or leading. A crime number is a crime number in
+   either language, and it stays in JetBrains Mono at tabular width. */
+html[data-lang='kn'] .mono,
+html[data-lang='kn'] code,
+html[data-lang='kn'] kbd,
+html[data-lang='kn'] samp,
+html[data-lang='kn'] pre,
+html[data-lang='kn'] .num,
+html[data-lang='kn'] .metric__value {
+  font-family: var(--font-mono);
+  line-height: var(--leading-body);
+}
+
+/* The one big number on a route keeps its display face, as designed. Only its
+   leading is left alone, since it holds digits and never Kannada. */
+html[data-lang='kn'] .hero__figure {
+  line-height: var(--leading-tight);
+}
+
+a {
+  color: var(--signal-deep);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* 2px in signal mid with 2px offset, never removed. */
+:focus-visible {
+  outline: 2px solid var(--signal-mid);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--s-4);
+  top: calc(-1 * var(--s-7));
+  z-index: 100;
+  padding: var(--s-2) var(--s-4);
+  background: var(--surface);
+  border: 2px solid var(--signal-mid);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font-size: var(--t-small);
+  font-weight: 500;
+  text-decoration: none;
+  transition: top var(--dur-base) var(--ease-out);
+}
+
+.skip-link:focus {
+  top: var(--s-4);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+::selection {
+  background: var(--signal-tint);
+  color: var(--ink);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}

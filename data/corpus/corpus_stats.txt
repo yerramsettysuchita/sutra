@@ -1,0 +1,294 @@
+==============================================================================
+SUTRA  synthetic KSP FIR corpus
+seed 4471   window 2021-01-01 to 2026-06-30   BNS transition 2024-07-01
+==============================================================================
+
+TABLE VOLUMES
+
+    districts                         31
+    units                            404
+    police_stations                  294
+    employees                      2,518
+    acts                               8
+    sections                          45
+    cases                          5,000
+    accused_rows                   7,611
+    victims                          688
+    complainants                   5,000
+    arrests                        4,714
+    chargesheets                   4,623
+    act_section_links              7,169
+    true_persons                   3,863
+    true_persons_appearing         3,840
+    undetected_cases                 450
+    collision_groups                 110
+    gangs                            197
+
+ACCUSED PER DETECTED CASE
+
+    1        2,667   58.6%  ██████████████████████████████
+    2        1,086   23.9%  ████████████
+    3          502   11.0%  ██████
+    4          209    4.6%  ██
+    5           86    1.9%  █
+    mean 1.673
+
+FINAL REPORT CLASSIFICATION
+
+    A        3,522   70.4%  ██████████████████████████████
+    B          414    8.3%  ████
+    C          450    9.0%  ████
+    D          237    4.7%  ██
+    pending     377    7.5%
+
+APPEARANCES PER TRUE PERSON
+
+    1        2,342   61.0%  ██████████████████████████████
+    2          659   17.2%  ████████
+    3          341    8.9%  ████
+    4          209    5.4%  ███
+    5           99    2.6%  █
+    6           50    1.3%  █
+    7           38    1.0%  █
+    8           38    1.0%  █
+    9           14    0.4%  █
+    10          19    0.5%  █
+    11           7    0.2%  █
+    12          13    0.3%  █
+    13           1    0.0%  █
+    14           1    0.0%  █
+    16           4    0.1%  █
+    17           3    0.1%  █
+    18           2    0.1%  █
+    persons appearing at all        3,840
+    repeat offenders, 2 or more     1,498   39.0%
+    largest single identity            18 appearances
+
+ACCUSED NAME, SCRIPT AS WRITTEN
+
+    kannada      2,962   38.9%  ████████████████████
+    latin        4,480   58.9%  ██████████████████████████████
+    mixed          169    2.2%  █
+
+ACCUSED NAME, RENDERING VARIANT
+
+    KN_ALIAS                      23    0.3%  █
+    KN_BIN                        18    0.2%  █
+    KN_FULL                    1,601   21.0%  ███████████████████████████
+    KN_GIVEN                     541    7.1%  █████████
+    KN_MONIKER                    40    0.5%  █
+    KN_TANDE                     739    9.7%  ████████████
+    LA_ALIAS                      23    0.3%  █
+    LA_FULL                    1,792   23.5%  ██████████████████████████████
+    LA_GIVEN                     681    8.9%  ███████████
+    LA_INITIAL_BOTH              102    1.3%  ██
+    LA_INITIAL_PREFIX            432    5.7%  ███████
+    LA_INITIAL_SUFFIX            293    3.8%  █████
+    LA_MONIKER                    37    0.5%  █
+    LA_REORDER                   185    2.4%  ███
+    LA_SONOF                     562    7.4%  █████████
+    LA_SONOF_DOT                 167    2.2%  ███
+    LA_UPPER                     206    2.7%  ███
+    MIX_KNGIVEN_LAFATHER         101    1.3%  ██
+    MIX_LAGIVEN_KNFATHER          68    0.9%  █
+
+    transliteration perturbation applied    1,490   19.6%
+    whitespace or punctuation noise           823   10.8%
+
+NAME FREQUENCY SKEW
+    the reason Layer 4 weights agreement by inverse name frequency
+
+    Manjunath Basappa                 235   3.09%
+    Manjunath Krishnappa              146   1.92%
+    Suresh Basappa                    128   1.68%
+    Manjunath Siddappa                 96   1.26%
+    Manjunath Ningappa                 93   1.22%
+    Manjunath Shivappa                 88   1.16%
+    Ramesh Krishnappa                  87   1.14%
+    Ramesh Basappa                     85   1.12%
+    Kumar Basappa                      78   1.02%
+    Mahesh Basappa                     62   0.81%
+    top 10 canonical names cover 14.4% of all accused rows
+    distinct canonical names     1,152
+
+CASES BY DISTRICT, TOP 12
+
+    Bengaluru Urban          925   18.5%  ██████████████████████████████
+    Dakshina Kannada         277    5.5%  █████████
+    Mysuru                   238    4.8%  ████████
+    Belagavi                 227    4.5%  ███████
+    Dharwad                  220    4.4%  ███████
+    Kalaburagi               211    4.2%  ███████
+    Tumakuru                 179    3.6%  ██████
+    Bengaluru Rural          152    3.0%  █████
+    Chamarajanagar           148    3.0%  █████
+    Ballari                  144    2.9%  █████
+    Udupi                    133    2.7%  ████
+    Mandya                   125    2.5%  ████
+
+CASES BY CRIME SUB HEAD
+
+    Cattle Theft                   395    7.9%  █████████████████
+    Cheating                       374    7.5%  ████████████████
+    Dacoity                        410    8.2%  ██████████████████
+    Excise Offence                 426    8.5%  ███████████████████
+    Financial Fraud                339    6.8%  ███████████████
+    House Breaking Theft           636   12.7%  ████████████████████████████
+    Hurt                           384    7.7%  █████████████████
+    Illegal Mineral Transport      333    6.7%  ███████████████
+    Murder                         304    6.1%  █████████████
+    Narcotic Substance             389    7.8%  █████████████████
+    Robbery                        681   13.6%  ██████████████████████████████
+    Theft of Motor Vehicle         329    6.6%  ██████████████
+
+IPC TO BNS TRANSITION
+
+    cases before 2024-07-01     2,309   46.2%
+    cases on or after             2,691   53.8%
+
+    BNS        2,848   39.7%  ██████████████████████████████
+    IPC        2,408   33.6%  █████████████████████████
+    ITA          339    4.7%  ████
+    KEA          852   11.9%  █████████
+    KPA          333    4.6%  ████
+    NDPS         389    5.4%  ████
+    a trend query crossing the transition without Layer 9 reconciliation
+    will show a cliff that is an artefact of legislation, not of crime
+
+RECORDED AGE AGAINST TRUE BIRTH YEAR
+
+     -5 years       64    0.8%
+     -3 years      338    4.4%
+     -2 years      614    8.1%
+     -1 years    1,002   13.2%
+     +0 years    3,294   43.3%
+     +1 years      935   12.3%
+     +2 years      620    8.1%
+     +3 years      287    3.8%
+     +4 years      156    2.0%
+    age not recorded      301    4.0%
+    beyond the plus or minus 2 tolerance of Layer 3c  845  11.1%
+
+==============================================================================
+RECOVERABILITY OF PLANTED IDENTITY
+==============================================================================
+
+    true matching pairs in the corpus     10,503
+    pairs written in different scripts     3,925   37.4%
+
+SIGNAL SURVIVAL ACROSS TRUE MATCHING PAIRS
+    each line is the share of true pairs on which that channel agrees
+
+    same district                   8,355   79.5%  ███████████████████████████
+    implied birth year agrees       7,459   71.0%  ████████████████████████
+    same police station             6,820   64.9%  ██████████████████████
+    same crime sub head             6,536   62.2%  █████████████████████
+    raw token overlap               5,305   50.5%  █████████████████
+    cross script pair               3,925   37.4%  █████████████
+    exact name string               1,289   12.3%  ████
+    shared arresting officer        1,072   10.2%  ███
+    shared co accused                 622    5.9%  ██
+
+STRUCTURAL SIGNALS PER PAIR
+    of district, station, sub head, officer, co accused, birth year
+
+    0          215    2.0%  ██
+    1        1,263   12.0%  ███████████
+    2        2,420   23.0%  ██████████████████████
+    3        2,478   23.6%  ██████████████████████
+    4        3,353   31.9%  ██████████████████████████████
+    5          729    6.9%  ███████
+    6           45    0.4%  █
+
+RECOVERABILITY TIER
+
+    1. exact string, a naive matcher finds it                     
+           1,289  12.27%  ████
+    2. token overlap, lexical matching finds it                   
+           4,017  38.25%  █████████████
+    3. name reachable after normalisation, needs Layers 1 and 2   
+           5,155  49.08%  █████████████████
+    4. name degraded, two or more structural signals survive      
+              36   0.34%  █
+    5. no channel survives, unrecoverable by construction         
+               6   0.06%  █
+
+------------------------------------------------------------------------------
+    RECALL CEILING                 99.94%   (10,497 of 10,503 pairs)
+    UNRECOVERABLE BY CONSTRUCTION   0.06%   (6 pairs)
+    EXACT NAME MATCH REACHES       12.27%   (1,289 pairs)
+------------------------------------------------------------------------------
+
+    Read the third line against the first. The gap between them is the
+    work Layers 1 to 7 have to do, and it is the entire argument of the
+    project stated as a single number.
+
+    The ceiling is high because the generator never gives one person two
+    unrelated names. That is a property of the instrument, not a result.
+    Tier 3 assumes Layer 1 folds scripts correctly and Layer 2 blocks
+    without losing the pair. Neither is measured here. Layer 2 pairs
+    completeness is the number that will turn this ceiling into a real
+    one, and it will be lower.
+
+    Sample of pairs with no surviving channel
+
+      'R.S.'                             LA_INITIAL_BOTH     
+      'R. Shivappa'                      LA_INITIAL_PREFIX     structural signals 1
+
+      'S. Mallapp'                       LA_INITIAL_PREFIX   
+      ' S. Mallappa'                     LA_INITIAL_PREFIX     structural signals 0
+
+      'B. Durgapa'                       LA_INITIAL_PREFIX   
+      'B.D.'                             LA_INITIAL_BOTH       structural signals 1
+
+      'S. Ningappa'                      LA_INITIAL_PREFIX   
+      'S.N.'                             LA_INITIAL_BOTH       structural signals 1
+
+      'M. Shivappa'                      LA_INITIAL_PREFIX   
+      'M. Shivapa'                       LA_INITIAL_PREFIX     structural signals 1
+
+      'H. Basappa'                       LA_INITIAL_PREFIX   
+      'H. Basapa'                        LA_INITIAL_PREFIX     structural signals 1
+
+
+==============================================================================
+HARD NEGATIVES, THE FALSE MERGE SURFACE
+==============================================================================
+
+    planted name collision groups                 110
+    of which birth years also within a year        48
+    distinct name strings shared by 2 or more people      938
+    cross person pairs sharing an exact name string    17,710
+
+    Every one of these is a merge a name based system will make and
+    report as a success. They are the denominator of the false merge
+    rate, and that rate is the number this project lives or dies on.
+
+RELATIONAL AND UNDETECTED STRUCTURE
+
+    co offending preset           moderate
+    co offending dyads              4,451
+    dyads appearing together more than once     190   4.27%
+    literature anchor, Sarnecki Stockholm, about 2.5% of co offending
+    relationships persist beyond six months. Charette and Papachristos
+    find co offenders rarely offend together more than once. See ADR 012.
+
+    co offending groups planted       197
+      size 2                          79
+      size 3                          66
+      size 4                          52
+    cases with 2 or more accused    1,883   these are the cannot link edges
+    undetected cases, cstype C        450
+    culprit appears elsewhere in the corpus, appearances 3 to 18
+
+==============================================================================
+VERDICT
+==============================================================================
+
+    The planted fragments are recoverable in principle for 99.94% of true pairs.
+    A system joining on AccusedName reaches at most 12.27% of them,
+    while exposing 17,710 cross person pairs that share a name string
+    and would be merged wrongly.
+
+    Phase 0 is complete. The corpus is measurable and the target is set.
+

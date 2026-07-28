@@ -1,0 +1,46 @@
+SectionID,ActID,SectionNo,SectionDesc,SectionDescKn,GravityOffenceID,IsCognizable,IsBailable,SuccessorSectionID,Active
+1,2,103,Murder,ಕೊಲೆ,1,Y,N,,Y
+2,2,105,Culpable homicide not amounting to murder,ಕೊಲೆಯಲ್ಲದ ನರಹತ್ಯೆ,1,Y,N,,Y
+3,2,109,Attempt to murder,ಕೊಲೆ ಯತ್ನ,1,Y,N,,Y
+4,2,115,Voluntarily causing hurt,ಸ್ವಯಂಪ್ರೇರಿತ ಗಾಯ,4,N,Y,,Y
+5,2,118,Hurt by dangerous weapon,ಅಪಾಯಕಾರಿ ಆಯುಧದಿಂದ ಗಾಯ,3,Y,N,,Y
+6,2,126,Wrongful restraint,ಅನ್ಯಾಯದ ತಡೆ,4,N,Y,,Y
+7,2,74,Assault on woman with intent to outrage modesty,ಮಹಿಳೆಯ ಮೇಲೆ ಹಲ್ಲೆ,2,Y,N,,Y
+8,2,303,Theft,ಕಳವು,3,Y,N,,Y
+9,2,305,Theft in dwelling house,ವಾಸದ ಮನೆಯಲ್ಲಿ ಕಳವು,3,Y,N,,Y
+10,2,309,Robbery,ದರೋಡೆ,2,Y,N,,Y
+11,2,310,Dacoity,ಸಂಘಟಿತ ದರೋಡೆ,1,Y,N,,Y
+12,2,317,Dishonestly receiving stolen property,ಕಳವು ಮಾಲು ಸ್ವೀಕಾರ,3,Y,N,,Y
+13,2,318,Cheating and dishonestly inducing delivery of property,ವಂಚನೆ,2,Y,N,,Y
+14,2,324,Mischief causing damage,ಹಾನಿ ಉಂಟುಮಾಡುವ ಕಿಡಿಗೇಡಿತನ,4,Y,Y,,Y
+15,2,331,Lurking house trespass by night,ರಾತ್ರಿ ಮನೆ ಅತಿಕ್ರಮಣ,2,Y,N,,Y
+16,2,351,Criminal intimidation,ಬೆದರಿಕೆ,4,Y,Y,,Y
+17,2,189,Unlawful assembly,ಕಾನೂನುಬಾಹಿರ ಸಭೆ,4,Y,Y,,Y
+18,2,191,Rioting,ಗಲಭೆ,3,Y,Y,,Y
+19,1,302,Murder,ಕೊಲೆ,1,Y,N,1,N
+20,1,304,Culpable homicide not amounting to murder,ಕೊಲೆಯಲ್ಲದ ನರಹತ್ಯೆ,1,Y,N,2,N
+21,1,307,Attempt to murder,ಕೊಲೆ ಯತ್ನ,1,Y,N,3,N
+22,1,323,Voluntarily causing hurt,ಸ್ವಯಂಪ್ರೇರಿತ ಗಾಯ,4,N,Y,4,N
+23,1,324,Hurt by dangerous weapon,ಅಪಾಯಕಾರಿ ಆಯುಧದಿಂದ ಗಾಯ,3,Y,N,5,N
+24,1,341,Wrongful restraint,ಅನ್ಯಾಯದ ತಡೆ,4,N,Y,6,N
+25,1,354,Assault on woman with intent to outrage modesty,ಮಹಿಳೆಯ ಮೇಲೆ ಹಲ್ಲೆ,2,Y,N,7,N
+26,1,379,Theft,ಕಳವು,3,Y,N,8,N
+27,1,380,Theft in dwelling house,ವಾಸದ ಮನೆಯಲ್ಲಿ ಕಳವು,3,Y,N,9,N
+28,1,392,Robbery,ದರೋಡೆ,2,Y,N,10,N
+29,1,395,Dacoity,ಸಂಘಟಿತ ದರೋಡೆ,1,Y,N,11,N
+30,1,411,Dishonestly receiving stolen property,ಕಳವು ಮಾಲು ಸ್ವೀಕಾರ,3,Y,N,12,N
+31,1,420,Cheating and dishonestly inducing delivery of property,ವಂಚನೆ,2,Y,N,13,N
+32,1,427,Mischief causing damage,ಹಾನಿ ಉಂಟುಮಾಡುವ ಕಿಡಿಗೇಡಿತನ,4,Y,Y,14,N
+33,1,457,Lurking house trespass by night,ರಾತ್ರಿ ಮನೆ ಅತಿಕ್ರಮಣ,2,Y,N,15,N
+34,1,506,Criminal intimidation,ಬೆದರಿಕೆ,4,Y,Y,16,N
+35,1,143,Unlawful assembly,ಕಾನೂನುಬಾಹಿರ ಸಭೆ,4,Y,Y,17,N
+36,1,147,Rioting,ಗಲಭೆ,3,Y,Y,18,N
+37,3,20,Contravention in relation to cannabis,ಗಾಂಜಾ ಸಂಬಂಧಿತ ಉಲ್ಲಂಘನೆ,2,Y,N,,Y
+38,3,22,Contravention in relation to psychotropic substance,ಮಾದಕ ವಸ್ತು ಉಲ್ಲಂಘನೆ,2,Y,N,,Y
+39,4,25,Possession of prohibited arms,ನಿಷೇಧಿತ ಆಯುಧ ಹೊಂದಿರುವಿಕೆ,2,Y,N,,Y
+40,5,32,Illicit possession of liquor,ಅಕ್ರಮ ಮದ್ಯ ಸಂಗ್ರಹ,3,Y,Y,,Y
+41,5,34,Illicit transport of liquor,ಅಕ್ರಮ ಮದ್ಯ ಸಾಗಣೆ,3,Y,Y,,Y
+42,6,98,Unlawful transport of minor mineral,ಅಕ್ರಮ ಖನಿಜ ಸಾಗಣೆ,3,Y,Y,,Y
+43,7,184,Driving dangerously,ಅಪಾಯಕಾರಿ ಚಾಲನೆ,4,Y,Y,,Y
+44,8,66C,Identity theft,ಗುರುತಿನ ಕಳವು,3,Y,Y,,Y
+45,8,66D,Cheating by personation using computer,ಗಣಕ ಬಳಸಿ ವಂಚನೆ,3,Y,Y,,Y

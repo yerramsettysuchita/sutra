@@ -1,0 +1,698 @@
+/*
+ * Screen level composition beyond the primitives.
+ *
+ * Nothing here introduces a colour, a typeface or a scale step. Every value
+ * is a token from tokens.css.
+ */
+
+/* ---------------------------------------------------------------- buttons */
+
+.btn {
+  font-family: var(--font-ui);
+  font-size: var(--t-small);
+  font-weight: 500;
+  padding: 0.3rem var(--s-3);
+  background: var(--surface);
+  color: var(--ink);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out);
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--sunken);
+}
+
+.btn--primary {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: var(--navy-deep);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.filter {
+  font-family: var(--font-ui);
+  font-size: var(--t-micro);
+  font-weight: 600;
+  padding: 0.2rem var(--s-3);
+  background: var(--surface);
+  color: var(--ink-2);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.filter--on {
+  background: var(--signal-tint);
+  border-color: var(--signal-mid);
+  color: var(--signal-deep);
+}
+
+/* Inline value colouring, deep shades only. */
+.value--resolved {
+  color: var(--resolved-deep);
+}
+.value--conflict {
+  color: var(--conflict-deep);
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 3px;
+  vertical-align: middle;
+  border-radius: 1px;
+  background: var(--line-strong);
+}
+
+.legend-swatch--resolved {
+  background: var(--resolved-mid);
+}
+
+/* ----------------------------------------------------------------- ledger */
+
+.ledger {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+
+.ledger__row {
+  position: relative;
+  background: var(--surface);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--lift);
+  break-inside: avoid;
+}
+
+.ledger__row--conflict {
+  border-color: var(--conflict-mid);
+}
+
+.ledger__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s-4);
+  padding: var(--s-3) var(--s-4) var(--s-2);
+  flex-wrap: wrap;
+}
+
+.ledger__candidates {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-4);
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.ledger__join {
+  font-size: var(--t-micro);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  padding-top: 0.2rem;
+}
+
+.candidate {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.candidate__name {
+  font-size: var(--t-title);
+  font-weight: 500;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.candidate__meta {
+  font-size: var(--t-micro);
+  color: var(--ink-3);
+  overflow-wrap: anywhere;
+}
+
+.ledger__verdict {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  flex: none;
+}
+
+.ledger__prob {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.ledger__llr {
+  font-size: var(--t-micro);
+  color: var(--ink-3);
+}
+
+.ledger__conflict {
+  margin: 0 var(--s-4) var(--s-3);
+  padding: var(--s-2) var(--s-3);
+  background: var(--conflict-tint);
+  border: var(--hairline) solid var(--conflict-mid);
+  border-radius: 2px;
+  font-size: var(--t-small);
+  color: var(--conflict-deep);
+}
+
+.ledger__evidence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  padding: 0 var(--s-4) var(--s-3);
+}
+
+.evidence {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--s-2);
+  padding: 0.1rem var(--s-2);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: 2px;
+  background: var(--sunken);
+  font-size: var(--t-micro);
+}
+
+.evidence--resolved {
+  border-color: var(--resolved-mid);
+  background: var(--resolved-tint);
+  color: var(--resolved-deep);
+}
+
+.evidence--conflict {
+  border-color: var(--conflict-mid);
+  background: var(--conflict-tint);
+  color: var(--conflict-deep);
+}
+
+.evidence--more {
+  color: var(--ink-3);
+}
+
+.evidence__label {
+  font-weight: 600;
+}
+
+.evidence__weight {
+  font-variant-numeric: tabular-nums;
+}
+
+.ledger__table {
+  border-top: var(--hairline) solid var(--line);
+}
+
+.ledger__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-3) var(--s-4);
+  border-top: var(--hairline) solid var(--line);
+}
+
+.ledger__spacer {
+  flex: 1;
+}
+
+.ledger__note {
+  padding: 0 var(--s-4) var(--s-3);
+  font-size: var(--t-micro);
+  color: var(--ink-3);
+}
+
+/* --------------------------------------------------------- legend list */
+
+.legend-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.legend-list li {
+  display: grid;
+  grid-template-columns: 7.5rem 4.5rem 1fr;
+  gap: var(--s-3);
+  align-items: baseline;
+}
+
+@media (max-width: 46rem) {
+  .legend-list li {
+    grid-template-columns: 7.5rem 4.5rem;
+  }
+  .legend-list__text {
+    grid-column: 1 / -1;
+  }
+}
+
+.legend-list__value {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  color: var(--ink);
+  text-align: right;
+}
+
+.legend-list__text {
+  font-size: var(--t-small);
+  color: var(--ink-2);
+  line-height: 1.45;
+}
+
+/* ------------------------------------------------------------- query form */
+
+.qpicker {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: var(--s-3);
+  align-items: end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  min-width: 0;
+}
+
+.field__label {
+  font-size: var(--t-micro);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 600;
+}
+
+.field__control {
+  font-family: var(--font-ui);
+  font-size: var(--t-body);
+  padding: 0.3rem var(--s-2);
+  color: var(--ink);
+  background: var(--surface);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius);
+  min-width: 0;
+}
+
+.sql {
+  margin-top: var(--s-3);
+  padding: var(--s-3);
+  background: var(--sunken);
+  border: var(--hairline) solid var(--line-strong);
+  border-left: 3px solid var(--official-mid);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: var(--t-small);
+  line-height: 1.5;
+  color: var(--ink);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.brief {
+  padding: var(--s-3);
+  background: var(--sunken);
+  border-left: 3px solid var(--line-strong);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  max-width: none;
+}
+
+/* ---------------------------------------------------------------- profile */
+
+.profile {
+  display: grid;
+  grid-template-columns: 17rem 1fr;
+  gap: var(--s-4);
+  align-items: start;
+}
+
+@media (max-width: 68rem) {
+  .profile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.idlist {
+  list-style: none;
+  max-height: 34rem;
+  overflow-y: auto;
+}
+
+.idlist__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 100%;
+  text-align: left;
+  padding: var(--s-2) var(--s-4);
+  background: transparent;
+  border: 0;
+  border-bottom: var(--hairline) solid var(--line);
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  font-family: var(--font-ui);
+}
+
+.idlist__item:hover {
+  background: var(--sunken);
+}
+
+.idlist__item--active {
+  background: var(--signal-tint);
+  border-left-color: var(--signal-mid);
+}
+
+.idlist__key {
+  font-size: var(--t-micro);
+  color: var(--ink-3);
+}
+
+.idlist__name {
+  font-size: var(--t-body);
+  font-weight: 500;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.idlist__meta {
+  font-size: var(--t-micro);
+  color: var(--ink-3);
+}
+
+.variants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+.variant {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0;
+  padding: var(--s-1) var(--s-2);
+  background: var(--sunken);
+  border: var(--hairline) solid var(--line);
+  border-radius: 2px;
+}
+
+.variant__name {
+  font-size: var(--t-small);
+  color: var(--ink);
+}
+
+.variant__amid {
+  font-size: var(--t-micro);
+  color: var(--ink-3);
+}
+
+.graph {
+  width: 100%;
+  height: 26rem;
+  background: var(--sunken);
+  border: var(--hairline) solid var(--line);
+  border-radius: var(--radius);
+}
+
+@media print {
+  /* Canvas prints as an empty box, so paper gets the table instead. */
+  .graph {
+    display: none;
+  }
+
+  .ledger__actions,
+  .filter,
+  .btn {
+    display: none;
+  }
+
+  .ledger__row {
+    border: 0.75pt solid #000;
+    box-shadow: none;
+  }
+
+  .rail {
+    display: none;
+  }
+
+  .layout {
+    display: block;
+  }
+
+  .evidence {
+    background: #fff !important;
+    color: #000 !important;
+    border: 0.5pt solid #000 !important;
+  }
+}
+
+/* The Kannada rendering under a question in the gold set. Quieter than the
+   English line above it, and set in Noto with the leading matras need. */
+.qset__kn {
+  font-size: var(--t-small);
+  color: var(--ink-3);
+  line-height: 1.6;
+  margin-top: 2px;
+}
+
+/* ------------------------------------------------- two products, one model
+ *
+ * The deployable point and the investigative one, side by side and equally
+ * weighted, because neither is the answer on its own and the choice between
+ * them belongs to the department. Precision leads in both cards, since that is
+ * the figure the choice turns on.
+ */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: var(--s-4);
+}
+
+@media (max-width: 44rem) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product {
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius);
+  border-top: 3px solid var(--line-strong);
+  padding: var(--s-4);
+  background: var(--surface);
+}
+
+.product--resolved {
+  border-top-color: var(--resolved-mid);
+}
+
+.product--signal {
+  border-top-color: var(--signal-mid);
+}
+
+.product__label {
+  display: block;
+  font-size: var(--t-body);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.product__purpose {
+  display: block;
+  font-size: var(--t-micro);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+
+.product__figures {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+}
+
+.product__precision {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--t-metric);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.product__unit {
+  font-size: var(--t-micro);
+  color: var(--ink-3);
+}
+
+.product__rest {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+  padding-top: var(--s-3);
+  border-top: var(--hairline) solid var(--line);
+}
+
+.product__rest dt {
+  font-size: var(--t-micro);
+  color: var(--ink-3);
+}
+
+.product__rest dd {
+  font-size: var(--t-small);
+  color: var(--ink);
+  margin-top: 1px;
+}
+
+.product__note {
+  font-size: var(--t-small);
+  color: var(--ink-2);
+  line-height: 1.5;
+  margin-top: var(--s-3);
+}
+
+/* A study measured against an earlier corpus. Review tint, because it needs a
+   decision from the reader about how much weight to give the figures below,
+   not a warning that something is wrong. */
+.stale {
+  font-size: var(--t-small);
+  line-height: 1.5;
+  color: var(--review-deep);
+  background: var(--review-tint);
+  border: var(--hairline) solid var(--review-mid);
+  border-radius: var(--radius);
+  padding: var(--s-3);
+  margin-bottom: var(--s-3);
+}
+
+/* ------------------------------------------------------------------ search
+ *
+ * In the masthead, on the navy band, matched to the role picker beside it. The
+ * results panel is white on the page rather than on navy, because it holds
+ * record data and record data is read on paper white everywhere else here.
+ */
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-right: var(--s-3);
+}
+
+.search__label {
+  font-size: var(--t-micro);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.search__input {
+  font-family: var(--font-ui);
+  font-size: var(--t-micro);
+  line-height: 1.7;
+  padding: 0.15rem var(--s-2);
+  width: 15rem;
+  max-width: 40vw;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: var(--hairline) solid rgba(255, 255, 255, 0.42);
+  border-radius: 2px;
+}
+
+.search__input::placeholder {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.search__input:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.search__results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 20;
+  width: 26rem;
+  max-width: 86vw;
+  max-height: 22rem;
+  overflow-y: auto;
+  background: var(--surface);
+  border: var(--hairline) solid var(--line-strong);
+  border-radius: var(--radius);
+}
+
+.search__results ul {
+  list-style: none;
+}
+
+.search__empty {
+  padding: var(--s-3);
+  font-size: var(--t-small);
+  color: var(--ink-2);
+  line-height: 1.5;
+}
+
+.search__hit {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: var(--s-3);
+  background: none;
+  border: 0;
+  border-bottom: var(--hairline) solid var(--line);
+  cursor: pointer;
+}
+
+.search__hit:hover,
+.search__hit:focus-visible {
+  background: var(--sunken);
+}
+
+.search__hit-name {
+  display: block;
+  font-size: var(--t-body);
+  font-weight: 500;
+  color: var(--ink);
+  font-family: var(--font-kannada);
+}
+
+.search__hit-id {
+  display: block;
+  font-size: var(--t-micro);
+  color: var(--signal-deep);
+}
+
+.search__hit-detail {
+  display: block;
+  font-size: var(--t-micro);
+  color: var(--ink-3);
+  line-height: 1.5;
+}
+
+/* What a queue row shows once somebody has decided it. Quiet, because the
+   decision is a fact about the row rather than an alert. */
+.ledger__outcome {
+  font-size: var(--t-small);
+  color: var(--ink-2);
+  padding: var(--s-2) var(--s-4) 0;
+  line-height: 1.6;
+}

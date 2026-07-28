@@ -1,0 +1,5 @@
+UnitTypeID,UnitTypeName,HierarchyLevel
+1,Range,1
+2,District,2
+3,Sub Division,3
+4,Police Station,4

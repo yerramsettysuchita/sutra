@@ -1,0 +1,689 @@
+VictimID,CaseMasterID,PersonID,VictimName,AgeYear,GenderID,CasteID,ReligionID,OccupationID,InjuryType
+1,39,V1,Sharada Gurapa,28,1,26,7,18,Grievous
+2,41,V1,Yashoda S,30,1,5,3,3,Simple
+3,42,V1,ನಿಂಗರಾಜ ಸಿದ್ದಪ್ಪ,52,1,29,6,7,Simple
+4,43,V1,YASHODA  SANGAPA,32,2,3,7,2,None
+5,53,V1,Shobha S/o Mallappa,44,2,27,3,11,None
+6,59,V1,Vijayalaksmi S/o Yamanappa,45,1,15,3,20,Grievous
+7,60,V1,ಶ್ವೇತಾ,52,2,38,2,6,Simple
+8,136,V1,Yashoda S/o Sangapa,33,1,15,3,10,Fatal
+9,137,V1,Yashoda S/o Sangapa,33,1,18,2,14,Simple
+10,139,V1,R.G.,23,2,27,3,21,Grievous
+11,140,V1,ಶರಣಪ್ಪ ಬಸಪ್ಪ,33,1,21,4,25,Fatal
+12,141,V1,ದೊಡ್ಡಬಸಪ್ಪ ತಂದೆ ಮಾರಿಯಪ್ಪ,61,1,27,1,11,Grievous
+13,142,V1,Kiran s/o. Somappa,35,2,32,7,9,Fatal
+14,144,V1,ರಾಜಣ್ಣ,32,2,6,4,18,None
+15,145,V1,ಗೋಪಾಲ,62,1,22,7,24,Grievous
+16,146,V1,ನಿಂಗರಾಜ ಸಿದ್ದಪ್ಪ,52,1,8,5,4,None
+17,147,V1,ಬಸಪ್ಪಫಕೀರಪ್ಪ,53,1,26,1,18,Grievous
+18,149,V1,Ayyapa Basappa,55,1,32,7,8,Simple
+19,150,V1,Lakshmee Eranna,30,1,11,1,13,Fatal
+20,151,V1,Ningaraj Siddappa,53,2,33,6,20,Fatal
+21,152,V1,Mariyappa Ganesh,41,2,9,2,17,Grievous
+22,153,V1,Veejayalakshmi Yamanappa,51,1,34,3,10,Grievous
+23,154,V1,ಲಕ್ಷ್ಮಿ,68,1,34,2,19,Fatal
+24,156,V1,Nagaratna Rangappa,43,1,18,4,13,Fatal
+25,168,V1,Wijayalakshmi,16,1,1,1,12,Grievous
+26,239,V1,ಸವಿತಾ ಲಿಂಗಪ್ಪ,39,1,33,7,12,Fatal
+27,243,V1,Kumara Gurappa,49,1,9,7,10,Grievous
+28,275,V1,Raju Boregowda,50,1,32,1,19,Simple
+29,342,V1,ಶೋಭಾ ಸಿದ್ದಪ್ಪ,50,1,19,2,4,Fatal
+30,374,V1,Manjunath Gurappa,50,2,32,2,25,Fatal
+31,384,V1,Raju Sangappa,41,1,24,2,23,None
+32,390,V1,Rajanna Hanumapp,28,2,12,5,13,None
+33,396,V1,Shivakumar Puttapp,52,1,34,6,4,Simple
+34,399,V1,Deepak Kreeshnappa,63,1,26,7,23,None
+35,400,V1,ಸವಿತಾ Basappa,44,1,36,1,1,Simple
+36,401,V1,B. Rangappa,26,2,25,1,21,None
+37,402,V1,ಮಂಜುನಾಥ,50,2,15,3,22,Fatal
+38,411,V1,U. Durgappa,51,1,35,3,15,None
+39,416,V1,ನಾಗರಾಜ ಯಮನಪ್ಪ,40,1,24,6,7,None
+40,428,V1,Hanumantha Krishnappa,21,1,30,2,7,Fatal
+41,429,V1,ಚಂದ್ರಶೇಖರ,36,1,36,6,7,Fatal
+42,430,V1,Suneel,48,1,9,3,19,None
+43,432,V1,ಯಶೋದಾ,43,1,27,4,17,Fatal
+44,438,V1,Ayyappa Somappa,63,1,11,3,19,Fatal
+45,439,V1,Suresh s/o. Yamanappa,50,1,38,4,4,Fatal
+46,441,V1,S. Puttappa,57,1,9,5,11,None
+47,442,V1,ಯಶೋದಾ ಲಿಂಗಪ್ಪ,61,1,27,1,23,None
+48,443,V1,ಹರೀಶ Fakirappa,37,1,11,3,4,Grievous
+49,444,V1,ಕುಮಾರ ಗುರಪ್ಪ,48,1,6,5,23,None
+50,445,V1,ಮಂಜುಳಾ ಗುರಪ್ಪ,55,2,35,6,7,Grievous
+51,446,V1,Chandrashekar Krisnappa,22,1,38,3,5,Grievous
+52,448,V1,Kiran,63,1,3,5,10,Grievous
+53,449,V1,ರಾಕೇಶ ಬೋರೇಗೌಡ,36,1,8,1,10,Grievous
+54,457,V1,Malleekarjuna ಬೋರೇಗೌಡ,53,1,30,2,23,Simple
+55,466,V1,ಮಂಜುಳಾ ಚೆನ್ನಪ್ಪ,45,1,39,1,18,Grievous
+56,467,V1,Shwetha Hanumappa,37,1,33,4,12,None
+57,468,V1,Sharanapp Sangapa,21,2,7,1,11,Grievous
+58,469,V1,ಹರೀಶ ಬೋರೇಗೌಡ,67,2,25,5,13,Simple
+59,470,V1,K. Sangappa,32,1,3,4,21,Grievous
+60,471,V1,ಶರಣಪ್ಪ ಬಸಪ್ಪ,38,1,10,1,17,None
+61,474,V1,Umesh Mallapa ,28,2,3,7,25,None
+62,475,V1,Shivakumar,49,2,19,3,10,None
+63,476,V1,Lakshmi Venkatappa,63,2,32,3,17,None
+64,481,V1,ಕಿರಣ ನಿಂಗಪ್ಪ,35,1,7,5,15,None
+65,493,V1,Harish S,47,1,7,5,24,Fatal
+66,501,V1,Shobha S/o  Siddappa,56,1,40,1,23,Simple
+67,504,V1,Kiran ಸೋಮಪ್ಪ,42,1,33,6,4,Simple
+68,505,V1,Wijayalakshmi Timmappa,40,2,3,5,22,Grievous
+69,511,V1,Santosh Gurappa,45,1,36,2,23,Grievous
+70,525,V1,Sunil Venkatappa,26,1,23,3,21,Fatal
+71,600,V1,Kiran Somappa,38,1,9,7,9,Simple
+72,606,V1,ಮಹೇಶ ಬೋರೇಗೌಡ,29,1,34,3,8,Fatal
+73,607,V1,Manjunath  G,50,1,25,2,23,Grievous
+74,609,V1, Githa,32,1,31,2,5,None
+75,610,V1,ಶೋಭಾ ತಂದೆ ಮಲ್ಲಪ್ಪ,46,1,24,3,23,Simple
+76,652,V1,ಅರುಣ Sangapa,61,1,26,4,6,None
+77,661,V1,Geetha Rangappa,38,1,10,7,2,Simple
+78,684,V1,ಗಂಗಾಧರ ಕೆಂಪೇಗೌಡ,47,2,18,1,3,Grievous
+79,686,V1,ಗಂಗಾಧರ ಸಂಗಪ್ಪ,52,1,4,1,9,Grievous
+80,724,V1,Nagesh,69,1,15,4,5,Fatal
+81,729,V1,ನವೀನ ದುರ್ಗಪ್ಪ,42,2,28,5,1,Simple
+82,741,V1,ಅಶೋಕ ಹನುಮಪ್ಪ,68,1,26,4,12,Simple
+83,742,V1,A Ramegowd,35,1,4,4,3,Fatal
+84,743,V1,S. Mallappa,51,1,15,7,25,None
+85,745,V1,ಶೋಭಾ ತಂದೆ ನಿಂಗಪ್ಪ,19,2,16,4,18,Fatal
+86,746,V1, Geetha S/o Mariyapp,65,2,37,4,10,Simple
+87,747,V1,Devaraj ಮಾರಿಯಪ್ಪ,62,1,15,3,17,Simple
+88,749,V1,Gopala,56,1,3,4,25,Fatal
+89,750,V1,Vijayalakshmi Timmappa,22,2,25,7,13,Grievous
+90,766,V1,Kavitha Chennappa,35,1,26,5,9,Grievous
+91,767,V1,ಮಧು  ಸಿದ್ದಪ್ಪ,36,1,39,3,5,Simple
+92,769,V1,Shwetha Ningappa,45,1,28,6,15,Simple
+93,770,V1,C.Sangappa,43,2,17,4,19,Simple
+94,771,V1,Rekh Y,50,1,15,6,1,Simple
+95,773,V1,Saranappa S/o Boregowda,36,1,20,4,4,None
+96,774,V1,ಅಂಬಿಕಾ,37,2,3,3,19,None
+97,775,V1,Roopa Puttappa,51,2,26,7,22,Fatal
+98,801,V1,Veeresh S,61,2,3,1,14,Simple
+99,815,V1,ರಮೇಶ ತಂದೆ ಮಲ್ಲಪ್ಪ,16,1,3,6,9,Grievous
+100,841,V1,B. Fakirappa,50,1,29,1,20,Simple
+101,847,V1,ರಾಕೇಶ Boregowda,34,2,5,7,14,Fatal
+102,849,V1,Nagaratna B,34,1,21,6,2,None
+103,850,V1,Shobha Muniyappa,30,2,34,5,13,Fatal
+104,856,V1,Basavaraj R,55,1,23,4,10,Fatal
+105,857,V1,Nages Mariyappa,29,1,16,7,21,Grievous
+106,858,V1,ಪ್ರವೀಣ ,45,2,10,6,15,Grievous
+107,859,V1,Shwetha S/o Chikkegowda,56,1,4,4,6,None
+108,860,V1,Venkatesh Hanumappa,60,1,37,3,16,Fatal
+109,861,V1,Vijayalakshmi,48,1,2,4,18,None
+110,864,V1,Siddaraju Chennappa,42,1,18,1,9,Simple
+111,868,V1,Shobh H,35,1,30,5,1,Fatal
+112,875,V1,Yasoda S/o Mallappa,53,1,14,3,18,Simple
+113,891,V1,ಕವಿತಾ ಶಿವಪ್ಪ,67,2,3,3,24,Simple
+114,908,V1,H. Fakirappa,59,2,37,7,13,Grievous
+115,909,V1,ಶ್ವೇತಾ Shivapp,34,1,14,4,19,Grievous
+116,913,V1,ಸೋಮಶೇಖರ ತಂದೆ ರಾಮೇಗೌಡ,38,2,33,1,8,None
+117,914,V1,SANTOSH CHIKKEGOWD,44,1,16,6,4,Grievous
+118,915,V1,ರೇಖಾ ಚಿಕ್ಕೇಗೌಡ,29,1,23,3,16,Grievous
+119,916,V1,HARISH FAKIRAPPA,34,1,29,1,22,Fatal
+120,917,V1,ಸುನೀಲ Basappa,49,2,30,4,5,Grievous
+121,920,V1,Sunil Gurappa,59,2,19,7,4,None
+122,924,V1,ಕೃಷ್ಣಮೂರ್ತಿ ಮಾರಿಯಪ್ಪ,59,2,10,1,23,None
+123,933,V1,Dinesh Ningapp,48,2,31,1,24,Fatal
+124,935,V1,Manjula Sangappa,51,2,25,2,13,Grievous
+125,936,V1,S. Venkatappa,29,2,40,4,4,Fatal
+126,954,V1,ಹರೀಶ ಸಿದ್ದಪ್ಪ,24,1,38,1,16,Simple
+127,974,V1,S. Puttappa,55,1,38,6,9,None
+128,975,V1,ಮಹಾದೇವ ಬೋರೇಗೌಡ,64,1,19,5,12,Grievous
+129,1018,V1,Kiran,46,2,33,6,19,None
+130,1019,V1,Ashok Mariyappa,49,2,28,3,4,Fatal
+131,1020,V1,AshokTimmappa,52,1,32,6,2,Simple
+132,1034,V1,ಪ್ರಕಾಶ ತಂದೆ ಚೆನ್ನಪ್ಪ,67,1,6,7,15,Simple
+133,1036,V1,ಲೋಕೇಶ ತಿಮ್ಮಪ್ಪ,56,2,18,1,12,Fatal
+134,1039,V1,A.‍ Doddappa,47,1,29,1,25,Grievous
+135,1046,V1,Girish Rangapa,58,1,31,1,16,None
+136,1051,V1,Yashoda,61,1,7,3,23,None
+137,1055,V1,ಶಾರದಾ ತಂದೆ ಚೆನ್ನಪ್ಪ,62,1,17,1,16,Fatal
+138,1059,V1,ಸುನೀತಾ ವೆಂಕಟಪ್ಪ,49,1,15,5,13,Simple
+139,1085,V1,Timmappa Manjunath,50,1,16,6,18,None
+140,1089,V1,ಗೀತಾ ಮುನಿಯಪ್ಪ,56,1,21,4,20,Fatal
+141,1104,V1,ನಾಗರತ್ನ ಚಿಕ್ಕೇಗೌಡ,21,2,31,7,16,Grievous
+142,1109,V1,Mahesh,57,1,14,2,15,Grievous
+143,1135,V1,Y. Sangappa,33,1,4,6,16,Fatal
+144,1155,V1,ನಾಗೇಶ ನಿಂಗಪ್ಪ,38,2,18,3,18,Simple
+145,1160,V1,ಪ್ರಕಾಶ ನಿಂಗಪ್ಪ,44,1,32,5,10,Grievous
+146,1162,V1,ದೊಡ್ಡಬಸಪ್ಪ ಯಮನಪ್ಪ,61,1,4,1,17,Fatal
+147,1166,V1,Mallikarjuna Durgappa,44,1,18,2,4,Simple
+148,1167,V1,Suresh,19,1,3,6,4,Fatal
+149,1170,V1,PRAKASH DURGAPPA,43,1,25,1,10,Fatal
+150,1175,V1,Sharada Gurappa,21,1,3,5,18,Fatal
+151,1184,V1,Mahesh Ramegowda,38,2,31,1,20,Fatal
+152,1185,V1,ರೂಪಾ ಮಲ್ಲಪ್ಪ,51,1,16,2,18,Simple
+153,1186,V1,D. Muniappa,64,1,29,3,11,Grievous
+154,1187,V1,M. Siddapa,39,1,21,7,3,Simple
+155,1188,V1,ನಂಜುಂಡಪ್ಪ ರಂಗಪ್ಪ,21,1,15,6,23,None
+156,1189,V1,Goppal S/o Fakirappa,66,1,30,5,7,Fatal
+157,1201,V1,D.K.,65,2,6,3,7,Fatal
+158,1203,V1,Basapp,56,1,33,3,6,None
+159,1204,V1,M. Gurappa,57,2,27,7,11,Simple
+160,1207,V1,ಶ್ವೇತಾ ಹನುಮಪ್ಪ,38,1,37,7,12,Grievous
+161,1211,V1,ಶರಣಪ್ಪ,26,2,31,6,21,Grievous
+162,1212,V1,ಲಕ್ಷ್ಮಿ ಈರಣ್ಣ,30,2,20,6,8,Fatal
+163,1233,V1,R. Doddappa,32,1,21,4,3,Grievous
+164,1235,V1,ಶ್ವೇತಾ,50,1,18,4,14,Fatal
+165,1236,V1,ಭಾಗ್ಯ ಬೋರೇಗೌಡ,24,1,14,4,25,Simple
+166,1237,V1,Doddabasappa Yamanapa,67,2,37,2,24,None
+167,1239,V1,Nagaraj,32,1,18,7,11,Grievous
+168,1240,V1,Sunitha Krishnappa,45,1,2,1,25,None
+169,1242,V1,Hanumappa Lokesh,32,2,14,1,15,None
+170,1243,V1,ಕಿರಣ  ದುರ್ಗಪ್ಪ,63,2,5,6,23,Grievous
+171,1246,V1,ರಾಜಣ್ಣ ಹನುಮಪ್ಪ,30,2,26,1,12,None
+172,1248,V1,RenukTimmappa,67,1,32,6,9,Simple
+173,1275,V1,ನಾಗೇಶ,73,1,19,2,5,Fatal
+174,1287,V1,Suresh Yamanappa,56,2,1,3,15,Grievous
+175,1289,V1,Mallappa Yashoda,55,2,34,1,6,Simple
+176,1290,V1,ಶ್ವೇತಾ,46,1,8,5,24,Simple
+177,1303,V1, Sunitha,29,1,14,6,9,Simple
+178,1304,V1,ಲಕ್ಷ್ಮಿ ,32,1,12,1,14,Simple
+179,1305,V1,Thimmaraju Hanumappa,50,1,6,5,24,Grievous
+180,1306,V1,ಮಲ್ಲಿಕಾರ್ಜುನ,54,2,2,3,18,Simple
+181,1323,V1,ಕಿರಣ ಸಂಗಪ್ಪ,41,1,13,1,12,Fatal
+182,1328,V1,P. Somappa ,52,1,21,7,22,Fatal
+183,1329,V1,Vijayalaksmi Krishnappa,41,1,6,2,6,Simple
+184,1330,V1,Sarada ಚಿಕ್ಕೇಗೌಡ,62,2,33,2,24,Fatal
+185,1331,V1,Mahesh S/o Eranna,23,2,13,6,5,None
+186,1332,V1,GANESH MARIYAPPA,40,1,32,4,10,None
+187,1335,V1,M. Ningappa ,33,1,8,4,23,Simple
+188,1339,V1,Savitha B,39,1,7,4,6,Grievous
+189,1340,V1,Nagaratna Basappa,33,2,12,2,21,Simple
+190,1346,V1,ಸವಿತಾ ಬಸಪ್ಪ,42,1,22,1,22,Fatal
+191,1358,V1,Prasad,53,2,9,2,17,None
+192,1379,V1,Manjunath ದುರ್ಗಪ್ಪ,60,1,21,3,1,Simple
+193,1385,V1,Rekh Durgappa,26,1,16,2,18,Fatal
+194,1389,V1,ಗಿರೀಶ ವೆಂಕಟಪ್ಪ,41,2,21,6,9,Grievous
+195,1390,V1,Umesh S/o Hanumappa,55,1,8,2,3,None
+196,1391,V1,ಗೀತಾ ತಂದೆ ಬಸಪ್ಪ,52,1,31,1,1,Fatal
+197,1392,V1,Sharada Venkatapa,65,1,26,6,17,Grievous
+198,1393,V1,Lakshmi S/o Shivappa,16,2,11,7,10,Grievous
+199,1394,V1,ಶಾರದಾ,25,1,7,7,10,Simple
+200,1422,V1,ಲೋಕೇಶ ಮಾರಿಯಪ್ಪ,31,1,28,4,19,Simple
+201,1430,V1,Somappa  Ananda,53,2,3,7,22,Fatal
+202,1431,V1,ಲಕ್ಷ್ಮಿ ತಂದೆ ದುರ್ಗಪ್ಪ,25,1,33,2,8,Fatal
+203,1432,V1,N. Mallappa,30,1,23,6,7,Simple
+204,1457,V1,Chikkegowda Umesh,61,1,9,6,6,Grievous
+205,1458,V1,Sunila Venkatappa,36,1,20,7,8,Grievous
+206,1475,V1,Manjula S/o Boregowda,67,2,13,4,3,None
+207,1476,V1,ಪ್ರವೀಣ ಬಸಪ್ಪ,42,1,7,3,3,None
+208,1477,V1,Sharada S/o Timmappa,20,1,26,6,20,None
+209,1484,V1,Praveen Doddappa,21,2,7,2,6,Simple
+210,1486,V1,ಶಿವಕುಮಾರ ಮಲ್ಲಪ್ಪ,51,2,39,7,6,Grievous
+211,1487,V1,Praveen Muniappa,68,2,5,4,7,Fatal
+212,1488,V1,Rakesh,32,2,28,7,12,Grievous
+213,1490,V1,Sharanappa,16,1,13,5,18,Fatal
+214,1492,V1,ಮಧು ಸಂಗಪ್ಪ,25,1,29,5,8,Simple
+215,1493,V1,Vijayalakshmi Fakirappa,37,1,40,6,23,Simple
+216,1514,V1,Ashoka Doddappa,34,2,23,5,22,Grievous
+217,1516,V1,Rekha Doddapp ,37,2,40,4,25,None
+218,1517,V1,Rakesh Ningappa,68,2,14,4,19,Simple
+219,1525,V1,Yallappa,30,1,21,2,23,Grievous
+220,1526,V1,ಬಸಪ್ಪ ಫಕೀರಪ್ಪ ,55,1,38,4,14,Grievous
+221,1527,V1,Shivanna Erana,51,1,23,2,9,Simple
+222,1528,V1,ಸುನೀತಾ ತಂದೆ ಮಾರಿಯಪ್ಪ,51,2,14,7,5,Fatal
+223,1534,V1,Mallikarjuna,43,2,14,3,17,Simple
+224,1535,V1,Nagaratna Basappa,56,2,11,3,11,Grievous
+225,1536,V1,Gurappa Sunith,66,1,9,7,12,Simple
+226,1538,V1,Ayyapp Durgapa,45,2,27,1,19,None
+227,1573,V1,Mahesh Ramegowda,22,2,29,5,23,Fatal
+228,1574,V1,ವಿಜಯಲಕ್ಷ್ಮಿ ಕೃಷ್ಣಪ್ಪ,40,1,40,3,20,None
+229,1608,V1,ಲಕ್ಷ್ಮಿ ಗುರಪ್ಪ,55,2,29,7,17,None
+230,1609,V1, ಯಶೋದಾ ದುರ್ಗಪ್ಪ,38,2,7,1,10,Simple
+231,1634,V1,Kiran Durgapp,68,2,15,1,18,Fatal
+232,1635,V1,Ramegowd Shankar,32,1,27,5,4,None
+233,1636,V1,Savitha S/o Puttappa,25,1,40,6,3,Simple
+234,1637,V1,ಯಶೋದಾ,34,1,38,6,9,Fatal
+235,1638,V1,Mallikarjuna s/o. Lingappa,54,1,23,1,1,Simple
+236,1642,V1,ನವೀನ Venkatappa ,53,2,34,6,16,Fatal
+237,1657,V1,ಶ್ವೇತಾ ಶಿವಪ್ಪ,44,1,33,2,3,Fatal
+238,1658,V1,ಸವಿತಾ ಶಿವಪ್ಪ,56,1,32,4,22,Fatal
+239,1659,V1,M. Chikkegowda ,20,1,18,1,12,Fatal
+240,1661,V1,ಗೋಪಾಲ ರಂಗಪ್ಪ,30,1,26,7,20,Simple
+241,1663,V1,Ayyapa,48,2,5,1,13,Simple
+242,1681,V1,Puttaswamy M,54,1,9,6,9,Fatal
+243,1698,V1,ಹರೀಶ ಬೋರೇಗೌಡ,66,1,29,7,2,Fatal
+244,1702,V1,S. Puttappa,50,1,29,3,20,None
+245,1705,V1,GangadharaKempegowda,42,1,4,4,17,Simple
+246,1716,V1,Sharad Yamanappa,49,1,1,4,5,Fatal
+247,1739,V1,Nagesh s/o. Ningappa,36,1,24,4,20,Fatal
+248,1741,V1,ಶೋಭಾ ಹನುಮಪ್ಪ,33,1,13,2,22,Grievous
+249,1743,V1,Savitha Chennappa,21,1,13,5,11,Fatal
+250,1744,V1,Rekha,20,1,10,2,11,None
+251,1751,V1,SANKAR KEMPEGOWDA,39,1,5,2,19,Fatal
+252,1753,V1,Doddabasappa S/o Ningappa,31,2,38,7,15,Fatal
+253,1754,V1,Githa ಗುರಪ್ಪ,41,2,16,2,11,None
+254,1755,V1,Nagesh,37,1,13,6,23,Grievous
+255,1756,V1,ಪ್ರವೀಣ Yamanappa,53,2,20,6,3,None
+256,1757,V1,ತಿಮ್ಮರಾಜು,64,1,14,4,20,Simple
+257,1770,V1,ಅಂಬಿಕಾ,20,2,22,1,15,Simple
+258,1777,V1,ನವೀನ ತಿಮ್ಮಪ್ಪ,69,1,30,6,20,Fatal
+259,1778,V1,Ambika S/o Seeddappa,54,1,30,4,20,Grievous
+260,1785,V1,Krishnamurthya Chennappa,36,1,24,1,5,Simple
+261,1831,V1, ರಾಜಣ್ಣ,42,1,7,6,24,Simple
+262,1832,V1,ಬಸಪ್ಪ,68,2,24,6,15,Fatal
+263,1833,V1,Rakes B,36,2,13,6,19,Grievous
+264,1837,V1,Bhagya s/o. Rangapa,21,2,12,6,18,Fatal
+265,1838,V1,ಶ್ವೇತಾ ಪುಟ್ಟಪ್ಪ,22,1,23,6,7,Simple
+266,1839,V1,P. Eranna,36,2,17,4,17,None
+267,1843,V1,Raju Siddappa,56,1,17,3,6,Grievous
+268,1844,V1,Veeresh Mallappa,34,2,38,2,6,Simple
+269,1845,V1,ಶಿವಕುಮಾರ ಗುರಪ್ಪ,31,1,37,6,13,Simple
+270,1848,V1,ಕುಮಾರ ದುರ್ಗಪ್ಪ,22,2,37,4,2,Simple
+271,1862,V1,Kavitha Sangappa,28,1,7,7,22,Grievous
+272,1873,V1,ತಿಮ್ಮರಾಜು ಪುಟ್ಟಪ್ಪ,54,2,10,3,7,Fatal
+273,1894,V1,S. Puttapa,30,1,27,6,16,None
+274,1895,V1,Pushpa S/o Venkatappa,53,2,36,2,9,Grievous
+275,1896,V1,Suresh,25,2,2,5,7,Simple
+276,1927,V1,Gangadhar Sangapp,47,1,28,5,18,Simple
+277,1928,V1,ವಿಜಯಲಕ್ಷ್ಮಿ ಬೋರೇಗೌಡ,56,1,34,1,8,Simple
+278,1929,V1,ನಾಗೇಶ Rangappa,66,2,37,3,13,Fatal
+279,1935,V1,Lakshmi Durgappa,25,1,4,5,20,Fatal
+280,1947,V1,Prakash S/o Erana,28,1,18,2,3,Fatal
+281,1953,V1,ಅಂಬಿಕಾ ತಂದೆ ದುರ್ಗಪ್ಪ,58,1,12,4,9,Simple
+282,1971,V1,S. Kempegowd,46,2,22,3,7,None
+283,1976,V1,Madha Chikkegowda,24,2,7,6,10,Simple
+284,1993,V1,Santosh Boregowda,28,1,23,5,12,Fatal
+285,1994,V1, Putaswamy,25,1,8,1,20,Fatal
+286,2003,V1,Kiran Durgappa,35,2,22,1,23,None
+287,2008,V1,Madhu S/o Sangappa,26,1,24,3,15,Fatal
+288,2013,V1,Erappa S/o Yamanapp,56,2,32,2,21,None
+289,2016,V1,Ashok  Gurappa,33,2,4,7,12,Grievous
+290,2020,V1,Yashoda Muniyappa,20,1,4,4,22,Grievous
+291,2025,V1,ದೇವರಾಜ,38,1,30,6,22,Grievous
+292,2029,V1,ಮಂಜುಳಾ ತಂದೆ ಚಿಕ್ಕೇಗೌಡ,59,1,32,2,1,Simple
+293,2030,V1,Y. Mariyappa,62,1,11,1,6,None
+294,2031,V1,Ambik K,38,1,9,4,4,None
+295,2035,V1,Prakash Ningappa,47,1,9,6,17,None
+296,2036,V1,L. Eranna,35,1,19,1,13,None
+297,2041,V1,Ningaraj,54,1,15,1,19,None
+298,2045,V1,Venkatesh‍ Somappa ,61,2,6,3,3,None
+299,2053,V1, ಹನುಮಂತ ಮುನಿಯಪ್ಪ,59,1,26,2,25,None
+300,2055,V1,ಸಿದ್ದರಾಜು ,38,1,28,7,4,Grievous
+301,2057,V1,Ningaraja Nagappa,21,1,11,3,25,Simple
+302,2075,V1,Sunil C,46,1,5,3,17,Fatal
+303,2083,V1,Nagaraj Mallappa,71,2,19,3,6,Grievous
+304,2084,V1,Roopa S/o Gurappa,62,1,17,1,10,None
+305,2105,V1,Roopa,57,1,8,6,18,Simple
+306,2106,V1,ವಿಜಯಲಕ್ಷ್ಮಿ ತಂದೆ ಹನುಮಪ್ಪ,42,2,14,7,5,Fatal
+307,2120,V1,Vijayalakshmi Timmappa,25,2,9,1,9,Grievous
+308,2128,V1,Kumar Gurappa,50,1,27,1,25,Fatal
+309,2130,V1,ಮಧು Kempegowda,63,1,18,5,14,Fatal
+310,2131,V1,ಶ್ರೀನಿವಾಸ ಪುಟ್ಟಪ್ಪ,49,1,23,2,19,Fatal
+311,2132,V1,ಶಾರದಾ ಮಲ್ಲಪ್ಪ,51,1,12,2,16,Simple
+312,2133,V1,ಸವಿತಾ ತಂದೆ ಈರಣ್ಣ,24,1,21,5,6,Simple
+313,2137,V1,Sunitha Mariappa,38,2,22,7,1,None
+314,2138,V1,S. Eranna,52,1,8,2,1,Fatal
+315,2139,V1,ನಾಗೇಶ ನಿಂಗಪ್ಪ,42,1,35,2,9,None
+316,2140,V1,Basappa Sunil,59,2,11,7,7,Grievous
+317,2141,V1,A. Chennapp,53,1,2,3,8,Grievous
+318,2142,V1,ರೇಖಾ ತಂದೆ ರಂಗಪ್ಪ,27,1,14,4,6,Simple
+319,2143,V1,Kiran Eranna,70,1,36,3,8,Fatal
+320,2144,V1,Nages s/o. Chennappa,40,2,20,5,23,Grievous
+321,2177,V1,Chandra Doddappa,45,1,29,1,21,Simple
+322,2178,V1,Chandru Kempegowda,42,1,20,2,19,Grievous
+323,2179,V1,Vijayalaksmi Krishnappa,62,1,18,5,20,Fatal
+324,2180,V1,ಪ್ರಸಾದ,65,2,20,5,13,Fatal
+325,2182,V1,Yashoda Chennappa,46,1,3,3,20,Grievous
+326,2183,V1,Basappa,23,1,37,2,4,Fatal
+327,2202,V1,Kiran S,41,1,18,1,13,Fatal
+328,2205,V1,Kiran  Somapp,41,2,35,7,9,Fatal
+329,2208,V1,Rakesh,40,1,5,3,14,None
+330,2262,V1,ವಿಜಯಲಕ್ಷ್ಮಿ ತಂದೆ ಪುಟ್ಟಪ್ಪ,30,1,39,7,1,None
+331,2264,V1,Ramesh Shivappa,59,1,32,4,15,Fatal
+332,2275,V1,Sunitha Eranna,46,1,40,1,10,Grievous
+333,2277,V1,Chandrasekar,41,1,27,5,15,Grievous
+334,2278,V1,Devaraj Ramegowd,60,1,34,4,10,Fatal
+335,2279,V1,ಶೋಭಾ ಮಲ್ಲಪ್ಪ,44,2,30,1,4,Fatal
+336,2280,V1,S. Basappa,47,2,18,5,12,Grievous
+337,2317,V1,Ravi Ningappa,37,1,19,6,3,Fatal
+338,2318,V1,S. Durgappa,58,2,18,5,6,None
+339,2319,V1,ಶಿವಕುಮಾರ,32,1,25,3,4,Grievous
+340,2320,V1,Kempegowda Basappa,36,1,12,1,17,Grievous
+341,2321,V1,Praveen Rangappa,56,1,3,2,10,Fatal
+342,2322,V1,ಕುಮಾರ ತಂದೆ ಬಸಪ್ಪ,26,1,23,6,6,Fatal
+343,2345,V1, Shankara S/o Chennappa,29,1,31,5,16,None
+344,2350,V1,ಲಕ್ಷ್ಮಿ ರಾಮೇಗೌಡ,42,1,1,6,17,Grievous
+345,2391,V1,LOKESH MARIYAPPA,26,1,32,5,19,Simple
+346,2394,V1,Neengaraj S/o Durgappa,66,2,26,7,7,None
+347,2395,V1,Siddaraja,48,1,18,2,23,Simple
+348,2402,V1,ಗೋಪಾಲ,58,2,2,6,15,Grievous
+349,2409,V1,Doddabasapa Krishnapp,47,1,18,6,25,None
+350,2410,V1,Mahadev,44,1,19,2,11,Simple
+351,2411,V1, ಸಂತೋಷ ತಂದೆ ಗುರಪ್ಪ,50,1,32,5,7,None
+352,2412,V1,MALLIKARJUN GURAPPA,37,1,11,4,20,Grievous
+353,2415,V1,R. Boregowd,52,1,37,6,4,None
+354,2416,V1,Basapp Geetha,59,2,8,7,13,Fatal
+355,2417,V1,Ganesh,45,1,16,7,19,Simple
+356,2426,V1,N Nagappa,42,2,13,4,15,Simple
+357,2436,V1,Deepak S/o Krishnappa,63,1,36,7,1,Simple
+358,2438,V1,Doddabasappa‍ S/o Ningappa,28,1,13,5,25,Simple
+359,2439,V1,Sharanappa,18,2,40,4,4,Simple
+360,2448,V1,ಸಿದ್ದರಾಜು ತಂದೆ ಸಂಗಪ್ಪ,39,1,31,7,5,Simple
+361,2449,V1,Gangadhar S/o Sangappa,51,2,11,1,24,Fatal
+362,2462,V1,L. Mariyappa,56,1,38,5,9,None
+363,2499,V1,ಸೋಮಶೇಖರ ಕೃಷ್ಣಪ್ಪ,47,1,37,4,25,None
+364,2500,V1,Kreeshnamurthy Mariyappa ,45,1,26,6,2,None
+365,2503,V1,Arun D,51,2,3,2,18,Grievous
+366,2507,V1,Thimmaraju S/o Somappa,45,1,27,1,22,Simple
+367,2524,V1,Sharada Doddappa,49,2,21,1,7,Fatal
+368,2525,V1,Somapa Renuka,30,2,13,3,4,Simple
+369,2526,V1,Ravi,23,1,27,4,6,Fatal
+370,2540,V1,Bhagy Yamanappa,41,1,39,2,20,Fatal
+371,2545,V1,ಮಹಾದೇವ,45,1,38,3,8,Grievous
+372,2551,V1,V.E.,46,2,6,5,24,Grievous
+373,2572,V1,ಶಿವಕುಮಾರ ತಂದೆ ಯಮನಪ್ಪ,34,1,10,2,11,None
+374,2573,V1,Gopal,25,1,39,6,5,None
+375,2575,V1,Anand Ramegowda,35,2,31,5,17,Simple
+376,2577,V1,Thimmaraju Nagappa,38,1,11,2,20,Simple
+377,2578,V1, Yallappa Rangapp,51,2,18,7,16,None
+378,2580,V1,ಗೀತಾ ಬಸಪ್ಪ,56,1,10,1,14,Grievous
+379,2607,V1,ಸವಿತಾ,62,2,10,5,17,Simple
+380,2613,V1,G.R.,52,1,11,4,23,None
+381,2614,V1,Krisnamurthy Nagapa,54,2,32,4,4,Fatal
+382,2615,V1,Naveen S/o Boregowda,33,1,8,3,17,Grievous
+383,2619,V1,Sunith s/o. Nagappa,49,1,34,1,23,None
+384,2627,V1,Geetha Muniyappa,57,1,6,2,22,Simple
+385,2628,V1,ಪ್ರಸಾದ ಬಸಪ್ಪ,41,1,28,3,1,None
+386,2630,V1,ವಿಜಯಲಕ್ಷ್ಮಿ ಫಕೀರಪ್ಪ,60,1,11,4,25,Simple
+387,2632,V1,ಸಿದ್ದರಾಜು ಹನುಮಪ್ಪ ,31,2,7,2,19,Simple
+388,2634,V1,ಸವಿತಾ ತಂದೆ ರಾಮೇಗೌಡ,35,2,9,4,19,Fatal
+389,2659,V1,B.Rangappa,26,1,33,3,7,Grievous
+390,2672,V1,Gurappa Manjula,56,2,11,6,6,Grievous
+391,2699,V1,Shobha Hanumapa,28,2,13,3,16,Fatal
+392,2700,V1,G. Sangappa,29,1,31,7,6,None
+393,2701,V1,Devaraj,33,2,13,6,25,Grievous
+394,2702,V1,Swetha  Yamanappa ,30,1,12,1,16,Fatal
+395,2720,V1,Lakshmi ,52,1,15,6,5,None
+396,2721,V1,Basappa M,45,2,18,6,8,Fatal
+397,2722,V1,ರಾಕೇಶ Krishnappa,50,1,40,5,8,Simple
+398,2724,V1,Ashok S/o Lingappa,58,1,29,7,10,Fatal
+399,2754,V1,Shobha,20,1,33,1,16,Simple
+400,2764,V1,ಗೀತಾ ತಂದೆ ರಂಗಪ್ಪ,40,1,40,3,16,None
+401,2766,V1,L. Mariyappa,21,1,5,3,13,Grievous
+402,2773,V1,Mallappa Srinivas,72,2,12,3,5,Simple
+403,2782,V1,Geetha Mallappa,25,1,12,2,17,Simple
+404,2783,V1,ದೀಪಕ Mariyappa,50,1,39,2,15,Simple
+405,2785,V1,ನಂಜುಂಡಪ್ಪ,26,1,17,4,7,Fatal
+406,2790,V1,Mallikarjuna Lingappa,28,2,18,6,9,Simple
+407,2796,V1,Chikkegowda Ambika,31,1,24,4,9,None
+408,2797,V1,Lakshmi V,63,1,37,6,24,Grievous
+409,2799,V1,ಪುಟ್ಟಸ್ವಾಮಿ ತಂದೆ ರಂಗಪ್ಪ,56,1,6,3,17,Grievous
+410,2800,V1,ರಾಜು,49,1,4,1,10,None
+411,2821,V1,Shivakumar Muniyapp,49,1,37,3,25,None
+412,2823,V1,Erann Navin,68,1,5,6,2,None
+413,2824,V1,ಲಕ್ಷ್ಮಿ ಲಿಂಗಪ್ಪ,39,1,36,5,10,Simple
+414,2826,V1,NANJUNDAPPA CHENNAPPA,46,2,24,1,3,Grievous
+415,2860,V1,Kavitha R,36,1,29,7,13,Grievous
+416,2861,V1,V.S.,25,1,12,4,9,Grievous
+417,2942,V1,S. Venkatappa,36,1,32,6,22,Grievous
+418,2963,V1,ShivakumarPuttappa,62,2,10,3,7,Grievous
+419,2964,V1,S. Shivappa,37,1,21,1,12,Fatal
+420,2965,V1,Yashoda S/o Mariyappa,53,1,29,7,17,Simple
+421,2966,V1,Veejay Eranna,51,2,22,1,20,Grievous
+422,2970,V1,Nagesh Yamanappa,39,1,25,7,6,Fatal
+423,2971,V1,ಹರೀಶ,56,2,37,6,2,Fatal
+424,2988,V1,Devaraj S/o Mariappa,67,2,11,4,23,None
+425,2991,V1,ಶಿವಣ್ಣ,28,2,34,5,8,Grievous
+426,3028,V1,S.  Basappa,32,2,33,2,24,Simple
+427,3030,V1,Savitha  Basappa,53,1,32,2,8,Simple
+428,3041,V1,Yashoda Chennapp,31,1,4,3,5,None
+429,3042,V1,Rangappa Shivann,39,2,2,5,11,Fatal
+430,3058,V1,Mallikarjuna S,49,1,37,5,15,Simple
+431,3061,V1,Rajanna,41,1,36,3,1,Simple
+432,3063,V1,Shankar Siddappa,63,1,16,1,17,Grievous
+433,3076,V1,Ashok ನಾಗಪ್ಪ,27,1,29,6,17,Fatal
+434,3079,V1,N. Gurappa,29,2,21,5,18,Simple
+435,3080,V1,ರೇಖಾ,24,1,18,3,10,Simple
+436,3081,V1,ನಾಗೇಶ Ningappa,20,1,27,6,24,None
+437,3089,V1,ಗೋಪಾಲ ಮಾರಿಯಪ್ಪ,52,1,14,5,3,None
+438,3102,V1,ಶಾರದಾ ಸೋಮಪ್ಪ,72,1,8,2,22,Simple
+439,3104,V1,Basappa Praveen ,43,1,12,4,24,Fatal
+440,3105,V1,ವಿಜಯಲಕ್ಷ್ಮಿ ಬೋರೇಗೌಡ,68,1,37,4,4,Grievous
+441,3106,V1,Shobha S/o Fakirappa,45,1,4,4,14,None
+442,3107,V1,Manjunath S/o Ningappa,30,2,12,1,22,None
+443,3108,V1,Doddabasappa  s/o. Durgappa,61,2,27,5,23,Fatal
+444,3111,V1,ಲೋಕೇಶ ಪುಟ್ಟಪ್ಪ,30,1,3,2,17,Simple
+445,3118,V1,ನಾಗೇಶ ನಿಂಗಪ್ಪ,63,1,2,6,9,Grievous
+446,3119,V1,Erappa V,29,2,27,1,10,Grievous
+447,3125,V1,ನವೀನ ಲಿಂಗಪ್ಪ,43,1,37,3,21,None
+448,3133,V1,ಚಂದ್ರು ಫಕೀರಪ್ಪ,22,1,12,2,20,Fatal
+449,3136,V1,Harish S/o Mallappa,34,1,29,1,20,Simple
+450,3143,V1,ಮಲ್ಲಿಕಾರ್ಜುನ‍ ಫಕೀರಪ್ಪ,57,1,38,2,16,Simple
+451,3144,V1,ಮಂಜುನಾಥ ಗುರಪ್ಪ,48,1,39,7,6,Fatal
+452,3145,V1,ಶ್ರೀನಿವಾಸ,49,1,29,4,18,Fatal
+453,3146,V1,ರೇಖಾ Venkatapp,55,1,10,2,16,Simple
+454,3147,V1,ಅಯ್ಯಪ್ಪ Yamanappa,56,2,26,7,20,Simple
+455,3148,V1,Arun Durgapp,25,1,5,3,19,None
+456,3149,V1,Yashoda S/o Basapp,38,1,32,1,14,None
+457,3153,V1,Ganesh S/o Puttappa ,59,1,28,5,15,None
+458,3156,V1,Shwetha Gurappa,72,1,21,4,1,None
+459,3187,V1,Thimmaraju,65,1,9,4,2,Fatal
+460,3188,V1,ರೇಣುಕಾ Fakeerappa,50,2,22,2,16,Grievous
+461,3190,V1,Nagaraj Krishnappa,28,1,2,7,4,Simple
+462,3191,V1,Somapa Srinivas,60,2,1,7,11,Simple
+463,3192,V1,ಗೋಪಾಲ ಯಮನಪ್ಪ,61,1,9,5,1,Simple
+464,3220,V1,ಸೋಮಶೇಖರ ರಾಮೇಗೌಡ,37,2,12,2,24,Simple
+465,3221,V1,Pushpa S/o Eranna,43,1,21,1,17,Fatal
+466,3223,V1,ಗಣೇಶ Fakirappa,46,1,33,5,22,Grievous
+467,3259,V1,ರಾಜು ಬೋರೇಗೌಡ,50,2,2,6,5,Grievous
+468,3266,V1,BHAGYA CHIKKEGOWDA,56,1,25,1,22,Simple
+469,3285,V1,Venkattesh Chennappa,29,2,9,2,14,Grievous
+470,3300,V1,Srinivas Ningappa,44,1,12,6,9,None
+471,3337,V1,Basavaraj Yamanappa,62,1,36,2,11,Simple
+472,3340,V1,Doddabasappa Y,62,2,17,2,3,Simple
+473,3355,V1,Venkatesh ,16,1,30,5,23,Grievous
+474,3356,V1,Savitha Nagappa,40,2,34,4,12,Grievous
+475,3360,V1,Basavaraj Nagappa,53,2,16,7,9,Grievous
+476,3364,V1,Vijayalakshmi Krishnappa ,34,1,31,3,11,Simple
+477,3366,V1,ಮಂಜುಳಾ ಬೋರೇಗೌಡ,61,2,20,3,9,Fatal
+478,3367,V1,BHAGYA SANGAPP,36,1,19,7,13,None
+479,3369,V1,ಮಧು,53,1,27,3,3,Grievous
+480,3370,V1,Naveen Mallappa,56,2,18,2,6,Grievous
+481,3376,V1,Shivakumar Sangapp,33,1,40,5,16,Grievous
+482,3377,V1,D.B. ,51,1,24,6,1,None
+483,3383,V1,Manjul,67,1,37,5,24,Fatal
+484,3387,V1, Roopa Y,35,1,28,4,14,Simple
+485,3397,V1,Bhagy,53,1,31,2,15,None
+486,3405,V1,ನಿಂಗರಾಜ ಫಕೀರಪ್ಪ,37,2,8,6,19,Grievous
+487,3421,V1,Srinivas Doddappa,45,1,21,5,13,Fatal
+488,3422,V1,Lakshmi,25,2,14,6,6,None
+489,3429,V1,Shobha S/o Timmappa,30,1,39,1,21,Fatal
+490,3438,V1,ಮಧು‍ ಸೋಮಪ್ಪ,50,1,40,3,15,None
+491,3450,V1,Girish ನಾಗಪ್ಪ,33,2,12,2,10,None
+492,3451,V1,ಯಶೋದಾ,20,2,4,5,18,Grievous
+493,3461,V1,Gangadhar Nagappa,51,1,10,7,16,None
+494,3465,V1,ಮಹೇಶ ತಂದೆ ಬೋರೇಗೌಡ,23,1,13,5,24,None
+495,3484,V1,ಶ್ರೀನಿವಾಸ ಹನುಮಪ್ಪ,60,1,16,2,19,Simple
+496,3485,V1,Ayyappa  N,28,2,2,3,14,Simple
+497,3507,V1,ಸುರೇಶ ಬೋರೇಗೌಡ,24,2,32,1,14,Simple
+498,3509,V1,ಕವಿತಾ ದೊಡ್ಡಪ್ಪ,58,2,17,6,7,Simple
+499,3510,V1,ರೇಣುಕಾ ತಂದೆ ರಂಗಪ್ಪ,66,1,8,4,19,None
+500,3514,V1,ANAND NAGAPPA,36,1,19,4,1,Grievous
+501,3515,V1,ಶಿವಕುಮಾರ ತಂದೆ ಮಲ್ಲಪ್ಪ,54,1,24,7,15,Simple
+502,3516,V1,ಶಿವಕುಮಾರ ರಂಗಪ್ಪ,22,2,7,7,10,Simple
+503,3541,V1,Manjula F,57,2,15,4,5,Simple
+504,3543,V1,ಶ್ವೇತಾ ಶಿವಪ್ಪ,45,2,3,3,2,Grievous
+505,3547,V1,Deepak S/o Puttappa,32,1,7,4,11,Simple
+506,3569,V1,THIMMARAJU PUTTAPPA,63,2,34,6,22,Simple
+507,3579,V1,ಗಣೇಶ Eranna ,57,1,11,6,5,Grievous
+508,3580,V1,Sharanappa Kempegowda ,54,1,13,5,13,Grievous
+509,3585,V1,ಈರಪ್ಪ,47,1,35,5,17,Grievous
+510,3593,V1,Rakesh,55,1,5,5,18,Simple
+511,3595,V1,Nagaratna,23,1,23,2,19,Fatal
+512,3608,V1,Sunitha Erana,52,1,10,4,11,Fatal
+513,3610,V1,ಸವಿತಾ ತಂದೆ ಬಸಪ್ಪ,62,2,21,2,11,Simple
+514,3611,V1,ಈರಪ್ಪ,33,1,17,2,2,Simple
+515,3614,V1,Savitha Lingappa,34,2,7,2,9,Grievous
+516,3618,V1,Shankar Hanumappa,38,1,25,6,23,Grievous
+517,3626,V1,ಯಶೋದಾ ತಂದೆ ಬೋರೇಗೌಡ,22,2,39,5,15,None
+518,3627,V1,Arun,36,1,1,3,15,Fatal
+519,3628,V1,Rekha ,24,1,14,1,25,Fatal
+520,3629,V1,Siddaraju,41,1,33,7,16,Grievous
+521,3630,V1,Y. Lingapa,24,1,27,2,5,Grievous
+522,3640,V1,ಮಹಾದೇವ Hanumappa,48,2,28,2,15,Grievous
+523,3652,V1,ಆನಂದ ನಾಗಪ್ಪ,24,2,36,7,6,Grievous
+524,3659,V1,ರೇಖಾ ತಂದೆ ಮಾರಿಯಪ್ಪ,37,2,39,6,4,Simple
+525,3687,V1,Lokesh,54,1,15,4,18,Fatal
+526,3691,V1,ಸಿದ್ದರಾಜು ನಿಂಗಪ್ಪ,33,1,13,2,23,None
+527,3692,V1,Sunitha Puttappa,37,1,10,1,11,Fatal
+528,3693,V1,Puttapa Mahadew,34,1,3,6,19,Fatal
+529,3694,V1,ಸುರೇಶ ಹನುಮಪ್ಪ,41,1,25,4,17,Fatal
+530,3695,V1,ಕಿರಣ ತಂದೆ ನಿಂಗಪ್ಪ,36,1,32,5,2,Grievous
+531,3696,V1, R. Hanumappa,27,2,39,3,18,Grievous
+532,3703,V1,ಯಲ್ಲಪ್ಪ ತಂದೆ ರಂಗಪ್ಪ,53,1,32,7,6,Fatal
+533,3704,V1,Mahesh Ningappa,34,2,28,1,18,Grievous
+534,3706,V1,Erappa,47,1,21,2,11,Simple
+535,3708,V1,Srinivasa H,40,1,7,3,13,Simple
+536,3710,V1,ಕೃಷ್ಣಮೂರ್ತಿ ಮಾರಿಯಪ್ಪ,45,1,6,7,16,Simple
+537,3740,V1,ಲಕ್ಷ್ಮಿ ಈರಣ್ಣ,25,1,10,3,19,Simple
+538,3741,V1,ತಿಮ್ಮರಾಜು  ತಂದೆ ಬೋರೇಗೌಡ,60,1,17,2,4,Fatal
+539,3754,V1,Vijayalakshmi Ramegowd,38,1,2,6,10,Grievous
+540,3755,V1,Ashok s/o. Hanumappa,70,1,30,7,2,Grievous
+541,3756,V1,Savita S,61,1,31,1,6,Grievous
+542,3764,V1,Rakes Fakirappa,38,1,33,2,9,Grievous
+543,3809,V1,Rekha Doddapp,68,1,5,1,12,Simple
+544,3814,V1,Gopal Hanumappa,62,2,29,5,3,Grievous
+545,3818,V1,ರಾಕೇಶ ನಿಂಗಪ್ಪ,73,2,9,7,21,Grievous
+546,3827,V1,ವಿಜಯಲಕ್ಷ್ಮಿ ಕೃಷ್ಣಪ್ಪ,56,2,39,3,11,Grievous
+547,3828,V1,ಗೋಪಾಲ,47,2,40,2,7,Simple
+548,3833,V1,S. Venkatappa,53,1,24,7,21,Grievous
+549,3834,V1,Lokesh,56,2,22,6,20,None
+550,3864,V1,Manjula,51,1,7,7,7,Grievous
+551,3868,V1,Sunitha,58,2,9,2,9,None
+552,3869,V1,A. Mariyappa,20,2,6,1,23,Fatal
+553,3870,V1,Nanjundappa,54,1,38,1,1,Simple
+554,3876,V1,Rakesh Venkatappa,37,1,1,4,4,Fatal
+555,3877,V1,ವಿಜಯಲಕ್ಷ್ಮಿ ಬಸಪ್ಪ,68,1,4,2,22,Simple
+556,3893,V1,Pushpa Chikegowda,44,2,22,4,14,Simple
+557,3899,V1,Ambika Chikkegowda,36,1,16,1,12,Fatal
+558,3902,V1, ಕಿರಣ ಬಸಪ್ಪ,33,1,7,5,7,None
+559,3907,V1,Krishnamurthy Krishnappa,47,1,2,6,16,Fatal
+560,3922,V1,Ashok Neengappa,37,2,10,3,17,None
+561,3930,V1,ಕವಿತಾ ಸಿದ್ದಪ್ಪ,31,1,20,4,12,Grievous
+562,3936,V1,Gurappa Raju ,38,2,24,3,5,Grievous
+563,3948,V1,Shiwakumar,39,1,26,3,1,Grievous
+564,3970,V1,ಈರಪ್ಪ ಈರಣ್ಣ,22,1,2,3,15,None
+565,4028,V1,Bhagy S/o Ningappa,48,1,18,2,9,Fatal
+566,4031,V1,Ganesh Fakirappa,63,1,31,4,6,None
+567,4032,V1, ಅಯ್ಯಪ್ಪ ಮಾರಿಯಪ್ಪ,49,2,14,1,16,Simple
+568,4041,V1,NAGARATNA MUNIYAPPA,48,2,13,7,2,Simple
+569,4042,V1,M. Hanumappa,63,1,25,7,19,None
+570,4043,V1,ಗಣೇಶ ತಂದೆ ಗುರಪ್ಪ,54,2,39,7,21,None
+571,4050,V1,Kiran Ningappa,35,1,15,2,4,Grievous
+572,4063,V1,Lakshmi S,39,1,39,2,7,Fatal
+573,4064,V1,Nagappa Venkatesh,48,2,26,3,4,None
+574,4065,V1,ಪುಟ್ಟಸ್ವಾಮಿ  ಸಂಗಪ್ಪ,26,1,22,6,21,None
+575,4066,V1,ತಿಮ್ಮರಾಜು ತಂದೆ ಬೋರೇಗೌಡ,39,1,32,2,17,Fatal
+576,4078,V1,N.F.,39,1,23,1,9,Grievous
+577,4096,V1,Aruna Sangapp,61,2,15,7,19,Simple
+578,4107,V1,Sunil Venkatappa,36,1,8,6,13,Grievous
+579,4135,V1,Naveena  Sangappa,34,2,39,7,22,Grievous
+580,4141,V1,B. Ramegowd,51,2,19,2,15,Fatal
+581,4142,V1,ಹರೀಶ,42,1,27,5,2,Simple
+582,4143,V1,Doddabasappa S/o Muneeyappa,71,1,7,7,10,None
+583,4144,V1,Saranappa  N,58,1,34,3,18,None
+584,4157,V1,L. Timmappa,32,2,13,2,15,Simple
+585,4158,V1,Madhu S ,70,1,32,7,25,None
+586,4159,V1,Sharanappa Mallappa,57,2,27,1,11,None
+587,4161,V1,Nanjundappa‍ Rangapa,23,1,5,7,7,None
+588,4168,V1,Chandrashekar S/o Krishnappa,26,1,6,1,16,Grievous
+589,4172,V1,Shwetha S/o Basappa,57,2,3,2,24,Grievous
+590,4187,V1,H.D.,43,1,14,7,13,None
+591,4202,V1,ಸಿದ್ದರಾಜು,47,1,20,1,23,None
+592,4203,V1,K Venkattappa,28,1,22,5,19,Grievous
+593,4204,V1,Srinivas Nagapp,62,1,26,5,10,None
+594,4212,V1,Somashekar ,41,2,2,6,19,Fatal
+595,4214,V1,Lakshmi,63,1,1,1,4,None
+596,4228,V1,Sobha,43,1,35,2,6,Fatal
+597,4246,V1,Savitha,42,1,27,2,13,Fatal
+598,4247,V1,Ashok Hanumappa,63,2,15,3,12,None
+599,4248,V1, ಶ್ವೇತಾ ಕೆಂಪೇಗೌಡ,53,2,27,1,18,Fatal
+600,4258,V1,L. Venkatappa,61,1,18,5,11,Grievous
+601,4265,V1,K.S.,61,1,13,6,13,Simple
+602,4278,V1,ರೇಖಾ,32,1,25,5,17,None
+603,4286,V1,ಯಶೋದಾ ಮುನಿಯಪ್ಪ,36,1,1,5,2,Grievous
+604,4298,V1,ನಾಗೇಶ,65,2,19,5,12,Grievous
+605,4354,V1,Ayyappa,57,1,39,3,24,None
+606,4369,V1,Devaraj Ramegowda,55,1,39,1,19,None
+607,4374,V1,Lakshmi Sangappa,29,1,10,3,3,Simple
+608,4375,V1,PRAWEEN FAKIRAPPA,32,2,38,7,23,Fatal
+609,4385,V1,ದೊಡ್ಡಬಸಪ್ಪ ಮುನಿಯಪ್ಪ,64,1,40,1,5,Grievous
+610,4399,V1,Roopa Mallappa,28,1,18,7,8,None
+611,4403,V1,ಶ್ವೇತಾ,31,2,11,5,1,Fatal
+612,4427,V1,Shweta Erann,57,2,4,1,8,Fatal
+613,4434,V1,Lakshmee s/o Venkatappa,63,1,40,1,15,Fatal
+614,4446,V1,Somashekar Hanumapa,22,2,37,2,3,None
+615,4447,V1,ಶರಣಪ್ಪ ತಂದೆ ಸಂಗಪ್ಪ,27,2,28,2,20,Grievous
+616,4448,V1,ಬಸಪ್ಪ ಫಕೀರಪ್ಪ,48,1,17,7,8,None
+617,4449,V1,Renuka,62,1,27,2,24,Simple
+618,4450,V1,Shivakumara Puttappa,58,1,28,4,18,None
+619,4453,V1,ಮಂಜುನಾಥ ಹನುಮಪ್ಪ,55,1,15,1,2,Grievous
+620,4469,V1,Ganesh,62,1,37,3,6,None
+621,4470,V1,Rakesh Gurappa,16,2,12,5,12,None
+622,4476,V1,ವೀರೇಶ ಮಲ್ಲಪ್ಪ,32,2,14,5,7,None
+623,4496,V1,Vijay S/o Nagappa,28,1,9,1,4,None
+624,4505,V1,Puttappa Sharada,46,2,6,5,15,Grievous
+625,4525,V1,Girish Fakirappa,36,2,3,3,20,Fatal
+626,4535,V1,ಯಲ್ಲಪ್ಪ ತಂದೆ ತಿಮ್ಮಪ್ಪ,30,2,2,6,6,Fatal
+627,4536,V1,ಸವಿತಾ ತಂದೆ ವೆಂಕಟಪ್ಪ ,22,1,24,5,15,Grievous
+628,4541,V1,Shivappa Lakshmee,20,2,16,4,20,Grievous
+629,4545,V1,ರೂಪಾ,43,1,15,6,4,Simple
+630,4549,V1,ದೇವರಾಜ ತಂದೆ ತಿಮ್ಮಪ್ಪ,68,1,14,4,9,Simple
+631,4554,V1,ಬಸವರಾಜ ತಂದೆ ಯಮನಪ್ಪ,53,2,20,2,17,Simple
+632,4558,V1,Pushpa  S/o Mariyappa,42,2,6,6,10,Fatal
+633,4563,V1,Gangadhar Hanumappa,35,1,1,7,24,Fatal
+634,4570,V1,ನಾಗರತ್ನ ಚಿಕ್ಕೇಗೌಡ,44,2,6,2,18,Grievous
+635,4577,V1,Timmappa Lakshmi,35,2,2,5,12,Fatal
+636,4580,V1,Doddabasappa S/o Ningappa,56,2,3,5,3,Simple
+637,4585,V1,Shwetha,70,1,1,4,22,Grievous
+638,4590,V1,ಸವಿತಾ ಬಸಪ್ಪ,45,1,35,7,9,None
+639,4594,V1,Shobha,36,1,9,7,8,Simple
+640,4606,V1,Savitha,36,1,10,6,1,Simple
+641,4620,V1,K. Ramegowd,38,1,1,2,22,Simple
+642,4622,V1,Kavitha Chennappa,32,1,32,4,3,Simple
+643,4623,V1,ಶಾರದಾ  ಸೋಮಪ್ಪ,69,1,34,5,7,Simple
+644,4624,V1,ಮಂಜುಳಾ ಬೋರೇಗೌಡ,67,1,39,2,7,Fatal
+645,4626,V1,L. Timmappa,55,1,14,6,8,None
+646,4654,V1,ರೂಪಾ,22,1,8,5,10,Grievous
+647,4660,V1,ರೂಪಾ ತಂದೆ ಪುಟ್ಟಪ್ಪ,27,1,34,1,19,Simple
+648,4673,V1,Shivakumar Ningappa,22,1,9,4,16,None
+649,4679,V1,Shivanna Chikkegowda,46,2,18,7,13,None
+650,4701,V1,Anand S/o Gurappa,34,1,33,7,7,Fatal
+651,4726,V1,ನಾಗರತ್ನ ಪುಟ್ಟಪ್ಪ,59,1,6,2,3,Fatal
+652,4733,V1,Nagaraj,48,1,17,5,21,None
+653,4736,V1,ಚಂದ್ರಶೇಖರ Shivapa,29,2,11,1,5,Simple
+654,4751,V1,Ravi M,35,1,23,6,23,Grievous
+655,4752,V1,Yashoda M,21,1,27,4,16,Fatal
+656,4758,V1,ಗೀತಾ,21,1,8,2,14,None
+657,4763,V1,ಕವಿತಾ ರಂಗಪ್ಪ,42,2,14,7,8,Fatal
+658,4785,V1,Ningaraj Durgappa,61,1,29,1,24,Fatal
+659,4790,V1,ವಿಜಯಲಕ್ಷ್ಮಿ ತಂದೆ ಯಮನಪ್ಪ,41,2,11,5,22,Grievous
+660,4805,V1,ಮಹಾದೇವ Durgappa,68,1,25,1,23,Fatal
+661,4842,V1,ಗೀತಾ,60,1,39,6,22,Simple
+662,4844,V1,ಮಹೇಶ ತಂದೆ ರಾಮೇಗೌಡ,38,2,7,7,9,Grievous
+663,4856,V1,Shobha,35,1,32,2,2,Fatal
+664,4879,V1,ರಾಜು ಗುರಪ್ಪ,46,2,8,4,14,None
+665,4886,V1,ರೇಣುಕಾ ಲಿಂಗಪ್ಪ,42,1,18,3,19,Grievous
+666,4890,V1,Vijayalakshmi B,61,2,13,7,3,Simple
+667,4894,V1,Basawaraj S/o Ramegowd,37,1,2,2,4,None
+668,4897,V1,Basavaraj Shivappa,65,2,8,4,12,Grievous
+669,4898,V1,ಭಾಗ್ಯ ತಿಮ್ಮಪ್ಪ,22,2,37,7,9,Grievous
+670,4902,V1,Sharanapp B,36,2,19,5,10,Grievous
+671,4904,V1,VIJAYALAKSHMI ERANNA,27,2,17,1,22,Grievous
+672,4905,V1,Sharanappa Yamanapp,39,2,25,5,11,Simple
+673,4912,V1,Ashoka Puttapp,35,2,30,2,21,None
+674,4918,V1,Basappa S/o Mallapa,30,2,26,7,7,Grievous
+675,4920,V1,Ashoka S/o Shivappa,51,1,26,6,21,Grievous
+676,4928,V1,Ramesh C,38,1,13,7,4,Simple
+677,4933,V1,ಶೋಭಾ ಮಲ್ಲಪ್ಪ,44,2,27,5,15,Grievous
+678,4935,V1,ಸಂತೋಷ ,59,1,7,6,4,Fatal
+679,4942,V1,ಚಂದ್ರಶೇಖರ Siddapa,72,1,12,4,12,Grievous
+680,4945,V1,Roopa S/o Hanumappa ,33,1,32,4,8,Grievous
+681,4955,V1,ನಾಗರತ್ನ ಹನುಮಪ್ಪ ,25,2,35,7,22,Simple
+682,4956,V1,Ningappa Srinivas,39,2,4,3,9,Simple
+683,4957,V1,Sures S/o Doddappa,45,2,39,1,22,Fatal
+684,4960,V1,Gopal ಯಮನಪ್ಪ,26,2,38,3,23,Grievous
+685,4970,V1,ಮಂಜುಳಾ ಚೆನ್ನಪ್ಪ,46,1,33,4,25,Fatal
+686,4973,V1,Basavaraj,35,1,14,6,3,Grievous
+687,4975,V1,ಲಕ್ಷ್ಮಿ ವೆಂಕಟಪ್ಪ,69,1,24,3,14,None
+688,4996,V1,Kiran Mariyappa,60,1,28,7,17,Fatal

@@ -1,0 +1,369 @@
+/*
+ * Print.
+ *
+ * Government readers print. A screen theme sent to a printer loses the
+ * hairlines, drops the colour chips to indistinguishable grey, and breaks
+ * panels across pages. This sheet is written for paper, not derived from the
+ * screen by accident.
+ *
+ * Four commitments.
+ *   hairlines survive, because they carry the table structure
+ *   colour chips degrade to labelled text with a visible border
+ *   page breaks land between panels, never inside one
+ *   link targets are printed after the link text
+ */
+
+@page {
+  size: A4;
+  margin: 14mm 12mm 16mm;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 9.5pt;
+    padding-bottom: 0;
+  }
+
+  /* Force the browser to render our backgrounds and rules rather than
+     stripping them, which is the default and which destroys the tables. */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .skip-link,
+  .audit-strip {
+    display: none !important;
+  }
+
+  .shell {
+    max-width: none;
+    padding: 0;
+  }
+
+  /* ------------------------------------------------------------ masthead */
+
+  .masthead {
+    background: #fff !important;
+    color: #000 !important;
+    border: 0;
+    border-bottom: 1.5pt solid #000;
+    padding: 0 0 4mm;
+    margin-bottom: 4mm;
+  }
+
+  .masthead__mark,
+  .masthead__org,
+  .masthead__bureau,
+  .masthead__screen {
+    color: #000 !important;
+  }
+
+  /* Chips and the language switch are screen controls. A printed sheet is
+     already in whichever language it was printed from. */
+  .masthead__right,
+  .langswitch {
+    display: none;
+  }
+
+  /* Provenance is the most important thing on a printed page, because a sheet
+     of paper leaves the building without its context. Keep it, and make it a
+     bordered block rather than a tint that may not print. */
+  .provenance {
+    background: #fff !important;
+    color: #000 !important;
+    border: 0.75pt solid #000;
+    border-radius: 0;
+    font-size: 7.5pt;
+  }
+
+  .provenance__key {
+    opacity: 1;
+  }
+
+  /* -------------------------------------------------------------- panels */
+
+  .panel {
+    border: 0.75pt solid #000;
+    box-shadow: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 4mm;
+  }
+
+  /* A 3px colour rule prints as a grey smear. Give it a solid black cap and
+     let the panel title carry the meaning. */
+  .panel__eyebrow {
+    height: 2pt;
+    background: #000 !important;
+  }
+
+  .panel__head {
+    border-bottom: 0.75pt solid #000;
+  }
+
+  .panel__note,
+  .metric__caption,
+  .table caption,
+  .note {
+    color: #000 !important;
+  }
+
+  .split,
+  .split--wide-left,
+  .verdict,
+  .metric-row {
+    display: block;
+  }
+
+  .metric-row .metric,
+  .verdict .metric {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    margin: 0 1% 4mm 0;
+  }
+
+  .metric__value {
+    color: #000 !important;
+    font-size: 14pt;
+  }
+
+  .metric__label {
+    color: #000 !important;
+  }
+
+  /* --------------------------------------------------------------- chips */
+  /* Colour chips degrade to labelled text. The dot goes, the border stays,
+     and a role prefix is added so the meaning survives without the hue. */
+
+  .pill {
+    background: #fff !important;
+    color: #000 !important;
+    border: 0.75pt solid #000 !important;
+    border-radius: 0;
+    font-size: 7.5pt;
+  }
+
+  .pill__dot {
+    display: none;
+  }
+
+  .pill--resolved::before {
+    content: 'resolved: ';
+  }
+  .pill--review::before {
+    content: 'review: ';
+  }
+  .pill--conflict::before {
+    content: 'conflict: ';
+  }
+  .pill--signal::before {
+    content: 'note: ';
+  }
+  .pill--official::before {
+    content: 'source: ';
+  }
+
+  /* -------------------------------------------------------------- tables */
+
+  .table-scroll {
+    overflow: visible;
+  }
+
+  .table {
+    font-size: 8pt;
+    border-top: 0.75pt solid #000;
+  }
+
+  .table thead th {
+    background: #fff !important;
+    color: #000 !important;
+    border-top: 0.75pt solid #000;
+    border-bottom: 0.75pt solid #000;
+    position: static;
+  }
+
+  .table th,
+  .table td {
+    border-bottom: 0.4pt solid #555;
+    color: #000 !important;
+    padding: 1mm 2mm;
+  }
+
+  .table tbody tr:hover td,
+  .table tbody tr:hover th {
+    background: transparent !important;
+  }
+
+  /* Header repeats on every page of a long table. */
+  .table thead {
+    display: table-header-group;
+  }
+
+  .table tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .table__bar {
+    background: #000 !important;
+    height: 3pt;
+  }
+
+  /* ---------------------------------------------------- comparison bars */
+
+  .gap-bar__track {
+    border: 0.75pt solid #000;
+  }
+
+  .gap-bar__ceiling {
+    background: #fff !important;
+    border-right: 1.5pt solid #000;
+  }
+
+  .gap-bar__exact {
+    background: #ddd !important;
+    border-right: 1.5pt solid #000;
+  }
+
+  /* --------------------------------------------------------------- links */
+  /* Print the target after the text. A printed page cannot be clicked. */
+
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-family: var(--font-mono);
+    font-size: 7.5pt;
+    word-break: break-all;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Components added after the print sheet was first written.
+
+   An audit found the two products panel, the role picker, the question set and
+   the legend list had no print rules at all. The two products panel is the most
+   important content on /evaluation and it would have printed with screen
+   assumptions. Print is a first class deliverable in this project and a rule
+   that is only true for the components that existed on the day it was written
+   is not a rule.
+   --------------------------------------------------------------------------- */
+@media print {
+
+  /* Screen controls. A printed page is already in whichever role and language
+     it was printed from, and the provenance bar records both. */
+  .rolepick,
+  .langswitch,
+  .swap,
+  .filter,
+  .chip-row button,
+  .field__control {
+    display: none !important;
+  }
+
+  /* Two products, side by side on screen, stacked on paper so neither card is
+     split across a page break. */
+  .products {
+    display: block;
+  }
+
+  .product {
+    border: 0.75pt solid #000;
+    border-top: 2pt solid #000;
+    padding: 3mm;
+    margin-bottom: 4mm;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .product__label {
+    font-size: 11pt;
+    font-weight: 700;
+  }
+
+  .product__purpose,
+  .product__unit {
+    color: #000 !important;
+  }
+
+  .product__precision {
+    font-size: 16pt;
+  }
+
+  .product__rest {
+    display: table;
+    width: 100%;
+    border-top: 0.5pt solid #000;
+    padding-top: 2mm;
+  }
+
+  .product__rest > div {
+    display: table-cell;
+    padding-right: 4mm;
+  }
+
+  .product__note {
+    color: #000 !important;
+    font-size: 8.5pt;
+  }
+
+  /* Staleness must survive to paper. A printed figure that is stale and does
+     not say so is the worst version of this problem, because the reader has no
+     way to check the timestamp. */
+  .stale {
+    background: #fff !important;
+    color: #000 !important;
+    border: 1pt solid #000;
+    padding: 2mm;
+    break-inside: avoid;
+  }
+
+  .stale::before {
+    content: 'STALE. ';
+    font-weight: 700;
+  }
+
+  /* The how to read legend. */
+  .legend-list {
+    display: block;
+  }
+
+  .legend-list li {
+    display: block;
+    margin-bottom: 1.5mm;
+    break-inside: avoid;
+  }
+
+  .legend-list__value {
+    font-weight: 700;
+  }
+
+  /* The question set. 150 rows is a lot of paper, so the browser prints the
+     table it is showing and the Kannada line stays with its English one. */
+  .qset__kn {
+    color: #000 !important;
+    break-before: avoid;
+  }
+
+  /* The scope a screen was rendered under has to reach paper, because a count
+     read under a district scope is a different count. */
+  .subhead__scope {
+    color: #000 !important;
+    border-left: 0.5pt solid #000;
+  }
+
+  .subhead__scope--on::before {
+    content: 'SCOPED: ';
+    font-weight: 700;
+  }
+}

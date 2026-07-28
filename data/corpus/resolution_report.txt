@@ -1,0 +1,241 @@
+==============================================================================
+SUTRA  Layers 1 to 5
+==============================================================================
+
+    accused rows             7,611
+    candidate pairs      3,194,221
+    true pairs inside       10,306
+
+------------------------------------------------------------------------------
+LAYER 3  six signal feature extraction
+------------------------------------------------------------------------------
+
+    signal                                        coverage     AUC   m/u top
+
+    a  lexical, Jaro Winkler and token set         100.0%   0.780        15
+    b  Indic phonetic code agreement                99.7%   0.785        30
+    c  implied birth year within two years          92.5%   0.931         9
+    d  Haversine and unit hierarchy                100.0%   0.872        29
+    e  modus operandi over BriefFacts              100.0%   0.747         9
+    f  shared co accused and arresting officer      64.8%   0.617         6
+
+    Coverage is where the signal can be computed at all. AUC is measured
+    only on those pairs. Lift is P(top level | match) over
+    P(top level | non match), so it is the evidence a top level
+    agreement carries before any weighting.
+
+------------------------------------------------------------------------------
+LAYER 4  frequency adjusted Fellegi Sunter
+------------------------------------------------------------------------------
+
+    method            direct estimation, EM for the mixing proportion only
+
+    Leave one out seeds, each estimating m for one signal from
+    strong agreement on the others, so no signal is fitted on itself
+
+      name           1,013 pairs
+      temporal         991 pairs
+      spatial          678 pairs
+      modus          2,045 pairs
+      relational       456 pairs
+      gender           456 pairs
+
+    EM iterations     12  converged
+    fitted p(match)   0.004950
+    observed p(match) 0.003226   ground truth, not used in the fit
+
+    Convergence trace, log likelihood
+
+        1    -10,225,810.1115  p 0.003867
+        2    -10,225,240.0047  p 0.004377  delta +570.106848
+        3    -10,225,081.8191  p 0.004655  delta +158.185612
+        4    -10,225,039.9251  p 0.004800  delta +41.893965
+        5    -10,225,029.0777  p 0.004874  delta +10.847425
+      ...
+       10    -10,225,025.3563  p 0.004948  delta +0.011538
+       11    -10,225,025.3534  p 0.004950  delta +0.002923
+       12    -10,225,025.3526  p 0.004950  delta +0.000740
+
+    Fitted m and u per level, with the resulting weight
+
+    Layer 4 models five features, not six. Lexical and phonetic are two
+    readings of one string, 0.686 correlated, and modelling both counted
+    the name evidence twice. They are reported above and combined into
+    one `name` channel here. See ADR 017.
+
+      signal        level          m            u   log(m/u)
+      name            n/a    0.00098    0.0000003      0.000
+                        0    0.15392    0.2297563     -0.401
+                        1    0.00098    0.0000003      0.000
+                        2    0.34902    0.7299567     -0.738
+                        3    0.04608    0.0196411      0.853
+                        4    0.02941    0.0025274      2.454
+                        5    0.41961    0.0181180      3.142
+      temporal        n/a    0.08040    0.0745267      0.000
+                        0    0.26231    0.8257242     -1.147
+                        1    0.19799    0.0392549      1.618
+                        2    0.45930    0.0604942      2.027
+      spatial         n/a    0.00146    0.0000003      0.000
+                        0    0.26940    0.8560262     -1.156
+                        1    0.03660    0.0605549     -0.503
+                        2    0.02343    0.0588462     -0.921
+                        3    0.66911    0.0245725      3.304
+      modus           n/a    0.00049    0.0000003      0.000
+                        0    0.62390    0.9516299     -0.422
+                        1    0.15220    0.0219937      1.934
+                        2    0.00780    0.0023192      1.214
+                        3    0.21561    0.0240568      2.193
+      relational      n/a    0.50652    0.3522325      0.000
+                        0    0.29130    0.6400279     -0.787
+                        1    0.15870    0.0013894      4.738
+                        2    0.04348    0.0063502      1.924
+      gender          n/a    0.00217    0.0000003      0.000
+                        0    0.02609    0.1049131     -1.392
+                        1    0.00217    0.0000003      0.000
+                        2    0.96957    0.8950863      0.080
+
+    sum of p_v squared, the generic agreement u   0.00447348
+    pairs agreeing on a name value                120,583
+    adjustment range                              -2.01 to +2.83
+    most common name key 'manjunat' at p_v 0.03337 is penalised -2.01
+
+    threshold from the fitted prior and the cost ratio   6.690
+    false merge costs 4 times a missed merge, so the boundary sits at posterior 0.80
+    That ratio is 1/beta squared at beta 0.5, which is the F0.5
+    objective this project has argued for from the start. It reads no
+    labels. See ADR 028.
+
+    Oracle diagnostic, m and u fitted from ground truth
+    This is not the engine. It is the ceiling of this model form.
+
+      fit                                         F1    prec  recall
+      oracle m and u, no adjustment           0.5755  0.5566  0.5957
+      oracle m and u, with adjustment         0.5937  0.5901  0.5973
+      EM fitted, best possible cut            0.5295  0.7082  0.4229
+
+    The frequency adjustment moves oracle precision from 0.5566 to 0.5901.
+    That is the clean measurement of what inverse name frequency buys,
+    isolated from whether EM found the right parameters.
+
+------------------------------------------------------------------------------
+LAYER 5  constrained correlation clustering
+------------------------------------------------------------------------------
+
+    cannot link edges from the schema        4,706
+    violations if the constraint were ignored         228
+    components repaired                               126
+    edges removed to repair them                    1,108
+    violations remaining                                0
+    clusters formed                                 5,284
+    of which singletons                             4,161
+    unrepairable, escalated as conflicts                0
+    true persons in the corpus                      3,840
+
+------------------------------------------------------------------------------
+LAYER 6  collective iteration
+------------------------------------------------------------------------------
+
+    Relational evidence is recomputed against resolved identities
+    instead of name keys, which changes the scores, which changes the
+    partition. Damping blends the new evidence with the previous
+    iteration's instead of replacing it, swept over three factors.
+
+    damping 1.00   non convergent after 8 iterations
+
+       iter  reassigned  clusters       F1
+          1         116     5,294   0.5033
+          2          69     5,296   0.5033
+          3          78     5,299   0.5026
+          4         101     5,294   0.5037
+          5          78     5,296   0.5040
+          6          78     5,295   0.5021
+          7          86     5,301   0.5039
+          8          63     5,298   0.5033
+
+    damping 0.50   non convergent after 8 iterations
+
+       iter  reassigned  clusters       F1
+          1         116     5,294   0.5033
+          2         119     5,281   0.5030
+          3         125     5,277   0.5039
+          4          66     5,281   0.5054
+          5          93     5,278   0.5042
+          6          78     5,288   0.5028
+          7          86     5,292   0.5038
+          8          98     5,285   0.5041
+
+    damping 0.30   non convergent after 8 iterations
+
+       iter  reassigned  clusters       F1
+          1         116     5,294   0.5033
+          2         119     5,281   0.5030
+          3          99     5,276   0.5029
+          4          92     5,278   0.5040
+          5         116     5,275   0.5032
+          6          79     5,288   0.5039
+          7          50     5,286   0.5036
+          8          93     5,286   0.5034
+
+    NON CONVERGENT at every damping factor swept. The partition
+    oscillates rather than settling, and that is reported as a
+    property of the coupling and not smoothed over. See ADR 021.
+
+------------------------------------------------------------------------------
+LAYER 7  calibration and three way routing
+------------------------------------------------------------------------------
+
+    Isotonic reliability, predicted against observed by score decile
+
+       score from        to      pairs  predicted  observed
+            -6.06     -4.17    269,724     0.0000    0.0001
+            -4.17     -3.83  1,007,261     0.0001    0.0001
+            -3.83     -3.52    298,736     0.0001    0.0001
+            -3.52     -3.38     70,080     0.0002    0.0009
+            -3.38     -3.05    563,861     0.0002    0.0001
+            -3.05     -2.39    340,326     0.0002    0.0002
+            -2.39     -1.00    269,201     0.0009    0.0009
+            -1.00     17.91    375,032     0.0260    0.0260
+
+    routing at 0.92 and 0.65
+
+      auto_merge        1,481 pairs  precision 0.9608
+      review              468 pairs  precision 0.8932
+      reject        3,192,272 pairs  precision 0.0027
+
+    FALSE MERGE RATE on the automatic band  0.0392
+    false merges                            58 of 1,481
+
+    Reported on the automatic band alone, because that is the band
+    where no human sees the decision. Errors in the review band are
+    what the review band is for.
+
+==============================================================================
+END TO END, PAIRWISE AGAINST GROUND TRUTH
+==============================================================================
+
+    model                             precision    recall       F1
+
+    without frequency adjustment         0.7811    0.3571   0.4902
+    with frequency adjustment            0.7901    0.3692   0.5033
+
+    frequency adjustment moves F1 by +0.0131
+
+    true positive pairs        3,878
+    false positive pairs       1,030   merges that are wrong
+    false negative pairs       6,625   merges that were missed
+    actual pairs              10,503
+
+    Recall is measured against every true pair in the corpus, not
+    against the pairs blocking proposed. Measuring against the
+    candidate set would hide the pairs Layer 2 already lost.
+
+    Stage timings, seconds
+      layer1_normalise            0.141
+      layer2_block                0.546
+      layer3_features            23.413
+      layer4_em                   8.016
+      layer4_score                0.352
+      layer5_cluster              1.108
+      layer6_collective          68.613
+      layer7_calibrate           21.828
+      total                     124.016

@@ -1,0 +1,127 @@
+/*
+ * SUTRA design tokens.
+ *
+ * Light. Government intelligence portal, read in daylight, in a police office,
+ * on a projector and on paper. Not an inverted dark theme, which is why the
+ * page is a warm off white rather than #FFF and the panels are the white.
+ *
+ * Contrast is verified in code, not by eye. scripts/check-contrast.mjs parses
+ * this file, computes WCAG 2.1 ratios for every pair the design actually uses,
+ * and fails the build below 4.5 to 1. Ratios in the comments are the measured
+ * output of that script.
+ *
+ * Colour has fixed meaning. Never use a triad outside it.
+ *   resolved  something recovered that was invisible before
+ *   review    a human decision is required
+ *   conflict  a constraint violation or a wrong result
+ *   signal    interactive, queries, links, navigation
+ *   official  provenance, seed, source file, timestamp, attribution
+ *
+ * Within a triad the roles are fixed too.
+ *   tint  background only, never text, never a border
+ *   mid   fills, bars, borders, never text
+ *   deep  the only shade text is ever set in
+ */
+
+:root {
+  /* -------------------------------------------------------------- surface */
+  --paper: #fbfaf7; /* page, warm off white, never pure white */
+  --surface: #ffffff; /* panels */
+  --sunken: #f4f2ee; /* table headers, recessed wells, code */
+  --line: #e4e1da; /* hairlines */
+  --line-strong: #cfcbc1; /* panel borders, table rules */
+
+  /* ----------------------------------------------------------------- text */
+  --ink: #14171c; /* primary,   17.29 to 1 on paper */
+  --ink-2: #464d55; /* secondary,  8.24 to 1 */
+  --ink-3: #656c75; /* tertiary,   5.11 to 1, never go lighter */
+
+  /* ---------------------------------------------------------------- brand */
+  --navy: #16305c; /* masthead, primary actions, 12.54 to 1 */
+  --navy-deep: #0e2143; /* masthead gradient floor and pressed states */
+
+  /* ------------------------------------------------------ semantic triads */
+  --resolved-tint: #e4f3ea;
+  --resolved-mid: #2e9e6b;
+  --resolved-deep: #0f5d3c; /* 6.91 to 1 on its tint */
+
+  --review-tint: #fbf1de;
+  /* Darkened from #D99518, which sat at 2.54 on white and was the sole mid
+     below 3.0. Its eyebrow and bars read faint against a white panel. */
+  --review-mid: #b57f14;
+  --review-deep: #7a4e06; /* 6.42 to 1 on its tint */
+
+  --conflict-tint: #fbebe9;
+  --conflict-mid: #d9534a;
+  --conflict-deep: #8c2018; /* 7.78 to 1 on its tint */
+
+  --signal-tint: #e8edfa;
+  --signal-mid: #4e6fd9;
+  --signal-deep: #22357f; /* 9.52 to 1 on its tint */
+
+  --official-tint: #f3efe1;
+  --official-mid: #a8913f;
+  --official-deep: #6b5a25; /* 5.86 to 1 on its tint */
+
+  /* ----------------------------------------------------------------- type */
+  --font-display: 'Bricolage Grotesque', 'Inter Tight', system-ui, sans-serif;
+  --font-ui: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-kannada: 'Noto Sans Kannada', 'Inter Tight', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Mono', Menlo, monospace;
+
+  --t-display: 1.6875rem;
+  --t-title: 1rem;
+  --t-body: 0.8125rem;
+  --t-small: 0.75rem;
+  --t-micro: 0.6875rem;
+  --t-metric: 1.625rem;
+
+  --tracking-display: -0.02em;
+  --tracking-data: 0;
+  --tracking-label: 0.07em;
+
+  --leading-tight: 1.15;
+  --leading-body: 1.55;
+
+  /* ---------------------------------------------------------------- space */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+
+  --radius: 3px;
+  --hairline: 1px;
+  --eyebrow: 3px; /* the coloured rule at the top of every panel */
+
+  /* --------------------------------------------------------------- motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 120ms;
+  --dur-base: 180ms;
+
+  --strip-height: 2rem;
+
+  /* Elevation on paper is a hairline and a very slight lift, never a glow. */
+  --lift: 0 1px 1px rgba(20, 23, 28, 0.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-base: 0ms;
+  }
+}
+
+/*
+ * Forced colours, Windows high contrast. Government machines run it. Let the
+ * system win rather than fighting it, and keep the structure legible by
+ * promoting hairlines to real borders.
+ */
+@media (forced-colors: active) {
+  :root {
+    --line: CanvasText;
+    --line-strong: CanvasText;
+  }
+}

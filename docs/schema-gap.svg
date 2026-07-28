@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" width="700" height="300" role="img" aria-labelledby="t d">
+<title id="t">The missing person entity in the KSP schema</title>
+<desc id="d">Three separate FIRs each carry an accused row for the same man, written as Suresh, Suresha and the Kannada rendering. Each has its own AccusedMasterID and a PersonID of A1, a label within that FIR only. No column joins them. On the right, SUTRA has resolved them into one identity linked to all three cases.</desc>
+<rect width="700" height="300" fill="#FFFFFF"/>
+<g font-family="Inter Tight, system-ui, sans-serif">
+<text x="16" y="20" font-size="11" font-weight="600" fill="#656C75" letter-spacing="1.2">AS THE SCHEMA HOLDS IT</text>
+<rect x="16" y="44" width="250" height="62" rx="3" fill="#FFFFFF" stroke="#CFCBC1"/><text x="30" y="64" font-size="10" fill="#656C75" font-family="JetBrains Mono, monospace">1000420240000131</text><text x="30" y="84" font-size="15" font-weight="500" fill="#14171C" font-family="JetBrains Mono, monospace">Suresh</text><text x="30" y="98" font-size="9.5" fill="#656C75" font-family="JetBrains Mono, monospace">PersonID A1</text><line x1="266" y1="75" x2="292" y2="75" stroke="#CFCBC1" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="296" cy="75" r="3.5" fill="#CFCBC1"/>
+<rect x="16" y="130" width="250" height="62" rx="3" fill="#FFFFFF" stroke="#CFCBC1"/><text x="30" y="150" font-size="10" fill="#656C75" font-family="JetBrains Mono, monospace">1001120250000078</text><text x="30" y="170" font-size="15" font-weight="500" fill="#14171C" font-family="JetBrains Mono, monospace">Suresha</text><text x="30" y="184" font-size="9.5" fill="#656C75" font-family="JetBrains Mono, monospace">PersonID A1</text><line x1="266" y1="161" x2="292" y2="161" stroke="#CFCBC1" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="296" cy="161" r="3.5" fill="#CFCBC1"/>
+<rect x="16" y="216" width="250" height="62" rx="3" fill="#FFFFFF" stroke="#CFCBC1"/><text x="30" y="236" font-size="10" fill="#656C75" font-family="JetBrains Mono, monospace">1002220250000205</text><text x="30" y="256" font-size="15" font-weight="500" fill="#14171C" font-family="Noto Sans Kannada, sans-serif">ಸುರೇಶ</text><text x="30" y="270" font-size="9.5" fill="#656C75" font-family="JetBrains Mono, monospace">PersonID A1</text><line x1="266" y1="247" x2="292" y2="247" stroke="#CFCBC1" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="296" cy="247" r="3.5" fill="#CFCBC1"/>
+<text x="16" y="292" font-size="11" fill="#8C2018" font-weight="500">No column joins these rows. Three people.</text>
+<line x1="350" y1="30" x2="350" y2="272" stroke="#CFCBC1" stroke-width="1" stroke-dasharray="2 5"/>
+<rect x="316" y="138" width="68" height="22" rx="11" fill="#F4F2EE" stroke="#CFCBC1"/>
+<text x="350" y="153" font-size="10" font-weight="600" fill="#464D55" text-anchor="middle" letter-spacing="0.6">LAYERS 1 to 7</text>
+<text x="404" y="20" font-size="11" font-weight="600" fill="#0F5D3C" letter-spacing="1.2">AFTER RESOLUTION</text>
+<path d="M 470 150 C 440 150, 430 75, 412 75" fill="none" stroke="#2E9E6B" stroke-width="1.75"/><circle cx="408" cy="75" r="4" fill="#2E9E6B"/>
+<path d="M 470 150 C 440 150, 430 161, 412 161" fill="none" stroke="#2E9E6B" stroke-width="1.75"/><circle cx="408" cy="161" r="4" fill="#2E9E6B"/>
+<path d="M 470 150 C 440 150, 430 247, 412 247" fill="none" stroke="#2E9E6B" stroke-width="1.75"/><circle cx="408" cy="247" r="4" fill="#2E9E6B"/>
+<rect x="470" y="106" width="214" height="88" rx="3" fill="#E4F3EA" stroke="#2E9E6B" stroke-width="1.5"/>
+<text x="486" y="128" font-size="10" fill="#0F5D3C" font-family="JetBrains Mono, monospace">R000412</text>
+<text x="486" y="150" font-size="15" font-weight="600" fill="#14171C">One person</text>
+<text x="486" y="168" font-size="11" fill="#464D55">3 records, 3 cases, 2 scripts</text>
+<text x="486" y="184" font-size="10" fill="#0F5D3C" font-family="JetBrains Mono, monospace">merged in the automatic band</text>
+<text x="404" y="292" font-size="11" fill="#0F5D3C" font-weight="500">One identity. Two co offender links recovered.</text>
+<text x="470" y="216" font-size="9.5" fill="#16305C" font-family="JetBrains Mono, monospace">ResolvedIdentity, the table SUTRA adds</text>
+</g>
+</svg>

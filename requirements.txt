@@ -1,0 +1,21 @@
+# SUTRA engine, Layers 1 to 9.
+#
+# The corpus generator in data/generator has no dependencies at all and never
+# will. See ADR 011. These are for the engine only, and the engine is a local
+# batch job. Nothing here is deployed. See ADR 002.
+#
+# All of these run inside our own process. None of them is a hosted third
+# party service, which is the line the organisers drew.
+#
+#   pip install -r requirements.txt
+
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.3
+jellyfish>=1.0
+networkx>=3.1
+
+# Reads eval/gold/questions.yaml, the investigator question set. A gold file a
+# human has to maintain is worth more in YAML than in JSON, and this is the
+# only thing that parses it.
+PyYAML>=6.0

@@ -1,0 +1,49 @@
+# What is derived, and therefore not committed.
+#
+# The rule here is that anything `make all` can rebuild from seed 4471 is left
+# out, and anything a reader would want to check without running the chain is
+# kept. So the corpus CSVs stay, because a judge should be able to look at a row
+# of the record this project argues about, and every report stays, because every
+# figure in the README and in the docs is quoted from one.
+
+# ---- dependencies ----------------------------------------------------------
+node_modules/
+web/node_modules/
+
+# ---- build output ----------------------------------------------------------
+web/dist/
+*.tsbuildinfo
+
+# ---- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- engine build artefacts ------------------------------------------------
+# Built by `make db` from data/schema/ksp_schema.sql and the corpus CSVs. It is
+# 5.8 MB and reproducible in seconds, so it is not worth a place in history.
+data/corpus/sutra.db
+
+# ---- study scratch directories ---------------------------------------------
+# Each of these holds one or more whole corpora generated for a single sweep.
+# scripts/layer6_selection_study.py and scripts/gender_noise_study.py rebuild
+# them on demand, and their findings live in the JSON reports which are kept.
+data/corpus_layer6/
+data/corpus_gender/
+data/corpus_vocab/
+data/corpus_scale/
+
+# ---- benchmark run output --------------------------------------------------
+# The task, the gold set and the scorer are committed. What a submission
+# produces is not.
+benchmark/baseline_output.csv
+benchmark/sutra_output.csv
+
+# ---- editor and OS ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,689 @@
+VictimID,CaseMasterID,TruePersonID,RenderedName,CanonicalName,Variant,Script,AgeRecorded,TrueBirthYear
+1,39,V000001,Sharada Gurapa,Sharada Gurappa,LA_FULL,latin,28,2000
+2,41,V000002,Yashoda S,Yashoda Sangappa,LA_INITIAL_SUFFIX,latin,30,1994
+3,42,V000003,ನಿಂಗರಾಜ ಸಿದ್ದಪ್ಪ,Ningaraj Siddappa,KN_FULL,kannada,52,1974
+4,43,V000002,YASHODA  SANGAPA,Yashoda Sangappa,LA_UPPER,latin,32,1994
+5,53,V000004,Shobha S/o Mallappa,Shobha Mallappa,LA_SONOF,latin,44,1982
+6,59,V000005,Vijayalaksmi S/o Yamanappa,Vijayalakshmi Yamanappa,LA_SONOF,latin,45,1980
+7,60,V000006,ಶ್ವೇತಾ,Shwetha Ningappa,KN_GIVEN,kannada,52,1979
+8,136,V000002,Yashoda S/o Sangapa,Yashoda Sangappa,LA_SONOF,latin,33,1994
+9,137,V000002,Yashoda S/o Sangapa,Yashoda Sangappa,LA_SONOF,latin,33,1994
+10,139,V000007,R.G.,Rakesh Gurappa,LA_INITIAL_BOTH,latin,23,2005
+11,140,V000008,ಶರಣಪ್ಪ ಬಸಪ್ಪ,Sharanappa Basappa,KN_FULL,kannada,33,1993
+12,141,V000009,ದೊಡ್ಡಬಸಪ್ಪ ತಂದೆ ಮಾರಿಯಪ್ಪ,Doddabasappa Mariyappa,KN_TANDE,kannada,61,1967
+13,142,V000010,Kiran s/o. Somappa,Kiran Somappa,LA_SONOF_DOT,latin,35,1986
+14,144,V000011,ರಾಜಣ್ಣ,Rajanna Hanumappa,KN_GIVEN,kannada,32,1996
+15,145,V000012,ಗೋಪಾಲ,Gopal Hanumappa,KN_GIVEN,kannada,62,1964
+16,146,V000003,ನಿಂಗರಾಜ ಸಿದ್ದಪ್ಪ,Ningaraj Siddappa,KN_FULL,kannada,52,1974
+17,147,V000013,ಬಸಪ್ಪಫಕೀರಪ್ಪ,Basappa Fakirappa,KN_FULL,kannada,53,1974
+18,149,V000014,Ayyapa Basappa,Ayyappa Basappa,LA_FULL,latin,55,1971
+19,150,V000015,Lakshmee Eranna,Lakshmi Eranna,LA_FULL,latin,30,1996
+20,151,V000003,Ningaraj Siddappa,Ningaraj Siddappa,LA_FULL,latin,53,1974
+21,152,V000016,Mariyappa Ganesh,Ganesh Mariyappa,LA_REORDER,latin,41,1986
+22,153,V000005,Veejayalakshmi Yamanappa,Vijayalakshmi Yamanappa,LA_FULL,latin,51,1980
+23,154,V000017,ಲಕ್ಷ್ಮಿ,Lakshmi Venkatappa,KN_GIVEN,kannada,68,1959
+24,156,V000018,Nagaratna Rangappa,Nagaratna Rangappa,LA_FULL,latin,43,1978
+25,168,V000019,Wijayalakshmi,Vijayalakshmi Timmappa,LA_GIVEN,latin,16,2006
+26,239,V000020,ಸವಿತಾ ಲಿಂಗಪ್ಪ,Savitha Lingappa,KN_FULL,kannada,39,1992
+27,243,V000021,Kumara Gurappa,Kumar Gurappa,LA_FULL,latin,49,1977
+28,275,V000022,Raju Boregowda,Raju Boregowda,LA_FULL,latin,50,1981
+29,342,V000023,ಶೋಭಾ ಸಿದ್ದಪ್ಪ,Shobha Siddappa,KN_FULL,kannada,50,1971
+30,374,V000024,Manjunath Gurappa,Manjunath Gurappa,LA_FULL,latin,50,1976
+31,384,V000025,Raju Sangappa,Raju Sangappa,LA_FULL,latin,41,1986
+32,390,V000011,Rajanna Hanumapp,Rajanna Hanumappa,LA_FULL,latin,28,1996
+33,396,V000026,Shivakumar Puttapp,Shivakumar Puttappa,LA_FULL,latin,52,1969
+34,399,V000027,Deepak Kreeshnappa,Deepak Krishnappa,LA_FULL,latin,63,1963
+35,400,V000028,ಸವಿತಾ Basappa,Savitha Basappa,MIX_KNGIVEN_LAFATHER,mixed,44,1984
+36,401,V000029,B. Rangappa,Bhagya Rangappa,LA_INITIAL_PREFIX,latin,26,2000
+37,402,V000024,ಮಂಜುನಾಥ,Manjunath Gurappa,KN_GIVEN,kannada,50,1976
+38,411,V000030,U. Durgappa,Umesh Durgappa,LA_INITIAL_PREFIX,latin,51,1970
+39,416,V000031,ನಾಗರಾಜ ಯಮನಪ್ಪ,Nagaraj Yamanappa,KN_FULL,kannada,40,1986
+40,428,V000032,Hanumantha Krishnappa,Hanumantha Krishnappa,LA_FULL,latin,21,2000
+41,429,V000033,ಚಂದ್ರಶೇಖರ,Chandrashekar Shivappa,KN_GIVEN,kannada,36,1990
+42,430,V000034,Suneel,Sunil Gurappa,LA_GIVEN,latin,48,1983
+43,432,V000035,ಯಶೋದಾ,Yashoda Basappa,KN_GIVEN,kannada,43,1983
+44,438,V000036,Ayyappa Somappa,Ayyappa Somappa,LA_FULL,latin,63,1963
+45,439,V000037,Suresh s/o. Yamanappa,Suresh Yamanappa,LA_SONOF_DOT,latin,50,1975
+46,441,V000026,S. Puttappa,Shivakumar Puttappa,LA_INITIAL_PREFIX,latin,57,1969
+47,442,V000038,ಯಶೋದಾ ಲಿಂಗಪ್ಪ,Yashoda Lingappa,KN_FULL,kannada,61,1970
+48,443,V000039,ಹರೀಶ Fakirappa,Harish Fakirappa,MIX_KNGIVEN_LAFATHER,mixed,37,1994
+49,444,V000021,ಕುಮಾರ ಗುರಪ್ಪ,Kumar Gurappa,KN_FULL,kannada,48,1977
+50,445,V000040,ಮಂಜುಳಾ ಗುರಪ್ಪ,Manjula Gurappa,KN_FULL,kannada,55,1971
+51,446,V000041,Chandrashekar Krisnappa,Chandrashekar Krishnappa,LA_FULL,latin,22,1999
+52,448,V000042,Kiran,Kiran Durgappa,LA_GIVEN,latin,63,1963
+53,449,V000043,ರಾಕೇಶ ಬೋರೇಗೌಡ,Rakesh Boregowda,KN_FULL,kannada,36,1990
+54,457,V000044,Malleekarjuna ಬೋರೇಗೌಡ,Mallikarjuna Boregowda,MIX_LAGIVEN_KNFATHER,mixed,53,1973
+55,466,V000045,ಮಂಜುಳಾ ಚೆನ್ನಪ್ಪ,Manjula Chennappa,KN_FULL,kannada,45,1981
+56,467,V000046,Shwetha Hanumappa,Shwetha Hanumappa,LA_FULL,latin,37,1987
+57,468,V000047,Sharanapp Sangapa,Sharanappa Sangappa,LA_FULL,latin,21,2003
+58,469,V000048,ಹರೀಶ ಬೋರೇಗೌಡ,Harish Boregowda,KN_FULL,kannada,67,1960
+59,470,V000049,K. Sangappa,Kavitha Sangappa,LA_INITIAL_PREFIX,latin,32,1995
+60,471,V000008,ಶರಣಪ್ಪ ಬಸಪ್ಪ,Sharanappa Basappa,KN_FULL,kannada,38,1993
+61,474,V000050,Umesh Mallapa ,Umesh Mallappa,LA_FULL,latin,28,1998
+62,475,V000051,Shivakumar,Shivakumar Mallappa,LA_GIVEN,latin,49,1977
+63,476,V000052,Lakshmi Venkatappa,Lakshmi Venkatappa,LA_FULL,latin,63,1965
+64,481,V000053,ಕಿರಣ ನಿಂಗಪ್ಪ,Kiran Ningappa,KN_FULL,kannada,35,1990
+65,493,V000054,Harish S,Harish Sangappa,LA_INITIAL_SUFFIX,latin,47,1984
+66,501,V000023,Shobha S/o  Siddappa,Shobha Siddappa,LA_SONOF,latin,56,1971
+67,504,V000010,Kiran ಸೋಮಪ್ಪ,Kiran Somappa,MIX_LAGIVEN_KNFATHER,mixed,42,1986
+68,505,V000055,Wijayalakshmi Timmappa,Vijayalakshmi Timmappa,LA_FULL,latin,40,1981
+69,511,V000056,Santosh Gurappa,Santosh Gurappa,LA_FULL,latin,45,1976
+70,525,V000057,Sunil Venkatappa,Sunil Venkatappa,LA_FULL,latin,26,2005
+71,600,V000010,Kiran Somappa,Kiran Somappa,LA_FULL,latin,38,1986
+72,606,V000058,ಮಹೇಶ ಬೋರೇಗೌಡ,Mahesh Boregowda,KN_FULL,kannada,29,1998
+73,607,V000024,Manjunath  G,Manjunath Gurappa,LA_INITIAL_SUFFIX,latin,50,1976
+74,609,V000059, Githa,Geetha Durgappa,LA_GIVEN,latin,32,1993
+75,610,V000004,ಶೋಭಾ ತಂದೆ ಮಲ್ಲಪ್ಪ,Shobha Mallappa,KN_TANDE,kannada,46,1982
+76,652,V000060,ಅರುಣ Sangapa,Arun Sangappa,MIX_KNGIVEN_LAFATHER,mixed,61,1965
+77,661,V000061,Geetha Rangappa,Geetha Rangappa,LA_FULL,latin,38,1988
+78,684,V000062,ಗಂಗಾಧರ ಕೆಂಪೇಗೌಡ,Gangadhar Kempegowda,KN_FULL,kannada,47,1984
+79,686,V000063,ಗಂಗಾಧರ ಸಂಗಪ್ಪ,Gangadhar Sangappa,KN_FULL,kannada,52,1974
+80,724,V000064,Nagesh,Nagesh Rangappa,LA_GIVEN,latin,69,1958
+81,729,V000065,ನವೀನ ದುರ್ಗಪ್ಪ,Naveen Durgappa,KN_FULL,kannada,42,1985
+82,741,V000066,ಅಶೋಕ ಹನುಮಪ್ಪ,Ashok Hanumappa,KN_FULL,kannada,68,1958
+83,742,V000067,A Ramegowd,Ambika Ramegowda,LA_INITIAL_PREFIX,latin,35,1991
+84,743,V000051,S. Mallappa,Shivakumar Mallappa,LA_INITIAL_PREFIX,latin,51,1977
+85,745,V000068,ಶೋಭಾ ತಂದೆ ನಿಂಗಪ್ಪ,Shobha Ningappa,KN_TANDE,kannada,19,2002
+86,746,V000069, Geetha S/o Mariyapp,Geetha Mariyappa,LA_SONOF,latin,65,1961
+87,747,V000070,Devaraj ಮಾರಿಯಪ್ಪ,Devaraj Mariyappa,MIX_LAGIVEN_KNFATHER,mixed,62,1959
+88,749,V000071,Gopala,Gopal Doddappa,LA_GIVEN,latin,56,1969
+89,750,V000019,Vijayalakshmi Timmappa,Vijayalakshmi Timmappa,LA_FULL,latin,22,2006
+90,766,V000072,Kavitha Chennappa,Kavitha Chennappa,LA_FULL,latin,35,1996
+91,767,V000073,ಮಧು  ಸಿದ್ದಪ್ಪ,Madhu Siddappa,KN_FULL,kannada,36,1988
+92,769,V000006,Shwetha Ningappa,Shwetha Ningappa,LA_FULL,latin,45,1979
+93,770,V000074,C.Sangappa,Chandrashekar Sangappa,LA_INITIAL_PREFIX,latin,43,1983
+94,771,V000075,Rekh Y,Rekha Yamanappa,LA_INITIAL_SUFFIX,latin,50,1981
+95,773,V000076,Saranappa S/o Boregowda,Sharanappa Boregowda,LA_SONOF,latin,36,1990
+96,774,V000077,ಅಂಬಿಕಾ,Ambika Chikkegowda,KN_GIVEN,kannada,37,1990
+97,775,V000078,Roopa Puttappa,Roopa Puttappa,LA_FULL,latin,51,1974
+98,801,V000079,Veeresh S,Veeresh Shivappa,LA_INITIAL_SUFFIX,latin,61,1967
+99,815,V000080,ರಮೇಶ ತಂದೆ ಮಲ್ಲಪ್ಪ,Ramesh Mallappa,KN_TANDE,kannada,16,2006
+100,841,V000081,B. Fakirappa,Basappa Fakirappa,LA_INITIAL_PREFIX,latin,50,1971
+101,847,V000043,ರಾಕೇಶ Boregowda,Rakesh Boregowda,MIX_KNGIVEN_LAFATHER,mixed,34,1990
+102,849,V000082,Nagaratna B,Nagaratna Basappa,LA_INITIAL_SUFFIX,latin,34,1992
+103,850,V000083,Shobha Muniyappa,Shobha Muniyappa,LA_FULL,latin,30,1996
+104,856,V000084,Basavaraj R,Basavaraj Ramegowda,LA_INITIAL_SUFFIX,latin,55,1976
+105,857,V000085,Nages Mariyappa,Nagesh Mariyappa,LA_FULL,latin,29,1997
+106,858,V000086,ಪ್ರವೀಣ ,Praveen Somappa,KN_GIVEN,kannada,45,1979
+107,859,V000087,Shwetha S/o Chikkegowda,Shwetha Chikkegowda,LA_SONOF,latin,56,1970
+108,860,V000088,Venkatesh Hanumappa,Venkatesh Hanumappa,LA_FULL,latin,60,1971
+109,861,V000089,Vijayalakshmi,Vijayalakshmi Doddappa,LA_GIVEN,latin,48,1978
+110,864,V000090,Siddaraju Chennappa,Siddaraju Chennappa,LA_FULL,latin,42,1984
+111,868,V000091,Shobh H,Shobha Hanumappa,LA_INITIAL_SUFFIX,latin,35,1993
+112,875,V000092,Yasoda S/o Mallappa,Yashoda Mallappa,LA_SONOF,latin,53,1973
+113,891,V000093,ಕವಿತಾ ಶಿವಪ್ಪ,Kavitha Shivappa,KN_FULL,kannada,67,1959
+114,908,V000094,H. Fakirappa,Hanumantha Fakirappa,LA_INITIAL_PREFIX,latin,59,1966
+115,909,V000095,ಶ್ವೇತಾ Shivapp,Shwetha Shivappa,MIX_KNGIVEN_LAFATHER,mixed,34,1994
+116,913,V000096,ಸೋಮಶೇಖರ ತಂದೆ ರಾಮೇಗೌಡ,Somashekar Ramegowda,KN_TANDE,kannada,38,1988
+117,914,V000097,SANTOSH CHIKKEGOWD,Santosh Chikkegowda,LA_UPPER,latin,44,1987
+118,915,V000098,ರೇಖಾ ಚಿಕ್ಕೇಗೌಡ,Rekha Chikkegowda,KN_FULL,kannada,29,1999
+119,916,V000039,HARISH FAKIRAPPA,Harish Fakirappa,LA_UPPER,latin,34,1994
+120,917,V000099,ಸುನೀಲ Basappa,Sunil Basappa,MIX_KNGIVEN_LAFATHER,mixed,49,1979
+121,920,V000100,Sunil Gurappa,Sunil Gurappa,LA_FULL,latin,59,1972
+122,924,V000101,ಕೃಷ್ಣಮೂರ್ತಿ ಮಾರಿಯಪ್ಪ,Krishnamurthy Mariyappa,KN_FULL,kannada,59,1967
+123,933,V000102,Dinesh Ningapp,Dinesh Ningappa,LA_FULL,latin,48,1978
+124,935,V000103,Manjula Sangappa,Manjula Sangappa,LA_FULL,latin,51,1975
+125,936,V000104,S. Venkatappa,Sharada Venkatappa,LA_INITIAL_PREFIX,latin,29,1995
+126,954,V000105,ಹರೀಶ ಸಿದ್ದಪ್ಪ,Harish Siddappa,KN_FULL,kannada,24,2002
+127,974,V000026,S. Puttappa,Shivakumar Puttappa,LA_INITIAL_PREFIX,latin,55,1969
+128,975,V000106,ಮಹಾದೇವ ಬೋರೇಗೌಡ,Mahadev Boregowda,KN_FULL,kannada,64,1962
+129,1018,V000107,Kiran,Kiran Sangappa,LA_GIVEN,latin,46,1985
+130,1019,V000108,Ashok Mariyappa,Ashok Mariyappa,LA_FULL,latin,49,1972
+131,1020,V000109,AshokTimmappa,Ashok Timmappa,LA_FULL,latin,52,1974
+132,1034,V000110,ಪ್ರಕಾಶ ತಂದೆ ಚೆನ್ನಪ್ಪ,Prakash Chennappa,KN_TANDE,kannada,67,1959
+133,1036,V000111,ಲೋಕೇಶ ತಿಮ್ಮಪ್ಪ,Lokesh Timmappa,KN_FULL,kannada,56,1970
+134,1039,V000112,A.‍ Doddappa,Anand Doddappa,LA_INITIAL_PREFIX,latin,47,1978
+135,1046,V000113,Girish Rangapa,Girish Rangappa,LA_FULL,latin,58,1970
+136,1051,V000114,Yashoda,Yashoda Timmappa,LA_GIVEN,latin,61,1967
+137,1055,V000115,ಶಾರದಾ ತಂದೆ ಚೆನ್ನಪ್ಪ,Sharada Chennappa,KN_TANDE,kannada,62,1964
+138,1059,V000116,ಸುನೀತಾ ವೆಂಕಟಪ್ಪ,Sunitha Venkatappa,KN_FULL,kannada,49,1977
+139,1085,V000117,Timmappa Manjunath,Manjunath Timmappa,LA_REORDER,latin,50,1976
+140,1089,V000118,ಗೀತಾ ಮುನಿಯಪ್ಪ,Geetha Muniyappa,KN_FULL,kannada,56,1969
+141,1104,V000119,ನಾಗರತ್ನ ಚಿಕ್ಕೇಗೌಡ,Nagaratna Chikkegowda,KN_FULL,kannada,21,2005
+142,1109,V000120,Mahesh,Mahesh Yamanappa,LA_GIVEN,latin,57,1969
+143,1135,V000002,Y. Sangappa,Yashoda Sangappa,LA_INITIAL_PREFIX,latin,33,1994
+144,1155,V000121,ನಾಗೇಶ ನಿಂಗಪ್ಪ,Nagesh Ningappa,KN_FULL,kannada,38,1989
+145,1160,V000122,ಪ್ರಕಾಶ ನಿಂಗಪ್ಪ,Prakash Ningappa,KN_FULL,kannada,44,1984
+146,1162,V000123,ದೊಡ್ಡಬಸಪ್ಪ ಯಮನಪ್ಪ,Doddabasappa Yamanappa,KN_FULL,kannada,61,1964
+147,1166,V000124,Mallikarjuna Durgappa,Mallikarjuna Durgappa,LA_FULL,latin,44,1984
+148,1167,V000125,Suresh,Suresh Nagappa,LA_GIVEN,latin,19,2006
+149,1170,V000126,PRAKASH DURGAPPA,Prakash Durgappa,LA_UPPER,latin,43,1988
+150,1175,V000001,Sharada Gurappa,Sharada Gurappa,LA_FULL,latin,21,2000
+151,1184,V000127,Mahesh Ramegowda,Mahesh Ramegowda,LA_FULL,latin,38,1988
+152,1185,V000128,ರೂಪಾ ಮಲ್ಲಪ್ಪ,Roopa Mallappa,KN_FULL,kannada,51,1977
+153,1186,V000129,D. Muniappa,Doddabasappa Muniyappa,LA_INITIAL_PREFIX,latin,64,1960
+154,1187,V000073,M. Siddapa,Madhu Siddappa,LA_INITIAL_PREFIX,latin,39,1988
+155,1188,V000130,ನಂಜುಂಡಪ್ಪ ರಂಗಪ್ಪ,Nanjundappa Rangappa,KN_FULL,kannada,21,2000
+156,1189,V000131,Goppal S/o Fakirappa,Gopal Fakirappa,LA_SONOF,latin,66,1962
+157,1201,V000027,D.K.,Deepak Krishnappa,LA_INITIAL_BOTH,latin,65,1963
+158,1203,V000132,Basapp,Basappa Yamanappa,LA_GIVEN,latin,56,1970
+159,1204,V000133,M. Gurappa,Manjula Gurappa,LA_INITIAL_PREFIX,latin,57,1970
+160,1207,V000046,ಶ್ವೇತಾ ಹನುಮಪ್ಪ,Shwetha Hanumappa,KN_FULL,kannada,38,1987
+161,1211,V000134,ಶರಣಪ್ಪ,Sharanappa Chennappa,KN_GIVEN,kannada,26,2001
+162,1212,V000015,ಲಕ್ಷ್ಮಿ ಈರಣ್ಣ,Lakshmi Eranna,KN_FULL,kannada,30,1996
+163,1233,V000135,R. Doddappa,Rekha Doddappa,LA_INITIAL_PREFIX,latin,32,1989
+164,1235,V000136,ಶ್ವೇತಾ,Shwetha Rangappa,KN_GIVEN,kannada,50,1971
+165,1236,V000137,ಭಾಗ್ಯ ಬೋರೇಗೌಡ,Bhagya Boregowda,KN_FULL,kannada,24,2004
+166,1237,V000123,Doddabasappa Yamanapa,Doddabasappa Yamanappa,LA_FULL,latin,67,1964
+167,1239,V000138,Nagaraj,Nagaraj Gurappa,LA_GIVEN,latin,32,1992
+168,1240,V000139,Sunitha Krishnappa,Sunitha Krishnappa,LA_FULL,latin,45,1980
+169,1242,V000140,Hanumappa Lokesh,Lokesh Hanumappa,LA_REORDER,latin,32,1994
+170,1243,V000042,ಕಿರಣ  ದುರ್ಗಪ್ಪ,Kiran Durgappa,KN_FULL,kannada,63,1963
+171,1246,V000011,ರಾಜಣ್ಣ ಹನುಮಪ್ಪ,Rajanna Hanumappa,KN_FULL,kannada,30,1996
+172,1248,V000141,RenukTimmappa,Renuka Timmappa,LA_FULL,latin,67,1959
+173,1275,V000064,ನಾಗೇಶ,Nagesh Rangappa,KN_GIVEN,kannada,73,1958
+174,1287,V000037,Suresh Yamanappa,Suresh Yamanappa,LA_FULL,latin,56,1975
+175,1289,V000092,Mallappa Yashoda,Yashoda Mallappa,LA_REORDER,latin,55,1973
+176,1290,V000006,ಶ್ವೇತಾ,Shwetha Ningappa,KN_GIVEN,kannada,46,1979
+177,1303,V000142, Sunitha,Sunitha Ramegowda,LA_GIVEN,latin,29,1996
+178,1304,V000143,ಲಕ್ಷ್ಮಿ ,Lakshmi Timmappa,KN_GIVEN,kannada,32,1996
+179,1305,V000144,Thimmaraju Hanumappa,Thimmaraju Hanumappa,LA_FULL,latin,50,1981
+180,1306,V000145,ಮಲ್ಲಿಕಾರ್ಜುನ,Mallikarjuna Lingappa,KN_GIVEN,kannada,54,1971
+181,1323,V000107,ಕಿರಣ ಸಂಗಪ್ಪ,Kiran Sangappa,KN_FULL,kannada,41,1985
+182,1328,V000086,P. Somappa ,Praveen Somappa,LA_INITIAL_PREFIX,latin,52,1979
+183,1329,V000146,Vijayalaksmi Krishnappa,Vijayalakshmi Krishnappa,LA_FULL,latin,41,1983
+184,1330,V000147,Sarada ಚಿಕ್ಕೇಗೌಡ,Sharada Chikkegowda,MIX_LAGIVEN_KNFATHER,mixed,62,1964
+185,1331,V000148,Mahesh S/o Eranna,Mahesh Eranna,LA_SONOF,latin,23,2005
+186,1332,V000016,GANESH MARIYAPPA,Ganesh Mariyappa,LA_UPPER,latin,40,1986
+187,1335,V000149,M. Ningappa ,Manjunath Ningappa,LA_INITIAL_PREFIX,latin,33,1994
+188,1339,V000150,Savitha B,Savitha Boregowda,LA_INITIAL_SUFFIX,latin,39,1987
+189,1340,V000082,Nagaratna Basappa,Nagaratna Basappa,LA_FULL,latin,33,1992
+190,1346,V000028,ಸವಿತಾ ಬಸಪ್ಪ,Savitha Basappa,KN_FULL,kannada,42,1984
+191,1358,V000151,Prasad,Prasad Yamanappa,LA_GIVEN,latin,53,1973
+192,1379,V000152,Manjunath ದುರ್ಗಪ್ಪ,Manjunath Durgappa,MIX_LAGIVEN_KNFATHER,mixed,60,1966
+193,1385,V000153,Rekh Durgappa,Rekha Durgappa,LA_FULL,latin,26,1998
+194,1389,V000154,ಗಿರೀಶ ವೆಂಕಟಪ್ಪ,Girish Venkatappa,KN_FULL,kannada,41,1986
+195,1390,V000155,Umesh S/o Hanumappa,Umesh Hanumappa,LA_SONOF,latin,55,1971
+196,1391,V000156,ಗೀತಾ ತಂದೆ ಬಸಪ್ಪ,Geetha Basappa,KN_TANDE,kannada,52,1969
+197,1392,V000157,Sharada Venkatapa,Sharada Venkatappa,LA_FULL,latin,65,1960
+198,1393,V000158,Lakshmi S/o Shivappa,Lakshmi Shivappa,LA_SONOF,latin,16,2005
+199,1394,V000001,ಶಾರದಾ,Sharada Gurappa,KN_GIVEN,kannada,25,2000
+200,1422,V000159,ಲೋಕೇಶ ಮಾರಿಯಪ್ಪ,Lokesh Mariyappa,KN_FULL,kannada,31,2000
+201,1430,V000160,Somappa  Ananda,Anand Somappa,LA_REORDER,latin,53,1971
+202,1431,V000161,ಲಕ್ಷ್ಮಿ ತಂದೆ ದುರ್ಗಪ್ಪ,Lakshmi Durgappa,KN_TANDE,kannada,25,1999
+203,1432,V000162,N. Mallappa,Ningaraj Mallappa,LA_INITIAL_PREFIX,latin,30,2001
+204,1457,V000163,Chikkegowda Umesh,Umesh Chikkegowda,LA_REORDER,latin,61,1970
+205,1458,V000164,Sunila Venkatappa,Sunil Venkatappa,LA_FULL,latin,36,1990
+206,1475,V000165,Manjula S/o Boregowda,Manjula Boregowda,LA_SONOF,latin,67,1959
+207,1476,V000166,ಪ್ರವೀಣ ಬಸಪ್ಪ,Praveen Basappa,KN_FULL,kannada,42,1984
+208,1477,V000167,Sharada S/o Timmappa,Sharada Timmappa,LA_SONOF,latin,20,2005
+209,1484,V000168,Praveen Doddappa,Praveen Doddappa,LA_FULL,latin,21,2005
+210,1486,V000051,ಶಿವಕುಮಾರ ಮಲ್ಲಪ್ಪ,Shivakumar Mallappa,KN_FULL,kannada,51,1977
+211,1487,V000169,Praveen Muniappa,Praveen Muniyappa,LA_FULL,latin,68,1963
+212,1488,V000170,Rakesh,Rakesh Shivappa,LA_GIVEN,latin,32,1999
+213,1490,V000171,Sharanappa,Sharanappa Boregowda,LA_GIVEN,latin,16,2006
+214,1492,V000172,ಮಧು ಸಂಗಪ್ಪ,Madhu Sangappa,KN_FULL,kannada,25,2001
+215,1493,V000173,Vijayalakshmi Fakirappa,Vijayalakshmi Fakirappa,LA_FULL,latin,37,1988
+216,1514,V000174,Ashoka Doddappa,Ashok Doddappa,LA_FULL,latin,34,1992
+217,1516,V000135,Rekha Doddapp ,Rekha Doddappa,LA_FULL,latin,37,1989
+218,1517,V000175,Rakesh Ningappa,Rakesh Ningappa,LA_FULL,latin,68,1958
+219,1525,V000176,Yallappa,Yallappa Doddappa,LA_GIVEN,latin,30,1998
+220,1526,V000081,ಬಸಪ್ಪ ಫಕೀರಪ್ಪ ,Basappa Fakirappa,KN_FULL,kannada,55,1971
+221,1527,V000177,Shivanna Erana,Shivanna Eranna,LA_FULL,latin,51,1974
+222,1528,V000178,ಸುನೀತಾ ತಂದೆ ಮಾರಿಯಪ್ಪ,Sunitha Mariyappa,KN_TANDE,kannada,51,1975
+223,1534,V000179,Mallikarjuna,Mallikarjuna Fakirappa,LA_GIVEN,latin,43,1983
+224,1535,V000180,Nagaratna Basappa,Nagaratna Basappa,LA_FULL,latin,56,1975
+225,1536,V000181,Gurappa Sunith,Sunitha Gurappa,LA_REORDER,latin,66,1965
+226,1538,V000182,Ayyapp Durgapa,Ayyappa Durgappa,LA_FULL,latin,45,1981
+227,1573,V000183,Mahesh Ramegowda,Mahesh Ramegowda,LA_FULL,latin,22,1999
+228,1574,V000184,ವಿಜಯಲಕ್ಷ್ಮಿ ಕೃಷ್ಣಪ್ಪ,Vijayalakshmi Krishnappa,KN_FULL,kannada,40,1987
+229,1608,V000185,ಲಕ್ಷ್ಮಿ ಗುರಪ್ಪ,Lakshmi Gurappa,KN_FULL,kannada,55,1969
+230,1609,V000186, ಯಶೋದಾ ದುರ್ಗಪ್ಪ,Yashoda Durgappa,KN_FULL,kannada,38,1990
+231,1634,V000042,Kiran Durgapp,Kiran Durgappa,LA_FULL,latin,68,1963
+232,1635,V000187,Ramegowd Shankar,Shankar Ramegowda,LA_REORDER,latin,32,1994
+233,1636,V000188,Savitha S/o Puttappa,Savitha Puttappa,LA_SONOF,latin,25,1999
+234,1637,V000189,ಯಶೋದಾ,Yashoda Puttappa,KN_GIVEN,kannada,34,1994
+235,1638,V000145,Mallikarjuna s/o. Lingappa,Mallikarjuna Lingappa,LA_SONOF_DOT,latin,54,1971
+236,1642,V000190,ನವೀನ Venkatappa ,Naveen Venkatappa,MIX_KNGIVEN_LAFATHER,mixed,53,1973
+237,1657,V000191,ಶ್ವೇತಾ ಶಿವಪ್ಪ,Shwetha Shivappa,KN_FULL,kannada,44,1982
+238,1658,V000192,ಸವಿತಾ ಶಿವಪ್ಪ,Savitha Shivappa,KN_FULL,kannada,56,1975
+239,1659,V000193,M. Chikkegowda ,Mahesh Chikkegowda,LA_INITIAL_PREFIX,latin,20,2004
+240,1661,V000194,ಗೋಪಾಲ ರಂಗಪ್ಪ,Gopal Rangappa,KN_FULL,kannada,30,1997
+241,1663,V000195,Ayyapa,Ayyappa Hanumappa,LA_GIVEN,latin,48,1978
+242,1681,V000196,Puttaswamy M,Puttaswamy Mariyappa,LA_INITIAL_SUFFIX,latin,54,1973
+243,1698,V000048,ಹರೀಶ ಬೋರೇಗೌಡ,Harish Boregowda,KN_FULL,kannada,66,1960
+244,1702,V000197,S. Puttappa,Sharada Puttappa,LA_INITIAL_PREFIX,latin,50,1976
+245,1705,V000062,GangadharaKempegowda,Gangadhar Kempegowda,LA_FULL,latin,42,1984
+246,1716,V000198,Sharad Yamanappa,Sharada Yamanappa,LA_FULL,latin,49,1975
+247,1739,V000121,Nagesh s/o. Ningappa,Nagesh Ningappa,LA_SONOF_DOT,latin,36,1989
+248,1741,V000091,ಶೋಭಾ ಹನುಮಪ್ಪ,Shobha Hanumappa,KN_FULL,kannada,33,1993
+249,1743,V000199,Savitha Chennappa,Savitha Chennappa,LA_FULL,latin,21,2005
+250,1744,V000200,Rekha,Rekha Rangappa,LA_GIVEN,latin,20,2005
+251,1751,V000201,SANKAR KEMPEGOWDA,Shankar Kempegowda,LA_UPPER,latin,39,1987
+252,1753,V000202,Doddabasappa S/o Ningappa,Doddabasappa Ningappa,LA_SONOF,latin,31,1993
+253,1754,V000203,Githa ಗುರಪ್ಪ,Geetha Gurappa,MIX_LAGIVEN_KNFATHER,mixed,41,1985
+254,1755,V000204,Nagesh,Nagesh Mariyappa,LA_GIVEN,latin,37,1984
+255,1756,V000205,ಪ್ರವೀಣ Yamanappa,Praveen Yamanappa,MIX_KNGIVEN_LAFATHER,mixed,53,1978
+256,1757,V000206,ತಿಮ್ಮರಾಜು,Thimmaraju Puttappa,KN_GIVEN,kannada,64,1962
+257,1770,V000207,ಅಂಬಿಕಾ,Ambika Boregowda,KN_GIVEN,kannada,20,2006
+258,1777,V000208,ನವೀನ ತಿಮ್ಮಪ್ಪ,Naveen Timmappa,KN_FULL,kannada,69,1958
+259,1778,V000209,Ambika S/o Seeddappa,Ambika Siddappa,LA_SONOF,latin,54,1974
+260,1785,V000210,Krishnamurthya Chennappa,Krishnamurthy Chennappa,LA_FULL,latin,36,1995
+261,1831,V000211, ರಾಜಣ್ಣ,Rajanna Doddappa,KN_GIVEN,kannada,42,1984
+262,1832,V000212,ಬಸಪ್ಪ,Basappa Chikkegowda,KN_GIVEN,kannada,68,1958
+263,1833,V000043,Rakes B,Rakesh Boregowda,LA_INITIAL_SUFFIX,latin,36,1990
+264,1837,V000029,Bhagya s/o. Rangapa,Bhagya Rangappa,LA_SONOF_DOT,latin,21,2000
+265,1838,V000213,ಶ್ವೇತಾ ಪುಟ್ಟಪ್ಪ,Shwetha Puttappa,KN_FULL,kannada,22,2004
+266,1839,V000214,P. Eranna,Puttaswamy Eranna,LA_INITIAL_PREFIX,latin,36,1989
+267,1843,V000215,Raju Siddappa,Raju Siddappa,LA_FULL,latin,56,1969
+268,1844,V000216,Veeresh Mallappa,Veeresh Mallappa,LA_FULL,latin,34,1992
+269,1845,V000217,ಶಿವಕುಮಾರ ಗುರಪ್ಪ,Shivakumar Gurappa,KN_FULL,kannada,31,1990
+270,1848,V000218,ಕುಮಾರ ದುರ್ಗಪ್ಪ,Kumar Durgappa,KN_FULL,kannada,22,2003
+271,1862,V000219,Kavitha Sangappa,Kavitha Sangappa,LA_FULL,latin,28,1998
+272,1873,V000220,ತಿಮ್ಮರಾಜು ಪುಟ್ಟಪ್ಪ,Thimmaraju Puttappa,KN_FULL,kannada,54,1973
+273,1894,V000221,S. Puttapa,Srinivas Puttappa,LA_INITIAL_PREFIX,latin,30,1991
+274,1895,V000222,Pushpa S/o Venkatappa,Pushpa Venkatappa,LA_SONOF,latin,53,1978
+275,1896,V000125,Suresh,Suresh Nagappa,LA_GIVEN,latin,25,2006
+276,1927,V000063,Gangadhar Sangapp,Gangadhar Sangappa,LA_FULL,latin,47,1974
+277,1928,V000223,ವಿಜಯಲಕ್ಷ್ಮಿ ಬೋರೇಗೌಡ,Vijayalakshmi Boregowda,KN_FULL,kannada,56,1971
+278,1929,V000064,ನಾಗೇಶ Rangappa,Nagesh Rangappa,MIX_KNGIVEN_LAFATHER,mixed,66,1958
+279,1935,V000161,Lakshmi Durgappa,Lakshmi Durgappa,LA_FULL,latin,25,1999
+280,1947,V000224,Prakash S/o Erana,Prakash Eranna,LA_SONOF,latin,28,1998
+281,1953,V000225,ಅಂಬಿಕಾ ತಂದೆ ದುರ್ಗಪ್ಪ,Ambika Durgappa,KN_TANDE,kannada,58,1968
+282,1971,V000226,S. Kempegowd,Srinivas Kempegowda,LA_INITIAL_PREFIX,latin,46,1985
+283,1976,V000227,Madha Chikkegowda,Madhu Chikkegowda,LA_FULL,latin,24,2002
+284,1993,V000228,Santosh Boregowda,Santosh Boregowda,LA_FULL,latin,28,1998
+285,1994,V000229, Putaswamy,Puttaswamy Yamanappa,LA_GIVEN,latin,25,2006
+286,2003,V000230,Kiran Durgappa,Kiran Durgappa,LA_FULL,latin,35,1986
+287,2008,V000231,Madhu S/o Sangappa,Madhu Sangappa,LA_SONOF,latin,26,2000
+288,2013,V000232,Erappa S/o Yamanapp,Erappa Yamanappa,LA_SONOF,latin,56,1970
+289,2016,V000233,Ashok  Gurappa,Ashok Gurappa,LA_FULL,latin,33,1991
+290,2020,V000234,Yashoda Muniyappa,Yashoda Muniyappa,LA_FULL,latin,20,2006
+291,2025,V000235,ದೇವರಾಜ,Devaraj Mallappa,KN_GIVEN,kannada,38,1993
+292,2029,V000236,ಮಂಜುಳಾ ತಂದೆ ಚಿಕ್ಕೇಗೌಡ,Manjula Chikkegowda,KN_TANDE,kannada,59,1966
+293,2030,V000237,Y. Mariyappa,Yashoda Mariyappa,LA_INITIAL_PREFIX,latin,62,1964
+294,2031,V000238,Ambik K,Ambika Kempegowda,LA_INITIAL_SUFFIX,latin,38,1988
+295,2035,V000122,Prakash Ningappa,Prakash Ningappa,LA_FULL,latin,47,1984
+296,2036,V000015,L. Eranna,Lakshmi Eranna,LA_INITIAL_PREFIX,latin,35,1996
+297,2041,V000239,Ningaraj,Ningaraj Siddappa,LA_GIVEN,latin,54,1972
+298,2045,V000240,Venkatesh‍ Somappa ,Venkatesh Somappa,LA_FULL,latin,61,1960
+299,2053,V000241, ಹನುಮಂತ ಮುನಿಯಪ್ಪ,Hanumantha Muniyappa,KN_FULL,kannada,59,1962
+300,2055,V000242,ಸಿದ್ದರಾಜು ,Siddaraju Venkatappa,KN_GIVEN,kannada,38,1988
+301,2057,V000243,Ningaraja Nagappa,Ningaraj Nagappa,LA_FULL,latin,21,2006
+302,2075,V000244,Sunil C,Sunil Chikkegowda,LA_INITIAL_SUFFIX,latin,46,1980
+303,2083,V000245,Nagaraj Mallappa,Nagaraj Mallappa,LA_FULL,latin,71,1960
+304,2084,V000246,Roopa S/o Gurappa,Roopa Gurappa,LA_SONOF,latin,62,1964
+305,2105,V000247,Roopa,Roopa Kempegowda,LA_GIVEN,latin,57,1964
+306,2106,V000248,ವಿಜಯಲಕ್ಷ್ಮಿ ತಂದೆ ಹನುಮಪ್ಪ,Vijayalakshmi Hanumappa,KN_TANDE,kannada,42,1984
+307,2120,V000249,Vijayalakshmi Timmappa,Vijayalakshmi Timmappa,LA_FULL,latin,25,2001
+308,2128,V000021,Kumar Gurappa,Kumar Gurappa,LA_FULL,latin,50,1977
+309,2130,V000250,ಮಧು Kempegowda,Madhu Kempegowda,MIX_KNGIVEN_LAFATHER,mixed,63,1963
+310,2131,V000251,ಶ್ರೀನಿವಾಸ ಪುಟ್ಟಪ್ಪ,Srinivas Puttappa,KN_FULL,kannada,49,1982
+311,2132,V000252,ಶಾರದಾ ಮಲ್ಲಪ್ಪ,Sharada Mallappa,KN_FULL,kannada,51,1970
+312,2133,V000253,ಸವಿತಾ ತಂದೆ ಈರಣ್ಣ,Savitha Eranna,KN_TANDE,kannada,24,2002
+313,2137,V000254,Sunitha Mariappa,Sunitha Mariyappa,LA_FULL,latin,38,1990
+314,2138,V000255,S. Eranna,Sunitha Eranna,LA_INITIAL_PREFIX,latin,52,1973
+315,2139,V000121,ನಾಗೇಶ ನಿಂಗಪ್ಪ,Nagesh Ningappa,KN_FULL,kannada,42,1989
+316,2140,V000256,Basappa Sunil,Sunil Basappa,LA_REORDER,latin,59,1967
+317,2141,V000257,A. Chennapp,Ambika Chennappa,LA_INITIAL_PREFIX,latin,53,1975
+318,2142,V000258,ರೇಖಾ ತಂದೆ ರಂಗಪ್ಪ,Rekha Rangappa,KN_TANDE,kannada,27,1998
+319,2143,V000259,Kiran Eranna,Kiran Eranna,LA_FULL,latin,70,1958
+320,2144,V000260,Nages s/o. Chennappa,Nagesh Chennappa,LA_SONOF_DOT,latin,40,1986
+321,2177,V000261,Chandra Doddappa,Chandru Doddappa,LA_FULL,latin,45,1981
+322,2178,V000262,Chandru Kempegowda,Chandru Kempegowda,LA_FULL,latin,42,1983
+323,2179,V000263,Vijayalaksmi Krishnappa,Vijayalakshmi Krishnappa,LA_FULL,latin,62,1969
+324,2180,V000264,ಪ್ರಸಾದ,Prasad Fakirappa,KN_GIVEN,kannada,65,1961
+325,2182,V000265,Yashoda Chennappa,Yashoda Chennappa,LA_FULL,latin,46,1981
+326,2183,V000266,Basappa,Basappa Venkatappa,LA_GIVEN,latin,23,2003
+327,2202,V000107,Kiran S,Kiran Sangappa,LA_INITIAL_SUFFIX,latin,41,1985
+328,2205,V000010,Kiran  Somapp,Kiran Somappa,LA_FULL,latin,41,1986
+329,2208,V000267,Rakesh,Rakesh Chikkegowda,LA_GIVEN,latin,40,1985
+330,2262,V000268,ವಿಜಯಲಕ್ಷ್ಮಿ ತಂದೆ ಪುಟ್ಟಪ್ಪ,Vijayalakshmi Puttappa,KN_TANDE,kannada,30,1996
+331,2264,V000269,Ramesh Shivappa,Ramesh Shivappa,LA_FULL,latin,59,1966
+332,2275,V000270,Sunitha Eranna,Sunitha Eranna,LA_FULL,latin,46,1979
+333,2277,V000271,Chandrasekar,Chandrashekar Sangappa,LA_GIVEN,latin,41,1983
+334,2278,V000272,Devaraj Ramegowd,Devaraj Ramegowda,LA_FULL,latin,60,1971
+335,2279,V000004,ಶೋಭಾ ಮಲ್ಲಪ್ಪ,Shobha Mallappa,KN_FULL,kannada,44,1982
+336,2280,V000273,S. Basappa,Savitha Basappa,LA_INITIAL_PREFIX,latin,47,1979
+337,2317,V000274,Ravi Ningappa,Ravi Ningappa,LA_FULL,latin,37,1991
+338,2318,V000275,S. Durgappa,Somashekar Durgappa,LA_INITIAL_PREFIX,latin,58,1968
+339,2319,V000276,ಶಿವಕುಮಾರ,Shivakumar Sangappa,KN_GIVEN,kannada,32,1994
+340,2320,V000277,Kempegowda Basappa,Basappa Kempegowda,LA_REORDER,latin,36,1990
+341,2321,V000278,Praveen Rangappa,Praveen Rangappa,LA_FULL,latin,56,1970
+342,2322,V000279,ಕುಮಾರ ತಂದೆ ಬಸಪ್ಪ,Kumar Basappa,KN_TANDE,kannada,26,2000
+343,2345,V000280, Shankara S/o Chennappa,Shankar Chennappa,LA_SONOF,latin,29,1996
+344,2350,V000281,ಲಕ್ಷ್ಮಿ ರಾಮೇಗೌಡ,Lakshmi Ramegowda,KN_FULL,kannada,42,1989
+345,2391,V000159,LOKESH MARIYAPPA,Lokesh Mariyappa,LA_UPPER,latin,26,2000
+346,2394,V000282,Neengaraj S/o Durgappa,Ningaraj Durgappa,LA_SONOF,latin,66,1960
+347,2395,V000283,Siddaraja,Siddaraju Chennappa,LA_GIVEN,latin,48,1979
+348,2402,V000284,ಗೋಪಾಲ,Gopal Chikkegowda,KN_GIVEN,kannada,58,1969
+349,2409,V000285,Doddabasapa Krishnapp,Doddabasappa Krishnappa,LA_FULL,latin,47,1979
+350,2410,V000286,Mahadev,Mahadev Sangappa,LA_GIVEN,latin,44,1984
+351,2411,V000056, ಸಂತೋಷ ತಂದೆ ಗುರಪ್ಪ,Santosh Gurappa,KN_TANDE,kannada,50,1976
+352,2412,V000287,MALLIKARJUN GURAPPA,Mallikarjuna Gurappa,LA_UPPER,latin,37,1990
+353,2415,V000288,R. Boregowd,Ravi Boregowda,LA_INITIAL_PREFIX,latin,52,1974
+354,2416,V000289,Basapp Geetha,Geetha Basappa,LA_REORDER,latin,59,1965
+355,2417,V000016,Ganesh,Ganesh Mariyappa,LA_GIVEN,latin,45,1986
+356,2426,V000290,N Nagappa,Ningaraj Nagappa,LA_INITIAL_PREFIX,latin,42,1984
+357,2436,V000027,Deepak S/o Krishnappa,Deepak Krishnappa,LA_SONOF,latin,63,1963
+358,2438,V000202,Doddabasappa‍ S/o Ningappa,Doddabasappa Ningappa,LA_SONOF,latin,28,1993
+359,2439,V000047,Sharanappa,Sharanappa Sangappa,LA_GIVEN,latin,18,2003
+360,2448,V000291,ಸಿದ್ದರಾಜು ತಂದೆ ಸಂಗಪ್ಪ,Siddaraju Sangappa,KN_TANDE,kannada,39,1987
+361,2449,V000063,Gangadhar S/o Sangappa,Gangadhar Sangappa,LA_SONOF,latin,51,1974
+362,2462,V000292,L. Mariyappa,Lakshmi Mariyappa,LA_INITIAL_PREFIX,latin,56,1975
+363,2499,V000293,ಸೋಮಶೇಖರ ಕೃಷ್ಣಪ್ಪ,Somashekar Krishnappa,KN_FULL,kannada,47,1979
+364,2500,V000294,Kreeshnamurthy Mariyappa ,Krishnamurthy Mariyappa,LA_FULL,latin,45,1981
+365,2503,V000295,Arun D,Arun Durgappa,LA_INITIAL_SUFFIX,latin,51,1976
+366,2507,V000296,Thimmaraju S/o Somappa,Thimmaraju Somappa,LA_SONOF,latin,45,1976
+367,2524,V000297,Sharada Doddappa,Sharada Doddappa,LA_FULL,latin,49,1978
+368,2525,V000298,Somapa Renuka,Renuka Somappa,LA_REORDER,latin,30,1995
+369,2526,V000299,Ravi,Ravi Ramegowda,LA_GIVEN,latin,23,2004
+370,2540,V000300,Bhagy Yamanappa,Bhagya Yamanappa,LA_FULL,latin,41,1985
+371,2545,V000301,ಮಹಾದೇವ,Mahadev Rangappa,KN_GIVEN,kannada,45,1980
+372,2551,V000302,V.E.,Vijay Eranna,LA_INITIAL_BOTH,latin,46,1980
+373,2572,V000303,ಶಿವಕುಮಾರ ತಂದೆ ಯಮನಪ್ಪ,Shivakumar Yamanappa,KN_TANDE,kannada,34,1992
+374,2573,V000304,Gopal,Gopal Mallappa,LA_GIVEN,latin,25,2001
+375,2575,V000305,Anand Ramegowda,Anand Ramegowda,LA_FULL,latin,35,1991
+376,2577,V000306,Thimmaraju Nagappa,Thimmaraju Nagappa,LA_FULL,latin,38,1987
+377,2578,V000307, Yallappa Rangapp,Yallappa Rangappa,LA_FULL,latin,51,1975
+378,2580,V000156,ಗೀತಾ ಬಸಪ್ಪ,Geetha Basappa,KN_FULL,kannada,56,1969
+379,2607,V000308,ಸವಿತಾ,Savitha Basappa,KN_GIVEN,kannada,62,1964
+380,2613,V000309,G.R.,Geetha Ramegowda,LA_INITIAL_BOTH,latin,52,1974
+381,2614,V000310,Krisnamurthy Nagapa,Krishnamurthy Nagappa,LA_FULL,latin,54,1972
+382,2615,V000311,Naveen S/o Boregowda,Naveen Boregowda,LA_SONOF,latin,33,1993
+383,2619,V000312,Sunith s/o. Nagappa,Sunitha Nagappa,LA_SONOF_DOT,latin,49,1982
+384,2627,V000118,Geetha Muniyappa,Geetha Muniyappa,LA_FULL,latin,57,1969
+385,2628,V000313,ಪ್ರಸಾದ ಬಸಪ್ಪ,Prasad Basappa,KN_FULL,kannada,41,1984
+386,2630,V000314,ವಿಜಯಲಕ್ಷ್ಮಿ ಫಕೀರಪ್ಪ,Vijayalakshmi Fakirappa,KN_FULL,kannada,60,1968
+387,2632,V000315,ಸಿದ್ದರಾಜು ಹನುಮಪ್ಪ ,Siddaraju Hanumappa,KN_FULL,kannada,31,1996
+388,2634,V000316,ಸವಿತಾ ತಂದೆ ರಾಮೇಗೌಡ,Savitha Ramegowda,KN_TANDE,kannada,35,1992
+389,2659,V000029,B.Rangappa,Bhagya Rangappa,LA_INITIAL_PREFIX,latin,26,2000
+390,2672,V000133,Gurappa Manjula,Manjula Gurappa,LA_REORDER,latin,56,1970
+391,2699,V000091,Shobha Hanumapa,Shobha Hanumappa,LA_FULL,latin,28,1993
+392,2700,V000317,G. Sangappa,Gopal Sangappa,LA_INITIAL_PREFIX,latin,29,1997
+393,2701,V000235,Devaraj,Devaraj Mallappa,LA_GIVEN,latin,33,1993
+394,2702,V000318,Swetha  Yamanappa ,Shwetha Yamanappa,LA_FULL,latin,30,1996
+395,2720,V000185,Lakshmi ,Lakshmi Gurappa,LA_GIVEN,latin,52,1969
+396,2721,V000319,Basappa M,Basappa Mariyappa,LA_INITIAL_SUFFIX,latin,45,1981
+397,2722,V000320,ರಾಕೇಶ Krishnappa,Rakesh Krishnappa,MIX_KNGIVEN_LAFATHER,mixed,50,1978
+398,2724,V000321,Ashok S/o Lingappa,Ashok Lingappa,LA_SONOF,latin,58,1969
+399,2754,V000322,Shobha,Shobha Krishnappa,LA_GIVEN,latin,20,2001
+400,2764,V000061,ಗೀತಾ ತಂದೆ ರಂಗಪ್ಪ,Geetha Rangappa,KN_TANDE,kannada,40,1988
+401,2766,V000159,L. Mariyappa,Lokesh Mariyappa,LA_INITIAL_PREFIX,latin,21,2000
+402,2773,V000323,Mallappa Srinivas,Srinivas Mallappa,LA_REORDER,latin,72,1959
+403,2782,V000324,Geetha Mallappa,Geetha Mallappa,LA_FULL,latin,25,2000
+404,2783,V000325,ದೀಪಕ Mariyappa,Deepak Mariyappa,MIX_KNGIVEN_LAFATHER,mixed,50,1976
+405,2785,V000326,ನಂಜುಂಡಪ್ಪ,Nanjundappa Gurappa,KN_GIVEN,kannada,26,2000
+406,2790,V000327,Mallikarjuna Lingappa,Mallikarjuna Lingappa,LA_FULL,latin,28,1993
+407,2796,V000328,Chikkegowda Ambika,Ambika Chikkegowda,LA_REORDER,latin,31,1996
+408,2797,V000052,Lakshmi V,Lakshmi Venkatappa,LA_INITIAL_SUFFIX,latin,63,1965
+409,2799,V000329,ಪುಟ್ಟಸ್ವಾಮಿ ತಂದೆ ರಂಗಪ್ಪ,Puttaswamy Rangappa,KN_TANDE,kannada,56,1970
+410,2800,V000330,ರಾಜು,Raju Sangappa,KN_GIVEN,kannada,49,1977
+411,2821,V000331,Shivakumar Muniyapp,Shivakumar Muniyappa,LA_FULL,latin,49,1976
+412,2823,V000332,Erann Navin,Naveen Eranna,LA_REORDER,latin,68,1963
+413,2824,V000333,ಲಕ್ಷ್ಮಿ ಲಿಂಗಪ್ಪ,Lakshmi Lingappa,KN_FULL,kannada,39,1989
+414,2826,V000334,NANJUNDAPPA CHENNAPPA,Nanjundappa Chennappa,LA_UPPER,latin,46,1980
+415,2860,V000335,Kavitha R,Kavitha Rangappa,LA_INITIAL_SUFFIX,latin,36,1989
+416,2861,V000336,V.S.,Vijayalakshmi Somappa,LA_INITIAL_BOTH,latin,25,1996
+417,2942,V000164,S. Venkatappa,Sunil Venkatappa,LA_INITIAL_PREFIX,latin,36,1990
+418,2963,V000026,ShivakumarPuttappa,Shivakumar Puttappa,LA_FULL,latin,62,1969
+419,2964,V000337,S. Shivappa,Srinivas Shivappa,LA_INITIAL_PREFIX,latin,37,1989
+420,2965,V000338,Yashoda S/o Mariyappa,Yashoda Mariyappa,LA_SONOF,latin,53,1972
+421,2966,V000339,Veejay Eranna,Vijay Eranna,LA_FULL,latin,51,1977
+422,2970,V000340,Nagesh Yamanappa,Nagesh Yamanappa,LA_FULL,latin,39,1985
+423,2971,V000341,ಹರೀಶ,Harish Eranna,KN_GIVEN,kannada,56,1970
+424,2988,V000070,Devaraj S/o Mariappa,Devaraj Mariyappa,LA_SONOF,latin,67,1959
+425,2991,V000342,ಶಿವಣ್ಣ,Shivanna Siddappa,KN_GIVEN,kannada,28,1998
+426,3028,V000343,S.  Basappa,Sharada Basappa,LA_INITIAL_PREFIX,latin,32,1994
+427,3030,V000344,Savitha  Basappa,Savitha Basappa,LA_FULL,latin,53,1974
+428,3041,V000345,Yashoda Chennapp,Yashoda Chennappa,LA_FULL,latin,31,1994
+429,3042,V000346,Rangappa Shivann,Shivanna Rangappa,LA_REORDER,latin,39,1989
+430,3058,V000347,Mallikarjuna S,Mallikarjuna Shivappa,LA_INITIAL_SUFFIX,latin,49,1977
+431,3061,V000348,Rajanna,Rajanna Chennappa,LA_GIVEN,latin,41,1984
+432,3063,V000349,Shankar Siddappa,Shankar Siddappa,LA_FULL,latin,63,1965
+433,3076,V000350,Ashok ನಾಗಪ್ಪ,Ashok Nagappa,MIX_LAGIVEN_KNFATHER,mixed,27,1998
+434,3079,V000138,N. Gurappa,Nagaraj Gurappa,LA_INITIAL_PREFIX,latin,29,1992
+435,3080,V000351,ರೇಖಾ,Rekha Kempegowda,KN_GIVEN,kannada,24,2002
+436,3081,V000352,ನಾಗೇಶ Ningappa,Nagesh Ningappa,MIX_KNGIVEN_LAFATHER,mixed,20,2006
+437,3089,V000353,ಗೋಪಾಲ ಮಾರಿಯಪ್ಪ,Gopal Mariyappa,KN_FULL,kannada,52,1974
+438,3102,V000354,ಶಾರದಾ ಸೋಮಪ್ಪ,Sharada Somappa,KN_FULL,kannada,72,1959
+439,3104,V000166,Basappa Praveen ,Praveen Basappa,LA_REORDER,latin,43,1984
+440,3105,V000355,ವಿಜಯಲಕ್ಷ್ಮಿ ಬೋರೇಗೌಡ,Vijayalakshmi Boregowda,KN_FULL,kannada,68,1958
+441,3106,V000356,Shobha S/o Fakirappa,Shobha Fakirappa,LA_SONOF,latin,45,1983
+442,3107,V000149,Manjunath S/o Ningappa,Manjunath Ningappa,LA_SONOF,latin,30,1994
+443,3108,V000357,Doddabasappa  s/o. Durgappa,Doddabasappa Durgappa,LA_SONOF_DOT,latin,61,1966
+444,3111,V000358,ಲೋಕೇಶ ಪುಟ್ಟಪ್ಪ,Lokesh Puttappa,KN_FULL,kannada,30,1995
+445,3118,V000359,ನಾಗೇಶ ನಿಂಗಪ್ಪ,Nagesh Ningappa,KN_FULL,kannada,63,1963
+446,3119,V000360,Erappa V,Erappa Venkatappa,LA_INITIAL_SUFFIX,latin,29,1997
+447,3125,V000361,ನವೀನ ಲಿಂಗಪ್ಪ,Naveen Lingappa,KN_FULL,kannada,43,1982
+448,3133,V000362,ಚಂದ್ರು ಫಕೀರಪ್ಪ,Chandru Fakirappa,KN_FULL,kannada,22,1999
+449,3136,V000363,Harish S/o Mallappa,Harish Mallappa,LA_SONOF,latin,34,1992
+450,3143,V000364,ಮಲ್ಲಿಕಾರ್ಜುನ‍ ಫಕೀರಪ್ಪ,Mallikarjuna Fakirappa,KN_FULL,kannada,57,1969
+451,3144,V000024,ಮಂಜುನಾಥ ಗುರಪ್ಪ,Manjunath Gurappa,KN_FULL,kannada,48,1976
+452,3145,V000365,ಶ್ರೀನಿವಾಸ,Srinivas Siddappa,KN_GIVEN,kannada,49,1977
+453,3146,V000366,ರೇಖಾ Venkatapp,Rekha Venkatappa,MIX_KNGIVEN_LAFATHER,mixed,55,1973
+454,3147,V000367,ಅಯ್ಯಪ್ಪ Yamanappa,Ayyappa Yamanappa,MIX_KNGIVEN_LAFATHER,mixed,56,1970
+455,3148,V000368,Arun Durgapp,Arun Durgappa,LA_FULL,latin,25,2000
+456,3149,V000035,Yashoda S/o Basapp,Yashoda Basappa,LA_SONOF,latin,38,1983
+457,3153,V000369,Ganesh S/o Puttappa ,Ganesh Puttappa,LA_SONOF,latin,59,1968
+458,3156,V000370,Shwetha Gurappa,Shwetha Gurappa,LA_FULL,latin,72,1959
+459,3187,V000206,Thimmaraju,Thimmaraju Puttappa,LA_GIVEN,latin,65,1962
+460,3188,V000371,ರೇಣುಕಾ Fakeerappa,Renuka Fakirappa,MIX_KNGIVEN_LAFATHER,mixed,50,1976
+461,3190,V000372,Nagaraj Krishnappa,Nagaraj Krishnappa,LA_FULL,latin,28,1998
+462,3191,V000373,Somapa Srinivas,Srinivas Somappa,LA_REORDER,latin,60,1967
+463,3192,V000374,ಗೋಪಾಲ ಯಮನಪ್ಪ,Gopal Yamanappa,KN_FULL,kannada,61,1965
+464,3220,V000096,ಸೋಮಶೇಖರ ರಾಮೇಗೌಡ,Somashekar Ramegowda,KN_FULL,kannada,37,1988
+465,3221,V000375,Pushpa S/o Eranna,Pushpa Eranna,LA_SONOF,latin,43,1983
+466,3223,V000376,ಗಣೇಶ Fakirappa,Ganesh Fakirappa,MIX_KNGIVEN_LAFATHER,mixed,46,1980
+467,3259,V000022,ರಾಜು ಬೋರೇಗೌಡ,Raju Boregowda,KN_FULL,kannada,50,1981
+468,3266,V000377,BHAGYA CHIKKEGOWDA,Bhagya Chikkegowda,LA_UPPER,latin,56,1965
+469,3285,V000378,Venkattesh Chennappa,Venkatesh Chennappa,LA_FULL,latin,29,1992
+470,3300,V000379,Srinivas Ningappa,Srinivas Ningappa,LA_FULL,latin,44,1987
+471,3337,V000380,Basavaraj Yamanappa,Basavaraj Yamanappa,LA_FULL,latin,62,1963
+472,3340,V000123,Doddabasappa Y,Doddabasappa Yamanappa,LA_INITIAL_SUFFIX,latin,62,1964
+473,3355,V000381,Venkatesh ,Venkatesh Hanumappa,LA_GIVEN,latin,16,2005
+474,3356,V000382,Savitha Nagappa,Savitha Nagappa,LA_FULL,latin,40,1981
+475,3360,V000383,Basavaraj Nagappa,Basavaraj Nagappa,LA_FULL,latin,53,1972
+476,3364,V000184,Vijayalakshmi Krishnappa ,Vijayalakshmi Krishnappa,LA_FULL,latin,34,1987
+477,3366,V000384,ಮಂಜುಳಾ ಬೋರೇಗೌಡ,Manjula Boregowda,KN_FULL,kannada,61,1967
+478,3367,V000385,BHAGYA SANGAPP,Bhagya Sangappa,LA_UPPER,latin,36,1992
+479,3369,V000386,ಮಧು,Madhu Lingappa,KN_GIVEN,kannada,53,1973
+480,3370,V000387,Naveen Mallappa,Naveen Mallappa,LA_FULL,latin,56,1970
+481,3376,V000276,Shivakumar Sangapp,Shivakumar Sangappa,LA_FULL,latin,33,1994
+482,3377,V000388,D.B. ,Devaraj Basappa,LA_INITIAL_BOTH,latin,51,1975
+483,3383,V000389,Manjul,Manjula Timmappa,LA_GIVEN,latin,67,1959
+484,3387,V000390, Roopa Y,Roopa Yamanappa,LA_INITIAL_SUFFIX,latin,35,1989
+485,3397,V000391,Bhagy,Bhagya Ningappa,LA_GIVEN,latin,53,1978
+486,3405,V000392,ನಿಂಗರಾಜ ಫಕೀರಪ್ಪ,Ningaraj Fakirappa,KN_FULL,kannada,37,1989
+487,3421,V000393,Srinivas Doddappa,Srinivas Doddappa,LA_FULL,latin,45,1983
+488,3422,V000394,Lakshmi,Lakshmi Hanumappa,LA_GIVEN,latin,25,1996
+489,3429,V000395,Shobha S/o Timmappa,Shobha Timmappa,LA_SONOF,latin,30,1996
+490,3438,V000396,ಮಧು‍ ಸೋಮಪ್ಪ,Madhu Somappa,KN_FULL,kannada,50,1976
+491,3450,V000397,Girish ನಾಗಪ್ಪ,Girish Nagappa,MIX_LAGIVEN_KNFATHER,mixed,33,1993
+492,3451,V000398,ಯಶೋದಾ,Yashoda Eranna,KN_GIVEN,kannada,20,2001
+493,3461,V000399,Gangadhar Nagappa,Gangadhar Nagappa,LA_FULL,latin,51,1973
+494,3465,V000058,ಮಹೇಶ ತಂದೆ ಬೋರೇಗೌಡ,Mahesh Boregowda,KN_TANDE,kannada,23,1998
+495,3484,V000400,ಶ್ರೀನಿವಾಸ ಹನುಮಪ್ಪ,Srinivas Hanumappa,KN_FULL,kannada,60,1965
+496,3485,V000401,Ayyappa  N,Ayyappa Ningappa,LA_INITIAL_SUFFIX,latin,28,1998
+497,3507,V000402,ಸುರೇಶ ಬೋರೇಗೌಡ,Suresh Boregowda,KN_FULL,kannada,24,1997
+498,3509,V000403,ಕವಿತಾ ದೊಡ್ಡಪ್ಪ,Kavitha Doddappa,KN_FULL,kannada,58,1970
+499,3510,V000404,ರೇಣುಕಾ ತಂದೆ ರಂಗಪ್ಪ,Renuka Rangappa,KN_TANDE,kannada,66,1959
+500,3514,V000405,ANAND NAGAPPA,Anand Nagappa,LA_UPPER,latin,36,1990
+501,3515,V000406,ಶಿವಕುಮಾರ ತಂದೆ ಮಲ್ಲಪ್ಪ,Shivakumar Mallappa,KN_TANDE,kannada,54,1972
+502,3516,V000407,ಶಿವಕುಮಾರ ರಂಗಪ್ಪ,Shivakumar Rangappa,KN_FULL,kannada,22,2004
+503,3541,V000408,Manjula F,Manjula Fakirappa,LA_INITIAL_SUFFIX,latin,57,1971
+504,3543,V000191,ಶ್ವೇತಾ ಶಿವಪ್ಪ,Shwetha Shivappa,KN_FULL,kannada,45,1982
+505,3547,V000409,Deepak S/o Puttappa,Deepak Puttappa,LA_SONOF,latin,32,1994
+506,3569,V000206,THIMMARAJU PUTTAPPA,Thimmaraju Puttappa,LA_UPPER,latin,63,1962
+507,3579,V000410,ಗಣೇಶ Eranna ,Ganesh Eranna,MIX_KNGIVEN_LAFATHER,mixed,57,1974
+508,3580,V000411,Sharanappa Kempegowda ,Sharanappa Kempegowda,LA_FULL,latin,54,1977
+509,3585,V000412,ಈರಪ್ಪ,Erappa Nagappa,KN_GIVEN,kannada,47,1981
+510,3593,V000413,Rakesh,Rakesh Yamanappa,LA_GIVEN,latin,55,1969
+511,3595,V000414,Nagaratna,Nagaratna Kempegowda,LA_GIVEN,latin,23,2002
+512,3608,V000255,Sunitha Erana,Sunitha Eranna,LA_FULL,latin,52,1973
+513,3610,V000308,ಸವಿತಾ ತಂದೆ ಬಸಪ್ಪ,Savitha Basappa,KN_TANDE,kannada,62,1964
+514,3611,V000415,ಈರಪ್ಪ,Erappa Sangappa,KN_GIVEN,kannada,33,1993
+515,3614,V000020,Savitha Lingappa,Savitha Lingappa,LA_FULL,latin,34,1992
+516,3618,V000416,Shankar Hanumappa,Shankar Hanumappa,LA_FULL,latin,38,1990
+517,3626,V000417,ಯಶೋದಾ ತಂದೆ ಬೋರೇಗೌಡ,Yashoda Boregowda,KN_TANDE,kannada,22,2004
+518,3627,V000418,Arun,Arun Yamanappa,LA_GIVEN,latin,36,1991
+519,3628,V000419,Rekha ,Rekha Gurappa,LA_GIVEN,latin,24,2002
+520,3629,V000420,Siddaraju,Siddaraju Kempegowda,LA_GIVEN,latin,41,1983
+521,3630,V000421,Y. Lingapa,Yashoda Lingappa,LA_INITIAL_PREFIX,latin,24,2003
+522,3640,V000422,ಮಹಾದೇವ Hanumappa,Mahadev Hanumappa,MIX_KNGIVEN_LAFATHER,mixed,48,1979
+523,3652,V000423,ಆನಂದ ನಾಗಪ್ಪ,Anand Nagappa,KN_FULL,kannada,24,2003
+524,3659,V000424,ರೇಖಾ ತಂದೆ ಮಾರಿಯಪ್ಪ,Rekha Mariyappa,KN_TANDE,kannada,37,1989
+525,3687,V000111,Lokesh,Lokesh Timmappa,LA_GIVEN,latin,54,1970
+526,3691,V000425,ಸಿದ್ದರಾಜು ನಿಂಗಪ್ಪ,Siddaraju Ningappa,KN_FULL,kannada,33,1995
+527,3692,V000426,Sunitha Puttappa,Sunitha Puttappa,LA_FULL,latin,37,1988
+528,3693,V000427,Puttapa Mahadew,Mahadev Puttappa,LA_REORDER,latin,34,1990
+529,3694,V000428,ಸುರೇಶ ಹನುಮಪ್ಪ,Suresh Hanumappa,KN_FULL,kannada,41,1990
+530,3695,V000053,ಕಿರಣ ತಂದೆ ನಿಂಗಪ್ಪ,Kiran Ningappa,KN_TANDE,kannada,36,1990
+531,3696,V000429, R. Hanumappa,Rajanna Hanumappa,LA_INITIAL_PREFIX,latin,27,2001
+532,3703,V000430,ಯಲ್ಲಪ್ಪ ತಂದೆ ರಂಗಪ್ಪ,Yallappa Rangappa,KN_TANDE,kannada,53,1975
+533,3704,V000431,Mahesh Ningappa,Mahesh Ningappa,LA_FULL,latin,34,1992
+534,3706,V000432,Erappa,Erappa Sangappa,LA_GIVEN,latin,47,1977
+535,3708,V000433,Srinivasa H,Srinivas Hanumappa,LA_INITIAL_SUFFIX,latin,40,1986
+536,3710,V000294,ಕೃಷ್ಣಮೂರ್ತಿ ಮಾರಿಯಪ್ಪ,Krishnamurthy Mariyappa,KN_FULL,kannada,45,1981
+537,3740,V000015,ಲಕ್ಷ್ಮಿ ಈರಣ್ಣ,Lakshmi Eranna,KN_FULL,kannada,25,1996
+538,3741,V000434,ತಿಮ್ಮರಾಜು  ತಂದೆ ಬೋರೇಗೌಡ,Thimmaraju Boregowda,KN_TANDE,kannada,60,1968
+539,3754,V000435,Vijayalakshmi Ramegowd,Vijayalakshmi Ramegowda,LA_FULL,latin,38,1983
+540,3755,V000066,Ashok s/o. Hanumappa,Ashok Hanumappa,LA_SONOF_DOT,latin,70,1958
+541,3756,V000436,Savita S,Savitha Sangappa,LA_INITIAL_SUFFIX,latin,61,1965
+542,3764,V000437,Rakes Fakirappa,Rakesh Fakirappa,LA_FULL,latin,38,1983
+543,3809,V000438,Rekha Doddapp,Rekha Doddappa,LA_FULL,latin,68,1960
+544,3814,V000012,Gopal Hanumappa,Gopal Hanumappa,LA_FULL,latin,62,1964
+545,3818,V000175,ರಾಕೇಶ ನಿಂಗಪ್ಪ,Rakesh Ningappa,KN_FULL,kannada,73,1958
+546,3827,V000263,ವಿಜಯಲಕ್ಷ್ಮಿ ಕೃಷ್ಣಪ್ಪ,Vijayalakshmi Krishnappa,KN_FULL,kannada,56,1969
+547,3828,V000439,ಗೋಪಾಲ,Gopal Krishnappa,KN_GIVEN,kannada,47,1977
+548,3833,V000440,S. Venkatappa,Shankar Venkatappa,LA_INITIAL_PREFIX,latin,53,1972
+549,3834,V000111,Lokesh,Lokesh Timmappa,LA_GIVEN,latin,56,1970
+550,3864,V000441,Manjula,Manjula Somappa,LA_GIVEN,latin,51,1975
+551,3868,V000442,Sunitha,Sunitha Chikkegowda,LA_GIVEN,latin,58,1968
+552,3869,V000443,A. Mariyappa,Anand Mariyappa,LA_INITIAL_PREFIX,latin,20,2004
+553,3870,V000444,Nanjundappa,Nanjundappa Boregowda,LA_GIVEN,latin,54,1972
+554,3876,V000445,Rakesh Venkatappa,Rakesh Venkatappa,LA_FULL,latin,37,1994
+555,3877,V000446,ವಿಜಯಲಕ್ಷ್ಮಿ ಬಸಪ್ಪ,Vijayalakshmi Basappa,KN_FULL,kannada,68,1958
+556,3893,V000447,Pushpa Chikegowda,Pushpa Chikkegowda,LA_FULL,latin,44,1987
+557,3899,V000077,Ambika Chikkegowda,Ambika Chikkegowda,LA_FULL,latin,36,1990
+558,3902,V000448, ಕಿರಣ ಬಸಪ್ಪ,Kiran Basappa,KN_FULL,kannada,33,1993
+559,3907,V000449,Krishnamurthy Krishnappa,Krishnamurthy Krishnappa,LA_FULL,latin,47,1979
+560,3922,V000450,Ashok Neengappa,Ashok Ningappa,LA_FULL,latin,37,1990
+561,3930,V000451,ಕವಿತಾ ಸಿದ್ದಪ್ಪ,Kavitha Siddappa,KN_FULL,kannada,31,2000
+562,3936,V000452,Gurappa Raju ,Raju Gurappa,LA_REORDER,latin,38,1990
+563,3948,V000453,Shiwakumar,Shivakumar Chennappa,LA_GIVEN,latin,39,1989
+564,3970,V000454,ಈರಪ್ಪ ಈರಣ್ಣ,Erappa Eranna,KN_FULL,kannada,22,2004
+565,4028,V000391,Bhagy S/o Ningappa,Bhagya Ningappa,LA_SONOF,latin,48,1978
+566,4031,V000455,Ganesh Fakirappa,Ganesh Fakirappa,LA_FULL,latin,63,1958
+567,4032,V000456, ಅಯ್ಯಪ್ಪ ಮಾರಿಯಪ್ಪ,Ayyappa Mariyappa,KN_FULL,kannada,49,1977
+568,4041,V000457,NAGARATNA MUNIYAPPA,Nagaratna Muniyappa,LA_UPPER,latin,48,1980
+569,4042,V000458,M. Hanumappa,Madhu Hanumappa,LA_INITIAL_PREFIX,latin,63,1963
+570,4043,V000459,ಗಣೇಶ ತಂದೆ ಗುರಪ್ಪ,Ganesh Gurappa,KN_TANDE,kannada,54,1972
+571,4050,V000053,Kiran Ningappa,Kiran Ningappa,LA_FULL,latin,35,1990
+572,4063,V000460,Lakshmi S,Lakshmi Siddappa,LA_INITIAL_SUFFIX,latin,39,1985
+573,4064,V000461,Nagappa Venkatesh,Venkatesh Nagappa,LA_REORDER,latin,48,1983
+574,4065,V000462,ಪುಟ್ಟಸ್ವಾಮಿ  ಸಂಗಪ್ಪ,Puttaswamy Sangappa,KN_FULL,kannada,26,1999
+575,4066,V000463,ತಿಮ್ಮರಾಜು ತಂದೆ ಬೋರೇಗೌಡ,Thimmaraju Boregowda,KN_TANDE,kannada,39,1989
+576,4078,V000464,N.F.,Naveen Fakirappa,LA_INITIAL_BOTH,latin,39,1982
+577,4096,V000060,Aruna Sangapp,Arun Sangappa,LA_FULL,latin,61,1965
+578,4107,V000164,Sunil Venkatappa,Sunil Venkatappa,LA_FULL,latin,36,1990
+579,4135,V000465,Naveena  Sangappa,Naveen Sangappa,LA_FULL,latin,34,1991
+580,4141,V000084,B. Ramegowd,Basavaraj Ramegowda,LA_INITIAL_PREFIX,latin,51,1976
+581,4142,V000054,ಹರೀಶ,Harish Sangappa,KN_GIVEN,kannada,42,1984
+582,4143,V000129,Doddabasappa S/o Muneeyappa,Doddabasappa Muniyappa,LA_SONOF,latin,71,1960
+583,4144,V000466,Saranappa  N,Sharanappa Ningappa,LA_INITIAL_SUFFIX,latin,58,1968
+584,4157,V000143,L. Timmappa,Lakshmi Timmappa,LA_INITIAL_PREFIX,latin,32,1996
+585,4158,V000467,Madhu S ,Madhu Siddappa,LA_INITIAL_SUFFIX,latin,70,1958
+586,4159,V000468,Sharanappa Mallappa,Sharanappa Mallappa,LA_FULL,latin,57,1967
+587,4161,V000469,Nanjundappa‍ Rangapa,Nanjundappa Rangappa,LA_FULL,latin,23,2004
+588,4168,V000041,Chandrashekar S/o Krishnappa,Chandrashekar Krishnappa,LA_SONOF,latin,26,1999
+589,4172,V000470,Shwetha S/o Basappa,Shwetha Basappa,LA_SONOF,latin,57,1971
+590,4187,V000471,H.D.,Hanumantha Durgappa,LA_INITIAL_BOTH,latin,43,1983
+591,4202,V000090,ಸಿದ್ದರಾಜು,Siddaraju Chennappa,KN_GIVEN,kannada,47,1984
+592,4203,V000472,K Venkattappa,Kavitha Venkatappa,LA_INITIAL_PREFIX,latin,28,1996
+593,4204,V000473,Srinivas Nagapp,Srinivas Nagappa,LA_FULL,latin,62,1966
+594,4212,V000474,Somashekar ,Somashekar Doddappa,LA_GIVEN,latin,41,1985
+595,4214,V000475,Lakshmi,Lakshmi Ramegowda,LA_GIVEN,latin,63,1963
+596,4228,V000476,Sobha,Shobha Durgappa,LA_GIVEN,latin,43,1983
+597,4246,V000273,Savitha,Savitha Basappa,LA_GIVEN,latin,42,1979
+598,4247,V000066,Ashok Hanumappa,Ashok Hanumappa,LA_FULL,latin,63,1958
+599,4248,V000477, ಶ್ವೇತಾ ಕೆಂಪೇಗೌಡ,Shwetha Kempegowda,KN_FULL,kannada,53,1978
+600,4258,V000052,L. Venkatappa,Lakshmi Venkatappa,LA_INITIAL_PREFIX,latin,61,1965
+601,4265,V000478,K.S.,Krishnamurthy Shivappa,LA_INITIAL_BOTH,latin,61,1970
+602,4278,V000479,ರೇಖಾ,Rekha Rangappa,KN_GIVEN,kannada,32,1992
+603,4286,V000480,ಯಶೋದಾ ಮುನಿಯಪ್ಪ,Yashoda Muniyappa,KN_FULL,kannada,36,1990
+604,4298,V000481,ನಾಗೇಶ,Nagesh Durgappa,KN_GIVEN,kannada,65,1960
+605,4354,V000482,Ayyappa,Ayyappa Durgappa,LA_GIVEN,latin,57,1970
+606,4369,V000483,Devaraj Ramegowda,Devaraj Ramegowda,LA_FULL,latin,55,1969
+607,4374,V000484,Lakshmi Sangappa,Lakshmi Sangappa,LA_FULL,latin,29,1992
+608,4375,V000485,PRAWEEN FAKIRAPPA,Praveen Fakirappa,LA_UPPER,latin,32,1999
+609,4385,V000129,ದೊಡ್ಡಬಸಪ್ಪ ಮುನಿಯಪ್ಪ,Doddabasappa Muniyappa,KN_FULL,kannada,64,1960
+610,4399,V000486,Roopa Mallappa,Roopa Mallappa,LA_FULL,latin,28,1996
+611,4403,V000487,ಶ್ವೇತಾ,Shwetha Sangappa,KN_GIVEN,kannada,31,1995
+612,4427,V000488,Shweta Erann,Shwetha Eranna,LA_FULL,latin,57,1964
+613,4434,V000052,Lakshmee s/o Venkatappa,Lakshmi Venkatappa,LA_SONOF_DOT,latin,63,1965
+614,4446,V000489,Somashekar Hanumapa,Somashekar Hanumappa,LA_FULL,latin,22,2004
+615,4447,V000490,ಶರಣಪ್ಪ ತಂದೆ ಸಂಗಪ್ಪ,Sharanappa Sangappa,KN_TANDE,kannada,27,2001
+616,4448,V000491,ಬಸಪ್ಪ ಫಕೀರಪ್ಪ,Basappa Fakirappa,KN_FULL,kannada,48,1979
+617,4449,V000492,Renuka,Renuka Chennappa,LA_GIVEN,latin,62,1965
+618,4450,V000026,Shivakumara Puttappa,Shivakumar Puttappa,LA_FULL,latin,58,1969
+619,4453,V000493,ಮಂಜುನಾಥ ಹನುಮಪ್ಪ,Manjunath Hanumappa,KN_FULL,kannada,55,1971
+620,4469,V000494,Ganesh,Ganesh Venkatappa,LA_GIVEN,latin,62,1964
+621,4470,V000007,Rakesh Gurappa,Rakesh Gurappa,LA_FULL,latin,16,2005
+622,4476,V000216,ವೀರೇಶ ಮಲ್ಲಪ್ಪ,Veeresh Mallappa,KN_FULL,kannada,32,1992
+623,4496,V000495,Vijay S/o Nagappa,Vijay Nagappa,LA_SONOF,latin,28,2000
+624,4505,V000496,Puttappa Sharada,Sharada Puttappa,LA_REORDER,latin,46,1980
+625,4525,V000497,Girish Fakirappa,Girish Fakirappa,LA_FULL,latin,36,1988
+626,4535,V000498,ಯಲ್ಲಪ್ಪ ತಂದೆ ತಿಮ್ಮಪ್ಪ,Yallappa Timmappa,KN_TANDE,kannada,30,1997
+627,4536,V000499,ಸವಿತಾ ತಂದೆ ವೆಂಕಟಪ್ಪ ,Savitha Venkatappa,KN_TANDE,kannada,22,2004
+628,4541,V000500,Shivappa Lakshmee,Lakshmi Shivappa,LA_REORDER,latin,20,2006
+629,4545,V000501,ರೂಪಾ,Roopa Krishnappa,KN_GIVEN,kannada,43,1983
+630,4549,V000502,ದೇವರಾಜ ತಂದೆ ತಿಮ್ಮಪ್ಪ,Devaraj Timmappa,KN_TANDE,kannada,68,1958
+631,4554,V000503,ಬಸವರಾಜ ತಂದೆ ಯಮನಪ್ಪ,Basavaraj Yamanappa,KN_TANDE,kannada,53,1968
+632,4558,V000504,Pushpa  S/o Mariyappa,Pushpa Mariyappa,LA_SONOF,latin,42,1984
+633,4563,V000505,Gangadhar Hanumappa,Gangadhar Hanumappa,LA_FULL,latin,35,1991
+634,4570,V000506,ನಾಗರತ್ನ ಚಿಕ್ಕೇಗೌಡ,Nagaratna Chikkegowda,KN_FULL,kannada,44,1981
+635,4577,V000143,Timmappa Lakshmi,Lakshmi Timmappa,LA_REORDER,latin,35,1996
+636,4580,V000507,Doddabasappa S/o Ningappa,Doddabasappa Ningappa,LA_SONOF,latin,56,1972
+637,4585,V000508,Shwetha,Shwetha Chikkegowda,LA_GIVEN,latin,70,1958
+638,4590,V000273,ಸವಿತಾ ಬಸಪ್ಪ,Savitha Basappa,KN_FULL,kannada,45,1979
+639,4594,V000509,Shobha,Shobha Fakirappa,LA_GIVEN,latin,36,1991
+640,4606,V000510,Savitha,Savitha Gurappa,LA_GIVEN,latin,36,1985
+641,4620,V000511,K. Ramegowd,Krishnamurthy Ramegowda,LA_INITIAL_PREFIX,latin,38,1983
+642,4622,V000072,Kavitha Chennappa,Kavitha Chennappa,LA_FULL,latin,32,1996
+643,4623,V000354,ಶಾರದಾ  ಸೋಮಪ್ಪ,Sharada Somappa,KN_FULL,kannada,69,1959
+644,4624,V000165,ಮಂಜುಳಾ ಬೋರೇಗೌಡ,Manjula Boregowda,KN_FULL,kannada,67,1959
+645,4626,V000111,L. Timmappa,Lokesh Timmappa,LA_INITIAL_PREFIX,latin,55,1970
+646,4654,V000512,ರೂಪಾ,Roopa Somappa,KN_GIVEN,kannada,22,2004
+647,4660,V000513,ರೂಪಾ ತಂದೆ ಪುಟ್ಟಪ್ಪ,Roopa Puttappa,KN_TANDE,kannada,27,1994
+648,4673,V000514,Shivakumar Ningappa,Shivakumar Ningappa,LA_FULL,latin,22,2004
+649,4679,V000515,Shivanna Chikkegowda,Shivanna Chikkegowda,LA_FULL,latin,46,1980
+650,4701,V000516,Anand S/o Gurappa,Anand Gurappa,LA_SONOF,latin,34,1993
+651,4726,V000517,ನಾಗರತ್ನ ಪುಟ್ಟಪ್ಪ,Nagaratna Puttappa,KN_FULL,kannada,59,1968
+652,4733,V000518,Nagaraj,Nagaraj Durgappa,LA_GIVEN,latin,48,1980
+653,4736,V000519,ಚಂದ್ರಶೇಖರ Shivapa,Chandrashekar Shivappa,MIX_KNGIVEN_LAFATHER,mixed,29,1998
+654,4751,V000520,Ravi M,Ravi Mallappa,LA_INITIAL_SUFFIX,latin,35,1986
+655,4752,V000234,Yashoda M,Yashoda Muniyappa,LA_INITIAL_SUFFIX,latin,21,2006
+656,4758,V000324,ಗೀತಾ,Geetha Mallappa,KN_GIVEN,kannada,21,2000
+657,4763,V000335,ಕವಿತಾ ರಂಗಪ್ಪ,Kavitha Rangappa,KN_FULL,kannada,42,1989
+658,4785,V000521,Ningaraj Durgappa,Ningaraj Durgappa,LA_FULL,latin,61,1965
+659,4790,V000005,ವಿಜಯಲಕ್ಷ್ಮಿ ತಂದೆ ಯಮನಪ್ಪ,Vijayalakshmi Yamanappa,KN_TANDE,kannada,41,1980
+660,4805,V000522,ಮಹಾದೇವ Durgappa,Mahadev Durgappa,MIX_KNGIVEN_LAFATHER,mixed,68,1958
+661,4842,V000523,ಗೀತಾ,Geetha Shivappa,KN_GIVEN,kannada,60,1971
+662,4844,V000127,ಮಹೇಶ ತಂದೆ ರಾಮೇಗೌಡ,Mahesh Ramegowda,KN_TANDE,kannada,38,1988
+663,4856,V000524,Shobha,Shobha Shivappa,LA_GIVEN,latin,35,1996
+664,4879,V000525,ರಾಜು ಗುರಪ್ಪ,Raju Gurappa,KN_FULL,kannada,46,1982
+665,4886,V000526,ರೇಣುಕಾ ಲಿಂಗಪ್ಪ,Renuka Lingappa,KN_FULL,kannada,42,1984
+666,4890,V000527,Vijayalakshmi B,Vijayalakshmi Basappa,LA_INITIAL_SUFFIX,latin,61,1965
+667,4894,V000528,Basawaraj S/o Ramegowd,Basavaraj Ramegowda,LA_SONOF,latin,37,1990
+668,4897,V000529,Basavaraj Shivappa,Basavaraj Shivappa,LA_FULL,latin,65,1959
+669,4898,V000530,ಭಾಗ್ಯ ತಿಮ್ಮಪ್ಪ,Bhagya Timmappa,KN_FULL,kannada,22,2004
+670,4902,V000076,Sharanapp B,Sharanappa Boregowda,LA_INITIAL_SUFFIX,latin,36,1990
+671,4904,V000531,VIJAYALAKSHMI ERANNA,Vijayalakshmi Eranna,LA_UPPER,latin,27,1999
+672,4905,V000532,Sharanappa Yamanapp,Sharanappa Yamanappa,LA_FULL,latin,39,1988
+673,4912,V000533,Ashoka Puttapp,Ashok Puttappa,LA_FULL,latin,35,1991
+674,4918,V000534,Basappa S/o Mallapa,Basappa Mallappa,LA_SONOF,latin,30,1994
+675,4920,V000535,Ashoka S/o Shivappa,Ashok Shivappa,LA_SONOF,latin,51,1975
+676,4928,V000536,Ramesh C,Ramesh Chennappa,LA_INITIAL_SUFFIX,latin,38,1989
+677,4933,V000004,ಶೋಭಾ ಮಲ್ಲಪ್ಪ,Shobha Mallappa,KN_FULL,kannada,44,1982
+678,4935,V000537,ಸಂತೋಷ ,Santosh Nagappa,KN_GIVEN,kannada,59,1962
+679,4942,V000538,ಚಂದ್ರಶೇಖರ Siddapa,Chandrashekar Siddappa,MIX_KNGIVEN_LAFATHER,mixed,72,1959
+680,4945,V000539,Roopa S/o Hanumappa ,Roopa Hanumappa,LA_SONOF,latin,33,1992
+681,4955,V000540,ನಾಗರತ್ನ ಹನುಮಪ್ಪ ,Nagaratna Hanumappa,KN_FULL,kannada,25,1999
+682,4956,V000379,Ningappa Srinivas,Srinivas Ningappa,LA_REORDER,latin,39,1987
+683,4957,V000541,Sures S/o Doddappa,Suresh Doddappa,LA_SONOF,latin,45,1981
+684,4960,V000542,Gopal ಯಮನಪ್ಪ,Gopal Yamanappa,MIX_LAGIVEN_KNFATHER,mixed,26,2005
+685,4970,V000045,ಮಂಜುಳಾ ಚೆನ್ನಪ್ಪ,Manjula Chennappa,KN_FULL,kannada,46,1981
+686,4973,V000543,Basavaraj,Basavaraj Kempegowda,LA_GIVEN,latin,35,1991
+687,4975,V000017,ಲಕ್ಷ್ಮಿ ವೆಂಕಟಪ್ಪ,Lakshmi Venkatappa,KN_FULL,kannada,69,1959
+688,4996,V000544,Kiran Mariyappa,Kiran Mariyappa,LA_FULL,latin,60,1964

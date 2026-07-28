@@ -1,0 +1,38 @@
+{
+  "name": "sutra-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "sync-corpus": "node scripts/sync-corpus.mjs",
+    "export": "python ../scripts/export_web.py",
+    "predev": "node scripts/sync-corpus.mjs && python ../scripts/export_web.py",
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "prebuild": "node scripts/sync-corpus.mjs && python ../scripts/export_web.py",
+    "build": "tsc -b && vite build",
+    "postbuild": "node scripts/verify-dist.mjs",
+    "preview": "vite preview --host 0.0.0.0 --port 5173",
+    "serve:static": "node scripts/serve-static.mjs",
+    "typecheck": "tsc -b --noEmit",
+    "smoke": "node scripts/smoke-render.mjs",
+    "contrast": "node scripts/check-contrast.mjs",
+    "kannada": "node scripts/check-kannada.mjs",
+    "verify": "node scripts/verify-dist.mjs",
+    "check": "npm run typecheck && npm run contrast && npm run kannada && npm run decisions && npm run smoke",
+    "decisions": "node scripts/check-decisions.mjs"
+  },
+  "dependencies": {
+    "cytoscape": "^3.34.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.1"
+  },
+  "devDependencies": {
+    "@types/cytoscape": "^3.21.9",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11"
+  }
+}

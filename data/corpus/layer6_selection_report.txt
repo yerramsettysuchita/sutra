@@ -1,0 +1,89 @@
+==============================================================================
+LAYER 6, BEST PARTITION SELECTION
+==============================================================================
+
+    The loop does not converge and damping did not fix it, see ADR 021.
+    Instead of returning the last iteration, score every partition on
+    the engine's own objective, which uses no labels, and return the
+    best. Success needs both a gain over the last iteration and the
+    same behaviour across seeds.
+    generating seed 4471, 3,000 cases
+
+    seed 4471   4,565 rows, 1,128,691 pairs, 18s
+
+       iter      objective    moved  clusters       F1
+          1        7,988.3      130     2,751   0.5391
+          2        7,997.5       59     2,755   0.5400  <- selected
+          3        7,992.1       52     2,757   0.5379
+          4        7,976.8       61     2,753   0.5404
+          5        7,981.8       40     2,753   0.5380
+          6        7,988.3       62     2,752   0.5387
+          7        7,957.9       68     2,756   0.5391
+          8        7,992.5       50     2,754   0.5379
+
+      selected iteration 2 of 8
+      partition                      prec   recall       F1
+      Layer 5, before the loop     0.6575   0.4550   0.5378
+      last iteration               0.6541   0.4568   0.5379
+      selected by objective        0.6593   0.4573   0.5400
+    generating seed 20260729, 3,000 cases
+
+    seed 20260729   4,573 rows, 1,162,286 pairs, 18s
+
+       iter      objective    moved  clusters       F1
+          1        9,085.6      249     2,686   0.5714
+          2        9,077.9      126     2,691   0.5690
+          3        9,144.4       84     2,698   0.5682
+          4        9,102.4       88     2,692   0.5702
+          5        9,153.9       96     2,688   0.5702  <- selected
+          6        9,107.5       99     2,692   0.5696
+          7        9,095.4       88     2,697   0.5691
+          8        9,117.0       95     2,688   0.5716
+
+      selected iteration 5 of 8
+      partition                      prec   recall       F1
+      Layer 5, before the loop     0.6801   0.4856   0.5666
+      last iteration               0.6779   0.4942   0.5716
+      selected by objective        0.6782   0.4919   0.5702
+    generating seed 815623, 3,000 cases
+
+    seed 815623   4,571 rows, 1,113,560 pairs, 18s
+
+       iter      objective    moved  clusters       F1
+          1        9,274.5      238     2,648   0.5541
+          2        9,292.9      122     2,655   0.5548
+          3        9,326.6      125     2,661   0.5571  <- selected
+          4        9,229.2      115     2,655   0.5555
+          5        9,281.3      103     2,653   0.5565
+          6        9,261.5       96     2,654   0.5535
+          7        9,259.3      110     2,661   0.5564
+          8        9,305.2      132     2,658   0.5579
+
+      selected iteration 3 of 8
+      partition                      prec   recall       F1
+      Layer 5, before the loop     0.6691   0.4914   0.5667
+      last iteration               0.6619   0.4821   0.5579
+      selected by objective        0.6594   0.4823   0.5571
+
+==============================================================================
+VERDICT
+==============================================================================
+
+          seed  selected   of   F1 last  F1 selected     delta
+          4471         2    8    0.5379       0.5400   +0.0021
+      20260729         5    8    0.5716       0.5702   -0.0014
+        815623         3    8    0.5579       0.5571   -0.0008
+
+    seeds where selection chose something other than the last   3 of 3
+    seeds where it improved F1                                  1 of 3
+    seeds where it made F1 worse                                2 of 3
+    mean delta F1                                               -0.0000
+
+    SELECTION DOES NOT WORK. Layer 6 stays PARTIAL and keeps being
+    reported as non convergent. This was the second mechanism
+    tried after damping, and per the brief it is the last. No
+    further work on Layer 6.
+
+    It made F1 worse on 2 of 3 seeds, which
+    is the disqualifying result. A selection rule that loses on
+    a corpus it has not seen is not a selection rule.

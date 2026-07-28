@@ -1,0 +1,2467 @@
+{
+  "generated_at": "2026-07-28T22:24:52+00:00",
+  "source": "eval/gold/questions.yaml",
+  "version": "1.0",
+  "status": "BUILT",
+  "total_questions": 150,
+  "headline": {
+    "requires_person_key": 76,
+    "share_requiring_person_key": 0.5067,
+    "statement": "76 of 150 investigator questions (50.7%) cannot be answered on the KSP schema as supplied, at any level of interface sophistication, because they need a person identity that spans FIRs. The schema has none. That is the gap SUTRA fills, measured from the question side rather than from the column side."
+  },
+  "coverage": {
+    "answerable_today": {
+      "questions": 39,
+      "share": 0.26,
+      "meaning": "The parameterised console at /ask answers this now, with no new engine work and no language model."
+    },
+    "needs_language_layer": {
+      "questions": 58,
+      "share": 0.3867,
+      "meaning": "Answerable against the schema plus the resolved table, but not through the console as built. Needs either a new parameterised question or a natural language layer, which is NOT BUILT."
+    },
+    "impossible_on_raw_schema": {
+      "questions": 53,
+      "share": 0.3533,
+      "meaning": "Cannot be answered by any interface over the KSP schema as supplied, because it needs a person identity that spans FIRs and no such column exists. SUTRA constructs that identity, which is what moves these questions from impossible to answerable."
+    }
+  },
+  "accuracy": {
+    "status": "not measured",
+    "why": "Answering these from free text needs a natural language layer. It is NOT BUILT, no language model runs anywhere in this system, and there is nothing to run the set through. The deck claimed 74 per cent correct. That figure has no measurement behind it and is not repeated here."
+  },
+  "kannada": {
+    "questions_with_kannada": 65,
+    "share": 0.4333,
+    "why_not_all": "Kannada is given where the question is one an officer would ask aloud at a station counter. The analyst phrasings are left in English, because a forced translation of an analyst's sentence is not a Kannada question. Interface chrome is translated separately, see ADR 023."
+  },
+  "by_shape": {
+    "act_section": {
+      "questions": 5,
+      "requires_person_key": 1,
+      "answerable_today": 0,
+      "share_needing_person_key": 0.2
+    },
+    "arrest_history": {
+      "questions": 15,
+      "requires_person_key": 8,
+      "answerable_today": 0,
+      "share_needing_person_key": 0.5333
+    },
+    "bns_transition_trend": {
+      "questions": 15,
+      "requires_person_key": 1,
+      "answerable_today": 3,
+      "share_needing_person_key": 0.0667
+    },
+    "case_disposal": {
+      "questions": 8,
+      "requires_person_key": 2,
+      "answerable_today": 0,
+      "share_needing_person_key": 0.25
+    },
+    "co_accused_circle": {
+      "questions": 15,
+      "requires_person_key": 12,
+      "answerable_today": 7,
+      "share_needing_person_key": 0.8
+    },
+    "cross_district_appearance": {
+      "questions": 15,
+      "requires_person_key": 11,
+      "answerable_today": 7,
+      "share_needing_person_key": 0.7333
+    },
+    "hotspot_by_head": {
+      "questions": 15,
+      "requires_person_key": 4,
+      "answerable_today": 8,
+      "share_needing_person_key": 0.2667
+    },
+    "name_variant_lookup": {
+      "questions": 15,
+      "requires_person_key": 9,
+      "answerable_today": 5,
+      "share_needing_person_key": 0.6
+    },
+    "officer_workload": {
+      "questions": 5,
+      "requires_person_key": 1,
+      "answerable_today": 0,
+      "share_needing_person_key": 0.2
+    },
+    "repeat_offender_station": {
+      "questions": 15,
+      "requires_person_key": 11,
+      "answerable_today": 4,
+      "share_needing_person_key": 0.7333
+    },
+    "undetected_case_match": {
+      "questions": 15,
+      "requires_person_key": 9,
+      "answerable_today": 5,
+      "share_needing_person_key": 0.6
+    },
+    "victim_complainant": {
+      "questions": 12,
+      "requires_person_key": 7,
+      "answerable_today": 0,
+      "share_needing_person_key": 0.5833
+    }
+  },
+  "by_difficulty": {
+    "simple": {
+      "questions": 34,
+      "requires_person_key": 0,
+      "answerable_today": 9
+    },
+    "moderate": {
+      "questions": 48,
+      "requires_person_key": 18,
+      "answerable_today": 12
+    },
+    "complex": {
+      "questions": 68,
+      "requires_person_key": 58,
+      "answerable_today": 18
+    }
+  },
+  "tables_touched": {
+    "CaseMaster": 97,
+    "resolved_identity": 72,
+    "Unit": 26,
+    "Accused": 24,
+    "ActSectionAssociation": 17,
+    "ArrestSurrender": 16,
+    "Section": 14,
+    "Act": 13,
+    "District": 8,
+    "CrimeSubHead": 7,
+    "CrimeHead": 7,
+    "Employee": 7,
+    "ChargesheetDetails": 6,
+    "ComplainantDetails": 5,
+    "Victim": 4,
+    "resolved_victim": 4,
+    "resolved_complainant": 4,
+    "GravityOffence": 2,
+    "UnitType": 1,
+    "CaseCategory": 1
+  },
+  "console_questions_shipped": [
+    "active-window",
+    "co-accused",
+    "cross-script",
+    "largest-merges",
+    "most-renderings",
+    "offence-signature",
+    "recovered-links",
+    "repeat-at-station",
+    "solo",
+    "station-load",
+    "travelling",
+    "two-districts",
+    "undetected-at-station",
+    "undetected-by-offence",
+    "undetected-for-identity"
+  ],
+  "validation": {
+    "checks_run": [
+      "every id unique",
+      "every required field present",
+      "difficulty is one of three values",
+      "SQL present and contains a SELECT",
+      "requires_person_key agrees with whether the SQL reads a resolved table",
+      "tables list includes the resolved table when the SQL reads one",
+      "no gold SQL reads CasteID, ReligionID or OccupationID"
+    ],
+    "problems": []
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "shape": "cross_district_appearance",
+      "difficulty": "simple",
+      "question": "How many FIRs were registered in this district last year?",
+      "question_kn": "ಕಳೆದ ವರ್ಷ ಈ ಜಿಲ್ಲೆಯಲ್ಲಿ ಎಷ್ಟು ಎಫ್ಐಆರ್ ದಾಖಲಾಗಿವೆ?",
+      "tables": [
+        "CaseMaster",
+        "District"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT COUNT(*) AS fir_count\nFROM CaseMaster cm\nJOIN District d ON d.DistrictID = cm.DistrictID\nWHERE d.DistrictName = :district\n  AND cm.CrimeRegisteredDate >= :from_date\n  AND cm.CrimeRegisteredDate <  :to_date;"
+    },
+    {
+      "id": "Q002",
+      "shape": "cross_district_appearance",
+      "difficulty": "complex",
+      "question": "Which people appear as accused in both of these two districts?",
+      "question_kn": "ಈ ಎರಡೂ ಜಿಲ್ಲೆಗಳಲ್ಲಿ ಆರೋಪಿಯಾಗಿ ಕಾಣಿಸಿಕೊಂಡವರು ಯಾರು?",
+      "tables": [
+        "CaseMaster",
+        "District",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT ri.ResolvedIdentityID,\n       COUNT(DISTINCT cm.CaseMasterID) AS cases\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN District d    ON d.DistrictID    = cm.DistrictID\nGROUP BY ri.ResolvedIdentityID\nHAVING SUM(CASE WHEN d.DistrictName = :district_a THEN 1 ELSE 0 END) > 0\n   AND SUM(CASE WHEN d.DistrictName = :district_b THEN 1 ELSE 0 END) > 0\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q003",
+      "shape": "cross_district_appearance",
+      "difficulty": "complex",
+      "question": "How many accused persons have offended in more than one district?",
+      "question_kn": "ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಜಿಲ್ಲೆಗಳಲ್ಲಿ ಅಪರಾಧ ಎಸಗಿದ ಆರೋಪಿಗಳು ಎಷ್ಟು ಮಂದಿ?",
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT COUNT(*) AS travelling_offenders\nFROM (\n  SELECT ri.ResolvedIdentityID\n  FROM resolved_identity ri\n  JOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\n  GROUP BY ri.ResolvedIdentityID\n  HAVING COUNT(DISTINCT cm.DistrictID) > 1\n) t;"
+    },
+    {
+      "id": "Q004",
+      "shape": "cross_district_appearance",
+      "difficulty": "complex",
+      "question": "Which pairs of districts share the most offenders between them?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "District",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT da.DistrictName AS district_a,\n       db.DistrictName AS district_b,\n       COUNT(DISTINCT a.ResolvedIdentityID) AS shared_offenders\nFROM resolved_identity a\nJOIN CaseMaster ca ON ca.CaseMasterID = a.CaseMasterID\nJOIN resolved_identity b ON b.ResolvedIdentityID = a.ResolvedIdentityID\nJOIN CaseMaster cb ON cb.CaseMasterID = b.CaseMasterID\nJOIN District da ON da.DistrictID = ca.DistrictID\nJOIN District db ON db.DistrictID = cb.DistrictID\nWHERE ca.DistrictID < cb.DistrictID\nGROUP BY da.DistrictName, db.DistrictName\nORDER BY shared_offenders DESC\nLIMIT 20;"
+    },
+    {
+      "id": "Q005",
+      "shape": "cross_district_appearance",
+      "difficulty": "moderate",
+      "question": "For this accused, list every district they have been booked in.",
+      "question_kn": "ಈ ಆರೋಪಿಯ ಮೇಲೆ ಯಾವ ಯಾವ ಜಿಲ್ಲೆಗಳಲ್ಲಿ ಪ್ರಕರಣ ದಾಖಲಾಗಿದೆ?",
+      "tables": [
+        "CaseMaster",
+        "District",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT DISTINCT d.DistrictName\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN District d    ON d.DistrictID    = cm.DistrictID\nWHERE ri.ResolvedIdentityID = :identity\nORDER BY d.DistrictName;"
+    },
+    {
+      "id": "Q006",
+      "shape": "cross_district_appearance",
+      "difficulty": "complex",
+      "question": "Which offenders moved from one district to another and never came back?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "WITH span AS (\n  SELECT ri.ResolvedIdentityID AS pid,\n         MIN(cm.CrimeRegisteredDate) AS first_seen,\n         MAX(cm.CrimeRegisteredDate) AS last_seen\n  FROM resolved_identity ri\n  JOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\n  GROUP BY ri.ResolvedIdentityID\n)\nSELECT s.pid, fc.DistrictID AS from_district, lc.DistrictID AS to_district\nFROM span s\nJOIN resolved_identity rf ON rf.ResolvedIdentityID = s.pid\nJOIN CaseMaster fc ON fc.CaseMasterID = rf.CaseMasterID\n                  AND fc.CrimeRegisteredDate = s.first_seen\nJOIN resolved_identity rl ON rl.ResolvedIdentityID = s.pid\nJOIN CaseMaster lc ON lc.CaseMasterID = rl.CaseMasterID\n                  AND lc.CrimeRegisteredDate = s.last_seen\nWHERE fc.DistrictID <> lc.DistrictID\n  AND NOT EXISTS (\n    SELECT 1 FROM resolved_identity rx\n    JOIN CaseMaster cx ON cx.CaseMasterID = rx.CaseMasterID\n    WHERE rx.ResolvedIdentityID = s.pid\n      AND cx.DistrictID = fc.DistrictID\n      AND cx.CrimeRegisteredDate > s.first_seen\n  );"
+    },
+    {
+      "id": "Q007",
+      "shape": "cross_district_appearance",
+      "difficulty": "simple",
+      "question": "List every district with the number of police stations in it.",
+      "question_kn": "ಪ್ರತಿ ಜಿಲ್ಲೆಯಲ್ಲಿ ಎಷ್ಟು ಪೊಲೀಸ್ ಠಾಣೆಗಳಿವೆ?",
+      "tables": [
+        "District",
+        "Unit",
+        "UnitType"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT d.DistrictName, COUNT(u.UnitID) AS stations\nFROM District d\nLEFT JOIN Unit u    ON u.DistrictID  = d.DistrictID\nJOIN UnitType ut    ON ut.UnitTypeID = u.UnitTypeID\nWHERE ut.UnitTypeName = 'Police Station'\nGROUP BY d.DistrictName\nORDER BY stations DESC;"
+    },
+    {
+      "id": "Q008",
+      "shape": "cross_district_appearance",
+      "difficulty": "complex",
+      "question": "How many cases in this district involve an accused whose home district is elsewhere?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "WITH home AS (\n  SELECT ri.ResolvedIdentityID AS pid, cm.DistrictID,\n         ROW_NUMBER() OVER (PARTITION BY ri.ResolvedIdentityID\n                            ORDER BY COUNT(*) DESC) AS rk\n  FROM resolved_identity ri\n  JOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\n  GROUP BY ri.ResolvedIdentityID, cm.DistrictID\n)\nSELECT COUNT(DISTINCT cm.CaseMasterID) AS outsider_cases\nFROM CaseMaster cm\nJOIN resolved_identity ri ON ri.CaseMasterID = cm.CaseMasterID\nJOIN home h ON h.pid = ri.ResolvedIdentityID AND h.rk = 1\nWHERE cm.DistrictID = :district_id\n  AND h.DistrictID <> :district_id;"
+    },
+    {
+      "id": "Q009",
+      "shape": "cross_district_appearance",
+      "difficulty": "moderate",
+      "question": "Show the ten offenders active across the most districts.",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT ri.ResolvedIdentityID,\n       COUNT(DISTINCT cm.DistrictID) AS districts,\n       COUNT(DISTINCT cm.CaseMasterID) AS cases\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nGROUP BY ri.ResolvedIdentityID\nORDER BY districts DESC, cases DESC\nLIMIT 10;"
+    },
+    {
+      "id": "Q010",
+      "shape": "cross_district_appearance",
+      "difficulty": "complex",
+      "question": "Do offenders who cross districts commit graver offences than those who stay put?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "GravityOffence",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "WITH reach AS (\n  SELECT ri.ResolvedIdentityID AS pid,\n         COUNT(DISTINCT cm.DistrictID) AS districts\n  FROM resolved_identity ri\n  JOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\n  GROUP BY ri.ResolvedIdentityID\n)\nSELECT CASE WHEN r.districts > 1 THEN 'travelling' ELSE 'local' END AS band,\n       g.GravityName, COUNT(*) AS cases\nFROM reach r\nJOIN resolved_identity ri ON ri.ResolvedIdentityID = r.pid\nJOIN CaseMaster cm      ON cm.CaseMasterID = ri.CaseMasterID\nJOIN GravityOffence g   ON g.GravityOffenceID = cm.GravityOffenceID\nGROUP BY band, g.GravityName\nORDER BY band, cases DESC;"
+    },
+    {
+      "id": "Q011",
+      "shape": "cross_district_appearance",
+      "difficulty": "simple",
+      "question": "Which district registered the most cases this year?",
+      "question_kn": "ಈ ವರ್ಷ ಅತಿ ಹೆಚ್ಚು ಪ್ರಕರಣ ದಾಖಲಾದ ಜಿಲ್ಲೆ ಯಾವುದು?",
+      "tables": [
+        "CaseMaster",
+        "District"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT d.DistrictName, COUNT(*) AS cases\nFROM CaseMaster cm\nJOIN District d ON d.DistrictID = cm.DistrictID\nWHERE cm.CrimeRegisteredDate >= :from_date\nGROUP BY d.DistrictName\nORDER BY cases DESC\nLIMIT 1;"
+    },
+    {
+      "id": "Q012",
+      "shape": "cross_district_appearance",
+      "difficulty": "moderate",
+      "question": "For this identity, in what order did the districts appear over time?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "District",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT cm.CrimeRegisteredDate, d.DistrictName, cm.CrimeNo\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN District d    ON d.DistrictID    = cm.DistrictID\nWHERE ri.ResolvedIdentityID = :identity\nORDER BY cm.CrimeRegisteredDate;"
+    },
+    {
+      "id": "Q013",
+      "shape": "cross_district_appearance",
+      "difficulty": "complex",
+      "question": "Which offenders appear in three or more districts inside a twelve month window?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID,\n       COUNT(DISTINCT cm.DistrictID) AS districts,\n       MIN(cm.CrimeRegisteredDate) AS window_start,\n       MAX(cm.CrimeRegisteredDate) AS window_end\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nGROUP BY ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT cm.DistrictID) >= 3\n   AND julianday(MAX(cm.CrimeRegisteredDate))\n     - julianday(MIN(cm.CrimeRegisteredDate)) <= 365\nORDER BY districts DESC;"
+    },
+    {
+      "id": "Q014",
+      "shape": "cross_district_appearance",
+      "difficulty": "simple",
+      "question": "How many cases were registered at each station in this district?",
+      "question_kn": "ಈ ಜಿಲ್ಲೆಯ ಪ್ರತಿ ಠಾಣೆಯಲ್ಲಿ ಎಷ್ಟು ಪ್ರಕರಣ ದಾಖಲಾಗಿವೆ?",
+      "tables": [
+        "CaseMaster",
+        "Unit"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT u.UnitName, COUNT(*) AS cases\nFROM CaseMaster cm\nJOIN Unit u ON u.UnitID = cm.UnitID\nWHERE cm.DistrictID = :district_id\nGROUP BY u.UnitName\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q015",
+      "shape": "cross_district_appearance",
+      "difficulty": "complex",
+      "question": "What share of all offenders is responsible for cases in more than one district?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT SUM(CASE WHEN districts > 1 THEN 1 ELSE 0 END) * 1.0 / COUNT(*) AS share,\n       SUM(CASE WHEN districts > 1 THEN 1 ELSE 0 END) AS travelling,\n       COUNT(*) AS all_offenders\nFROM (\n  SELECT ri.ResolvedIdentityID,\n         COUNT(DISTINCT cm.DistrictID) AS districts\n  FROM resolved_identity ri\n  JOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\n  GROUP BY ri.ResolvedIdentityID\n) t;"
+    },
+    {
+      "id": "Q016",
+      "shape": "repeat_offender_station",
+      "difficulty": "complex",
+      "question": "Who are the repeat offenders at this station?",
+      "question_kn": "ಈ ಠಾಣೆಯಲ್ಲಿ ಪದೇ ಪದೇ ಬರುವ ಅಪರಾಧಿಗಳು ಯಾರು?",
+      "tables": [
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT ri.ResolvedIdentityID, COUNT(DISTINCT cm.CaseMasterID) AS cases\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nWHERE u.UnitName = :station\nGROUP BY ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT cm.CaseMasterID) >= :minimum\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q017",
+      "shape": "repeat_offender_station",
+      "difficulty": "simple",
+      "question": "How many accused rows does this station hold?",
+      "question_kn": "ಈ ಠಾಣೆಯಲ್ಲಿ ಎಷ್ಟು ಆರೋಪಿ ದಾಖಲೆಗಳಿವೆ?",
+      "tables": [
+        "Accused",
+        "CaseMaster",
+        "Unit"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT COUNT(*) AS accused_rows\nFROM Accused a\nJOIN CaseMaster cm ON cm.CaseMasterID = a.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nWHERE u.UnitName = :station;"
+    },
+    {
+      "id": "Q018",
+      "shape": "repeat_offender_station",
+      "difficulty": "complex",
+      "question": "How many distinct people do this station's accused rows actually represent?",
+      "question_kn": "ಈ ಠಾಣೆಯ ಆರೋಪಿ ದಾಖಲೆಗಳು ನಿಜವಾಗಿ ಎಷ್ಟು ಮಂದಿ ವ್ಯಕ್ತಿಗಳು?",
+      "tables": [
+        "Accused",
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT COUNT(DISTINCT ri.ResolvedIdentityID) AS people,\n       COUNT(*) AS rows_held\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nWHERE u.UnitName = :station;"
+    },
+    {
+      "id": "Q019",
+      "shape": "repeat_offender_station",
+      "difficulty": "moderate",
+      "question": "Which offenders came back to the same station within ninety days?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT a.ResolvedIdentityID, ca.UnitID,\n       ca.CrimeRegisteredDate AS first_case,\n       cb.CrimeRegisteredDate AS return_case\nFROM resolved_identity a\nJOIN CaseMaster ca ON ca.CaseMasterID = a.CaseMasterID\nJOIN resolved_identity b ON b.ResolvedIdentityID = a.ResolvedIdentityID\nJOIN CaseMaster cb ON cb.CaseMasterID = b.CaseMasterID\nWHERE ca.UnitID = cb.UnitID\n  AND cb.CrimeRegisteredDate > ca.CrimeRegisteredDate\n  AND julianday(cb.CrimeRegisteredDate)\n    - julianday(ca.CrimeRegisteredDate) <= 90;"
+    },
+    {
+      "id": "Q020",
+      "shape": "repeat_offender_station",
+      "difficulty": "complex",
+      "question": "Which station has the highest ratio of accused rows to actual people?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT u.UnitName,\n       COUNT(*) AS rows_held,\n       COUNT(DISTINCT ri.ResolvedIdentityID) AS people,\n       COUNT(*) * 1.0 / COUNT(DISTINCT ri.ResolvedIdentityID) AS inflation\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nGROUP BY u.UnitName\nHAVING COUNT(*) >= 20\nORDER BY inflation DESC;"
+    },
+    {
+      "id": "Q021",
+      "shape": "repeat_offender_station",
+      "difficulty": "moderate",
+      "question": "List the accused at this station with three or more cases anywhere in the state.",
+      "question_kn": "ಈ ಠಾಣೆಯ ಆರೋಪಿಗಳಲ್ಲಿ ರಾಜ್ಯಾದ್ಯಂತ ಮೂರು ಅಥವಾ ಹೆಚ್ಚು ಪ್ರಕರಣ ಇರುವವರು ಯಾರು?",
+      "tables": [
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID, COUNT(DISTINCT cm.CaseMasterID) AS total_cases\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nWHERE ri.ResolvedIdentityID IN (\n  SELECT r2.ResolvedIdentityID\n  FROM resolved_identity r2\n  JOIN CaseMaster c2 ON c2.CaseMasterID = r2.CaseMasterID\n  JOIN Unit u        ON u.UnitID        = c2.UnitID\n  WHERE u.UnitName = :station\n)\nGROUP BY ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT cm.CaseMasterID) >= 3\nORDER BY total_cases DESC;"
+    },
+    {
+      "id": "Q022",
+      "shape": "repeat_offender_station",
+      "difficulty": "simple",
+      "question": "How many cases at this station are still under investigation?",
+      "question_kn": "ಈ ಠಾಣೆಯಲ್ಲಿ ಎಷ್ಟು ಪ್ರಕರಣಗಳು ಇನ್ನೂ ತನಿಖೆಯಲ್ಲಿವೆ?",
+      "tables": [
+        "CaseMaster",
+        "Unit"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) AS open_cases\nFROM CaseMaster cm\nJOIN Unit u ON u.UnitID = cm.UnitID\nWHERE u.UnitName = :station\n  AND cm.CaseStatus = 'Undetected';"
+    },
+    {
+      "id": "Q023",
+      "shape": "repeat_offender_station",
+      "difficulty": "complex",
+      "question": "For each station, how many of its offenders also appear at another station?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT u.UnitName,\n       COUNT(DISTINCT ri.ResolvedIdentityID) AS shared_offenders\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nWHERE ri.ResolvedIdentityID IN (\n  SELECT r2.ResolvedIdentityID\n  FROM resolved_identity r2\n  JOIN CaseMaster c2 ON c2.CaseMasterID = r2.CaseMasterID\n  GROUP BY r2.ResolvedIdentityID\n  HAVING COUNT(DISTINCT c2.UnitID) > 1\n)\nGROUP BY u.UnitName\nORDER BY shared_offenders DESC;"
+    },
+    {
+      "id": "Q024",
+      "shape": "repeat_offender_station",
+      "difficulty": "moderate",
+      "question": "Which offenders at this station have been active for more than two years?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT ri.ResolvedIdentityID,\n       MIN(cm.CrimeRegisteredDate) AS first_case,\n       MAX(cm.CrimeRegisteredDate) AS last_case\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nGROUP BY ri.ResolvedIdentityID\nHAVING julianday(MAX(cm.CrimeRegisteredDate))\n     - julianday(MIN(cm.CrimeRegisteredDate)) > 730\nORDER BY first_case;"
+    },
+    {
+      "id": "Q025",
+      "shape": "repeat_offender_station",
+      "difficulty": "simple",
+      "question": "How many accused at this station are recorded as absconding?",
+      "question_kn": "ಈ ಠಾಣೆಯಲ್ಲಿ ಎಷ್ಟು ಆರೋಪಿಗಳು ತಲೆಮರೆಸಿಕೊಂಡಿದ್ದಾರೆ?",
+      "tables": [
+        "Accused",
+        "CaseMaster",
+        "Unit"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) AS absconding\nFROM Accused a\nJOIN CaseMaster cm ON cm.CaseMasterID = a.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nWHERE u.UnitName = :station\n  AND a.AccusedType = 'Absconding';"
+    },
+    {
+      "id": "Q026",
+      "shape": "repeat_offender_station",
+      "difficulty": "complex",
+      "question": "Rank stations by the number of offenders with three or more cases.",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "WITH repeat_offenders AS (\n  SELECT ri.ResolvedIdentityID AS pid\n  FROM resolved_identity ri\n  GROUP BY ri.ResolvedIdentityID\n  HAVING COUNT(DISTINCT ri.CaseMasterID) >= 3\n)\nSELECT u.UnitName, COUNT(DISTINCT ri.ResolvedIdentityID) AS repeat_count\nFROM resolved_identity ri\nJOIN repeat_offenders ro ON ro.pid = ri.ResolvedIdentityID\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nGROUP BY u.UnitName\nORDER BY repeat_count DESC;"
+    },
+    {
+      "id": "Q027",
+      "shape": "repeat_offender_station",
+      "difficulty": "moderate",
+      "question": "At this station, what is the average number of cases per offender?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT COUNT(DISTINCT cm.CaseMasterID) * 1.0\n     / COUNT(DISTINCT ri.ResolvedIdentityID) AS cases_per_offender\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nWHERE u.UnitName = :station;"
+    },
+    {
+      "id": "Q028",
+      "shape": "repeat_offender_station",
+      "difficulty": "simple",
+      "question": "Show every case registered at this station in the last thirty days.",
+      "question_kn": "ಕಳೆದ ಮೂವತ್ತು ದಿನಗಳಲ್ಲಿ ಈ ಠಾಣೆಯಲ್ಲಿ ದಾಖಲಾದ ಎಲ್ಲ ಪ್ರಕರಣ ತೋರಿಸಿ.",
+      "tables": [
+        "CaseMaster",
+        "Unit"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT cm.CrimeNo, cm.CrimeRegisteredDate\nFROM CaseMaster cm\nJOIN Unit u ON u.UnitID = cm.UnitID\nWHERE u.UnitName = :station\n  AND cm.CrimeRegisteredDate >= date(:as_of, '-30 day')\nORDER BY cm.CrimeRegisteredDate DESC;"
+    },
+    {
+      "id": "Q029",
+      "shape": "repeat_offender_station",
+      "difficulty": "complex",
+      "question": "Which offenders known at this station have never been arrested anywhere?",
+      "question_kn": null,
+      "tables": [
+        "ArrestSurrender",
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT DISTINCT ri.ResolvedIdentityID\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nWHERE u.UnitName = :station\n  AND NOT EXISTS (\n    SELECT 1\n    FROM resolved_identity r2\n    JOIN ArrestSurrender ars ON ars.AccusedMasterID = r2.AccusedMasterID\n    WHERE r2.ResolvedIdentityID = ri.ResolvedIdentityID\n  );"
+    },
+    {
+      "id": "Q030",
+      "shape": "repeat_offender_station",
+      "difficulty": "moderate",
+      "question": "Which circle holds the most repeat offenders?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT parent.UnitName AS circle,\n       COUNT(DISTINCT ri.ResolvedIdentityID) AS offenders\nFROM resolved_identity ri\nJOIN CaseMaster cm  ON cm.CaseMasterID = ri.CaseMasterID\nJOIN Unit u         ON u.UnitID        = cm.UnitID\nJOIN Unit parent    ON parent.UnitID   = COALESCE(u.ParentUnitID, u.UnitID)\nGROUP BY parent.UnitName\nHAVING COUNT(DISTINCT ri.CaseMasterID) >= 2\nORDER BY offenders DESC;"
+    },
+    {
+      "id": "Q031",
+      "shape": "co_accused_circle",
+      "difficulty": "moderate",
+      "question": "Who has been arrested alongside this person?",
+      "question_kn": "ಈ ವ್ಯಕ್ತಿಯ ಜೊತೆ ಯಾರು ಯಾರು ಬಂಧನಕ್ಕೆ ಒಳಗಾಗಿದ್ದಾರೆ?",
+      "tables": [
+        "Accused",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT other.ResolvedIdentityID AS co_accused,\n       COUNT(DISTINCT other.CaseMasterID) AS shared_cases\nFROM resolved_identity me\nJOIN resolved_identity other\n  ON other.CaseMasterID = me.CaseMasterID\n AND other.ResolvedIdentityID <> me.ResolvedIdentityID\nWHERE me.ResolvedIdentityID = :identity\nGROUP BY other.ResolvedIdentityID\nORDER BY shared_cases DESC;"
+    },
+    {
+      "id": "Q032",
+      "shape": "co_accused_circle",
+      "difficulty": "simple",
+      "question": "How many accused were named in this FIR?",
+      "question_kn": "ಈ ಎಫ್ಐಆರ್‌ನಲ್ಲಿ ಎಷ್ಟು ಆರೋಪಿಗಳ ಹೆಸರಿದೆ?",
+      "tables": [
+        "Accused"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) AS accused_named\nFROM Accused\nWHERE CaseMasterID = :case_id;"
+    },
+    {
+      "id": "Q033",
+      "shape": "co_accused_circle",
+      "difficulty": "complex",
+      "question": "Which co offending pairs appear together in more than one case?",
+      "question_kn": "ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಪ್ರಕರಣಗಳಲ್ಲಿ ಒಟ್ಟಿಗೆ ಕಾಣಿಸಿಕೊಂಡ ಜೋಡಿಗಳು ಯಾರು?",
+      "tables": [
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT a.ResolvedIdentityID AS person_a,\n       b.ResolvedIdentityID AS person_b,\n       COUNT(DISTINCT a.CaseMasterID) AS cases_together\nFROM resolved_identity a\nJOIN resolved_identity b\n  ON b.CaseMasterID = a.CaseMasterID\n AND b.ResolvedIdentityID > a.ResolvedIdentityID\nGROUP BY a.ResolvedIdentityID, b.ResolvedIdentityID\nHAVING COUNT(DISTINCT a.CaseMasterID) > 1\nORDER BY cases_together DESC;"
+    },
+    {
+      "id": "Q034",
+      "shape": "co_accused_circle",
+      "difficulty": "complex",
+      "question": "What is the co offender network around this person, two steps out?",
+      "question_kn": null,
+      "tables": [
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "WITH step1 AS (\n  SELECT DISTINCT other.ResolvedIdentityID AS pid\n  FROM resolved_identity me\n  JOIN resolved_identity other\n    ON other.CaseMasterID = me.CaseMasterID\n   AND other.ResolvedIdentityID <> me.ResolvedIdentityID\n  WHERE me.ResolvedIdentityID = :identity\n)\nSELECT DISTINCT other.ResolvedIdentityID AS pid, 2 AS step\nFROM step1\nJOIN resolved_identity me ON me.ResolvedIdentityID = step1.pid\nJOIN resolved_identity other\n  ON other.CaseMasterID = me.CaseMasterID\n AND other.ResolvedIdentityID NOT IN (SELECT pid FROM step1)\n AND other.ResolvedIdentityID <> :identity;"
+    },
+    {
+      "id": "Q035",
+      "shape": "co_accused_circle",
+      "difficulty": "complex",
+      "question": "How many co offending links only become visible after identity resolution?",
+      "question_kn": null,
+      "tables": [
+        "Accused",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT COUNT(*) AS recovered_links\nFROM (\n  SELECT a.ResolvedIdentityID AS pa, b.ResolvedIdentityID AS pb\n  FROM resolved_identity a\n  JOIN resolved_identity b\n    ON b.CaseMasterID = a.CaseMasterID\n   AND b.ResolvedIdentityID > a.ResolvedIdentityID\n  GROUP BY a.ResolvedIdentityID, b.ResolvedIdentityID\n  HAVING COUNT(DISTINCT a.CaseMasterID) > 1\n) t;"
+    },
+    {
+      "id": "Q036",
+      "shape": "co_accused_circle",
+      "difficulty": "moderate",
+      "question": "Which groups of three or more people always appear together?",
+      "question_kn": null,
+      "tables": [
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT a.ResolvedIdentityID, b.ResolvedIdentityID, c.ResolvedIdentityID,\n       COUNT(DISTINCT a.CaseMasterID) AS cases_together\nFROM resolved_identity a\nJOIN resolved_identity b ON b.CaseMasterID = a.CaseMasterID\n                        AND b.ResolvedIdentityID > a.ResolvedIdentityID\nJOIN resolved_identity c ON c.CaseMasterID = a.CaseMasterID\n                        AND c.ResolvedIdentityID > b.ResolvedIdentityID\nGROUP BY a.ResolvedIdentityID, b.ResolvedIdentityID, c.ResolvedIdentityID\nHAVING COUNT(DISTINCT a.CaseMasterID) >= 2;"
+    },
+    {
+      "id": "Q037",
+      "shape": "co_accused_circle",
+      "difficulty": "moderate",
+      "question": "Which offenders always act alone?",
+      "question_kn": "ಯಾವಾಗಲೂ ಒಬ್ಬರೇ ಅಪರಾಧ ಎಸಗುವವರು ಯಾರು?",
+      "tables": [
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT ri.ResolvedIdentityID, COUNT(DISTINCT ri.CaseMasterID) AS cases\nFROM resolved_identity ri\nWHERE NOT EXISTS (\n  SELECT 1 FROM resolved_identity o\n  WHERE o.CaseMasterID = ri.CaseMasterID\n    AND o.ResolvedIdentityID <> ri.ResolvedIdentityID\n)\nGROUP BY ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT ri.CaseMasterID) >= 2\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q038",
+      "shape": "co_accused_circle",
+      "difficulty": "complex",
+      "question": "Which person connects two otherwise separate co offending groups?",
+      "question_kn": null,
+      "tables": [
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID,\n       COUNT(DISTINCT other.ResolvedIdentityID) AS degree,\n       COUNT(DISTINCT ri.CaseMasterID) AS cases\nFROM resolved_identity ri\nJOIN resolved_identity other\n  ON other.CaseMasterID = ri.CaseMasterID\n AND other.ResolvedIdentityID <> ri.ResolvedIdentityID\nGROUP BY ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT other.ResolvedIdentityID) >= 4\nORDER BY degree DESC;"
+    },
+    {
+      "id": "Q039",
+      "shape": "co_accused_circle",
+      "difficulty": "simple",
+      "question": "List the other accused named in this FIR.",
+      "question_kn": "ಈ ಎಫ್ಐಆರ್‌ನಲ್ಲಿ ಹೆಸರಿಸಲಾದ ಇತರ ಆರೋಪಿಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಿ.",
+      "tables": [
+        "Accused"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT a.PersonID, a.AccusedName, a.AgeYear\nFROM Accused a\nWHERE a.CaseMasterID = :case_id\n  AND a.AccusedMasterID <> :accused_id\nORDER BY a.PersonID;"
+    },
+    {
+      "id": "Q040",
+      "shape": "co_accused_circle",
+      "difficulty": "complex",
+      "question": "How large is the biggest connected co offending group in this district?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "WITH edges AS (\n  SELECT a.ResolvedIdentityID AS pa, b.ResolvedIdentityID AS pb\n  FROM resolved_identity a\n  JOIN CaseMaster cm ON cm.CaseMasterID = a.CaseMasterID\n  JOIN resolved_identity b\n    ON b.CaseMasterID = a.CaseMasterID\n   AND b.ResolvedIdentityID > a.ResolvedIdentityID\n  WHERE cm.DistrictID = :district_id\n)\nSELECT COUNT(DISTINCT pid) AS group_size\nFROM (SELECT pa AS pid FROM edges UNION SELECT pb FROM edges);"
+    },
+    {
+      "id": "Q041",
+      "shape": "co_accused_circle",
+      "difficulty": "moderate",
+      "question": "For this person, which co accused is the most frequent partner?",
+      "question_kn": "ಈ ವ್ಯಕ್ತಿಯ ಜೊತೆ ಅತಿ ಹೆಚ್ಚು ಬಾರಿ ಕಾಣಿಸಿಕೊಂಡ ಸಹ ಆರೋಪಿ ಯಾರು?",
+      "tables": [
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT other.ResolvedIdentityID,\n       COUNT(DISTINCT other.CaseMasterID) AS shared_cases\nFROM resolved_identity me\nJOIN resolved_identity other\n  ON other.CaseMasterID = me.CaseMasterID\n AND other.ResolvedIdentityID <> me.ResolvedIdentityID\nWHERE me.ResolvedIdentityID = :identity\nGROUP BY other.ResolvedIdentityID\nORDER BY shared_cases DESC\nLIMIT 1;"
+    },
+    {
+      "id": "Q042",
+      "shape": "co_accused_circle",
+      "difficulty": "complex",
+      "question": "Do co offending pairs tend to work in the same district or across districts?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT CASE WHEN COUNT(DISTINCT cm.DistrictID) = 1\n            THEN 'same district' ELSE 'across districts' END AS pattern,\n       COUNT(*) AS pairs\nFROM resolved_identity a\nJOIN resolved_identity b\n  ON b.CaseMasterID = a.CaseMasterID\n AND b.ResolvedIdentityID > a.ResolvedIdentityID\nJOIN CaseMaster cm ON cm.CaseMasterID = a.CaseMasterID\nGROUP BY a.ResolvedIdentityID, b.ResolvedIdentityID;"
+    },
+    {
+      "id": "Q043",
+      "shape": "co_accused_circle",
+      "difficulty": "moderate",
+      "question": "How many people has this person offended with in total?",
+      "question_kn": null,
+      "tables": [
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT COUNT(DISTINCT other.ResolvedIdentityID) AS associates\nFROM resolved_identity me\nJOIN resolved_identity other\n  ON other.CaseMasterID = me.CaseMasterID\n AND other.ResolvedIdentityID <> me.ResolvedIdentityID\nWHERE me.ResolvedIdentityID = :identity;"
+    },
+    {
+      "id": "Q044",
+      "shape": "co_accused_circle",
+      "difficulty": "complex",
+      "question": "Which co offending groups span the BNS transition of July 2024?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT a.ResolvedIdentityID, b.ResolvedIdentityID,\n       MIN(cm.CrimeRegisteredDate) AS first_together,\n       MAX(cm.CrimeRegisteredDate) AS last_together\nFROM resolved_identity a\nJOIN resolved_identity b\n  ON b.CaseMasterID = a.CaseMasterID\n AND b.ResolvedIdentityID > a.ResolvedIdentityID\nJOIN CaseMaster cm ON cm.CaseMasterID = a.CaseMasterID\nGROUP BY a.ResolvedIdentityID, b.ResolvedIdentityID\nHAVING MIN(cm.CrimeRegisteredDate) < '2024-07-01'\n   AND MAX(cm.CrimeRegisteredDate) >= '2024-07-01';"
+    },
+    {
+      "id": "Q045",
+      "shape": "co_accused_circle",
+      "difficulty": "moderate",
+      "question": "Which cases have four or more accused named in them?",
+      "question_kn": "ನಾಲ್ಕು ಅಥವಾ ಹೆಚ್ಚು ಆರೋಪಿಗಳಿರುವ ಪ್ರಕರಣಗಳು ಯಾವುವು?",
+      "tables": [
+        "Accused",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT cm.CrimeNo, COUNT(*) AS accused_count\nFROM Accused a\nJOIN CaseMaster cm ON cm.CaseMasterID = a.CaseMasterID\nGROUP BY cm.CrimeNo\nHAVING COUNT(*) >= 4\nORDER BY accused_count DESC;"
+    },
+    {
+      "id": "Q046",
+      "shape": "undetected_case_match",
+      "difficulty": "complex",
+      "question": "Which undetected cases might this person be responsible for?",
+      "question_kn": "ಈ ವ್ಯಕ್ತಿ ಯಾವ ಪತ್ತೆಯಾಗದ ಪ್ರಕರಣಗಳಿಗೆ ಕಾರಣವಿರಬಹುದು?",
+      "tables": [
+        "CaseMaster",
+        "CrimeSubHead",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT cm.CrimeNo, cm.CrimeRegisteredDate, csh.CrimeSubHeadName\nFROM CaseMaster cm\nJOIN CrimeSubHead csh ON csh.CrimeSubHeadID = cm.CrimeSubHeadID\nWHERE cm.CaseStatus = 'Undetected'\n  AND cm.CrimeSubHeadID IN (\n    SELECT c2.CrimeSubHeadID\n    FROM resolved_identity ri\n    JOIN CaseMaster c2 ON c2.CaseMasterID = ri.CaseMasterID\n    WHERE ri.ResolvedIdentityID = :identity\n  )\n  AND cm.DistrictID IN (\n    SELECT c3.DistrictID\n    FROM resolved_identity ri\n    JOIN CaseMaster c3 ON c3.CaseMasterID = ri.CaseMasterID\n    WHERE ri.ResolvedIdentityID = :identity\n  )\nORDER BY cm.CrimeRegisteredDate DESC;"
+    },
+    {
+      "id": "Q047",
+      "shape": "undetected_case_match",
+      "difficulty": "simple",
+      "question": "How many cases are still undetected in this district?",
+      "question_kn": "ಈ ಜಿಲ್ಲೆಯಲ್ಲಿ ಎಷ್ಟು ಪ್ರಕರಣಗಳು ಇನ್ನೂ ಪತ್ತೆಯಾಗಿಲ್ಲ?",
+      "tables": [
+        "CaseMaster"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT COUNT(*) AS undetected\nFROM CaseMaster\nWHERE DistrictID = :district_id\n  AND CaseStatus = 'Undetected';"
+    },
+    {
+      "id": "Q048",
+      "shape": "undetected_case_match",
+      "difficulty": "complex",
+      "question": "For this undetected case, who are the ten most likely known offenders?",
+      "question_kn": "ಈ ಪತ್ತೆಯಾಗದ ಪ್ರಕರಣಕ್ಕೆ ಸಂಭಾವ್ಯ ಹತ್ತು ಅಪರಾಧಿಗಳು ಯಾರು?",
+      "tables": [
+        "CaseMaster",
+        "CrimeSubHead",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT ri.ResolvedIdentityID,\n       SUM(CASE WHEN c2.CrimeSubHeadID = target.CrimeSubHeadID THEN 2 ELSE 0 END)\n     + SUM(CASE WHEN c2.DistrictID     = target.DistrictID     THEN 1 ELSE 0 END)\n       AS affinity\nFROM CaseMaster target\nCROSS JOIN resolved_identity ri\nJOIN CaseMaster c2 ON c2.CaseMasterID = ri.CaseMasterID\nWHERE target.CaseMasterID = :case_id\nGROUP BY ri.ResolvedIdentityID\nORDER BY affinity DESC\nLIMIT 10;"
+    },
+    {
+      "id": "Q049",
+      "shape": "undetected_case_match",
+      "difficulty": "moderate",
+      "question": "Which undetected cases match the modus of a known offender at this station?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "CrimeSubHead",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT cm.CrimeNo, csh.CrimeSubHeadName, ri.ResolvedIdentityID\nFROM CaseMaster cm\nJOIN CrimeSubHead csh ON csh.CrimeSubHeadID = cm.CrimeSubHeadID\nJOIN resolved_identity ri\n  ON ri.CaseMasterID IN (\n       SELECT c2.CaseMasterID FROM CaseMaster c2\n       WHERE c2.CrimeSubHeadID = cm.CrimeSubHeadID\n         AND c2.CaseStatus <> 'Undetected'\n     )\nJOIN CaseMaster known ON known.CaseMasterID = ri.CaseMasterID\nJOIN Unit u ON u.UnitID = known.UnitID\nWHERE cm.CaseStatus = 'Undetected' AND u.UnitName = :station;"
+    },
+    {
+      "id": "Q050",
+      "shape": "undetected_case_match",
+      "difficulty": "simple",
+      "question": "What is the detection rate for this crime head?",
+      "question_kn": "ಈ ಅಪರಾಧ ವಿಭಾಗದ ಪತ್ತೆ ಪ್ರಮಾಣ ಎಷ್ಟು?",
+      "tables": [
+        "CaseMaster",
+        "CrimeHead"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT ch.CrimeHeadName,\n       SUM(CASE WHEN cm.CaseStatus <> 'Undetected' THEN 1 ELSE 0 END) * 1.0\n     / COUNT(*) AS detection_rate\nFROM CaseMaster cm\nJOIN CrimeHead ch ON ch.CrimeHeadID = cm.CrimeHeadID\nWHERE ch.CrimeHeadName = :head\nGROUP BY ch.CrimeHeadName;"
+    },
+    {
+      "id": "Q051",
+      "shape": "undetected_case_match",
+      "difficulty": "complex",
+      "question": "Which undetected cases fall inside a known offender's active window and district?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "WITH active AS (\n  SELECT ri.ResolvedIdentityID AS pid, cm.DistrictID,\n         MIN(cm.CrimeRegisteredDate) AS first_seen,\n         MAX(cm.CrimeRegisteredDate) AS last_seen\n  FROM resolved_identity ri\n  JOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\n  GROUP BY ri.ResolvedIdentityID, cm.DistrictID\n)\nSELECT u.CrimeNo, a.pid\nFROM CaseMaster u\nJOIN active a ON a.DistrictID = u.DistrictID\n             AND u.CrimeRegisteredDate BETWEEN a.first_seen AND a.last_seen\nWHERE u.CaseStatus = 'Undetected';"
+    },
+    {
+      "id": "Q052",
+      "shape": "undetected_case_match",
+      "difficulty": "moderate",
+      "question": "How many undetected cases are there per crime sub head?",
+      "question_kn": "ಪ್ರತಿ ಅಪರಾಧ ಉಪವಿಭಾಗದಲ್ಲಿ ಎಷ್ಟು ಪ್ರಕರಣ ಪತ್ತೆಯಾಗಿಲ್ಲ?",
+      "tables": [
+        "CaseMaster",
+        "CrimeSubHead"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT csh.CrimeSubHeadName, COUNT(*) AS undetected\nFROM CaseMaster cm\nJOIN CrimeSubHead csh ON csh.CrimeSubHeadID = cm.CrimeSubHeadID\nWHERE cm.CaseStatus = 'Undetected'\nGROUP BY csh.CrimeSubHeadName\nORDER BY undetected DESC;"
+    },
+    {
+      "id": "Q053",
+      "shape": "undetected_case_match",
+      "difficulty": "complex",
+      "question": "If we resolve identities, how many undetected cases gain a candidate?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT COUNT(DISTINCT u.CaseMasterID) AS cases_with_candidate\nFROM CaseMaster u\nJOIN resolved_identity ri\nJOIN CaseMaster k ON k.CaseMasterID = ri.CaseMasterID\nWHERE u.CaseStatus = 'Undetected'\n  AND k.CrimeSubHeadID = u.CrimeSubHeadID\n  AND k.DistrictID     = u.DistrictID;"
+    },
+    {
+      "id": "Q054",
+      "shape": "undetected_case_match",
+      "difficulty": "moderate",
+      "question": "Which undetected cases are the oldest still open at this station?",
+      "question_kn": "ಈ ಠಾಣೆಯಲ್ಲಿ ಅತಿ ಹಳೆಯ ಬಾಕಿ ಇರುವ ಪ್ರಕರಣಗಳು ಯಾವುವು?",
+      "tables": [
+        "CaseMaster",
+        "Unit"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT cm.CrimeNo, cm.CrimeRegisteredDate\nFROM CaseMaster cm\nJOIN Unit u ON u.UnitID = cm.UnitID\nWHERE u.UnitName = :station AND cm.CaseStatus = 'Undetected'\nORDER BY cm.CrimeRegisteredDate\nLIMIT 20;"
+    },
+    {
+      "id": "Q055",
+      "shape": "undetected_case_match",
+      "difficulty": "complex",
+      "question": "Rank known offenders by how many undetected cases in their district match their modus.",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID, COUNT(DISTINCT u.CaseMasterID) AS matches\nFROM resolved_identity ri\nJOIN CaseMaster k ON k.CaseMasterID = ri.CaseMasterID\nJOIN CaseMaster u ON u.CaseStatus = 'Undetected'\n                 AND u.DistrictID     = k.DistrictID\n                 AND u.CrimeSubHeadID = k.CrimeSubHeadID\nGROUP BY ri.ResolvedIdentityID\nORDER BY matches DESC\nLIMIT 25;"
+    },
+    {
+      "id": "Q056",
+      "shape": "undetected_case_match",
+      "difficulty": "simple",
+      "question": "How many cases were detected this month?",
+      "question_kn": "ಈ ತಿಂಗಳು ಎಷ್ಟು ಪ್ರಕರಣ ಪತ್ತೆಯಾಗಿವೆ?",
+      "tables": [
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) AS detected\nFROM CaseMaster\nWHERE CaseStatus <> 'Undetected'\n  AND CrimeRegisteredDate >= :from_date\n  AND CrimeRegisteredDate <  :to_date;"
+    },
+    {
+      "id": "Q057",
+      "shape": "undetected_case_match",
+      "difficulty": "moderate",
+      "question": "For this undetected case, which known offenders were active nearby at the time?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT DISTINCT ri.ResolvedIdentityID\nFROM CaseMaster target\nJOIN CaseMaster k ON k.DistrictID = target.DistrictID\n                 AND ABS(julianday(k.CrimeRegisteredDate)\n                       - julianday(target.CrimeRegisteredDate)) <= 180\nJOIN resolved_identity ri ON ri.CaseMasterID = k.CaseMasterID\nWHERE target.CaseMasterID = :case_id;"
+    },
+    {
+      "id": "Q058",
+      "shape": "undetected_case_match",
+      "difficulty": "complex",
+      "question": "What proportion of undetected cases have at least one plausible known offender?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT SUM(CASE WHEN c.candidates > 0 THEN 1 ELSE 0 END) * 1.0\n     / COUNT(*) AS coverage\nFROM (\n  SELECT u.CaseMasterID,\n         COUNT(DISTINCT ri.ResolvedIdentityID) AS candidates\n  FROM CaseMaster u\n  LEFT JOIN CaseMaster k ON k.DistrictID     = u.DistrictID\n                        AND k.CrimeSubHeadID = u.CrimeSubHeadID\n                        AND k.CaseStatus <> 'Undetected'\n  LEFT JOIN resolved_identity ri ON ri.CaseMasterID = k.CaseMasterID\n  WHERE u.CaseStatus = 'Undetected'\n  GROUP BY u.CaseMasterID\n) c;"
+    },
+    {
+      "id": "Q059",
+      "shape": "undetected_case_match",
+      "difficulty": "simple",
+      "question": "List undetected cases of this sub head in the last six months.",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "CrimeSubHead"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT cm.CrimeNo, cm.CrimeRegisteredDate\nFROM CaseMaster cm\nJOIN CrimeSubHead csh ON csh.CrimeSubHeadID = cm.CrimeSubHeadID\nWHERE cm.CaseStatus = 'Undetected'\n  AND csh.CrimeSubHeadName = :offence\n  AND cm.CrimeRegisteredDate >= date(:as_of, '-6 month')\nORDER BY cm.CrimeRegisteredDate DESC;"
+    },
+    {
+      "id": "Q060",
+      "shape": "undetected_case_match",
+      "difficulty": "complex",
+      "question": "Which offenders have a gap in their record that an undetected case would fill?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "WITH appearances AS (\n  SELECT ri.ResolvedIdentityID AS pid, cm.CrimeRegisteredDate AS on_date,\n         cm.DistrictID\n  FROM resolved_identity ri\n  JOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\n)\nSELECT a.pid, u.CrimeNo, u.CrimeRegisteredDate\nFROM appearances a\nJOIN appearances b ON b.pid = a.pid AND b.on_date > a.on_date\nJOIN CaseMaster u  ON u.CaseStatus = 'Undetected'\n                  AND u.DistrictID = a.DistrictID\n                  AND u.CrimeRegisteredDate BETWEEN a.on_date AND b.on_date\nWHERE julianday(b.on_date) - julianday(a.on_date) > 180;"
+    },
+    {
+      "id": "Q061",
+      "shape": "bns_transition_trend",
+      "difficulty": "complex",
+      "question": "How has theft changed over the last three years, counting IPC and BNS together?",
+      "question_kn": "ಕಳೆದ ಮೂರು ವರ್ಷಗಳಲ್ಲಿ ಕಳ್ಳತನ ಪ್ರಕರಣಗಳ ಪ್ರವೃತ್ತಿ ಹೇಗಿದೆ?",
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "Section",
+        "CaseMaster"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT strftime('%Y', cm.CrimeRegisteredDate) AS year, COUNT(DISTINCT cm.CaseMasterID) AS cases\nFROM CaseMaster cm\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\nJOIN Act a         ON a.ActID = asa.ActID\nJOIN Section s     ON s.SectionID = asa.SectionID\nWHERE (a.ActAbbr = 'IPC' AND s.SectionNo IN ('378','379'))\n   OR (a.ActAbbr = 'BNS' AND s.SectionNo IN ('303'))\nGROUP BY year\nORDER BY year;"
+    },
+    {
+      "id": "Q062",
+      "shape": "bns_transition_trend",
+      "difficulty": "simple",
+      "question": "How many cases were registered under BNS since July 2024?",
+      "question_kn": "ಜುಲೈ 2024 ರಿಂದ ಬಿಎನ್ಎಸ್ ಅಡಿಯಲ್ಲಿ ಎಷ್ಟು ಪ್ರಕರಣ ದಾಖಲಾಗಿವೆ?",
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(DISTINCT cm.CaseMasterID) AS bns_cases\nFROM CaseMaster cm\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\nJOIN Act a ON a.ActID = asa.ActID\nWHERE a.ActAbbr = 'BNS';"
+    },
+    {
+      "id": "Q063",
+      "shape": "bns_transition_trend",
+      "difficulty": "complex",
+      "question": "By how much does a naive IPC only query undercount this offence across the transition?",
+      "question_kn": null,
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "Section",
+        "CaseMaster"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT\n  SUM(CASE WHEN a.ActAbbr = 'IPC' THEN 1 ELSE 0 END) AS naive_count,\n  COUNT(*) AS reconciled_count,\n  1.0 - SUM(CASE WHEN a.ActAbbr = 'IPC' THEN 1 ELSE 0 END) * 1.0\n      / COUNT(*) AS undercount_share\nFROM CaseMaster cm\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\nJOIN Act a     ON a.ActID = asa.ActID\nJOIN Section s ON s.SectionID = asa.SectionID\nWHERE s.SectionNo IN (:ipc_section, :bns_section);"
+    },
+    {
+      "id": "Q064",
+      "shape": "bns_transition_trend",
+      "difficulty": "moderate",
+      "question": "Which IPC section corresponds to this BNS section?",
+      "question_kn": "ಈ ಬಿಎನ್ಎಸ್ ಸೆಕ್ಷನ್‌ಗೆ ಸಮಾನವಾದ ಐಪಿಸಿ ಸೆಕ್ಷನ್ ಯಾವುದು?",
+      "tables": [
+        "Section",
+        "Act"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT ipc.SectionNo AS ipc_section, bns.SectionNo AS bns_section,\n       ipc.SectionDesc\nFROM Section bns\nJOIN Act ba ON ba.ActID = bns.ActID AND ba.ActAbbr = 'BNS'\nJOIN Section ipc ON ipc.SectionDesc = bns.SectionDesc\nJOIN Act ia ON ia.ActID = ipc.ActID AND ia.ActAbbr = 'IPC'\nWHERE bns.SectionNo = :bns_section;"
+    },
+    {
+      "id": "Q065",
+      "shape": "bns_transition_trend",
+      "difficulty": "complex",
+      "question": "Show the monthly case count either side of 1 July 2024 for this offence.",
+      "question_kn": null,
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "Section",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT strftime('%Y-%m', cm.CrimeRegisteredDate) AS month,\n       CASE WHEN cm.CrimeRegisteredDate < '2024-07-01'\n            THEN 'IPC era' ELSE 'BNS era' END AS era,\n       COUNT(DISTINCT cm.CaseMasterID) AS cases\nFROM CaseMaster cm\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\nJOIN Section s ON s.SectionID = asa.SectionID\nWHERE s.SectionNo IN (:ipc_section, :bns_section)\nGROUP BY month, era\nORDER BY month;"
+    },
+    {
+      "id": "Q066",
+      "shape": "bns_transition_trend",
+      "difficulty": "simple",
+      "question": "How many distinct sections appear in the record?",
+      "question_kn": null,
+      "tables": [
+        "Section"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) AS sections FROM Section;"
+    },
+    {
+      "id": "Q067",
+      "shape": "bns_transition_trend",
+      "difficulty": "moderate",
+      "question": "Which offences show the largest change in volume after the BNS switch?",
+      "question_kn": null,
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "Section",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT s.SectionDesc,\n       SUM(CASE WHEN cm.CrimeRegisteredDate <  '2024-07-01' THEN 1 ELSE 0 END) AS before_switch,\n       SUM(CASE WHEN cm.CrimeRegisteredDate >= '2024-07-01' THEN 1 ELSE 0 END) AS after_switch\nFROM CaseMaster cm\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\nJOIN Section s ON s.SectionID = asa.SectionID\nGROUP BY s.SectionDesc\nORDER BY ABS(after_switch - before_switch) DESC;"
+    },
+    {
+      "id": "Q068",
+      "shape": "bns_transition_trend",
+      "difficulty": "complex",
+      "question": "For this offender, list their cases under both IPC and BNS sections.",
+      "question_kn": null,
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "Section",
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT cm.CrimeNo, cm.CrimeRegisteredDate,\n       a.ActAbbr, s.SectionNo, s.SectionDesc\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\nJOIN Act a     ON a.ActID     = asa.ActID\nJOIN Section s ON s.SectionID = asa.SectionID\nWHERE ri.ResolvedIdentityID = :identity\nORDER BY cm.CrimeRegisteredDate;"
+    },
+    {
+      "id": "Q069",
+      "shape": "bns_transition_trend",
+      "difficulty": "moderate",
+      "question": "How many cases carry both an IPC and a BNS section, which should not happen?",
+      "question_kn": null,
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT cm.CrimeNo, cm.CrimeRegisteredDate\nFROM CaseMaster cm\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\nJOIN Act a ON a.ActID = asa.ActID\nGROUP BY cm.CaseMasterID\nHAVING SUM(CASE WHEN a.ActAbbr = 'IPC' THEN 1 ELSE 0 END) > 0\n   AND SUM(CASE WHEN a.ActAbbr = 'BNS' THEN 1 ELSE 0 END) > 0;"
+    },
+    {
+      "id": "Q070",
+      "shape": "bns_transition_trend",
+      "difficulty": "complex",
+      "question": "Is the drop in IPC filings after July 2024 matched by a rise in BNS filings?",
+      "question_kn": null,
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT strftime('%Y-%m', cm.CrimeRegisteredDate) AS month,\n       SUM(CASE WHEN a.ActAbbr = 'IPC' THEN 1 ELSE 0 END) AS ipc,\n       SUM(CASE WHEN a.ActAbbr = 'BNS' THEN 1 ELSE 0 END) AS bns\nFROM CaseMaster cm\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\nJOIN Act a ON a.ActID = asa.ActID\nGROUP BY month\nORDER BY month;"
+    },
+    {
+      "id": "Q071",
+      "shape": "bns_transition_trend",
+      "difficulty": "simple",
+      "question": "Which act was this case registered under?",
+      "question_kn": "ಈ ಪ್ರಕರಣ ಯಾವ ಕಾಯ್ದೆಯಡಿ ದಾಖಲಾಗಿದೆ?",
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT DISTINCT a.ActName, a.ActAbbr\nFROM ActSectionAssociation asa\nJOIN Act a ON a.ActID = asa.ActID\nWHERE asa.CaseMasterID = :case_id;"
+    },
+    {
+      "id": "Q072",
+      "shape": "bns_transition_trend",
+      "difficulty": "moderate",
+      "question": "Count cases per act abbreviation per year.",
+      "question_kn": null,
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT strftime('%Y', cm.CrimeRegisteredDate) AS year,\n       a.ActAbbr, COUNT(DISTINCT cm.CaseMasterID) AS cases\nFROM CaseMaster cm\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\nJOIN Act a ON a.ActID = asa.ActID\nGROUP BY year, a.ActAbbr\nORDER BY year, a.ActAbbr;"
+    },
+    {
+      "id": "Q073",
+      "shape": "bns_transition_trend",
+      "difficulty": "complex",
+      "question": "Reconciled across the transition, which offence is actually rising fastest?",
+      "question_kn": null,
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "Section",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "WITH reconciled AS (\n  SELECT s.SectionDesc AS offence,\n         strftime('%Y', cm.CrimeRegisteredDate) AS year,\n         COUNT(DISTINCT cm.CaseMasterID) AS cases\n  FROM CaseMaster cm\n  JOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\n  JOIN Section s ON s.SectionID = asa.SectionID\n  GROUP BY offence, year\n)\nSELECT offence,\n       MAX(CASE WHEN year = :recent THEN cases END)\n     - MAX(CASE WHEN year = :baseline THEN cases END) AS growth\nFROM reconciled\nGROUP BY offence\nORDER BY growth DESC;"
+    },
+    {
+      "id": "Q074",
+      "shape": "bns_transition_trend",
+      "difficulty": "moderate",
+      "question": "How many sections have no case registered under them at all?",
+      "question_kn": null,
+      "tables": [
+        "Section",
+        "ActSectionAssociation"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) AS unused_sections\nFROM Section s\nWHERE NOT EXISTS (\n  SELECT 1 FROM ActSectionAssociation asa WHERE asa.SectionID = s.SectionID\n);"
+    },
+    {
+      "id": "Q075",
+      "shape": "bns_transition_trend",
+      "difficulty": "simple",
+      "question": "What is the earliest and latest case date in the record?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT MIN(CrimeRegisteredDate) AS earliest,\n       MAX(CrimeRegisteredDate) AS latest\nFROM CaseMaster;"
+    },
+    {
+      "id": "Q076",
+      "shape": "hotspot_by_head",
+      "difficulty": "moderate",
+      "question": "Which areas have the most cases of this crime head?",
+      "question_kn": "ಈ ಅಪರಾಧ ವಿಭಾಗದ ಪ್ರಕರಣ ಅತಿ ಹೆಚ್ಚು ಇರುವ ಪ್ರದೇಶ ಯಾವುದು?",
+      "tables": [
+        "CaseMaster",
+        "CrimeHead",
+        "Unit"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT u.UnitName, COUNT(*) AS cases\nFROM CaseMaster cm\nJOIN CrimeHead ch ON ch.CrimeHeadID = cm.CrimeHeadID\nJOIN Unit u       ON u.UnitID       = cm.UnitID\nWHERE ch.CrimeHeadName = :head\nGROUP BY u.UnitName\nORDER BY cases DESC\nLIMIT 20;"
+    },
+    {
+      "id": "Q077",
+      "shape": "hotspot_by_head",
+      "difficulty": "complex",
+      "question": "Which areas have the highest density of distinct offenders rather than of cases?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT u.UnitName,\n       COUNT(DISTINCT ri.ResolvedIdentityID) AS offenders,\n       COUNT(DISTINCT cm.CaseMasterID) AS cases\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nGROUP BY u.UnitName\nORDER BY offenders DESC\nLIMIT 20;"
+    },
+    {
+      "id": "Q078",
+      "shape": "hotspot_by_head",
+      "difficulty": "simple",
+      "question": "How many cases of each crime head were registered?",
+      "question_kn": "ಪ್ರತಿ ಅಪರಾಧ ವಿಭಾಗದಲ್ಲಿ ಎಷ್ಟು ಪ್ರಕರಣ ದಾಖಲಾಗಿವೆ?",
+      "tables": [
+        "CaseMaster",
+        "CrimeHead"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT ch.CrimeHeadName, COUNT(*) AS cases\nFROM CaseMaster cm\nJOIN CrimeHead ch ON ch.CrimeHeadID = cm.CrimeHeadID\nGROUP BY ch.CrimeHeadName\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q079",
+      "shape": "hotspot_by_head",
+      "difficulty": "moderate",
+      "question": "Which month had an unusual spike in cases in this district?",
+      "question_kn": "ಈ ಜಿಲ್ಲೆಯಲ್ಲಿ ಯಾವ ತಿಂಗಳು ಪ್ರಕರಣಗಳು ಅಸಾಮಾನ್ಯವಾಗಿ ಹೆಚ್ಚಾಗಿವೆ?",
+      "tables": [
+        "CaseMaster"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT strftime('%Y-%m', CrimeRegisteredDate) AS month, COUNT(*) AS cases\nFROM CaseMaster\nWHERE DistrictID = :district_id\nGROUP BY month\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q080",
+      "shape": "hotspot_by_head",
+      "difficulty": "complex",
+      "question": "For this crime head, is offender density concentrated or spread across the district?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "CrimeHead",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT u.UnitName,\n       COUNT(DISTINCT ri.ResolvedIdentityID) AS offenders,\n       COUNT(DISTINCT ri.ResolvedIdentityID) * 1.0\n     / SUM(COUNT(DISTINCT ri.ResolvedIdentityID)) OVER () AS share\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN CrimeHead ch  ON ch.CrimeHeadID  = cm.CrimeHeadID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nWHERE ch.CrimeHeadName = :head AND cm.DistrictID = :district_id\nGROUP BY u.UnitName\nORDER BY offenders DESC;"
+    },
+    {
+      "id": "Q081",
+      "shape": "hotspot_by_head",
+      "difficulty": "moderate",
+      "question": "What is the busiest day of the week for case registration?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT strftime('%w', CrimeRegisteredDate) AS weekday, COUNT(*) AS cases\nFROM CaseMaster\nGROUP BY weekday\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q082",
+      "shape": "hotspot_by_head",
+      "difficulty": "complex",
+      "question": "Which stations show a rise in this crime head over the last twelve months?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "CrimeHead",
+        "Unit"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT u.UnitName,\n       SUM(CASE WHEN cm.CrimeRegisteredDate >= date(:as_of, '-12 month')\n                THEN 1 ELSE 0 END) AS recent,\n       SUM(CASE WHEN cm.CrimeRegisteredDate <  date(:as_of, '-12 month')\n            AND cm.CrimeRegisteredDate >= date(:as_of, '-24 month')\n                THEN 1 ELSE 0 END) AS prior\nFROM CaseMaster cm\nJOIN CrimeHead ch ON ch.CrimeHeadID = cm.CrimeHeadID\nJOIN Unit u       ON u.UnitID       = cm.UnitID\nWHERE ch.CrimeHeadName = :head\nGROUP BY u.UnitName\nHAVING recent > prior\nORDER BY recent - prior DESC;"
+    },
+    {
+      "id": "Q083",
+      "shape": "hotspot_by_head",
+      "difficulty": "simple",
+      "question": "Which crime sub head is most common in this district?",
+      "question_kn": "ಈ ಜಿಲ್ಲೆಯಲ್ಲಿ ಅತಿ ಸಾಮಾನ್ಯ ಅಪರಾಧ ಯಾವುದು?",
+      "tables": [
+        "CaseMaster",
+        "CrimeSubHead"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT csh.CrimeSubHeadName, COUNT(*) AS cases\nFROM CaseMaster cm\nJOIN CrimeSubHead csh ON csh.CrimeSubHeadID = cm.CrimeSubHeadID\nWHERE cm.DistrictID = :district_id\nGROUP BY csh.CrimeSubHeadName\nORDER BY cases DESC\nLIMIT 1;"
+    },
+    {
+      "id": "Q084",
+      "shape": "hotspot_by_head",
+      "difficulty": "complex",
+      "question": "Do hotspots by case count agree with hotspots by offender count?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "Unit",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT u.UnitName,\n       COUNT(DISTINCT cm.CaseMasterID) AS cases,\n       COUNT(DISTINCT ri.ResolvedIdentityID) AS offenders,\n       RANK() OVER (ORDER BY COUNT(DISTINCT cm.CaseMasterID) DESC) AS rank_by_cases,\n       RANK() OVER (ORDER BY COUNT(DISTINCT ri.ResolvedIdentityID) DESC) AS rank_by_offenders\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nGROUP BY u.UnitName;"
+    },
+    {
+      "id": "Q085",
+      "shape": "hotspot_by_head",
+      "difficulty": "moderate",
+      "question": "How many cases per gravity band in this district?",
+      "question_kn": "ಈ ಜಿಲ್ಲೆಯಲ್ಲಿ ಗಂಭೀರತೆಯ ಪ್ರಕಾರ ಎಷ್ಟು ಪ್ರಕರಣಗಳಿವೆ?",
+      "tables": [
+        "CaseMaster",
+        "GravityOffence"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT g.GravityName, COUNT(*) AS cases\nFROM CaseMaster cm\nJOIN GravityOffence g ON g.GravityOffenceID = cm.GravityOffenceID\nWHERE cm.DistrictID = :district_id\nGROUP BY g.GravityName\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q086",
+      "shape": "hotspot_by_head",
+      "difficulty": "complex",
+      "question": "Which district and month combinations exceed twice their trailing median?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "WITH monthly AS (\n  SELECT DistrictID, strftime('%Y-%m', CrimeRegisteredDate) AS month,\n         COUNT(*) AS cases\n  FROM CaseMaster\n  GROUP BY DistrictID, month\n)\nSELECT m.DistrictID, m.month, m.cases\nFROM monthly m\nWHERE m.cases > 2.0 * (\n  SELECT AVG(p.cases) FROM monthly p\n  WHERE p.DistrictID = m.DistrictID AND p.month < m.month\n)\nORDER BY m.cases DESC;"
+    },
+    {
+      "id": "Q087",
+      "shape": "hotspot_by_head",
+      "difficulty": "simple",
+      "question": "How many cases are there in total in the record?",
+      "question_kn": "ದಾಖಲೆಯಲ್ಲಿ ಒಟ್ಟು ಎಷ್ಟು ಪ್ರಕರಣಗಳಿವೆ?",
+      "tables": [
+        "CaseMaster"
+      ],
+      "answerable_today": true,
+      "requires_person_key": false,
+      "band": "answerable_today",
+      "sql": "SELECT COUNT(*) AS cases FROM CaseMaster;"
+    },
+    {
+      "id": "Q088",
+      "shape": "hotspot_by_head",
+      "difficulty": "moderate",
+      "question": "Which case category accounts for the most cases?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "CaseCategory"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT cc.CaseCategoryName, COUNT(*) AS cases\nFROM CaseMaster cm\nJOIN CaseCategory cc ON cc.CaseCategoryID = cm.CaseCategoryID\nGROUP BY cc.CaseCategoryName\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q089",
+      "shape": "hotspot_by_head",
+      "difficulty": "complex",
+      "question": "After resolution, how much smaller is the apparent offender population in each district?",
+      "question_kn": null,
+      "tables": [
+        "Accused",
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT cm.DistrictID,\n       COUNT(*) AS accused_rows,\n       COUNT(DISTINCT ri.ResolvedIdentityID) AS actual_people,\n       COUNT(*) - COUNT(DISTINCT ri.ResolvedIdentityID) AS inflation_removed\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nGROUP BY cm.DistrictID\nORDER BY inflation_removed DESC;"
+    },
+    {
+      "id": "Q090",
+      "shape": "hotspot_by_head",
+      "difficulty": "moderate",
+      "question": "Which crime sub heads are rising statewide this year?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "CrimeSubHead"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT csh.CrimeSubHeadName,\n       SUM(CASE WHEN strftime('%Y', cm.CrimeRegisteredDate) = :recent   THEN 1 ELSE 0 END) AS this_year,\n       SUM(CASE WHEN strftime('%Y', cm.CrimeRegisteredDate) = :baseline THEN 1 ELSE 0 END) AS last_year\nFROM CaseMaster cm\nJOIN CrimeSubHead csh ON csh.CrimeSubHeadID = cm.CrimeSubHeadID\nGROUP BY csh.CrimeSubHeadName\nORDER BY this_year - last_year DESC;"
+    },
+    {
+      "id": "Q091",
+      "shape": "arrest_history",
+      "difficulty": "moderate",
+      "question": "What is the arrest history of this person across all their cases?",
+      "question_kn": "ಈ ವ್ಯಕ್ತಿಯ ಬಂಧನದ ಇತಿಹಾಸ ಏನು?",
+      "tables": [
+        "ArrestSurrender",
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT cm.CrimeNo, ars.ArrestDate, ars.ArrestType, ars.ArrestingOfficerID\nFROM resolved_identity ri\nJOIN ArrestSurrender ars ON ars.AccusedMasterID = ri.AccusedMasterID\nJOIN CaseMaster cm       ON cm.CaseMasterID     = ri.CaseMasterID\nWHERE ri.ResolvedIdentityID = :identity\nORDER BY ars.ArrestDate;"
+    },
+    {
+      "id": "Q092",
+      "shape": "arrest_history",
+      "difficulty": "simple",
+      "question": "Was this accused arrested?",
+      "question_kn": "ಈ ಆರೋಪಿಯನ್ನು ಬಂಧಿಸಲಾಗಿದೆಯೇ?",
+      "tables": [
+        "ArrestSurrender"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) > 0 AS arrested\nFROM ArrestSurrender\nWHERE AccusedMasterID = :accused_id;"
+    },
+    {
+      "id": "Q093",
+      "shape": "arrest_history",
+      "difficulty": "complex",
+      "question": "How many people have been arrested more than three times across all districts?",
+      "question_kn": "ಎಲ್ಲ ಜಿಲ್ಲೆಗಳಲ್ಲಿ ಮೂರಕ್ಕಿಂತ ಹೆಚ್ಚು ಬಾರಿ ಬಂಧನಕ್ಕೆ ಒಳಗಾದವರು ಎಷ್ಟು ಮಂದಿ?",
+      "tables": [
+        "ArrestSurrender",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT COUNT(*) AS repeat_arrests\nFROM (\n  SELECT ri.ResolvedIdentityID\n  FROM resolved_identity ri\n  JOIN ArrestSurrender ars ON ars.AccusedMasterID = ri.AccusedMasterID\n  GROUP BY ri.ResolvedIdentityID\n  HAVING COUNT(*) > 3\n) t;"
+    },
+    {
+      "id": "Q094",
+      "shape": "arrest_history",
+      "difficulty": "moderate",
+      "question": "Which officer has made the most arrests?",
+      "question_kn": "ಅತಿ ಹೆಚ್ಚು ಬಂಧನ ಮಾಡಿದ ಅಧಿಕಾರಿ ಯಾರು?",
+      "tables": [
+        "ArrestSurrender",
+        "Employee"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT e.EmployeeName, COUNT(*) AS arrests\nFROM ArrestSurrender ars\nJOIN Employee e ON e.EmployeeID = ars.ArrestingOfficerID\nGROUP BY e.EmployeeName\nORDER BY arrests DESC\nLIMIT 10;"
+    },
+    {
+      "id": "Q095",
+      "shape": "arrest_history",
+      "difficulty": "complex",
+      "question": "Which people were arrested by the same officer in different districts?",
+      "question_kn": null,
+      "tables": [
+        "ArrestSurrender",
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID, ars.ArrestingOfficerID,\n       COUNT(DISTINCT cm.DistrictID) AS districts\nFROM resolved_identity ri\nJOIN ArrestSurrender ars ON ars.AccusedMasterID = ri.AccusedMasterID\nJOIN CaseMaster cm       ON cm.CaseMasterID     = ri.CaseMasterID\nGROUP BY ri.ResolvedIdentityID, ars.ArrestingOfficerID\nHAVING COUNT(DISTINCT cm.DistrictID) > 1;"
+    },
+    {
+      "id": "Q096",
+      "shape": "arrest_history",
+      "difficulty": "simple",
+      "question": "How many arrests were made at this station last month?",
+      "question_kn": "ಕಳೆದ ತಿಂಗಳು ಈ ಠಾಣೆಯಲ್ಲಿ ಎಷ್ಟು ಬಂಧನ ಆಗಿವೆ?",
+      "tables": [
+        "ArrestSurrender",
+        "CaseMaster",
+        "Unit"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) AS arrests\nFROM ArrestSurrender ars\nJOIN CaseMaster cm ON cm.CaseMasterID = ars.CaseMasterID\nJOIN Unit u        ON u.UnitID        = cm.UnitID\nWHERE u.UnitName = :station\n  AND ars.ArrestDate >= :from_date\n  AND ars.ArrestDate <  :to_date;"
+    },
+    {
+      "id": "Q097",
+      "shape": "arrest_history",
+      "difficulty": "moderate",
+      "question": "What is the average gap between case registration and arrest?",
+      "question_kn": null,
+      "tables": [
+        "ArrestSurrender",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT AVG(julianday(ars.ArrestDate) - julianday(cm.CrimeRegisteredDate)) AS avg_days\nFROM ArrestSurrender ars\nJOIN CaseMaster cm ON cm.CaseMasterID = ars.CaseMasterID;"
+    },
+    {
+      "id": "Q098",
+      "shape": "arrest_history",
+      "difficulty": "complex",
+      "question": "Which repeat offenders have never been arrested despite multiple cases?",
+      "question_kn": "ಹಲವು ಪ್ರಕರಣಗಳಿದ್ದರೂ ಎಂದೂ ಬಂಧನಕ್ಕೆ ಒಳಗಾಗದವರು ಯಾರು?",
+      "tables": [
+        "ArrestSurrender",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID, COUNT(DISTINCT ri.CaseMasterID) AS cases\nFROM resolved_identity ri\nGROUP BY ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT ri.CaseMasterID) >= 3\n   AND SUM(CASE WHEN EXISTS (\n         SELECT 1 FROM ArrestSurrender ars\n         WHERE ars.AccusedMasterID = ri.AccusedMasterID\n       ) THEN 1 ELSE 0 END) = 0;"
+    },
+    {
+      "id": "Q099",
+      "shape": "arrest_history",
+      "difficulty": "simple",
+      "question": "What type of arrest was recorded, arrest or surrender?",
+      "question_kn": null,
+      "tables": [
+        "ArrestSurrender"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT ArrestType, COUNT(*) AS n\nFROM ArrestSurrender\nGROUP BY ArrestType;"
+    },
+    {
+      "id": "Q100",
+      "shape": "arrest_history",
+      "difficulty": "complex",
+      "question": "For each officer, how many distinct people rather than distinct rows have they arrested?",
+      "question_kn": null,
+      "tables": [
+        "ArrestSurrender",
+        "Employee",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT e.EmployeeName,\n       COUNT(*) AS arrest_rows,\n       COUNT(DISTINCT ri.ResolvedIdentityID) AS distinct_people\nFROM ArrestSurrender ars\nJOIN Employee e            ON e.EmployeeID = ars.ArrestingOfficerID\nJOIN resolved_identity ri  ON ri.AccusedMasterID = ars.AccusedMasterID\nGROUP BY e.EmployeeName\nORDER BY distinct_people DESC;"
+    },
+    {
+      "id": "Q101",
+      "shape": "arrest_history",
+      "difficulty": "moderate",
+      "question": "Which arrests happened more than a year after the case was registered?",
+      "question_kn": null,
+      "tables": [
+        "ArrestSurrender",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT cm.CrimeNo, cm.CrimeRegisteredDate, ars.ArrestDate\nFROM ArrestSurrender ars\nJOIN CaseMaster cm ON cm.CaseMasterID = ars.CaseMasterID\nWHERE julianday(ars.ArrestDate) - julianday(cm.CrimeRegisteredDate) > 365\nORDER BY ars.ArrestDate DESC;"
+    },
+    {
+      "id": "Q102",
+      "shape": "arrest_history",
+      "difficulty": "complex",
+      "question": "Does arresting a repeat offender reduce their subsequent case rate?",
+      "question_kn": null,
+      "tables": [
+        "ArrestSurrender",
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "WITH first_arrest AS (\n  SELECT ri.ResolvedIdentityID AS pid, MIN(ars.ArrestDate) AS on_date\n  FROM resolved_identity ri\n  JOIN ArrestSurrender ars ON ars.AccusedMasterID = ri.AccusedMasterID\n  GROUP BY ri.ResolvedIdentityID\n)\nSELECT fa.pid,\n       SUM(CASE WHEN cm.CrimeRegisteredDate <  fa.on_date THEN 1 ELSE 0 END) AS before_arrest,\n       SUM(CASE WHEN cm.CrimeRegisteredDate >= fa.on_date THEN 1 ELSE 0 END) AS after_arrest\nFROM first_arrest fa\nJOIN resolved_identity ri ON ri.ResolvedIdentityID = fa.pid\nJOIN CaseMaster cm        ON cm.CaseMasterID       = ri.CaseMasterID\nGROUP BY fa.pid;"
+    },
+    {
+      "id": "Q103",
+      "shape": "arrest_history",
+      "difficulty": "simple",
+      "question": "List all arrests recorded for this case.",
+      "question_kn": "ಈ ಪ್ರಕರಣದಲ್ಲಿ ದಾಖಲಾದ ಎಲ್ಲ ಬಂಧನಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಿ.",
+      "tables": [
+        "ArrestSurrender"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT ArrestSurrenderID, AccusedMasterID, ArrestDate, ArrestType\nFROM ArrestSurrender\nWHERE CaseMasterID = :case_id\nORDER BY ArrestDate;"
+    },
+    {
+      "id": "Q104",
+      "shape": "arrest_history",
+      "difficulty": "moderate",
+      "question": "How many accused have been arrested in more than one district?",
+      "question_kn": null,
+      "tables": [
+        "ArrestSurrender",
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT COUNT(*) AS people\nFROM (\n  SELECT ri.ResolvedIdentityID\n  FROM resolved_identity ri\n  JOIN ArrestSurrender ars ON ars.AccusedMasterID = ri.AccusedMasterID\n  JOIN CaseMaster cm       ON cm.CaseMasterID     = ri.CaseMasterID\n  GROUP BY ri.ResolvedIdentityID\n  HAVING COUNT(DISTINCT cm.DistrictID) > 1\n) t;"
+    },
+    {
+      "id": "Q105",
+      "shape": "arrest_history",
+      "difficulty": "complex",
+      "question": "Which officers repeatedly arrest the same person, suggesting a beat relationship?",
+      "question_kn": null,
+      "tables": [
+        "ArrestSurrender",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ars.ArrestingOfficerID, ri.ResolvedIdentityID, COUNT(*) AS times\nFROM ArrestSurrender ars\nJOIN resolved_identity ri ON ri.AccusedMasterID = ars.AccusedMasterID\nGROUP BY ars.ArrestingOfficerID, ri.ResolvedIdentityID\nHAVING COUNT(*) >= 2\nORDER BY times DESC;"
+    },
+    {
+      "id": "Q106",
+      "shape": "name_variant_lookup",
+      "difficulty": "simple",
+      "question": "Find every accused row with this name.",
+      "question_kn": "ಈ ಹೆಸರಿನ ಎಲ್ಲ ಆರೋಪಿ ದಾಖಲೆಗಳನ್ನು ಹುಡುಕಿ.",
+      "tables": [
+        "Accused"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT AccusedMasterID, CaseMasterID, AccusedName, AgeYear\nFROM Accused\nWHERE AccusedName = :name;"
+    },
+    {
+      "id": "Q107",
+      "shape": "name_variant_lookup",
+      "difficulty": "complex",
+      "question": "Find this person however their name was spelt, including in Kannada.",
+      "question_kn": "ಹೆಸರು ಯಾವ ರೀತಿ ಬರೆದಿದ್ದರೂ, ಕನ್ನಡದಲ್ಲಿದ್ದರೂ, ಈ ವ್ಯಕ್ತಿಯನ್ನು ಹುಡುಕಿ.",
+      "tables": [
+        "Accused",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT a.AccusedName, a.CaseMasterID, ri.ResolvedIdentityID\nFROM resolved_identity ri\nJOIN Accused a ON a.AccusedMasterID = ri.AccusedMasterID\nWHERE ri.ResolvedIdentityID = (\n  SELECT r2.ResolvedIdentityID\n  FROM resolved_identity r2\n  JOIN Accused a2 ON a2.AccusedMasterID = r2.AccusedMasterID\n  WHERE a2.AccusedName = :name\n  LIMIT 1\n);"
+    },
+    {
+      "id": "Q108",
+      "shape": "name_variant_lookup",
+      "difficulty": "complex",
+      "question": "Which identities are recorded under the most different spellings?",
+      "question_kn": "ಅತಿ ಹೆಚ್ಚು ವಿಭಿನ್ನ ಕಾಗುಣಿತಗಳಲ್ಲಿ ದಾಖಲಾದ ವ್ಯಕ್ತಿಗಳು ಯಾರು?",
+      "tables": [
+        "Accused",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT ri.ResolvedIdentityID,\n       COUNT(DISTINCT a.AccusedName) AS spellings,\n       COUNT(*) AS rows_held\nFROM resolved_identity ri\nJOIN Accused a ON a.AccusedMasterID = ri.AccusedMasterID\nGROUP BY ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT a.AccusedName) > 1\nORDER BY spellings DESC;"
+    },
+    {
+      "id": "Q109",
+      "shape": "name_variant_lookup",
+      "difficulty": "complex",
+      "question": "Which identities appear in both Kannada and Latin script?",
+      "question_kn": "ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್ ಎರಡೂ ಲಿಪಿಗಳಲ್ಲಿ ದಾಖಲಾದವರು ಯಾರು?",
+      "tables": [
+        "Accused",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT ri.ResolvedIdentityID, COUNT(DISTINCT a.AccusedName) AS renderings\nFROM resolved_identity ri\nJOIN Accused a ON a.AccusedMasterID = ri.AccusedMasterID\nGROUP BY ri.ResolvedIdentityID\nHAVING SUM(CASE WHEN a.AccusedName GLOB '*[ಀ-೿]*' THEN 1 ELSE 0 END) > 0\n   AND SUM(CASE WHEN a.AccusedName GLOB '*[A-Za-z]*'        THEN 1 ELSE 0 END) > 0;"
+    },
+    {
+      "id": "Q110",
+      "shape": "name_variant_lookup",
+      "difficulty": "moderate",
+      "question": "How many accused rows share an identical name string?",
+      "question_kn": null,
+      "tables": [
+        "Accused"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT AccusedName, COUNT(*) AS rows_held\nFROM Accused\nGROUP BY AccusedName\nHAVING COUNT(*) > 1\nORDER BY rows_held DESC;"
+    },
+    {
+      "id": "Q111",
+      "shape": "name_variant_lookup",
+      "difficulty": "complex",
+      "question": "Which identical name strings actually belong to different people?",
+      "question_kn": null,
+      "tables": [
+        "Accused",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT a.AccusedName,\n       COUNT(DISTINCT ri.ResolvedIdentityID) AS distinct_people,\n       COUNT(*) AS rows_held\nFROM Accused a\nJOIN resolved_identity ri ON ri.AccusedMasterID = a.AccusedMasterID\nGROUP BY a.AccusedName\nHAVING COUNT(DISTINCT ri.ResolvedIdentityID) > 1\nORDER BY distinct_people DESC;"
+    },
+    {
+      "id": "Q112",
+      "shape": "name_variant_lookup",
+      "difficulty": "simple",
+      "question": "Search for accused whose name starts with these letters.",
+      "question_kn": "ಈ ಅಕ್ಷರಗಳಿಂದ ಆರಂಭವಾಗುವ ಹೆಸರಿನ ಆರೋಪಿಗಳನ್ನು ಹುಡುಕಿ.",
+      "tables": [
+        "Accused"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT AccusedMasterID, AccusedName, CaseMasterID\nFROM Accused\nWHERE AccusedName LIKE :prefix || '%'\nORDER BY AccusedName;"
+    },
+    {
+      "id": "Q113",
+      "shape": "name_variant_lookup",
+      "difficulty": "complex",
+      "question": "How many people would a plain GROUP BY on name wrongly merge?",
+      "question_kn": null,
+      "tables": [
+        "Accused",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT SUM(distinct_people - 1) AS wrong_merges\nFROM (\n  SELECT a.AccusedName, COUNT(DISTINCT ri.ResolvedIdentityID) AS distinct_people\n  FROM Accused a\n  JOIN resolved_identity ri ON ri.AccusedMasterID = a.AccusedMasterID\n  GROUP BY a.AccusedName\n  HAVING COUNT(DISTINCT ri.ResolvedIdentityID) > 1\n) t;"
+    },
+    {
+      "id": "Q114",
+      "shape": "name_variant_lookup",
+      "difficulty": "complex",
+      "question": "How many people would a plain GROUP BY on name wrongly split?",
+      "question_kn": null,
+      "tables": [
+        "Accused",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT SUM(spellings - 1) AS wrong_splits\nFROM (\n  SELECT ri.ResolvedIdentityID, COUNT(DISTINCT a.AccusedName) AS spellings\n  FROM resolved_identity ri\n  JOIN Accused a ON a.AccusedMasterID = ri.AccusedMasterID\n  GROUP BY ri.ResolvedIdentityID\n  HAVING COUNT(DISTINCT a.AccusedName) > 1\n) t;"
+    },
+    {
+      "id": "Q115",
+      "shape": "name_variant_lookup",
+      "difficulty": "moderate",
+      "question": "Show every recorded name for this identity, with the case each came from.",
+      "question_kn": "ಈ ವ್ಯಕ್ತಿಗೆ ದಾಖಲಾದ ಎಲ್ಲ ಹೆಸರುಗಳನ್ನು ಪ್ರಕರಣ ಸಹಿತ ತೋರಿಸಿ.",
+      "tables": [
+        "Accused",
+        "CaseMaster",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT a.AccusedName, cm.CrimeNo, cm.CrimeRegisteredDate\nFROM resolved_identity ri\nJOIN Accused a     ON a.AccusedMasterID = ri.AccusedMasterID\nJOIN CaseMaster cm ON cm.CaseMasterID   = ri.CaseMasterID\nWHERE ri.ResolvedIdentityID = :identity\nORDER BY cm.CrimeRegisteredDate;"
+    },
+    {
+      "id": "Q116",
+      "shape": "name_variant_lookup",
+      "difficulty": "moderate",
+      "question": "Which names differ only by a trailing vowel?",
+      "question_kn": null,
+      "tables": [
+        "Accused"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT a.AccusedName AS name_a, b.AccusedName AS name_b\nFROM Accused a\nJOIN Accused b ON b.AccusedName = a.AccusedName || 'a'\nGROUP BY name_a, name_b;"
+    },
+    {
+      "id": "Q117",
+      "shape": "name_variant_lookup",
+      "difficulty": "simple",
+      "question": "How many distinct name strings are in the accused table?",
+      "question_kn": null,
+      "tables": [
+        "Accused"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(DISTINCT AccusedName) AS distinct_names,\n       COUNT(*) AS rows_held\nFROM Accused;"
+    },
+    {
+      "id": "Q118",
+      "shape": "name_variant_lookup",
+      "difficulty": "complex",
+      "question": "For a given name, which identities does it resolve to and with what confidence?",
+      "question_kn": null,
+      "tables": [
+        "Accused",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID, COUNT(*) AS rows_held,\n       COUNT(DISTINCT ri.CaseMasterID) AS cases\nFROM Accused a\nJOIN resolved_identity ri ON ri.AccusedMasterID = a.AccusedMasterID\nWHERE a.AccusedName = :name\nGROUP BY ri.ResolvedIdentityID;"
+    },
+    {
+      "id": "Q119",
+      "shape": "name_variant_lookup",
+      "difficulty": "moderate",
+      "question": "Which accused names carry an initial rather than a full patronymic?",
+      "question_kn": null,
+      "tables": [
+        "Accused"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT AccusedMasterID, AccusedName\nFROM Accused\nWHERE AccusedName LIKE '_. %' OR AccusedName LIKE '_ %'\nORDER BY AccusedName;"
+    },
+    {
+      "id": "Q120",
+      "shape": "name_variant_lookup",
+      "difficulty": "complex",
+      "question": "How many identities did resolution recover that exact name matching would have missed?",
+      "question_kn": null,
+      "tables": [
+        "Accused",
+        "resolved_identity"
+      ],
+      "answerable_today": true,
+      "requires_person_key": true,
+      "band": "answerable_today",
+      "sql": "SELECT COUNT(*) AS recovered_identities\nFROM (\n  SELECT ri.ResolvedIdentityID\n  FROM resolved_identity ri\n  JOIN Accused a ON a.AccusedMasterID = ri.AccusedMasterID\n  GROUP BY ri.ResolvedIdentityID\n  HAVING COUNT(DISTINCT a.AccusedName) > 1\n) t;"
+    },
+    {
+      "id": "Q121",
+      "shape": "victim_complainant",
+      "difficulty": "simple",
+      "question": "How many victims are recorded in this district?",
+      "question_kn": "ಈ ಜಿಲ್ಲೆಯಲ್ಲಿ ಎಷ್ಟು ಸಂತ್ರಸ್ತರು ದಾಖಲಾಗಿದ್ದಾರೆ?",
+      "tables": [
+        "Victim",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) AS victims\nFROM Victim v\nJOIN CaseMaster cm ON cm.CaseMasterID = v.CaseMasterID\nWHERE cm.DistrictID = :district_id;"
+    },
+    {
+      "id": "Q122",
+      "shape": "victim_complainant",
+      "difficulty": "complex",
+      "question": "Which people have been a victim in more than one case?",
+      "question_kn": "ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಪ್ರಕರಣಗಳಲ್ಲಿ ಸಂತ್ರಸ್ತರಾದವರು ಯಾರು?",
+      "tables": [
+        "Victim",
+        "resolved_victim"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT rv.ResolvedIdentityID, COUNT(DISTINCT rv.CaseMasterID) AS cases\nFROM resolved_victim rv\nGROUP BY rv.ResolvedIdentityID\nHAVING COUNT(DISTINCT rv.CaseMasterID) > 1\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q123",
+      "shape": "victim_complainant",
+      "difficulty": "complex",
+      "question": "Which complainants have filed more than one FIR?",
+      "question_kn": "ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಎಫ್ಐಆರ್ ದಾಖಲಿಸಿದ ದೂರುದಾರರು ಯಾರು?",
+      "tables": [
+        "ComplainantDetails",
+        "resolved_complainant"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT rc.ResolvedIdentityID, COUNT(DISTINCT rc.CaseMasterID) AS firs_filed\nFROM resolved_complainant rc\nGROUP BY rc.ResolvedIdentityID\nHAVING COUNT(DISTINCT rc.CaseMasterID) > 1\nORDER BY firs_filed DESC;"
+    },
+    {
+      "id": "Q124",
+      "shape": "victim_complainant",
+      "difficulty": "complex",
+      "question": "Is anyone recorded as both a victim and an accused?",
+      "question_kn": "ಯಾರಾದರೂ ಸಂತ್ರಸ್ತರೂ ಆರೋಪಿಯೂ ಆಗಿ ದಾಖಲಾಗಿದ್ದಾರೆಯೇ?",
+      "tables": [
+        "resolved_identity",
+        "resolved_victim"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID\nFROM resolved_identity ri\nJOIN resolved_victim rv ON rv.ResolvedIdentityID = ri.ResolvedIdentityID\nGROUP BY ri.ResolvedIdentityID;"
+    },
+    {
+      "id": "Q125",
+      "shape": "victim_complainant",
+      "difficulty": "moderate",
+      "question": "How many complainants filed on their own behalf rather than for someone else?",
+      "question_kn": null,
+      "tables": [
+        "ComplainantDetails"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT RelationToVictim, COUNT(*) AS n\nFROM ComplainantDetails\nGROUP BY RelationToVictim\nORDER BY n DESC;"
+    },
+    {
+      "id": "Q126",
+      "shape": "victim_complainant",
+      "difficulty": "complex",
+      "question": "How many distinct people do the complainant rows actually represent?",
+      "question_kn": null,
+      "tables": [
+        "ComplainantDetails",
+        "resolved_complainant"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT COUNT(*) AS complainant_rows,\n       COUNT(DISTINCT rc.ResolvedIdentityID) AS distinct_people\nFROM resolved_complainant rc;"
+    },
+    {
+      "id": "Q127",
+      "shape": "victim_complainant",
+      "difficulty": "moderate",
+      "question": "Which complainant phone numbers appear on more than one FIR?",
+      "question_kn": null,
+      "tables": [
+        "ComplainantDetails"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT PhoneNumber, COUNT(DISTINCT CaseMasterID) AS firs\nFROM ComplainantDetails\nWHERE PhoneNumber IS NOT NULL\nGROUP BY PhoneNumber\nHAVING COUNT(DISTINCT CaseMasterID) > 1\nORDER BY firs DESC;"
+    },
+    {
+      "id": "Q128",
+      "shape": "victim_complainant",
+      "difficulty": "complex",
+      "question": "Do repeat complainants cluster in particular localities?",
+      "question_kn": null,
+      "tables": [
+        "ComplainantDetails",
+        "CaseMaster",
+        "resolved_complainant"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT c.Address, COUNT(DISTINCT rc.ResolvedIdentityID) AS repeat_people\nFROM resolved_complainant rc\nJOIN ComplainantDetails c ON c.ComplainantID = rc.ComplainantID\nWHERE rc.ResolvedIdentityID IN (\n  SELECT r2.ResolvedIdentityID FROM resolved_complainant r2\n  GROUP BY r2.ResolvedIdentityID HAVING COUNT(DISTINCT r2.CaseMasterID) > 1\n)\nGROUP BY c.Address\nORDER BY repeat_people DESC;"
+    },
+    {
+      "id": "Q129",
+      "shape": "victim_complainant",
+      "difficulty": "simple",
+      "question": "What is the age distribution of victims for this crime head?",
+      "question_kn": null,
+      "tables": [
+        "Victim",
+        "CaseMaster",
+        "CrimeHead"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT v.AgeYear, COUNT(*) AS victims\nFROM Victim v\nJOIN CaseMaster cm ON cm.CaseMasterID = v.CaseMasterID\nJOIN CrimeHead ch  ON ch.CrimeHeadID  = cm.CrimeHeadID\nWHERE ch.CrimeHeadName = :head\nGROUP BY v.AgeYear\nORDER BY v.AgeYear;"
+    },
+    {
+      "id": "Q130",
+      "shape": "victim_complainant",
+      "difficulty": "complex",
+      "question": "For a repeat victim, is the same offender involved each time?",
+      "question_kn": null,
+      "tables": [
+        "resolved_identity",
+        "resolved_victim"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT rv.ResolvedIdentityID AS victim,\n       ri.ResolvedIdentityID AS accused,\n       COUNT(DISTINCT rv.CaseMasterID) AS shared_cases\nFROM resolved_victim rv\nJOIN resolved_identity ri ON ri.CaseMasterID = rv.CaseMasterID\nGROUP BY rv.ResolvedIdentityID, ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT rv.CaseMasterID) > 1;"
+    },
+    {
+      "id": "Q131",
+      "shape": "victim_complainant",
+      "difficulty": "moderate",
+      "question": "How many cases have a victim recorded at all?",
+      "question_kn": null,
+      "tables": [
+        "Victim",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(DISTINCT v.CaseMasterID) AS cases_with_victim,\n       (SELECT COUNT(*) FROM CaseMaster) AS all_cases\nFROM Victim v;"
+    },
+    {
+      "id": "Q132",
+      "shape": "victim_complainant",
+      "difficulty": "complex",
+      "question": "Across accused, victims and complainants, how many rows collapse to how many people?",
+      "question_kn": null,
+      "tables": [
+        "resolved_identity",
+        "resolved_victim",
+        "resolved_complainant"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT 'accused' AS table_name, COUNT(*) AS rows_held,\n       COUNT(DISTINCT ResolvedIdentityID) AS people\nFROM resolved_identity\nUNION ALL\nSELECT 'victim', COUNT(*), COUNT(DISTINCT ResolvedIdentityID)\nFROM resolved_victim\nUNION ALL\nSELECT 'complainant', COUNT(*), COUNT(DISTINCT ResolvedIdentityID)\nFROM resolved_complainant;"
+    },
+    {
+      "id": "Q133",
+      "shape": "case_disposal",
+      "difficulty": "simple",
+      "question": "How many cases ended in a chargesheet?",
+      "question_kn": "ಎಷ್ಟು ಪ್ರಕರಣಗಳಲ್ಲಿ ದೋಷಾರೋಪ ಪಟ್ಟಿ ಸಲ್ಲಿಸಲಾಗಿದೆ?",
+      "tables": [
+        "ChargesheetDetails"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(DISTINCT CaseMasterID) AS chargesheeted\nFROM ChargesheetDetails;"
+    },
+    {
+      "id": "Q134",
+      "shape": "case_disposal",
+      "difficulty": "moderate",
+      "question": "What is the chargesheet rate by district?",
+      "question_kn": "ಜಿಲ್ಲಾವಾರು ದೋಷಾರೋಪ ಪಟ್ಟಿ ಪ್ರಮಾಣ ಎಷ್ಟು?",
+      "tables": [
+        "ChargesheetDetails",
+        "CaseMaster",
+        "District"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT d.DistrictName,\n       COUNT(DISTINCT cs.CaseMasterID) * 1.0 / COUNT(DISTINCT cm.CaseMasterID) AS rate\nFROM CaseMaster cm\nJOIN District d ON d.DistrictID = cm.DistrictID\nLEFT JOIN ChargesheetDetails cs ON cs.CaseMasterID = cm.CaseMasterID\nGROUP BY d.DistrictName\nORDER BY rate DESC;"
+    },
+    {
+      "id": "Q135",
+      "shape": "case_disposal",
+      "difficulty": "complex",
+      "question": "Do repeat offenders get chargesheeted at a different rate from first timers?",
+      "question_kn": null,
+      "tables": [
+        "ChargesheetDetails",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "WITH history AS (\n  SELECT ri.ResolvedIdentityID AS pid, COUNT(DISTINCT ri.CaseMasterID) AS cases\n  FROM resolved_identity ri\n  GROUP BY ri.ResolvedIdentityID\n)\nSELECT CASE WHEN h.cases > 1 THEN 'repeat' ELSE 'first time' END AS band,\n       COUNT(DISTINCT cs.CaseMasterID) * 1.0\n     / COUNT(DISTINCT ri.CaseMasterID) AS chargesheet_rate\nFROM history h\nJOIN resolved_identity ri ON ri.ResolvedIdentityID = h.pid\nLEFT JOIN ChargesheetDetails cs ON cs.CaseMasterID = ri.CaseMasterID\nGROUP BY band;"
+    },
+    {
+      "id": "Q136",
+      "shape": "case_disposal",
+      "difficulty": "simple",
+      "question": "What is the final report type for this case?",
+      "question_kn": "ಈ ಪ್ರಕರಣದ ಅಂತಿಮ ವರದಿ ಯಾವ ಬಗೆಯದು?",
+      "tables": [
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT CrimeNo, CaseStatus\nFROM CaseMaster\nWHERE CaseMasterID = :case_id;"
+    },
+    {
+      "id": "Q137",
+      "shape": "case_disposal",
+      "difficulty": "moderate",
+      "question": "How many cases closed as B report, meaning false or mistake of fact?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) AS b_reports\nFROM CaseMaster\nWHERE CaseStatus = 'B report';"
+    },
+    {
+      "id": "Q138",
+      "shape": "case_disposal",
+      "difficulty": "complex",
+      "question": "What is the median days from registration to chargesheet, by crime head?",
+      "question_kn": null,
+      "tables": [
+        "ChargesheetDetails",
+        "CaseMaster",
+        "CrimeHead"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT ch.CrimeHeadName,\n       AVG(julianday(cs.ChargesheetDate) - julianday(cm.CrimeRegisteredDate)) AS avg_days\nFROM ChargesheetDetails cs\nJOIN CaseMaster cm ON cm.CaseMasterID = cs.CaseMasterID\nJOIN CrimeHead ch  ON ch.CrimeHeadID  = cm.CrimeHeadID\nGROUP BY ch.CrimeHeadName\nORDER BY avg_days DESC;"
+    },
+    {
+      "id": "Q139",
+      "shape": "case_disposal",
+      "difficulty": "moderate",
+      "question": "Which cases have been open for more than a year with no chargesheet?",
+      "question_kn": "ಒಂದು ವರ್ಷಕ್ಕೂ ಹೆಚ್ಚು ಕಾಲ ಬಾಕಿ ಇರುವ ಪ್ರಕರಣಗಳು ಯಾವುವು?",
+      "tables": [
+        "CaseMaster",
+        "ChargesheetDetails"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT cm.CrimeNo, cm.CrimeRegisteredDate\nFROM CaseMaster cm\nLEFT JOIN ChargesheetDetails cs ON cs.CaseMasterID = cm.CaseMasterID\nWHERE cs.CaseMasterID IS NULL\n  AND julianday(:as_of) - julianday(cm.CrimeRegisteredDate) > 365\nORDER BY cm.CrimeRegisteredDate;"
+    },
+    {
+      "id": "Q140",
+      "shape": "case_disposal",
+      "difficulty": "complex",
+      "question": "Which offenders have the highest share of cases ending in a chargesheet?",
+      "question_kn": null,
+      "tables": [
+        "ChargesheetDetails",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID,\n       COUNT(DISTINCT cs.CaseMasterID) * 1.0\n     / COUNT(DISTINCT ri.CaseMasterID) AS chargesheet_share,\n       COUNT(DISTINCT ri.CaseMasterID) AS cases\nFROM resolved_identity ri\nLEFT JOIN ChargesheetDetails cs ON cs.CaseMasterID = ri.CaseMasterID\nGROUP BY ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT ri.CaseMasterID) >= 3\nORDER BY chargesheet_share DESC;"
+    },
+    {
+      "id": "Q141",
+      "shape": "officer_workload",
+      "difficulty": "moderate",
+      "question": "How many cases is each investigating officer carrying?",
+      "question_kn": "ಪ್ರತಿ ತನಿಖಾಧಿಕಾರಿ ಎಷ್ಟು ಪ್ರಕರಣ ನಿರ್ವಹಿಸುತ್ತಿದ್ದಾರೆ?",
+      "tables": [
+        "CaseMaster",
+        "Employee"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT e.EmployeeName, COUNT(*) AS cases\nFROM CaseMaster cm\nJOIN Employee e ON e.EmployeeID = cm.IOEmployeeID\nGROUP BY e.EmployeeName\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q142",
+      "shape": "officer_workload",
+      "difficulty": "simple",
+      "question": "Who is the investigating officer on this case?",
+      "question_kn": "ಈ ಪ್ರಕರಣದ ತನಿಖಾಧಿಕಾರಿ ಯಾರು?",
+      "tables": [
+        "CaseMaster",
+        "Employee"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT e.EmployeeName, e.DesignationID\nFROM CaseMaster cm\nJOIN Employee e ON e.EmployeeID = cm.IOEmployeeID\nWHERE cm.CaseMasterID = :case_id;"
+    },
+    {
+      "id": "Q143",
+      "shape": "officer_workload",
+      "difficulty": "complex",
+      "question": "Which officers have handled cases involving the same repeat offender?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "Employee",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID,\n       COUNT(DISTINCT cm.IOEmployeeID) AS officers,\n       COUNT(DISTINCT ri.CaseMasterID) AS cases\nFROM resolved_identity ri\nJOIN CaseMaster cm ON cm.CaseMasterID = ri.CaseMasterID\nGROUP BY ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT cm.IOEmployeeID) > 1\nORDER BY officers DESC;"
+    },
+    {
+      "id": "Q144",
+      "shape": "officer_workload",
+      "difficulty": "moderate",
+      "question": "How many officers are posted at this station?",
+      "question_kn": "ಈ ಠಾಣೆಯಲ್ಲಿ ಎಷ್ಟು ಅಧಿಕಾರಿಗಳಿದ್ದಾರೆ?",
+      "tables": [
+        "Employee",
+        "Unit"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(*) AS officers\nFROM Employee e\nJOIN Unit u ON u.UnitID = e.UnitID\nWHERE u.UnitName = :station;"
+    },
+    {
+      "id": "Q145",
+      "shape": "officer_workload",
+      "difficulty": "complex",
+      "question": "Is caseload per officer even across the district?",
+      "question_kn": null,
+      "tables": [
+        "CaseMaster",
+        "Employee",
+        "Unit"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT u.UnitName,\n       COUNT(DISTINCT cm.CaseMasterID) AS cases,\n       COUNT(DISTINCT e.EmployeeID) AS officers,\n       COUNT(DISTINCT cm.CaseMasterID) * 1.0\n     / NULLIF(COUNT(DISTINCT e.EmployeeID), 0) AS load_per_officer\nFROM Unit u\nLEFT JOIN CaseMaster cm ON cm.UnitID = u.UnitID\nLEFT JOIN Employee e    ON e.UnitID  = u.UnitID\nWHERE u.DistrictID = :district_id\nGROUP BY u.UnitName\nORDER BY load_per_officer DESC;"
+    },
+    {
+      "id": "Q146",
+      "shape": "act_section",
+      "difficulty": "simple",
+      "question": "Which sections were applied in this case?",
+      "question_kn": "ಈ ಪ್ರಕರಣದಲ್ಲಿ ಯಾವ ಸೆಕ್ಷನ್‌ಗಳನ್ನು ಅನ್ವಯಿಸಲಾಗಿದೆ?",
+      "tables": [
+        "ActSectionAssociation",
+        "Act",
+        "Section"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT a.ActAbbr, s.SectionNo, s.SectionDesc\nFROM ActSectionAssociation asa\nJOIN Act a     ON a.ActID     = asa.ActID\nJOIN Section s ON s.SectionID = asa.SectionID\nWHERE asa.CaseMasterID = :case_id;"
+    },
+    {
+      "id": "Q147",
+      "shape": "act_section",
+      "difficulty": "moderate",
+      "question": "Which section is most frequently applied statewide?",
+      "question_kn": null,
+      "tables": [
+        "ActSectionAssociation",
+        "Section"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT s.SectionNo, s.SectionDesc, COUNT(*) AS uses\nFROM ActSectionAssociation asa\nJOIN Section s ON s.SectionID = asa.SectionID\nGROUP BY s.SectionNo, s.SectionDesc\nORDER BY uses DESC\nLIMIT 20;"
+    },
+    {
+      "id": "Q148",
+      "shape": "act_section",
+      "difficulty": "complex",
+      "question": "Which sections most often appear together on one FIR?",
+      "question_kn": null,
+      "tables": [
+        "ActSectionAssociation",
+        "Section"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT sa.SectionNo AS section_a, sb.SectionNo AS section_b,\n       COUNT(*) AS co_occurrences\nFROM ActSectionAssociation a\nJOIN ActSectionAssociation b ON b.CaseMasterID = a.CaseMasterID\n                            AND b.SectionID > a.SectionID\nJOIN Section sa ON sa.SectionID = a.SectionID\nJOIN Section sb ON sb.SectionID = b.SectionID\nGROUP BY section_a, section_b\nORDER BY co_occurrences DESC\nLIMIT 20;"
+    },
+    {
+      "id": "Q149",
+      "shape": "act_section",
+      "difficulty": "complex",
+      "question": "Which offenders have been booked under this section more than once?",
+      "question_kn": "ಈ ಸೆಕ್ಷನ್ ಅಡಿಯಲ್ಲಿ ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಬಾರಿ ಪ್ರಕರಣ ದಾಖಲಾದವರು ಯಾರು?",
+      "tables": [
+        "ActSectionAssociation",
+        "Section",
+        "resolved_identity"
+      ],
+      "answerable_today": false,
+      "requires_person_key": true,
+      "band": "impossible_on_raw_schema",
+      "sql": "SELECT ri.ResolvedIdentityID, COUNT(DISTINCT ri.CaseMasterID) AS cases\nFROM resolved_identity ri\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = ri.CaseMasterID\nJOIN Section s ON s.SectionID = asa.SectionID\nWHERE s.SectionNo = :section\nGROUP BY ri.ResolvedIdentityID\nHAVING COUNT(DISTINCT ri.CaseMasterID) > 1\nORDER BY cases DESC;"
+    },
+    {
+      "id": "Q150",
+      "shape": "act_section",
+      "difficulty": "moderate",
+      "question": "How many cases were registered under this section in this district?",
+      "question_kn": "ಈ ಜಿಲ್ಲೆಯಲ್ಲಿ ಈ ಸೆಕ್ಷನ್ ಅಡಿಯಲ್ಲಿ ಎಷ್ಟು ಪ್ರಕರಣ ದಾಖಲಾಗಿವೆ?",
+      "tables": [
+        "ActSectionAssociation",
+        "Section",
+        "CaseMaster"
+      ],
+      "answerable_today": false,
+      "requires_person_key": false,
+      "band": "needs_language_layer",
+      "sql": "SELECT COUNT(DISTINCT cm.CaseMasterID) AS cases\nFROM CaseMaster cm\nJOIN ActSectionAssociation asa ON asa.CaseMasterID = cm.CaseMasterID\nJOIN Section s ON s.SectionID = asa.SectionID\nWHERE s.SectionNo = :section\n  AND cm.DistrictID = :district_id;"
+    }
+  ]
+}

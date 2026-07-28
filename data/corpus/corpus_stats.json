@@ -1,0 +1,161 @@
+{
+  "counts": {
+    "districts": 31,
+    "units": 404,
+    "police_stations": 294,
+    "employees": 2518,
+    "acts": 8,
+    "sections": 45,
+    "cases": 5000,
+    "accused_rows": 7611,
+    "victims": 688,
+    "complainants": 5000,
+    "arrests": 4714,
+    "chargesheets": 4623,
+    "act_section_links": 7169,
+    "true_persons": 3863,
+    "true_persons_appearing": 3840,
+    "undetected_cases": 450,
+    "collision_groups": 110,
+    "gangs": 197
+  },
+  "accused_per_case": {
+    "1": 2667,
+    "2": 1086,
+    "3": 502,
+    "4": 209,
+    "5": 86
+  },
+  "cstype": {
+    "A": 3522,
+    "D": 237,
+    "B": 414,
+    "C": 450
+  },
+  "appearances_per_person": {
+    "2": 659,
+    "4": 209,
+    "12": 13,
+    "10": 19,
+    "17": 3,
+    "1": 2342,
+    "3": 341,
+    "7": 38,
+    "5": 99,
+    "11": 7,
+    "9": 14,
+    "6": 50,
+    "8": 38,
+    "14": 1,
+    "18": 2,
+    "16": 4,
+    "13": 1
+  },
+  "script": {
+    "latin": 4480,
+    "kannada": 2962,
+    "mixed": 169
+  },
+  "variants": {
+    "LA_UPPER": 206,
+    "LA_FULL": 1792,
+    "KN_FULL": 1601,
+    "KN_TANDE": 739,
+    "LA_INITIAL_SUFFIX": 293,
+    "LA_SONOF": 562,
+    "LA_GIVEN": 681,
+    "LA_INITIAL_PREFIX": 432,
+    "LA_INITIAL_BOTH": 102,
+    "KN_GIVEN": 541,
+    "LA_REORDER": 185,
+    "LA_SONOF_DOT": 167,
+    "MIX_LAGIVEN_KNFATHER": 68,
+    "MIX_KNGIVEN_LAFATHER": 101,
+    "LA_ALIAS": 23,
+    "KN_ALIAS": 23,
+    "LA_MONIKER": 37,
+    "KN_MONIKER": 40,
+    "KN_BIN": 18
+  },
+  "name_frequency_top10": {
+    "Manjunath Basappa": 235,
+    "Manjunath Krishnappa": 146,
+    "Suresh Basappa": 128,
+    "Manjunath Siddappa": 96,
+    "Manjunath Ningappa": 93,
+    "Manjunath Shivappa": 88,
+    "Ramesh Krishnappa": 87,
+    "Ramesh Basappa": 85,
+    "Kumar Basappa": 78,
+    "Mahesh Basappa": 62
+  },
+  "subheads": {
+    "Robbery": 681,
+    "Narcotic Substance": 389,
+    "Dacoity": 410,
+    "Cheating": 374,
+    "Excise Offence": 426,
+    "Hurt": 384,
+    "House Breaking Theft": 636,
+    "Theft of Motor Vehicle": 329,
+    "Murder": 304,
+    "Cattle Theft": 395,
+    "Financial Fraud": 339,
+    "Illegal Mineral Transport": 333
+  },
+  "act_usage": {
+    "BNS": 2848,
+    "NDPS": 389,
+    "KEA": 852,
+    "IPC": 2408,
+    "ITA": 339,
+    "KPA": 333
+  },
+  "age_noise": {
+    "0": 3294,
+    "-3": 338,
+    "2": 620,
+    "-1": 1002,
+    "-2": 614,
+    "1": 935,
+    "3": 287,
+    "4": 156,
+    "-5": 64
+  },
+  "recoverability": {
+    "true_pairs": 10503,
+    "cross_script_pairs": 3925,
+    "channels": {
+      "exact name string": 1289,
+      "raw token overlap": 5305,
+      "cross script pair": 3925,
+      "same district": 8355,
+      "same police station": 6820,
+      "same crime sub head": 6536,
+      "shared arresting officer": 1072,
+      "shared co accused": 622,
+      "implied birth year agrees": 7459
+    },
+    "tiers": {
+      "2. token overlap, lexical matching finds it": 4017,
+      "1. exact string, a naive matcher finds it": 1289,
+      "3. name reachable after normalisation, needs Layers 1 and 2": 5155,
+      "4. name degraded, two or more structural signals survive": 36,
+      "5. no channel survives, unrecoverable by construction": 6
+    },
+    "recall_ceiling_pct": 99.9429,
+    "unrecoverable_pct": 0.0571,
+    "exact_match_pct": 12.2727
+  },
+  "hard_negatives": {
+    "collision_groups": 110,
+    "tight_age_groups": 48,
+    "ambiguous_name_strings": 938,
+    "cross_person_exact_name_pairs": 17710
+  },
+  "relational": {
+    "gangs": 197,
+    "cannot_link_cases": 1883,
+    "undetected_cases": 450
+  }
+}

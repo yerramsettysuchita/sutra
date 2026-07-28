@@ -1,0 +1,19 @@
+CrimeSubHeadID,CrimeHeadID,CrimeSubHeadName,CrimeSubHeadNameKn
+1,1,Murder,ಕೊಲೆ
+2,1,Attempt to Murder,ಕೊಲೆ ಯತ್ನ
+3,1,Hurt,ಗಾಯ
+4,1,Grievous Hurt,ಗಂಭೀರ ಗಾಯ
+5,2,Theft of Motor Vehicle,ವಾಹನ ಕಳವು
+6,2,House Breaking Theft,ಮನೆ ಕನ್ನ ಕಳವು
+7,2,Ordinary Theft,ಸಾಮಾನ್ಯ ಕಳವು
+8,2,Robbery,ದರೋಡೆ
+9,2,Dacoity,ಸಂಘಟಿತ ದರೋಡೆ
+10,2,Cattle Theft,ಜಾನುವಾರು ಕಳವು
+11,3,Assault on Woman,ಮಹಿಳೆಯ ಮೇಲೆ ಹಲ್ಲೆ
+12,4,Cheating,ವಂಚನೆ
+13,4,Financial Fraud,ಹಣಕಾಸು ವಂಚನೆ
+14,5,Excise Offence,ಅಬಕಾರಿ ಅಪರಾಧ
+15,5,Narcotic Substance,ಮಾದಕ ವಸ್ತು
+16,5,Illegal Mineral Transport,ಅಕ್ರಮ ಖನಿಜ ಸಾಗಣೆ
+17,6,Rioting,ಗಲಭೆ
+18,6,Criminal Intimidation,ಬೆದರಿಕೆ

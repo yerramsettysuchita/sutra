@@ -1,0 +1,1515 @@
+{
+  "generated_at": "2026-07-28T22:24:55+00:00",
+  "database": "data\\corpus\\sutra.db",
+  "total": 150,
+  "execute_on_full_schema": 150,
+  "fail_to_execute": 0,
+  "requires_person_key_claimed": 76,
+  "requires_person_key_confirmed_by_database": 76,
+  "requires_person_key_contradicted": 0,
+  "unmarked_but_failing_on_raw_schema": 0,
+  "queries_reading_protected_columns": 0,
+  "verdict": "every query executes, and every question marked as needing a cross FIR person key is one the raw KSP schema cannot run",
+  "results": [
+    {
+      "id": "Q001",
+      "shape": "cross_district_appearance",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q002",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q003",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q004",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q005",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q006",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q007",
+      "shape": "cross_district_appearance",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q008",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q009",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q010",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q011",
+      "shape": "cross_district_appearance",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q012",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q013",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q014",
+      "shape": "cross_district_appearance",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q015",
+      "shape": "cross_district_appearance",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q016",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q017",
+      "shape": "repeat_offender_station",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q018",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q019",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q020",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q021",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q022",
+      "shape": "repeat_offender_station",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q023",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q024",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q025",
+      "shape": "repeat_offender_station",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q026",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q027",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q028",
+      "shape": "repeat_offender_station",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q029",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q030",
+      "shape": "repeat_offender_station",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q031",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q032",
+      "shape": "co_accused_circle",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q033",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q034",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q035",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q036",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q037",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q038",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q039",
+      "shape": "co_accused_circle",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q040",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q041",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q042",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q043",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q044",
+      "shape": "co_accused_circle",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q045",
+      "shape": "co_accused_circle",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q046",
+      "shape": "undetected_case_match",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q047",
+      "shape": "undetected_case_match",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q048",
+      "shape": "undetected_case_match",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q049",
+      "shape": "undetected_case_match",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q050",
+      "shape": "undetected_case_match",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q051",
+      "shape": "undetected_case_match",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q052",
+      "shape": "undetected_case_match",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q053",
+      "shape": "undetected_case_match",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q054",
+      "shape": "undetected_case_match",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q055",
+      "shape": "undetected_case_match",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q056",
+      "shape": "undetected_case_match",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q057",
+      "shape": "undetected_case_match",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q058",
+      "shape": "undetected_case_match",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q059",
+      "shape": "undetected_case_match",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q060",
+      "shape": "undetected_case_match",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q061",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q062",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q063",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q064",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q065",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q066",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q067",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q068",
+      "shape": "bns_transition_trend",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q069",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q070",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q071",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q072",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q073",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q074",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q075",
+      "shape": "bns_transition_trend",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q076",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q077",
+      "shape": "hotspot_by_head",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q078",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q079",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q080",
+      "shape": "hotspot_by_head",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q081",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q082",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q083",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q084",
+      "shape": "hotspot_by_head",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q085",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q086",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q087",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q088",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q089",
+      "shape": "hotspot_by_head",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q090",
+      "shape": "hotspot_by_head",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q091",
+      "shape": "arrest_history",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q092",
+      "shape": "arrest_history",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q093",
+      "shape": "arrest_history",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q094",
+      "shape": "arrest_history",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q095",
+      "shape": "arrest_history",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q096",
+      "shape": "arrest_history",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q097",
+      "shape": "arrest_history",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q098",
+      "shape": "arrest_history",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q099",
+      "shape": "arrest_history",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q100",
+      "shape": "arrest_history",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q101",
+      "shape": "arrest_history",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q102",
+      "shape": "arrest_history",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q103",
+      "shape": "arrest_history",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q104",
+      "shape": "arrest_history",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q105",
+      "shape": "arrest_history",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q106",
+      "shape": "name_variant_lookup",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q107",
+      "shape": "name_variant_lookup",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q108",
+      "shape": "name_variant_lookup",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q109",
+      "shape": "name_variant_lookup",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q110",
+      "shape": "name_variant_lookup",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q111",
+      "shape": "name_variant_lookup",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q112",
+      "shape": "name_variant_lookup",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q113",
+      "shape": "name_variant_lookup",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q114",
+      "shape": "name_variant_lookup",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q115",
+      "shape": "name_variant_lookup",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q116",
+      "shape": "name_variant_lookup",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q117",
+      "shape": "name_variant_lookup",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q118",
+      "shape": "name_variant_lookup",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q119",
+      "shape": "name_variant_lookup",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q120",
+      "shape": "name_variant_lookup",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q121",
+      "shape": "victim_complainant",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q122",
+      "shape": "victim_complainant",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_victim",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q123",
+      "shape": "victim_complainant",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_complainant",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q124",
+      "shape": "victim_complainant",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q125",
+      "shape": "victim_complainant",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q126",
+      "shape": "victim_complainant",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_complainant",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q127",
+      "shape": "victim_complainant",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q128",
+      "shape": "victim_complainant",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_complainant",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q129",
+      "shape": "victim_complainant",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q130",
+      "shape": "victim_complainant",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_victim",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q131",
+      "shape": "victim_complainant",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q132",
+      "shape": "victim_complainant",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_complainant",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q133",
+      "shape": "case_disposal",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q134",
+      "shape": "case_disposal",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q135",
+      "shape": "case_disposal",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q136",
+      "shape": "case_disposal",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q137",
+      "shape": "case_disposal",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q138",
+      "shape": "case_disposal",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q139",
+      "shape": "case_disposal",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q140",
+      "shape": "case_disposal",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q141",
+      "shape": "officer_workload",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q142",
+      "shape": "officer_workload",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q143",
+      "shape": "officer_workload",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q144",
+      "shape": "officer_workload",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q145",
+      "shape": "officer_workload",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q146",
+      "shape": "act_section",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q147",
+      "shape": "act_section",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q148",
+      "shape": "act_section",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q149",
+      "shape": "act_section",
+      "requires_person_key": true,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": false,
+      "error_on_raw_ksp_schema": "OperationalError: no such table: resolved_identity",
+      "reads_protected_column": []
+    },
+    {
+      "id": "Q150",
+      "shape": "act_section",
+      "requires_person_key": false,
+      "runs_on_full_schema": true,
+      "error_on_full_schema": "",
+      "runs_on_raw_ksp_schema": true,
+      "error_on_raw_ksp_schema": "",
+      "reads_protected_column": []
+    }
+  ]
+}

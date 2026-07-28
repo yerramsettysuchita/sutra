@@ -1,0 +1,2201 @@
+{
+  "generated_at": "2026-07-28T22:28:39+00:00",
+  "nodes": [
+    {
+      "identity": "R000694",
+      "label": "ಹರೀಶ ಬಸಪ್ಪ",
+      "record_count": 15,
+      "case_count": 15,
+      "merged": true,
+      "degree": 0,
+      "circle": "Mandya Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R000140",
+      "label": "Mahesh S/o Basappa",
+      "record_count": 12,
+      "case_count": 12,
+      "merged": true,
+      "degree": 0,
+      "circle": "Davanagere Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R001432",
+      "label": "Nagaraja Ningappa",
+      "record_count": 12,
+      "case_count": 12,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Market Police Station"
+    },
+    {
+      "identity": "R000547",
+      "label": "Girish S/o Nagappa ",
+      "record_count": 11,
+      "case_count": 11,
+      "merged": true,
+      "degree": 0,
+      "circle": "Belagavi Kote Police Station"
+    },
+    {
+      "identity": "R000712",
+      "label": "ಮಂಜುನಾಥ ವೆಂಕಟಪ್ಪ",
+      "record_count": 10,
+      "case_count": 10,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dakshina Kannada Extension Police Station"
+    },
+    {
+      "identity": "R003564",
+      "label": "Basavaraj  Hanumappa",
+      "record_count": 10,
+      "case_count": 10,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kodagu Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R000263",
+      "label": "ಗಣೇಶ ಬಸಪ್ಪ",
+      "record_count": 9,
+      "case_count": 9,
+      "merged": true,
+      "degree": 0,
+      "circle": "Tumakuru Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R000294",
+      "label": "ವೆಂಕಟೇಶ ತಂದೆ  ಚೆನ್ನಪ್ಪ",
+      "record_count": 9,
+      "case_count": 9,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chikkamagaluru Gandhi Nagar Police Station"
+    },
+    {
+      "identity": "R002267",
+      "label": "ಗಿರೀಶ ಬಸಪ್ಪ",
+      "record_count": 9,
+      "case_count": 9,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Town Police Station"
+    },
+    {
+      "identity": "R002774",
+      "label": "Shivakumar  S/o Puttappa",
+      "record_count": 9,
+      "case_count": 9,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R002988",
+      "label": "ಶಿವಕುಮಾರ ತಂದೆ ಶಿವಪ್ಪ",
+      "record_count": 9,
+      "case_count": 9,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Town Police Station"
+    },
+    {
+      "identity": "R003697",
+      "label": "Harish Basappa",
+      "record_count": 9,
+      "case_count": 9,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chamarajanagar Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R000021",
+      "label": "M. Siddappa ",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 1,
+      "circle": "Dharwad Basaveshwara Nagar Police Station"
+    },
+    {
+      "identity": "R000897",
+      "label": "Manjunath s/o. Krishnappa",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kalaburagi Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R000978",
+      "label": "Sivakumar Shivappa",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Kote Police Station"
+    },
+    {
+      "identity": "R001022",
+      "label": "Kumara",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kodagu Halli Police Station"
+    },
+    {
+      "identity": "R001049",
+      "label": "Manjunath Ramegowda",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chitradurga Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R001358",
+      "label": "ಕಿರಣ ಚಿಕ್ಕೇಗೌಡ",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Uttara Kannada Camp Police Station"
+    },
+    {
+      "identity": "R001619",
+      "label": "ಮಹೇಶ‍ ಸಂಗಪ್ಪ",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Vijayanagara Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R002221",
+      "label": "Kumar s/o. Rangapa",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dakshina Kannada Kote Police Station"
+    },
+    {
+      "identity": "R002302",
+      "label": "Suresh Ningappa",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R002385",
+      "label": "ಗಂಗಾಧರ ನಿಂಗಪ್ಪ",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chamarajanagar Basaveshwara Nagar Police Station"
+    },
+    {
+      "identity": "R003385",
+      "label": "M.C.",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Traffic Police Station"
+    },
+    {
+      "identity": "R004089",
+      "label": "ಶಂಕರ ಕೃಷ್ಣಪ್ಪ",
+      "record_count": 8,
+      "case_count": 8,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Market Police Station"
+    },
+    {
+      "identity": "R000008",
+      "label": "ಚಂದ್ರು ರಂಗಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Rural Women Police Station"
+    },
+    {
+      "identity": "R000067",
+      "label": "ಸುರೇಶ ತಂದೆ ಬಸಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Belagavi Jayanagar Police Station"
+    },
+    {
+      "identity": "R000072",
+      "label": "ಮಂಜುನಾಥ ತಂದೆ ಸಿದ್ದಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Gadag Vinoba Nagar Police Station"
+    },
+    {
+      "identity": "R000116",
+      "label": "Suresh S/o Siddappa",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 1,
+      "circle": "Mysuru Extension Police Station"
+    },
+    {
+      "identity": "R000182",
+      "label": "ಬಸವರಾಜ ತಂದೆ ನಾಗಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Gadag Kote Police Station"
+    },
+    {
+      "identity": "R000196",
+      "label": "ಅಂಬಿಕಾ ತಿಮ್ಮಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Vijayapura Market Police Station"
+    },
+    {
+      "identity": "R000370",
+      "label": "V.M.",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Raichur Extension Police Station"
+    },
+    {
+      "identity": "R000381",
+      "label": "Puttaswamy Krishnappa",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bidar Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R000492",
+      "label": "ಶಂಕರ ತಂದೆ ನಾಗಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Vijayapura Market Police Station"
+    },
+    {
+      "identity": "R000629",
+      "label": "Hanumanta Krishnappa ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Raichur Vinoba Nagar Police Station"
+    },
+    {
+      "identity": "R000677",
+      "label": "Manjunath S/o Krishnapa",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 1,
+      "circle": "Dakshina Kannada Kote Police Station"
+    },
+    {
+      "identity": "R000778",
+      "label": "Santosh Mariyappa",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Rural Market Police Station"
+    },
+    {
+      "identity": "R001100",
+      "label": "ಮಂಜುನಾಥ ಮುನಿಯಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chitradurga Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R001169",
+      "label": "Lokesh Doddapa",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chikkamagaluru Rural Police Station"
+    },
+    {
+      "identity": "R001213",
+      "label": "ಗೋಪಾಲ ತಂದೆ ಮುನಿಯಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kalaburagi Camp Police Station"
+    },
+    {
+      "identity": "R001370",
+      "label": "ಬಸಪ್ಪ ನಿಂಗಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Tumakuru Vinoba Nagar Police Station"
+    },
+    {
+      "identity": "R001387",
+      "label": "ವೆಂಕಟೇಶ ಬಸಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 2,
+      "circle": "Dharwad Ring Road Police Station"
+    },
+    {
+      "identity": "R001418",
+      "label": "Siddappa Manjunath",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kalaburagi Camp Police Station"
+    },
+    {
+      "identity": "R001504",
+      "label": "Siddaraju S/o Ramegowda",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R001565",
+      "label": "ಪ್ರವೀಣ ಶಿವಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 1,
+      "circle": "Mysuru Jayanagar Police Station"
+    },
+    {
+      "identity": "R001588",
+      "label": "ನಾಗರಾಜ ತಂದೆ ಲಿಂಗಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kolar Bazaar Police Station"
+    },
+    {
+      "identity": "R001747",
+      "label": "Suresha s/o. Chikkegowda",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chikkaballapur Extension Police Station"
+    },
+    {
+      "identity": "R001757",
+      "label": "ರವಿ ತಂದೆ ಬಸಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 2,
+      "circle": "Belagavi Ring Road Police Station"
+    },
+    {
+      "identity": "R001786",
+      "label": "Nagaraj Kempegowda",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Koppal Basaveshwara Nagar Police Station"
+    },
+    {
+      "identity": "R002317",
+      "label": "ಬಸವರಾಜ Shiwappa",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 1,
+      "circle": "Dharwad Ring Road Police Station"
+    },
+    {
+      "identity": "R002392",
+      "label": "H.S.",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Kote Police Station"
+    },
+    {
+      "identity": "R002493",
+      "label": "Kavitha Basapp",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Shivamogga Women Police Station"
+    },
+    {
+      "identity": "R002512",
+      "label": "ಸುನೀಲ ತಂದೆ ಕೃಷ್ಣಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chamarajanagar Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R002711",
+      "label": "ಲೋಕೇಶ ಲಿಂಗಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Yadgir Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R002820",
+      "label": "Mallikarjuna Sangappa",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Raichur Rural Police Station"
+    },
+    {
+      "identity": "R003321",
+      "label": "Madhu Gurappa",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Tumakuru Vinoba Nagar Police Station"
+    },
+    {
+      "identity": "R003338",
+      "label": "ಹರೀಶ ದೊಡ್ಡಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Town Police Station"
+    },
+    {
+      "identity": "R003602",
+      "label": "ಸವಿತಾ ತಂದೆ ಹನುಮಪ್ಪ",
+      "record_count": 7,
+      "case_count": 7,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Kote Police Station"
+    },
+    {
+      "identity": "R000015",
+      "label": "Manjunath S/o Siddapp",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dharwad Basaveshwara Nagar Police Station"
+    },
+    {
+      "identity": "R000052",
+      "label": "ಸಂತೋಷ ಶಿವಪ್ಪ ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dakshina Kannada Extension Police Station"
+    },
+    {
+      "identity": "R000083",
+      "label": "Lokesh Rangappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 1,
+      "circle": "Haveri Women Police Station"
+    },
+    {
+      "identity": "R000170",
+      "label": "ಸಿದ್ದರಾಜು ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dakshina Kannada Ring Road Police Station"
+    },
+    {
+      "identity": "R000322",
+      "label": " Manjunath ರಾಮೇಗೌಡ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R000726",
+      "label": "Savita Mallappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kodagu Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R000888",
+      "label": "Arun Mariyappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Koppal Kote Police Station"
+    },
+    {
+      "identity": "R000914",
+      "label": "S. Boregowda",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Hassan Women Police Station"
+    },
+    {
+      "identity": "R000953",
+      "label": "ಸಂತೋಷ Siddappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R000959",
+      "label": "ನವೀನ ದುರ್ಗಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Haveri Bazaar Police Station"
+    },
+    {
+      "identity": "R001018",
+      "label": "Chennappa Manjunath",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kalaburagi Camp Police Station"
+    },
+    {
+      "identity": "R001122",
+      "label": "Raju ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 1,
+      "circle": "Dharwad Ring Road Police Station"
+    },
+    {
+      "identity": "R001185",
+      "label": "ರವಿ ಯಮನಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dakshina Kannada Extension Police Station"
+    },
+    {
+      "identity": "R001244",
+      "label": "ಅರುಣ ವೆಂಕಟಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kalaburagi Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R001380",
+      "label": "Ravi Chennappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dharwad Rural Police Station"
+    },
+    {
+      "identity": "R001527",
+      "label": "Harish ನಿಂಗಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Vijayanagara Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R001586",
+      "label": "Nanjundappa S/o Rangapa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Vijayapura Traffic Police Station"
+    },
+    {
+      "identity": "R001808",
+      "label": "ಮಂಜುನಾಥ ಮಾರಿಯಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Ramanagara Extension Police Station"
+    },
+    {
+      "identity": "R001837",
+      "label": "ರಾಕೇಶ ಫಕೀರಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dakshina Kannada Extension Police Station"
+    },
+    {
+      "identity": "R001847",
+      "label": "Kavitha S/o Krishnappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Belagavi Jayanagar Police Station"
+    },
+    {
+      "identity": "R001941",
+      "label": "R. Mallappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R002153",
+      "label": "ಮಂಜುನಾಥ ಸಿದ್ದಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 1,
+      "circle": "Dakshina Kannada Ring Road Police Station"
+    },
+    {
+      "identity": "R002288",
+      "label": "S.D.",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 1,
+      "circle": "Dakshina Kannada Extension Police Station"
+    },
+    {
+      "identity": "R002520",
+      "label": "Umesh S/o Ningappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Kote Police Station"
+    },
+    {
+      "identity": "R002525",
+      "label": "Mahesh Muniyappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 1,
+      "circle": "Dharwad Basaveshwara Nagar Police Station"
+    },
+    {
+      "identity": "R002597",
+      "label": "ಗೋಪಾಲ ಕೃಷ್ಣಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kodagu Bazaar Police Station"
+    },
+    {
+      "identity": "R002651",
+      "label": "ಮಹೇಶ ಫಕೀರಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Haveri Traffic Police Station"
+    },
+    {
+      "identity": "R002839",
+      "label": "Manjunath Sangappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Traffic Police Station"
+    },
+    {
+      "identity": "R002963",
+      "label": "Manjunath Basappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Market Police Station"
+    },
+    {
+      "identity": "R003276",
+      "label": "Praveen Mallapa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Town Police Station"
+    },
+    {
+      "identity": "R003393",
+      "label": "ಸಿದ್ದರಾಜು ತಂದೆ ನಿಂಗಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dharwad Ring Road Police Station"
+    },
+    {
+      "identity": "R003473",
+      "label": "Sheevakumar Krishnappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dakshina Kannada Extension Police Station"
+    },
+    {
+      "identity": "R003776",
+      "label": "ಬಸವರಾಜ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Town Police Station"
+    },
+    {
+      "identity": "R003957",
+      "label": " Ramesh Siddappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Uttara Kannada Jayanagar Police Station"
+    },
+    {
+      "identity": "R004067",
+      "label": "Ganesh S/o Ningappa",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Traffic Police Station"
+    },
+    {
+      "identity": "R004280",
+      "label": "ಸುರೇಶ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 2,
+      "circle": "Bengaluru Urban Market Police Station"
+    },
+    {
+      "identity": "R004870",
+      "label": "ಕುಮಾರ ಬಸಪ್ಪ",
+      "record_count": 6,
+      "case_count": 6,
+      "merged": true,
+      "degree": 0,
+      "circle": "Gadag Ring Road Police Station"
+    },
+    {
+      "identity": "R000029",
+      "label": "Santosh C",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R000107",
+      "label": "Savitha D",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Udupi Rural Police Station"
+    },
+    {
+      "identity": "R000180",
+      "label": "MALIKARJUNA NAGAPPA",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chamarajanagar Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R000209",
+      "label": "ಶಿವಕುಮಾರ ಬಸಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bidar Kote Police Station"
+    },
+    {
+      "identity": "R000243",
+      "label": "A. Basappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Traffic Police Station"
+    },
+    {
+      "identity": "R000347",
+      "label": "ಬಸಪ್ಪ ರಂಗಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Kote Police Station"
+    },
+    {
+      "identity": "R000452",
+      "label": "Lakshmi Nagappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Tumakuru Vinoba Nagar Police Station"
+    },
+    {
+      "identity": "R000534",
+      "label": "ರಮೇಶ ಶಿವಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Bazaar Police Station"
+    },
+    {
+      "identity": "R000558",
+      "label": "ರಮೇಶ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Traffic Police Station"
+    },
+    {
+      "identity": "R000582",
+      "label": "ಸವಿತಾ Shivappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Mandya Rural Police Station"
+    },
+    {
+      "identity": "R000616",
+      "label": "Mahesh  Basappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Ramanagara Gandhi Nagar Police Station"
+    },
+    {
+      "identity": "R000618",
+      "label": "ನಾಗರಾಜ ಚಿಕ್ಕೇಗೌಡ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Mandya Traffic Police Station"
+    },
+    {
+      "identity": "R000749",
+      "label": "ವಿಜಯ ಬಸಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Tumakuru Town Police Station"
+    },
+    {
+      "identity": "R000767",
+      "label": "Santosha Nagappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 1,
+      "circle": "Ballari Industrial Area Police Station"
+    },
+    {
+      "identity": "R000784",
+      "label": "ಸಂತೋಷ Hanumapp",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R000798",
+      "label": "S. Mallapp",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Kote Police Station"
+    },
+    {
+      "identity": "R000861",
+      "label": "ಹರೀಶ  ಬೋರೇಗೌಡ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Yadgir Kote Police Station"
+    },
+    {
+      "identity": "R000907",
+      "label": "ಮಂಜುನಾಥ ಹನುಮಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Udupi Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R001088",
+      "label": "Lokesha s/o. Chikkegowda",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Bazaar Police Station"
+    },
+    {
+      "identity": "R001268",
+      "label": "ನಾಗರಾಜ ಶಿವಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Udupi Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R001341",
+      "label": "ಗೀತಾ ತಂದೆ ಚೆನ್ನಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Market Police Station"
+    },
+    {
+      "identity": "R001538",
+      "label": "Manjunath Puttappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Hassan Traffic Police Station"
+    },
+    {
+      "identity": "R001569",
+      "label": "ಶಿವಕುಮಾರ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 1,
+      "circle": "Mysuru Jayanagar Police Station"
+    },
+    {
+      "identity": "R001582",
+      "label": "ರಮೇಶ ಕೃಷ್ಣಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 1,
+      "circle": "Raichur Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R001640",
+      "label": "SURESH BASAPPA",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R001886",
+      "label": "ಶ್ರೀನಿವಾಸ ತಂದೆ ಸೋಮಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dharwad Kote Police Station"
+    },
+    {
+      "identity": "R001906",
+      "label": "ನಾಗರಾಜ ತಂದೆ ಬಸಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Davanagere Gandhi Nagar Police Station"
+    },
+    {
+      "identity": "R001932",
+      "label": " ರವಿ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 1,
+      "circle": "Dakshina Kannada Extension Police Station"
+    },
+    {
+      "identity": "R002027",
+      "label": "ಅಶೋಕ Gurappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bagalkot Women Police Station"
+    },
+    {
+      "identity": "R002049",
+      "label": "ಪ್ರಕಾಶ Mallapa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Bazaar Police Station"
+    },
+    {
+      "identity": "R002072",
+      "label": "R.T.",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chamarajanagar Basaveshwara Nagar Police Station"
+    },
+    {
+      "identity": "R002209",
+      "label": "ಅಯ್ಯಪ್ಪ ತಿಮ್ಮಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Market Police Station"
+    },
+    {
+      "identity": "R002277",
+      "label": "ಶಂಕರ ತಂದೆ ಈರಣ್ಣ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Rural Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R002405",
+      "label": "Mahesh Rangappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 1,
+      "circle": "Kolar Ring Road Police Station"
+    },
+    {
+      "identity": "R002407",
+      "label": "Manjunath",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 1,
+      "circle": "Kolar Ring Road Police Station"
+    },
+    {
+      "identity": "R002429",
+      "label": "ನಾಗರಾಜ ತಂದೆ ನಿಂಗಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Rural Town Police Station"
+    },
+    {
+      "identity": "R002504",
+      "label": "ಮಂಜುನಾಥ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Market Police Station"
+    },
+    {
+      "identity": "R002545",
+      "label": "Manjunath Krisnappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R002613",
+      "label": "ಚಂದ್ರು ಗುರಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Bazaar Police Station"
+    },
+    {
+      "identity": "R002704",
+      "label": "ಮಂಜುನಾಥ ರಂಗಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dharwad Halli Police Station"
+    },
+    {
+      "identity": "R002716",
+      "label": "ಸುರೇಶ ಮಾರಿಯಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Ballari Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R002804",
+      "label": "ರಾಕೇಶ ಬಸಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Market Police Station"
+    },
+    {
+      "identity": "R002826",
+      "label": "Suresh S/o Timmappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Udupi Market Police Station"
+    },
+    {
+      "identity": "R002874",
+      "label": "Manjunath S/o Shivappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Town Police Station"
+    },
+    {
+      "identity": "R002933",
+      "label": "Nagesha",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Tumakuru Vinoba Nagar Police Station"
+    },
+    {
+      "identity": "R003201",
+      "label": "Ramesh Hanumapp",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Ramanagara Bazaar Police Station"
+    },
+    {
+      "identity": "R003256",
+      "label": "ವೆಂಕಟೇಶ ತಂದೆ ದೊಡ್ಡಪ್ಪ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dharwad Basaveshwara Nagar Police Station"
+    },
+    {
+      "identity": "R003382",
+      "label": "Deepak S/o Chikkegowda",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Hassan Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R003470",
+      "label": "ಸುರೇಶ",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Belagavi Ring Road Police Station"
+    },
+    {
+      "identity": "R003790",
+      "label": "Nagesha S/o Chennappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Koppal Traffic Police Station"
+    },
+    {
+      "identity": "R004002",
+      "label": "Prakash S/o Ningapp",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Ramanagara Extension Police Station"
+    },
+    {
+      "identity": "R004033",
+      "label": "Basapa Ramesh",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Bazaar Police Station"
+    },
+    {
+      "identity": "R004136",
+      "label": "N.N.",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chikkamagaluru Bazaar Police Station"
+    },
+    {
+      "identity": "R005097",
+      "label": "Chandru Mallappa",
+      "record_count": 5,
+      "case_count": 5,
+      "merged": true,
+      "degree": 0,
+      "circle": "Belagavi Jayanagar Police Station"
+    },
+    {
+      "identity": "R000002",
+      "label": "ಕುಮಾರ ಬಸಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Gadag Ring Road Police Station"
+    },
+    {
+      "identity": "R000035",
+      "label": "ಹನುಮಂತ ತಿಮ್ಮಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chamarajanagar Cantonment Police Station"
+    },
+    {
+      "identity": "R000084",
+      "label": "Krishnamurthy  Hanumappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Haveri Women Police Station"
+    },
+    {
+      "identity": "R000098",
+      "label": "ಸುರೇಶ ತಂದೆ ಕೃಷ್ಣಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Ramanagara Camp Police Station"
+    },
+    {
+      "identity": "R000122",
+      "label": "Rames s/o. Durgappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dharwad Halli Police Station"
+    },
+    {
+      "identity": "R000129",
+      "label": "Kumar",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Mysuru Extension Police Station"
+    },
+    {
+      "identity": "R000172",
+      "label": "Naveen Basappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Davanagere Town Police Station"
+    },
+    {
+      "identity": "R000212",
+      "label": "Kumar Basappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Traffic Police Station"
+    },
+    {
+      "identity": "R000284",
+      "label": "ಸುರೇಶ ಬಸಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Ramanagara Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R000310",
+      "label": "Suresh S/o Basappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chamarajanagar Kote Police Station"
+    },
+    {
+      "identity": "R000463",
+      "label": "Krishnappa Manjunath",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Koppal Basaveshwara Nagar Police Station"
+    },
+    {
+      "identity": "R000562",
+      "label": "Kumara Basappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Traffic Police Station"
+    },
+    {
+      "identity": "R000597",
+      "label": "ರಮೇಶ‍ ನಿಂಗಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Dakshina Kannada Ring Road Police Station"
+    },
+    {
+      "identity": "R000614",
+      "label": "Manjunath Krishnappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Belagavi Market Police Station"
+    },
+    {
+      "identity": "R000701",
+      "label": "Ravi S/o Basappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kalaburagi Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R000758",
+      "label": "ರವಿ ತಂದೆ ಕೃಷ್ಣಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Tumakuru Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R000763",
+      "label": "Kiran S/o Basappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Ballari Industrial Area Police Station"
+    },
+    {
+      "identity": "R000768",
+      "label": "Somashekar",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Haveri Rural Police Station"
+    },
+    {
+      "identity": "R000855",
+      "label": "Siddaraju s/o. Chikkegowda",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Mysuru Vinoba Nagar Police Station"
+    },
+    {
+      "identity": "R000927",
+      "label": "ಮಂಜುನಾಥ Fakirapp",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Chamarajanagar Cantonment Police Station"
+    },
+    {
+      "identity": "R000943",
+      "label": "Santosh S",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R000972",
+      "label": " Mallikarjuna s/o. Krishnapp",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R001110",
+      "label": "Lokesha s/o. Rangappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Belagavi Market Police Station"
+    },
+    {
+      "identity": "R001124",
+      "label": "ಸುರೇಶ ರಾಮೇಗೌಡ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dakshina Kannada Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R001158",
+      "label": "SAVITHA  MALLAPPA ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Yadgir Camp Police Station"
+    },
+    {
+      "identity": "R001172",
+      "label": "Madhu s/o. Shivappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Ballari Market Police Station"
+    },
+    {
+      "identity": "R001190",
+      "label": "Basavaraj Siddapp",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Mandya Gandhi Nagar Police Station"
+    },
+    {
+      "identity": "R001307",
+      "label": "Siddappa Basawaraj",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Traffic Police Station"
+    },
+    {
+      "identity": "R001329",
+      "label": "Deenesh Krishnappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Kote Police Station"
+    },
+    {
+      "identity": "R001398",
+      "label": "Ganesh S/o Neengappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R001407",
+      "label": "Manjunath Gurapa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Vidya Nagar Police Station"
+    },
+    {
+      "identity": "R001431",
+      "label": "ನಾಗರಾಜ ನಿಂಗಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Market Police Station"
+    },
+    {
+      "identity": "R001445",
+      "label": "Haris Basappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Rural Basaveshwara Nagar Police Station"
+    },
+    {
+      "identity": "R001459",
+      "label": "ಶಿವಕುಮಾರ ನಿಂಗಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Raichur Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R001518",
+      "label": "Manjunath s/o. Basapa ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Kalaburagi Shivaji Nagar Police Station"
+    },
+    {
+      "identity": "R001543",
+      "label": "Manjunath Nagappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Belagavi Jayanagar Police Station"
+    },
+    {
+      "identity": "R001648",
+      "label": "Kadu Manjunath",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Dakshina Kannada Kote Police Station"
+    },
+    {
+      "identity": "R001662",
+      "label": "ಶರಣಪ್ಪ ಸಿದ್ದಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Market Police Station"
+    },
+    {
+      "identity": "R001670",
+      "label": "Ambika",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Tumakuru Town Police Station"
+    },
+    {
+      "identity": "R001674",
+      "label": "ಚಂದ್ರು  ಬಸಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Mysuru Jayanagar Police Station"
+    },
+    {
+      "identity": "R001698",
+      "label": "ದೇವರಾಜ ಹನುಮಪ್ಪ ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Koppal Cantonment Police Station"
+    },
+    {
+      "identity": "R001756",
+      "label": "ಮಂಜುನಾಥ ತಂದೆ ಬಸಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 2,
+      "circle": "Belagavi Ring Road Police Station"
+    },
+    {
+      "identity": "R001759",
+      "label": "Basavaraj S",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 2,
+      "circle": "Belagavi Ring Road Police Station"
+    },
+    {
+      "identity": "R001774",
+      "label": "Praveen Ramegowda",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Rural Women Police Station"
+    },
+    {
+      "identity": "R001824",
+      "label": " Manjunath Fakirapa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Town Police Station"
+    },
+    {
+      "identity": "R001857",
+      "label": "Ramesh S/o Nagappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Bengaluru Urban Kote Police Station"
+    },
+    {
+      "identity": "R001873",
+      "label": "ಮಹಾದೇವ Muniyappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Udupi Halli Police Station"
+    },
+    {
+      "identity": "R001983",
+      "label": "Basappa Rajanna",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Dakshina Kannada Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R001985",
+      "label": "ಬಸವರಾಜ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Bengaluru Urban Town Police Station"
+    },
+    {
+      "identity": "R002054",
+      "label": "S. Basappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Shivamogga Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R002057",
+      "label": "Srinivas Krishnappa",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 1,
+      "circle": "Shivamogga Ashok Nagar Police Station"
+    },
+    {
+      "identity": "R002061",
+      "label": "ಲೋಕೇಶ ರಂಗಪ್ಪ",
+      "record_count": 4,
+      "case_count": 4,
+      "merged": true,
+      "degree": 0,
+      "circle": "Koppal Town Police Station"
+    }
+  ],
+  "edges": [
+    {
+      "source": "R001565",
+      "target": "R001569",
+      "cases": [
+        {
+          "case_id": "1382",
+          "crime_no": "100221006202500002",
+          "registered": "2025-04-10"
+        },
+        {
+          "case_id": "1384",
+          "crime_no": "100221006202500004",
+          "registered": "2025-07-05"
+        },
+        {
+          "case_id": "1386",
+          "crime_no": "100221006202500005",
+          "registered": "2025-07-06"
+        },
+        {
+          "case_id": "1397",
+          "crime_no": "100221006202500007",
+          "registered": "2025-04-12"
+        },
+        {
+          "case_id": "1398",
+          "crime_no": "100221006202500008",
+          "registered": "2025-03-14"
+        }
+      ],
+      "visible_before_resolution": true,
+      "shared_cases": 5,
+      "recovered": false
+    },
+    {
+      "source": "R000116",
+      "target": "R000129",
+      "cases": [
+        {
+          "case_id": "121",
+          "crime_no": "100221004202400002",
+          "registered": "2024-02-15"
+        },
+        {
+          "case_id": "130",
+          "crime_no": "100221004202400003",
+          "registered": "2024-02-25"
+        },
+        {
+          "case_id": "131",
+          "crime_no": "100221004202300002",
+          "registered": "2023-10-27"
+        },
+        {
+          "case_id": "134",
+          "crime_no": "100221004202300005",
+          "registered": "2023-11-13"
+        }
+      ],
+      "visible_before_resolution": true,
+      "shared_cases": 4,
+      "recovered": false
+    },
+    {
+      "source": "R002405",
+      "target": "R002407",
+      "cases": [
+        {
+          "case_id": "2163",
+          "crime_no": "100191005202600003",
+          "registered": "2026-06-03"
+        },
+        {
+          "case_id": "2171",
+          "crime_no": "100191005202600004",
+          "registered": "2026-05-17"
+        },
+        {
+          "case_id": "2173",
+          "crime_no": "100191005202600005",
+          "registered": "2026-03-16"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 3,
+      "recovered": true
+    },
+    {
+      "source": "R000083",
+      "target": "R000084",
+      "cases": [
+        {
+          "case_id": "94",
+          "crime_no": "100161012202600002",
+          "registered": "2026-05-27"
+        },
+        {
+          "case_id": "97",
+          "crime_no": "100161012202500001",
+          "registered": "2025-05-02"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 2,
+      "recovered": true
+    },
+    {
+      "source": "R001756",
+      "target": "R001757",
+      "cases": [
+        {
+          "case_id": "1560",
+          "crime_no": "300031007202200001",
+          "registered": "2022-05-13"
+        },
+        {
+          "case_id": "1565",
+          "crime_no": "300031007202200004",
+          "registered": "2022-12-17"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 2,
+      "recovered": true
+    },
+    {
+      "source": "R001757",
+      "target": "R001759",
+      "cases": [
+        {
+          "case_id": "1565",
+          "crime_no": "300031007202200004",
+          "registered": "2022-12-17"
+        },
+        {
+          "case_id": "1566",
+          "crime_no": "300031007202200005",
+          "registered": "2022-06-16"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 2,
+      "recovered": true
+    },
+    {
+      "source": "R002054",
+      "target": "R002057",
+      "cases": [
+        {
+          "case_id": "1824",
+          "crime_no": "100251002202300001",
+          "registered": "2023-07-02"
+        },
+        {
+          "case_id": "1827",
+          "crime_no": "100251002202400002",
+          "registered": "2024-11-14"
+        }
+      ],
+      "visible_before_resolution": true,
+      "shared_cases": 2,
+      "recovered": false
+    },
+    {
+      "source": "R000021",
+      "target": "R002525",
+      "cases": [
+        {
+          "case_id": "2212",
+          "crime_no": "300131001202500011",
+          "registered": "2025-03-10"
+        },
+        {
+          "case_id": "2227",
+          "crime_no": "300131001202400013",
+          "registered": "2024-08-25"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 2,
+      "recovered": true
+    },
+    {
+      "source": "R000562",
+      "target": "R004067",
+      "cases": [
+        {
+          "case_id": "493",
+          "crime_no": "100041007202200003",
+          "registered": "2022-05-10"
+        }
+      ],
+      "visible_before_resolution": true,
+      "shared_cases": 1,
+      "recovered": false
+    },
+    {
+      "source": "R000763",
+      "target": "R000767",
+      "cases": [
+        {
+          "case_id": "692",
+          "crime_no": "100021001202100001",
+          "registered": "2021-08-16"
+        }
+      ],
+      "visible_before_resolution": true,
+      "shared_cases": 1,
+      "recovered": false
+    },
+    {
+      "source": "R001122",
+      "target": "R001387",
+      "cases": [
+        {
+          "case_id": "1226",
+          "crime_no": "100131007202100002",
+          "registered": "2021-12-21"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R001398",
+      "target": "R001407",
+      "cases": [
+        {
+          "case_id": "1254",
+          "crime_no": "100041005202600008",
+          "registered": "2026-04-05"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R001431",
+      "target": "R004280",
+      "cases": [
+        {
+          "case_id": "1276",
+          "crime_no": "300041004202400010",
+          "registered": "2024-08-15"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R001504",
+      "target": "R001941",
+      "cases": [
+        {
+          "case_id": "1329",
+          "crime_no": "100041005202400009",
+          "registered": "2024-09-28"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R001459",
+      "target": "R001582",
+      "cases": [
+        {
+          "case_id": "1411",
+          "crime_no": "100231005202600002",
+          "registered": "2026-03-14"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R001756",
+      "target": "R001759",
+      "cases": [
+        {
+          "case_id": "1565",
+          "crime_no": "300031007202200004",
+          "registered": "2022-12-17"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R001932",
+      "target": "R002288",
+      "cases": [
+        {
+          "case_id": "1718",
+          "crime_no": "100111008202200007",
+          "registered": "2022-12-18"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R000597",
+      "target": "R002153",
+      "cases": [
+        {
+          "case_id": "1916",
+          "crime_no": "300111006202500015",
+          "registered": "2025-06-10"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R001387",
+      "target": "R002317",
+      "cases": [
+        {
+          "case_id": "2098",
+          "crime_no": "100131007202600003",
+          "registered": "2026-06-15"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R001857",
+      "target": "R002392",
+      "cases": [
+        {
+          "case_id": "2150",
+          "crime_no": "100041003202100006",
+          "registered": "2021-07-13"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R003338",
+      "target": "R003776",
+      "cases": [
+        {
+          "case_id": "2948",
+          "crime_no": "300041001202600015",
+          "registered": "2026-05-23"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R000677",
+      "target": "R001648",
+      "cases": [
+        {
+          "case_id": "3136",
+          "crime_no": "100111005202500013",
+          "registered": "2025-03-17"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    },
+    {
+      "source": "R001662",
+      "target": "R004280",
+      "cases": [
+        {
+          "case_id": "3583",
+          "crime_no": "100041004202500034",
+          "registered": "2025-04-15"
+        }
+      ],
+      "visible_before_resolution": false,
+      "shared_cases": 1,
+      "recovered": true
+    }
+  ],
+  "recovered_edges": 18,
+  "pre_existing_edges": 5
+}

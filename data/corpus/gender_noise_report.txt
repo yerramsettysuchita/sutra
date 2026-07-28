@@ -1,0 +1,39 @@
+==============================================================================
+THE GENDER CHANNEL, AGAINST A FIELD THAT IS NOT CLEAN
+==============================================================================
+
+    ADR 028 measured this channel on a corpus where recorded gender
+    could not be wrong, because the generator copied it verbatim onto
+    every row. The zero true pairs lost was guaranteed, not found.
+    This sweeps the error rate. Rate 0.000 reproduces the original
+    claim so the overstatement is visible rather than merely admitted.
+
+    generating a clean corpus, 5,000 cases
+    7,611 rows, 3,194,221 candidate pairs, 10,306 true pairs
+
+     error rate  flipped   people  F0.5 with  F0.5 without      gain  true lost
+
+          0.000        0        0     0.6473        0.6381   +0.0092          0
+          0.005       48       34     0.6453        0.6381   +0.0072        140
+          0.012       89       60     0.6434        0.6381   +0.0053        255
+          0.020      141       93     0.6433        0.6381   +0.0052        398
+          0.050      348      222     0.6426        0.6381   +0.0045        929
+          0.100      752      415     0.6360        0.6381   -0.0021      1,834
+
+==============================================================================
+WHAT THIS SAYS
+==============================================================================
+
+    At a clean field, the original claim, the channel eliminates
+    273,335 false pairs and contradicts 0 true ones.
+    That zero is a property of the generator, not of police records.
+
+    At the shipped 1.2% rate it contradicts 255 true pairs across
+    60 people, and is still worth +0.0053 F0.5.
+
+    The channel remains positive at every rate swept up to 5%.
+
+    The reason it survives is the asymmetry. A wrong gender on one row
+    costs the true pairs involving that row. A right gender on every
+    other row rejects false pairs across the whole candidate set, and
+    there are three hundred times more of those.

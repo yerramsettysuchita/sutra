@@ -1,0 +1,60 @@
+==============================================================================
+SUTRA  Layer 9  IPC to BNS reconciliation
+==============================================================================
+
+    window            2021-02-02 to 2026-06-29
+    transition        2024-07-01
+    spans transition  True
+    cases before         2,309
+    cases on or after    2,691
+    correspondences         18
+
+------------------------------------------------------------------------------
+THE DAMAGE A NAIVE QUERY DOES
+------------------------------------------------------------------------------
+
+    naive count, filtering on the section number as written      2,408
+    reconciled count, following the correspondence                5,256
+    cases the naive query never sees                              2,848
+
+    NAIVE UNDERCOUNT  54.19%
+
+    An analyst asking for five years of one offence gets that share
+    of it, because the section number changed underneath the question
+    and nothing in the schema says so.
+
+------------------------------------------------------------------------------
+THE AMBIGUOUS CODE HAZARD
+------------------------------------------------------------------------------
+
+    section number 324 means:
+      IPC 324, Hurt by dangerous weapon
+      BNS 324, Mischief causing damage
+
+    This hazard does not manifest in this corpus. IPC 427, whose
+    successor number collides with IPC 324, has no cases here
+    because the generator's modus operandi families do not cover
+    mischief. The collision is real in the law and the guard is
+    built, but the measured harm from it in this run is zero and
+    is reported as zero.
+
+------------------------------------------------------------------------------
+PER OFFENCE
+------------------------------------------------------------------------------
+
+     IPC  BNS  offence                                        naive    true   miss %
+
+     379  303  Theft                                            329     724    54.6%
+     420  318  Cheating and dishonestly inducing delivery       353     713    50.5%
+     392  309  Robbery                                          316     681    53.6%
+     380  305  Theft in a dwelling house                        259     636    59.3%
+     457  331  Lurking house trespass by night                  259     636    59.3%
+     395  310  Dacoity                                          178     410    56.6%
+     323  115  Voluntarily causing hurt                         190     384    50.5%
+     324  118  Hurt by dangerous weapon                         190     384    50.5%
+     341  126  Wrongful restraint                               190     384    50.5%
+     302  103  Murder                                           144     304    52.6%
+
+    8 of 18 mapped offences have no
+    cases in this corpus, because the generator's modus operandi
+    families do not cover them. They are mapped and untested.

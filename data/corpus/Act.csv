@@ -1,0 +1,9 @@
+ActID,ActName,ActAbbr,ActYear,EffectiveFrom,EffectiveTo,Active
+1,"Indian Penal Code, 1860",IPC,1860,1862-01-01,2024-06-30,N
+2,"Bharatiya Nyaya Sanhita, 2023",BNS,2023,2024-07-01,,Y
+3,"Narcotic Drugs and Psychotropic Substances Act, 1985",NDPS,1985,1985-11-14,,Y
+4,"Arms Act, 1959",ARMS,1959,1959-01-01,,Y
+5,"Karnataka Excise Act, 1965",KEA,1965,1966-01-01,,Y
+6,"Karnataka Police Act, 1963",KPA,1963,1964-01-01,,Y
+7,"Motor Vehicles Act, 1988",MVA,1988,1989-07-01,,Y
+8,"Information Technology Act, 2000",ITA,2000,2000-10-17,,Y

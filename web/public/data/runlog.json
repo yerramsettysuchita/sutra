@@ -1,0 +1,79 @@
+{
+  "run_id": "bb8e989b896b",
+  "exported_at": "2026-07-28T22:28:39+00:00",
+  "seed": 4471,
+  "corpus_generated_at": "2026-07-28T22:15:29+00:00",
+  "co_offending_preset": "moderate",
+  "stages": [
+    {
+      "stage": "normalise",
+      "seconds": 0.142
+    },
+    {
+      "stage": "block",
+      "seconds": 0.528
+    },
+    {
+      "stage": "features",
+      "seconds": 23.531
+    },
+    {
+      "stage": "linkage",
+      "seconds": 4.605
+    },
+    {
+      "stage": "cluster",
+      "seconds": 0.034
+    },
+    {
+      "stage": "baselines",
+      "seconds": 24.963
+    },
+    {
+      "stage": "ablation",
+      "seconds": 0.761
+    },
+    {
+      "stage": "pr_curve",
+      "seconds": 136.993
+    },
+    {
+      "stage": "total",
+      "seconds": 191.574
+    }
+  ],
+  "route_counts": {
+    "auto_merge": 1481,
+    "review": 468,
+    "reject": 3192272
+  },
+  "counts": {
+    "cases": 5000,
+    "accused_rows": 7611,
+    "candidate_pairs": 3194221,
+    "resolved_identities": 5284,
+    "true_persons": 3840
+  },
+  "files_read": [
+    "eval/report.json",
+    "eval/canonical.json",
+    "data/corpus/resolution_report.json",
+    "data/corpus/downstream_report.json",
+    "data/corpus/reconciliation_report.json",
+    "data/corpus/resolved_identities.csv",
+    "data/corpus/blocking_report.json",
+    "data/corpus/manifest.json",
+    "data/corpus/Accused.csv",
+    "data/corpus/CaseMaster.csv"
+  ],
+  "engine": {
+    "linkage_method": "direct estimation, EM for the mixing proportion only",
+    "threshold_llr": 6.689650494595371,
+    "blocking_families": [
+      "P4",
+      "TR"
+    ],
+    "collective_iterations": 8,
+    "collective_converged": false
+  }
+}

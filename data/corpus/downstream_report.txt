@@ -1,0 +1,98 @@
+==============================================================================
+SUTRA  Layer 8  downstream products
+==============================================================================
+
+    accused rows               7,611
+    resolved identities        5,284
+    undetected cases             450
+
+------------------------------------------------------------------------------
+CO OFFENDER GRAPH
+------------------------------------------------------------------------------
+
+    nodes                                         5,284
+    nodes_with_at_least_one_edge                  4,075
+    edges                                         4,576
+    edges_recovered_by_resolution                 1,401
+    edges_visible_before_resolution               3,175
+    recovered_share                              0.3062
+    mean_degree                                   1.732
+    max_degree                                       12
+    components_among_connected                    1,141
+    largest_component                                51
+    constraint_violations                             0
+
+    An edge counts as recovered when it attaches through a name
+    rendering a naive join would have read as a different person.
+
+------------------------------------------------------------------------------
+COMMUNITIES
+------------------------------------------------------------------------------
+
+    algorithm                                networkx greedy_modularity_communities, Clauset Newman Moore
+    intended_algorithm                       Leiden, see ADR 008
+    substitution_reason                      leidenalg and igraph are not installed. Greedy modularity does not guarantee internally connected communities, so connectivity is verified explicitly below instead of assumed.
+    nodes_considered                         4075
+    edges_considered                         4576
+    communities                              1141
+    modularity                               0.9973
+    largest_community                        51
+    communities_of_two_or_more               1141
+    internally_disconnected_communities      0
+    connectivity_guarantee_held              True
+
+------------------------------------------------------------------------------
+PROFILES
+------------------------------------------------------------------------------
+
+    profiles                                          5,284
+    merged_identities                                 1,123
+    single_record_identities                          4,161
+    identities_touching_more_than_one_district           44
+    max_cases_on_one_identity                            15
+    max_renderings_on_one_identity                        9
+    identities_with_co_accused                        4,075
+    total_recovered_relationships                     2,802
+
+------------------------------------------------------------------------------
+HOTSPOTS AND TRENDS
+------------------------------------------------------------------------------
+
+    grid cells at 0.25 degrees             239
+    cases placed                        4,550
+
+    Summed over cells, so an offender working two cells counts in
+    both. Both rows are summed identically, so the ratio holds.
+    offender occupancies, resolved      6,002
+    the same, before resolution         7,042
+    inflation resolution removes        1,040   14.8%
+
+    A case density map shows where offences are recorded. Offender
+    density needs a person entity, and without one the same man
+    working three stations counts as three offenders.
+
+    anomalous district months             124   above 2.0x the trailing 12 month median
+
+------------------------------------------------------------------------------
+UNDETECTED CASE MATCHER
+------------------------------------------------------------------------------
+
+    cases ranked                 450
+    candidate pool             5,284 identities
+
+    ranking             hit@1    hit@3   hit@10   hit@50      MRR
+
+    combined           0.2067   0.3556   0.5200   0.7533   0.3115
+    modus_only         0.0333   0.0600   0.1111   0.2622   0.0638
+    spatial_only       0.0956   0.2156   0.4556   0.7444   0.2021
+    temporal_only      0.0022   0.0067   0.0089   0.1111   0.0117
+
+    random baseline hit@10  0.001893
+    culprit unreachable            0   ground truth person holds no resolved record
+
+    Measured against the generator's record of who actually committed
+    each undetected case. A hit means any resolved identity holding
+    that person's records appears in the top k, which does not
+    penalise this layer for a split the resolver caused.
+
+    total 35.517 s

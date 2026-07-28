@@ -1,0 +1,128 @@
+==============================================================================
+SUTRA  Layer 1 normalisation and Layer 2 blocking
+corpus seed 4471   5,000 cases   7,611 accused rows
+==============================================================================
+
+LAYER 1  NORMALISATION
+
+    latin        4,480   58.9%
+    kannada      2,962   38.9%
+    mixed          169    2.2%
+    names left with no usable token after folding  102  1.34%
+
+    Cross script true pairs, does normalisation bring them together
+
+    cross script true pairs                3,554
+    share a folded token after Layer 1     3,312   93.2%
+    survive into the candidate set         3,476   97.8%
+
+LAYER 2  BLOCKING
+
+    all possible pairs          28,959,855
+    candidate pairs proposed     3,194,221
+    dropped as cannot link           1,376   two accused on one FIR
+    reduction ratio               0.889702
+    blocks across families           1,491
+    largest single block             1,393
+
+    Per family, before the union
+
+    family  candidate pairs   reduction  completeness
+    PH            2,452,687    0.915307        92.50%
+    P4            3,034,997    0.895200        94.12%
+    TR              256,346    0.991148        70.16%
+
+    union         3,194,221    0.889702        98.12%
+
+    Every combination, so the choice of families is a measurement
+
+    families      candidate pairs   reduction  completeness
+    PH                  2,452,256    0.915322        92.50%
+    P4                  3,034,473    0.895218        94.12%
+    TR                    254,970    0.991196        70.16%
+    PH+TR               2,629,283    0.909209        97.64%
+    PH+P4               3,034,473    0.895218        94.12%
+    P4+TR               3,194,221    0.889702        98.12%
+    PH+P4+TR            3,194,221    0.889702        98.12%
+
+    PH is a strict subset of P4. Truncating a token to four characters
+    can only merge blocks, never split them, so PH+P4 equals P4 exactly
+    and the full token key contributes nothing once the prefix key is
+    present. It is kept as a diagnostic and not shipped.
+
+    That leaves one real choice, and it is a cost decision.
+
+      PH+TR    2,629,283 pairs   97.64% complete
+      P4+TR    3,194,221 pairs   98.12% complete
+
+    P4+TR costs 564,938 more candidate pairs, 21.5% more
+    scoring work, to recover about 51 more true pairs. That is
+    roughly 11,077 pairs scored per true pair gained.
+
+    We take it. The ceiling constrains every layer downstream and cannot
+    be recovered later, while scoring cost is a batch job that runs
+    overnight. That is the same asymmetry argument as ADR 004. Shipped
+    scheme is P4 plus TR.
+
+    Block size, per family
+
+    PH   blocks    196   largest  1,199   mean    66.4
+    P4   blocks    110   largest  1,393   mean   117.5
+    TR   blocks  1,185   largest    255   mean    11.4
+
+    Caveat on these numbers. The corpus draws names from 58 given and
+    28 patronymic forms, so it carries about 100 distinct folded tokens
+    across 7,600 rows. Real Karnataka has orders of magnitude more, so
+    phonetic blocks here are far larger than they would be in the field
+    and this reduction ratio is pessimistic. Pairs completeness is not
+    affected by that, which is why it is the figure we carry forward.
+
+==============================================================================
+THE CEILING, RESTATED
+==============================================================================
+
+    true matching pairs                    10,503
+    proposed by blocking                   10,306
+    lost at Layer 2, unrecoverable            197
+
+    PAIRS COMPLETENESS                     98.12%
+    REVISED RECALL CEILING                 98.12%
+
+    The corpus audit reported 99.94% on the assumption that
+    blocking would not lose anything. It does. Every layer from 3 to 7
+    is now working against a ceiling of 98.12% and not 99.94%.
+
+    Exact name matching still reaches only 12.27%. The gap
+    from there to 98.12% is what Layers 3 to 7 have to earn.
+
+    Which renderings blocking loses, most frequent first
+
+      LA_GIVEN               against LA_INITIAL_PREFIX         35
+      KN_GIVEN               against LA_INITIAL_PREFIX         26
+      KN_FULL                against LA_INITIAL_BOTH           26
+      LA_FULL                against LA_INITIAL_BOTH           23
+      LA_INITIAL_PREFIX      against LA_INITIAL_SUFFIX         19
+      KN_TANDE               against LA_INITIAL_BOTH            9
+      LA_INITIAL_BOTH        against LA_SONOF                   9
+      LA_INITIAL_BOTH        against LA_INITIAL_PREFIX          7
+
+    Sample of lost pairs
+
+      'Chandru R'                      LA_INITIAL_SUFFIX
+      'C. Rangappa'                    LA_INITIAL_PREFIX  different districts
+
+      'ಚಂದ್ರು ತಂದೆ ರಂಗಪ್ಪ'             KN_TANDE
+      'C.R.'                           LA_INITIAL_BOTH  different districts
+
+      'C.R.'                           LA_INITIAL_BOTH
+      'C. Rangappa'                    LA_INITIAL_PREFIX  different districts
+
+      'Shankar'                        LA_GIVEN
+      'S. Erana'                       LA_INITIAL_PREFIX  same district
+
+      'S. Erana'                       LA_INITIAL_PREFIX
+      'Shankar E'                      LA_INITIAL_SUFFIX  different districts
+
+      'M. Siddappa '                   LA_INITIAL_PREFIX
+      'Manjunath'                      LA_GIVEN  different districts
+

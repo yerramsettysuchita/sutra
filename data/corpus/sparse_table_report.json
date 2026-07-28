@@ -1,0 +1,175 @@
+{
+  "generated_at": "2026-07-28T20:30:17+00:00",
+  "question": "Can the unsupervised estimator be made to produce a non zero result on Victim and ComplainantDetails.",
+  "oracle_ceilings": {
+    "victim": {
+      "true_positive_pairs": 89,
+      "false_positive_pairs": 80,
+      "false_negative_pairs": 111,
+      "predicted_pairs": 169,
+      "actual_pairs": 200,
+      "precision": 0.5266272189349113,
+      "recall": 0.445,
+      "f1": 0.48238482384823844
+    },
+    "complainant": {
+      "true_positive_pairs": 401,
+      "false_positive_pairs": 329,
+      "false_negative_pairs": 1279,
+      "predicted_pairs": 730,
+      "actual_pairs": 1680,
+      "precision": 0.5493150684931507,
+      "recall": 0.2386904761904762,
+      "f1": 0.33278008298755185
+    }
+  },
+  "methods": {
+    "baseline": "Direct estimation on the table's own leave one out seeds.",
+    "a_transfer": "m fitted on Accused and applied unchanged. u re estimated locally. EM fits only the mixing proportion. Assumes the name generating process is shared across the three tables.",
+    "b_pooled": "One m estimated over the candidate pairs of all three tables pooled, then applied to each.",
+    "a2_transfer_threshold": "Method A plus the threshold taken from the source table, because EM drives the mixing proportion to zero and the derived threshold lands above every score the model can produce. Reported as the diagnosis of A rather than proposed as a method, since the match proportion among candidate pairs is a property of the blocking output and of how often a person recurs, and both differ per table.",
+    "c_contact": "Adds phone equality and address agreement, the two columns ComplainantDetails carries and Accused does not. Not applicable to Victim."
+  },
+  "attempts": {
+    "baseline": {
+      "victim": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "share_of_oracle": 0.0,
+        "clusters": 688,
+        "threshold": 3.435676421629238
+      },
+      "complainant": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "share_of_oracle": 0.0,
+        "clusters": 4995,
+        "threshold": 3.0867218908945953
+      }
+    },
+    "a_transfer": {
+      "victim": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "share_of_oracle": 0.0,
+        "clusters": 688,
+        "threshold": 20.72326583594641,
+        "p_match": 6.280117111863764e-10
+      },
+      "complainant": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "share_of_oracle": 0.0,
+        "clusters": 5000,
+        "threshold": 20.72326583594641,
+        "p_match": 6.213211692321323e-10
+      }
+    },
+    "a2_transfer_threshold": {
+      "victim": {
+        "precision": 0.75,
+        "recall": 0.015,
+        "f1": 0.029411764705882353,
+        "share_of_oracle": 0.061,
+        "clusters": 684,
+        "threshold": 5.265064971407228
+      },
+      "complainant": {
+        "precision": 0.22561863173216884,
+        "recall": 0.09226190476190477,
+        "f1": 0.13096746937051118,
+        "share_of_oracle": 0.3936,
+        "clusters": 4437,
+        "threshold": 5.265064971407228
+      }
+    },
+    "b_pooled": {
+      "victim": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "share_of_oracle": 0.0,
+        "clusters": 688,
+        "threshold": 20.72326583594641
+      },
+      "complainant": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "share_of_oracle": 0.0,
+        "clusters": 5000,
+        "threshold": 20.72326583594641
+      }
+    },
+    "c_contact": {
+      "victim": {
+        "not_applicable": true
+      },
+      "complainant": {
+        "precision": 0.610655737704918,
+        "recall": 0.26607142857142857,
+        "f1": 0.37064676616915426,
+        "share_of_oracle": 0.3789,
+        "clusters": 4403,
+        "threshold": 2.962779814247843,
+        "ceiling_with_contact": 0.9781,
+        "ceiling_without_contact": 0.3328,
+        "phone_weights": [
+          0.0,
+          -0.0054,
+          1.0581
+        ],
+        "address_weights": [
+          0.0,
+          -0.0036,
+          -0.7982,
+          1.404
+        ]
+      }
+    }
+  },
+  "best_per_table": {
+    "victim": {
+      "method": "a2_transfer_threshold",
+      "precision": 0.75,
+      "recall": 0.015,
+      "f1": 0.029411764705882353,
+      "share_of_oracle": 0.061,
+      "clusters": 684,
+      "threshold": 5.265064971407228
+    },
+    "complainant": {
+      "method": "c_contact",
+      "precision": 0.610655737704918,
+      "recall": 0.26607142857142857,
+      "f1": 0.37064676616915426,
+      "share_of_oracle": 0.3789,
+      "clusters": 4403,
+      "threshold": 2.962779814247843,
+      "ceiling_with_contact": 0.9781,
+      "ceiling_without_contact": 0.3328,
+      "phone_weights": [
+        0.0,
+        -0.0054,
+        1.0581
+      ],
+      "address_weights": [
+        0.0,
+        -0.0036,
+        -0.7982,
+        1.404
+      ]
+    }
+  },
+  "stale": {
+    "is_stale": true,
+    "report_generated_at": "2026-07-28T20:30:17+00:00",
+    "corpus_generated_at": "2026-07-28T22:15:29+00:00",
+    "refresh_with": "python scripts/sparse_table_study.py",
+    "note": "This study was run against an earlier corpus. Its figures are not from the run that produced the headline and are labelled wherever they appear."
+  }
+}

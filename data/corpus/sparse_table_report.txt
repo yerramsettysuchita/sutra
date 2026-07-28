@@ -1,0 +1,92 @@
+==============================================================================
+FIXING THE ESTIMATOR ON THE SPARSE PERSON TABLES
+==============================================================================
+
+    preparing tables
+      accused        7,611 rows, 3,194,221 pairs
+      victim           688 rows,    12,004 pairs
+      complainant    5,000 rows,   628,500 pairs, contact columns phone, address
+
+    Oracle ceilings, m and u fitted from ground truth. Not the engine.
+      victim       F1 0.4824
+      complainant  F1 0.3328
+
+------------------------------------------------------------------------------
+BASELINE  direct estimation on the table's own seeds, what ships today
+------------------------------------------------------------------------------
+
+      table                                  prec   recall       F1  of oracle
+      victim                               0.0000   0.0000   0.0000       0.0%
+      complainant                          0.0000   0.0000   0.0000       0.0%
+
+------------------------------------------------------------------------------
+METHOD A  transfer m from Accused, re estimate only the mixing proportion
+------------------------------------------------------------------------------
+
+    Assumption. The name generating process is shared. All three tables
+    hold Karnataka names written by the same station writers into the
+    same fields, so P(name agreement | same person) belongs to that
+    process rather than to the role the person plays in the FIR.
+    u is NOT transferred, it is re estimated locally, because u
+    describes the blocking output and the base rate and both differ.
+
+    fitted on accused, p_match 0.005142, 7,611 rows
+
+      table                                  prec   recall       F1  of oracle
+      victim                               0.0000   0.0000   0.0000       0.0%
+      complainant                          0.0000   0.0000   0.0000       0.0%
+
+------------------------------------------------------------------------------
+METHOD A2  transfer m AND the threshold, diagnosing why A fails
+------------------------------------------------------------------------------
+
+    Under A, EM drives the mixing proportion to zero on both tables.
+    The threshold is log((1-p)/p), so it goes to 20.7 while the best
+    score the model produces is 8.1. Nothing can clear it. The
+    transferred weights are not the problem, the re estimated prior is.
+
+    accused threshold 5.265
+
+      table                                  prec   recall       F1  of oracle
+      victim                               0.7500   0.0150   0.0294       6.1%
+      complainant                          0.2256   0.0923   0.1310      39.4%
+
+------------------------------------------------------------------------------
+METHOD B  one parameter set estimated over all three tables pooled
+------------------------------------------------------------------------------
+
+    pooled candidate pairs 3,834,725
+    pooled p_match 0.005028
+
+      table                                  prec   recall       F1  of oracle
+      victim                               0.0000   0.0000   0.0000       0.0%
+      complainant                          0.0000   0.0000   0.0000       0.0%
+
+------------------------------------------------------------------------------
+METHOD C  add the address and phone columns ComplainantDetails carries
+------------------------------------------------------------------------------
+
+    Applies to ComplainantDetails only. Victim has neither column, and
+    the columns it does carry beyond a name are caste, religion and
+    occupation, which are excluded and are not read.
+
+      table                                  prec   recall       F1  of oracle
+      victim                                 not applicable, no contact columns
+      complainant                          0.6107   0.2661   0.3706      37.9%
+        oracle ceiling moves 0.3328 to 0.9781 once the phone column is a feature
+        phone weights by level [0.0, -0.01, 1.06]
+        address weights by level [0.0, -0.0, -0.8, 1.4]
+
+==============================================================================
+VERDICT
+==============================================================================
+
+    method                   victim F1   complainant F1
+    baseline                    0.0000           0.0000
+    a_transfer                  0.0000           0.0000
+    a2_transfer_threshold       0.0294           0.1310
+    b_pooled                    0.0000           0.0000
+    c_contact                      n/a           0.3706
+
+    victim       best is a2_transfer_threshold, F1 0.0294, 6.1% of the oracle ceiling
+    complainant  best is c_contact, F1 0.3706, 37.9% of the oracle ceiling

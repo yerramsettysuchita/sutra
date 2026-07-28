@@ -1,0 +1,253 @@
+{
+  "generated_at": "2026-07-28T22:18:32+00:00",
+  "corpus_seed": 4471,
+  "corpus_generated_at": "2026-07-28T22:15:29+00:00",
+  "cases": 5000,
+  "accused_rows": 7611,
+  "normalisation": {
+    "script_counts": {
+      "latin": 4480,
+      "kannada": 2962,
+      "mixed": 169
+    },
+    "empty_after_folding": 102,
+    "cross_script_true_pairs": 3554,
+    "cross_script_shared_token": 3312,
+    "cross_script_shared_token_pct": 93.191,
+    "cross_script_blocked": 3476,
+    "cross_script_blocked_pct": 97.805
+  },
+  "blocking": {
+    "shipped_families": [
+      "P4",
+      "TR"
+    ],
+    "all_possible_pairs": 28959855,
+    "candidate_pairs": 3194221,
+    "cannot_link_dropped": 1376,
+    "reduction_ratio": 0.889702,
+    "total_blocks": 1491,
+    "largest_block": 1393,
+    "by_family": {
+      "PH": {
+        "candidate_pairs": 2452687,
+        "pairs_completeness_pct": 92.497,
+        "reduction_ratio": 0.915307
+      },
+      "P4": {
+        "candidate_pairs": 3034997,
+        "pairs_completeness_pct": 94.116,
+        "reduction_ratio": 0.8952
+      },
+      "TR": {
+        "candidate_pairs": 256346,
+        "pairs_completeness_pct": 70.161,
+        "reduction_ratio": 0.991148
+      }
+    },
+    "by_combination": [
+      {
+        "families": "PH",
+        "candidate_pairs": 2452256,
+        "reduction_ratio": 0.915322,
+        "pairs_completeness_pct": 92.497
+      },
+      {
+        "families": "P4",
+        "candidate_pairs": 3034473,
+        "reduction_ratio": 0.895218,
+        "pairs_completeness_pct": 94.116
+      },
+      {
+        "families": "TR",
+        "candidate_pairs": 254970,
+        "reduction_ratio": 0.991196,
+        "pairs_completeness_pct": 70.161
+      },
+      {
+        "families": "PH+TR",
+        "candidate_pairs": 2629283,
+        "reduction_ratio": 0.909209,
+        "pairs_completeness_pct": 97.639
+      },
+      {
+        "families": "PH+P4",
+        "candidate_pairs": 3034473,
+        "reduction_ratio": 0.895218,
+        "pairs_completeness_pct": 94.116
+      },
+      {
+        "families": "P4+TR",
+        "candidate_pairs": 3194221,
+        "reduction_ratio": 0.889702,
+        "pairs_completeness_pct": 98.124
+      },
+      {
+        "families": "PH+P4+TR",
+        "candidate_pairs": 3194221,
+        "reduction_ratio": 0.889702,
+        "pairs_completeness_pct": 98.124
+      }
+    ],
+    "block_sizes": {
+      "PH": {
+        "blocks": 196,
+        "largest": 1199,
+        "mean": 66.39
+      },
+      "P4": {
+        "blocks": 110,
+        "largest": 1393,
+        "mean": 117.55
+      },
+      "TR": {
+        "blocks": 1185,
+        "largest": 255,
+        "mean": 11.36
+      }
+    }
+  },
+  "ceiling": {
+    "true_pairs": 10503,
+    "blocked": 10306,
+    "lost": 197,
+    "pairs_completeness_pct": 98.124,
+    "revised_recall_ceiling_pct": 98.124,
+    "prior_ceiling_pct": 99.9429,
+    "exact_name_match_pct": 12.2727
+  },
+  "lost_pair_variants": [
+    {
+      "variant_a": "LA_GIVEN",
+      "variant_b": "LA_INITIAL_PREFIX",
+      "count": 35
+    },
+    {
+      "variant_a": "KN_GIVEN",
+      "variant_b": "LA_INITIAL_PREFIX",
+      "count": 26
+    },
+    {
+      "variant_a": "KN_FULL",
+      "variant_b": "LA_INITIAL_BOTH",
+      "count": 26
+    },
+    {
+      "variant_a": "LA_FULL",
+      "variant_b": "LA_INITIAL_BOTH",
+      "count": 23
+    },
+    {
+      "variant_a": "LA_INITIAL_PREFIX",
+      "variant_b": "LA_INITIAL_SUFFIX",
+      "count": 19
+    },
+    {
+      "variant_a": "KN_TANDE",
+      "variant_b": "LA_INITIAL_BOTH",
+      "count": 9
+    },
+    {
+      "variant_a": "LA_INITIAL_BOTH",
+      "variant_b": "LA_SONOF",
+      "count": 9
+    },
+    {
+      "variant_a": "LA_INITIAL_BOTH",
+      "variant_b": "LA_INITIAL_PREFIX",
+      "count": 7
+    },
+    {
+      "variant_a": "KN_GIVEN",
+      "variant_b": "LA_INITIAL_BOTH",
+      "count": 7
+    },
+    {
+      "variant_a": "LA_GIVEN",
+      "variant_b": "LA_INITIAL_BOTH",
+      "count": 6
+    },
+    {
+      "variant_a": "LA_INITIAL_BOTH",
+      "variant_b": "LA_UPPER",
+      "count": 4
+    },
+    {
+      "variant_a": "LA_FULL",
+      "variant_b": "LA_GIVEN",
+      "count": 3
+    }
+  ],
+  "lost_pair_examples": [
+    {
+      "a": "Chandru R",
+      "b": "C. Rangappa",
+      "variant_a": "LA_INITIAL_SUFFIX",
+      "variant_b": "LA_INITIAL_PREFIX",
+      "same_district": false
+    },
+    {
+      "a": "ಚಂದ್ರು ತಂದೆ ರಂಗಪ್ಪ",
+      "b": "C.R.",
+      "variant_a": "KN_TANDE",
+      "variant_b": "LA_INITIAL_BOTH",
+      "same_district": false
+    },
+    {
+      "a": "C.R.",
+      "b": "C. Rangappa",
+      "variant_a": "LA_INITIAL_BOTH",
+      "variant_b": "LA_INITIAL_PREFIX",
+      "same_district": false
+    },
+    {
+      "a": "Shankar",
+      "b": "S. Erana",
+      "variant_a": "LA_GIVEN",
+      "variant_b": "LA_INITIAL_PREFIX",
+      "same_district": true
+    },
+    {
+      "a": "S. Erana",
+      "b": "Shankar E",
+      "variant_a": "LA_INITIAL_PREFIX",
+      "variant_b": "LA_INITIAL_SUFFIX",
+      "same_district": false
+    },
+    {
+      "a": "M. Siddappa ",
+      "b": "Manjunath",
+      "variant_a": "LA_INITIAL_PREFIX",
+      "variant_b": "LA_GIVEN",
+      "same_district": false
+    },
+    {
+      "a": "M. Siddappa ",
+      "b": "Manjunat S",
+      "variant_a": "LA_INITIAL_PREFIX",
+      "variant_b": "LA_INITIAL_SUFFIX",
+      "same_district": false
+    },
+    {
+      "a": "M. Siddappa",
+      "b": "Manjunath",
+      "variant_a": "LA_INITIAL_PREFIX",
+      "variant_b": "LA_GIVEN",
+      "same_district": false
+    },
+    {
+      "a": "M. Siddappa",
+      "b": "Manjunat S",
+      "variant_a": "LA_INITIAL_PREFIX",
+      "variant_b": "LA_INITIAL_SUFFIX",
+      "same_district": false
+    },
+    {
+      "a": "R.S.",
+      "b": "R. Shivappa",
+      "variant_a": "LA_INITIAL_BOTH",
+      "variant_b": "LA_INITIAL_PREFIX",
+      "same_district": false
+    }
+  ]
+}
