@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-07-28T22:24:41+00:00",
+  "headline": {
+    "precision": 0.7901385493072535,
+    "recall": 0.36922783966485767,
+    "f1": 0.5032768801505418,
+    "f_beta_0_5": 0.6434378629500581,
+    "false_merge_rate": 0.03916272788656313
+  },
+  "definition": {
+    "corpus": "fixture",
+    "cases": 5000,
+    "accused_rows": 7611,
+    "name_vocabulary": 86,
+    "seed": 4471,
+    "operating_point": "deployed",
+    "threshold_llr": 6.6897,
+    "statement": "The fixture corpus at the threshold the engine derives for itself. No label is used to choose it."
+  },
+  "how_to_read": [
+    {
+      "role": "headline",
+      "f1": 0.5032768801505418,
+      "text": "What the shipped system does on the hostile fixture. This is the answer."
+    },
+    {
+      "role": "floor",
+      "f1": 0.0696452410032096,
+      "text": "Exact name matching, the naive join every other approach starts from."
+    },
+    {
+      "role": "ceiling",
+      "f1": 0.5936927379689458,
+      "text": "This model family fitted from ground truth, on the fixture. Not reachable without labels."
+    },
+    {
+      "role": "realistic",
+      "f1": 0.6325680980135602,
+      "text": "The same system with a 3000 form name vocabulary. A different, easier corpus, which is why it exceeds the fixture ceiling above. Not the headline."
+    }
+  ],
+  "products": {
+    "note": "One model, two operating points, two different products. The operating point is a policy choice for the department about the cost of a wrong merge against the cost of a missed one. It is not a property of the method.",
+    "deployable": {
+      "label": "Deployable",
+      "purpose": "automatic merging",
+      "precision": 0.9508373851971907,
+      "recall": 0.16757117014186423,
+      "f1": 0.2849279585559333,
+      "f_beta_0_5": 0.49142793321047634,
+      "threshold_llr": 9.6712,
+      "merged_pairs": 1851,
+      "statement": "The highest recall that holds precision at or above 0.95. At this cut a merge can be written to the record without a human looking at it, and one merge in twenty is still wrong, which is why the band is narrow."
+    },
+    "investigative": {
+      "label": "Investigative",
+      "purpose": "generating review candidates",
+      "precision": 0.7901385493072535,
+      "recall": 0.36922783966485767,
+      "f1": 0.5032768801505418,
+      "f_beta_0_5": 0.6434378629500581,
+      "threshold_llr": 6.6897,
+      "merged_pairs": 4908,
+      "statement": "The threshold the engine derives for itself. Twice the recall, at a precision that needs a human between the result and the record."
+    }
+  },
+  "ceiling_argument": {
+    "oracle_f1": 0.5936927379689458,
+    "headline_f1": 0.5032768801505418,
+    "share_of_ceiling": 0.8477059730800794,
+    "statement": "With m and u fitted from ground truth this model form caps at F1 0.5937, so no linkage method can do much better on the fields this schema provides. SUTRA reaches 85% of it. The remaining gap is not a modelling problem, it is a data collection problem, and it is the argument for adding a person key to the record."
+  },
+  "qualifiers": {
+    "deployed": "at the threshold the engine derives for itself",
+    "deployable": "at the highest recall that holds precision at or above 0.95, the automatic merging point",
+    "f1_optimal": "at the F1 optimal cut, which we do not deploy",
+    "f_beta_0_5_optimal": "at the F0.5 optimal cut, which we do not deploy",
+    "precision_90": "at a cut chosen for precision 0.90, which we do not deploy",
+    "precision_95": "at a cut chosen for precision 0.95, which we do not deploy"
+  },
+  "rule": "Any figure that is not the headline carries its qualifier inline, every time, without exception."
+}

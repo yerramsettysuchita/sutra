@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-07-28T16:55:19+00:00",
+  "cases": 5000,
+  "pools": [
+    86,
+    300,
+    1000,
+    3000
+  ],
+  "runs": [
+    {
+      "requested_vocabulary": 86,
+      "folded_tokens_realised": 196,
+      "accused_rows": 7611,
+      "candidate_pairs": 3194221,
+      "reduction_ratio": 0.889702,
+      "pairs_completeness_pct": 98.124,
+      "base_rate": 0.00322645,
+      "precision": 0.5770472205618649,
+      "recall": 0.45958297629248784,
+      "f1": 0.5116599533601864,
+      "false_positive_pairs": 3538,
+      "exact_name_f1": 0.0696452410032096,
+      "multiple_over_exact": 7.346660676163165,
+      "seconds": 37.8
+    },
+    {
+      "requested_vocabulary": 300,
+      "folded_tokens_realised": 403,
+      "accused_rows": 7611,
+      "candidate_pairs": 1799613,
+      "reduction_ratio": 0.937858,
+      "pairs_completeness_pct": 98.143,
+      "base_rate": 0.0057279,
+      "precision": 0.7302839116719243,
+      "recall": 0.4849090735980196,
+      "f1": 0.5828231389826629,
+      "false_positive_pairs": 1881,
+      "exact_name_f1": 0.10759996469238238,
+      "multiple_over_exact": 5.416573701012788,
+      "seconds": 33.2
+    },
+    {
+      "requested_vocabulary": 1000,
+      "folded_tokens_realised": 976,
+      "accused_rows": 7611,
+      "candidate_pairs": 1126476,
+      "reduction_ratio": 0.961102,
+      "pairs_completeness_pct": 98.067,
+      "base_rate": 0.00914356,
+      "precision": 0.7705797101449275,
+      "recall": 0.5062363134342569,
+      "f1": 0.6110440728610009,
+      "false_positive_pairs": 1583,
+      "exact_name_f1": 0.13562887511071742,
+      "multiple_over_exact": 4.505265360065764,
+      "seconds": 18.4
+    },
+    {
+      "requested_vocabulary": 3000,
+      "folded_tokens_realised": 1819,
+      "accused_rows": 7611,
+      "candidate_pairs": 778256,
+      "reduction_ratio": 0.973126,
+      "pairs_completeness_pct": 98.153,
+      "base_rate": 0.01324628,
+      "precision": 0.8426556805577563,
+      "recall": 0.506331524326383,
+      "f1": 0.6325680980135602,
+      "false_positive_pairs": 993,
+      "exact_name_f1": 0.1555004135649297,
+      "multiple_over_exact": 4.067951226055289,
+      "seconds": 8.7
+    }
+  ],
+  "fixture": {
+    "vocabulary": 86,
+    "precision": 0.5770472205618649,
+    "f1": 0.5116599533601864,
+    "note": "The pool the headline figures are measured on. A deliberately hostile fixture, not a jurisdiction."
+  },
+  "realistic": {
+    "vocabulary": 3000,
+    "precision": 0.8426556805577563,
+    "f1": 0.6325680980135602,
+    "note": "Still conservative against a real electoral roll, which carries name vocabularies in the hundreds of thousands. This end is indicative of field behaviour."
+  },
+  "sensitivity": {
+    "precision_gain": 0.26560845999589144,
+    "f1_gain": 0.12090814465337374,
+    "reduction_ratio_gain": 0.08342400000000005,
+    "base_rate_ratio": 4.10552774721443
+  },
+  "headline_unchanged": "The figures published elsewhere in this project remain those of the 86 form fixture. They are not replaced by this sweep. The sweep establishes that they are a floor.",
+  "stale": {
+    "is_stale": true,
+    "report_generated_at": "2026-07-28T16:55:19+00:00",
+    "corpus_generated_at": "2026-07-28T21:38:21+00:00",
+    "refresh_with": "python scripts/vocabulary_study.py",
+    "note": "This study was run against an earlier corpus. Its figures are not from the run that produced the headline and are labelled wherever they appear."
+  }
+}

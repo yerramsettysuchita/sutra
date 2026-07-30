@@ -1,0 +1,335 @@
+{
+  "generated_at": "2026-07-28T22:21:28+00:00",
+  "window": {
+    "from": "2021-02-02",
+    "to": "2026-06-29",
+    "spans_transition": true
+  },
+  "transition": "2024-07-01",
+  "cases_before_transition": 2309,
+  "cases_on_or_after_transition": 2691,
+  "correspondences": 18,
+  "totals": {
+    "naive_count": 2408,
+    "reconciled_count": 5256,
+    "naive_missed": 2848,
+    "naive_error_pct": -54.1857,
+    "naive_undercount_pct": 54.1857
+  },
+  "ambiguous_codes": {
+    "324": [
+      "IPC 324, Hurt by dangerous weapon",
+      "BNS 324, Mischief causing damage"
+    ]
+  },
+  "offences_returning_the_wrong_offence": [],
+  "by_offence": [
+    {
+      "code": "379",
+      "offence": "Theft",
+      "head": "Property",
+      "ipc": "379",
+      "bns": "303",
+      "equivalents": [
+        "303",
+        "379"
+      ],
+      "naive_count": 329,
+      "reconciled_count": 724,
+      "naive_missed": 395,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": -54.558,
+      "naive_undercount_pct": 54.558
+    },
+    {
+      "code": "420",
+      "offence": "Cheating and dishonestly inducing delivery",
+      "head": "Economic",
+      "ipc": "420",
+      "bns": "318",
+      "equivalents": [
+        "318",
+        "420"
+      ],
+      "naive_count": 353,
+      "reconciled_count": 713,
+      "naive_missed": 360,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": -50.4909,
+      "naive_undercount_pct": 50.4909
+    },
+    {
+      "code": "392",
+      "offence": "Robbery",
+      "head": "Property",
+      "ipc": "392",
+      "bns": "309",
+      "equivalents": [
+        "309",
+        "392"
+      ],
+      "naive_count": 316,
+      "reconciled_count": 681,
+      "naive_missed": 365,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": -53.5977,
+      "naive_undercount_pct": 53.5977
+    },
+    {
+      "code": "380",
+      "offence": "Theft in a dwelling house",
+      "head": "Property",
+      "ipc": "380",
+      "bns": "305",
+      "equivalents": [
+        "305",
+        "380"
+      ],
+      "naive_count": 259,
+      "reconciled_count": 636,
+      "naive_missed": 377,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": -59.2767,
+      "naive_undercount_pct": 59.2767
+    },
+    {
+      "code": "457",
+      "offence": "Lurking house trespass by night",
+      "head": "Property",
+      "ipc": "457",
+      "bns": "331",
+      "equivalents": [
+        "331",
+        "457"
+      ],
+      "naive_count": 259,
+      "reconciled_count": 636,
+      "naive_missed": 377,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": -59.2767,
+      "naive_undercount_pct": 59.2767
+    },
+    {
+      "code": "395",
+      "offence": "Dacoity",
+      "head": "Property",
+      "ipc": "395",
+      "bns": "310",
+      "equivalents": [
+        "310",
+        "395"
+      ],
+      "naive_count": 178,
+      "reconciled_count": 410,
+      "naive_missed": 232,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": -56.5854,
+      "naive_undercount_pct": 56.5854
+    },
+    {
+      "code": "323",
+      "offence": "Voluntarily causing hurt",
+      "head": "Body",
+      "ipc": "323",
+      "bns": "115",
+      "equivalents": [
+        "115",
+        "323"
+      ],
+      "naive_count": 190,
+      "reconciled_count": 384,
+      "naive_missed": 194,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": -50.5208,
+      "naive_undercount_pct": 50.5208
+    },
+    {
+      "code": "324",
+      "offence": "Hurt by dangerous weapon",
+      "head": "Body",
+      "ipc": "324",
+      "bns": "118",
+      "equivalents": [
+        "118",
+        "324",
+        "427"
+      ],
+      "naive_count": 190,
+      "reconciled_count": 384,
+      "naive_missed": 194,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": -50.5208,
+      "naive_undercount_pct": 50.5208
+    },
+    {
+      "code": "341",
+      "offence": "Wrongful restraint",
+      "head": "Body",
+      "ipc": "341",
+      "bns": "126",
+      "equivalents": [
+        "126",
+        "341"
+      ],
+      "naive_count": 190,
+      "reconciled_count": 384,
+      "naive_missed": 194,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": -50.5208,
+      "naive_undercount_pct": 50.5208
+    },
+    {
+      "code": "302",
+      "offence": "Murder",
+      "head": "Body",
+      "ipc": "302",
+      "bns": "103",
+      "equivalents": [
+        "103",
+        "302"
+      ],
+      "naive_count": 144,
+      "reconciled_count": 304,
+      "naive_missed": 160,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": -52.6316,
+      "naive_undercount_pct": 52.6316
+    },
+    {
+      "code": "304",
+      "offence": "Culpable homicide not amounting to murder",
+      "head": "Body",
+      "ipc": "304",
+      "bns": "105",
+      "equivalents": [
+        "105",
+        "304"
+      ],
+      "naive_count": 0,
+      "reconciled_count": 0,
+      "naive_missed": 0,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": 0.0,
+      "naive_undercount_pct": 0.0
+    },
+    {
+      "code": "307",
+      "offence": "Attempt to murder",
+      "head": "Body",
+      "ipc": "307",
+      "bns": "109",
+      "equivalents": [
+        "109",
+        "307"
+      ],
+      "naive_count": 0,
+      "reconciled_count": 0,
+      "naive_missed": 0,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": 0.0,
+      "naive_undercount_pct": 0.0
+    },
+    {
+      "code": "354",
+      "offence": "Assault on a woman with intent to outrage modesty",
+      "head": "Women",
+      "ipc": "354",
+      "bns": "74",
+      "equivalents": [
+        "354",
+        "74"
+      ],
+      "naive_count": 0,
+      "reconciled_count": 0,
+      "naive_missed": 0,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": 0.0,
+      "naive_undercount_pct": 0.0
+    },
+    {
+      "code": "411",
+      "offence": "Dishonestly receiving stolen property",
+      "head": "Property",
+      "ipc": "411",
+      "bns": "317",
+      "equivalents": [
+        "317",
+        "411"
+      ],
+      "naive_count": 0,
+      "reconciled_count": 0,
+      "naive_missed": 0,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": 0.0,
+      "naive_undercount_pct": 0.0
+    },
+    {
+      "code": "427",
+      "offence": "Mischief causing damage",
+      "head": "Property",
+      "ipc": "427",
+      "bns": "324",
+      "equivalents": [
+        "324",
+        "427"
+      ],
+      "naive_count": 0,
+      "reconciled_count": 0,
+      "naive_missed": 0,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": 0.0,
+      "naive_undercount_pct": 0.0
+    },
+    {
+      "code": "506",
+      "offence": "Criminal intimidation",
+      "head": "Public order",
+      "ipc": "506",
+      "bns": "351",
+      "equivalents": [
+        "351",
+        "506"
+      ],
+      "naive_count": 0,
+      "reconciled_count": 0,
+      "naive_missed": 0,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": 0.0,
+      "naive_undercount_pct": 0.0
+    },
+    {
+      "code": "143",
+      "offence": "Unlawful assembly",
+      "head": "Public order",
+      "ipc": "143",
+      "bns": "189",
+      "equivalents": [
+        "143",
+        "189"
+      ],
+      "naive_count": 0,
+      "reconciled_count": 0,
+      "naive_missed": 0,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": 0.0,
+      "naive_undercount_pct": 0.0
+    },
+    {
+      "code": "147",
+      "offence": "Rioting",
+      "head": "Public order",
+      "ipc": "147",
+      "bns": "191",
+      "equivalents": [
+        "147",
+        "191"
+      ],
+      "naive_count": 0,
+      "reconciled_count": 0,
+      "naive_missed": 0,
+      "naive_wrong_offence": 0,
+      "naive_error_pct": 0.0,
+      "naive_undercount_pct": 0.0
+    }
+  ]
+}

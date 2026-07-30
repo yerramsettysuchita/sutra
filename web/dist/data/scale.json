@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-07-28T16:52:47+00:00",
+  "sizes": [
+    5000,
+    10000,
+    15000
+  ],
+  "runs": [
+    {
+      "cases": 5000,
+      "accused_rows": 7611,
+      "true_persons": 3840,
+      "candidate_pairs": 3194221,
+      "all_possible_pairs": 28959855,
+      "reduction_ratio": 0.889702,
+      "true_pairs_in_candidates": 10306,
+      "base_rate": 0.00322645,
+      "precision": 0.5770472205618649,
+      "recall": 0.45958297629248784,
+      "f1": 0.5116599533601864,
+      "false_positive_pairs": 3538,
+      "clusters": 4255,
+      "exact_name_f1": 0.0696452410032096,
+      "multiple_over_exact": 7.346660676163165,
+      "stages_seconds": {
+        "generate": 0.56,
+        "normalise": 0.6,
+        "block": 2.96,
+        "features": 211.66,
+        "linkage": 4.16,
+        "cluster": 0.3
+      },
+      "total_seconds": 220.24,
+      "peak_python_memory_mb": 5049.3
+    },
+    {
+      "cases": 10000,
+      "accused_rows": 15276,
+      "true_persons": 7885,
+      "candidate_pairs": 12688139,
+      "all_possible_pairs": 116670450,
+      "reduction_ratio": 0.891248,
+      "true_pairs_in_candidates": 19767,
+      "base_rate": 0.00155791,
+      "precision": 0.4434241245136187,
+      "recall": 0.42418978609360264,
+      "f1": 0.43359374999999994,
+      "false_positive_pairs": 10728,
+      "clusters": 7947,
+      "exact_name_f1": 0.04155779740130909,
+      "multiple_over_exact": 10.43351132912404,
+      "stages_seconds": {
+        "generate": 1.07,
+        "normalise": 1.03,
+        "block": 12.02,
+        "features": 839.38,
+        "linkage": 18.03,
+        "cluster": 0.8
+      },
+      "total_seconds": 872.33,
+      "peak_python_memory_mb": 6054.1
+    },
+    {
+      "cases": 15000,
+      "accused_rows": 22956,
+      "true_persons": 11622,
+      "candidate_pairs": 28412208,
+      "all_possible_pairs": 263477490,
+      "reduction_ratio": 0.892165,
+      "true_pairs_in_candidates": 30650,
+      "base_rate": 0.00107876,
+      "precision": 0.35605938357269645,
+      "recall": 0.4237971766061654,
+      "f1": 0.3869864515280397,
+      "false_positive_pairs": 23943,
+      "clusters": 10901,
+      "exact_name_f1": 0.02880672469501019,
+      "multiple_over_exact": 13.433892801949547,
+      "stages_seconds": {
+        "generate": 1.57,
+        "normalise": 1.5,
+        "block": 27.87,
+        "features": 1976.9,
+        "linkage": 43.21,
+        "cluster": 2.05
+      },
+      "total_seconds": 2053.1,
+      "peak_python_memory_mb": 7506.3
+    }
+  ],
+  "growth": {
+    "pairs_vs_rows_exponent": 1.98,
+    "interpretation": "An exponent near 2 means candidate pairs grow with the square of corpus size. Block membership grows linearly because the corpus has a fixed name vocabulary of about 200 distinct folded tokens, and pairs within a block grow with its square.",
+    "projected_pairs_at_full_scale": 2730086797
+  },
+  "full_scale": {
+    "cases": 150000,
+    "accused_rows": 230369,
+    "candidate_pairs": 3048808835,
+    "largest_block_rows": 43361,
+    "all_possible_pairs": 26534822896,
+    "reduction_ratio": 0.885102,
+    "note": "Counted without materialising the pairs. The chain was not run at this size, see the module docstring."
+  },
+  "not_run_at_full_scale": "3,048,808,835 candidate pairs at 150,000 cases. Not a memory ceiling, a compute wall. The chain was not run at that size and no figure here is extrapolated into the headline results.",
+  "stale": {
+    "is_stale": true,
+    "report_generated_at": "2026-07-28T16:52:47+00:00",
+    "corpus_generated_at": "2026-07-28T21:38:21+00:00",
+    "refresh_with": "python scripts/scale_study.py",
+    "note": "This study was run against an earlier corpus. Its figures are not from the run that produced the headline and are labelled wherever they appear."
+  }
+}

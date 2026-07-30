@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-07-28T22:18:08+00:00",
+  "question": "How much of the gender channel's value survives the field being imperfect.",
+  "correction": "ADR 028 reported zero true pairs lost, citing zero of 3,840 people with disagreeing gender. The generator copied gender verbatim onto every row, so that was guaranteed by construction rather than measured. The corpus now models a recording error rate and this sweeps it. See ADR 030.",
+  "method": "One corpus, one feature extraction. Only the gender channel is recomputed per rate, so every other feature is identical across the sweep and a difference between rows is the gender channel and nothing else.",
+  "cases": 5000,
+  "seed": 4471,
+  "shipped_rate": 0.012,
+  "rates": [
+    0.0,
+    0.005,
+    0.012,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "runs": [
+    {
+      "error_rate": 0.0,
+      "rows_flipped": 0,
+      "people_with_contradictory_gender": 0,
+      "true_pairs_contradicted": 0,
+      "false_pairs_eliminated": 273335,
+      "with_gender": {
+        "true_positive_pairs": 3871,
+        "false_positive_pairs": 978,
+        "false_negative_pairs": 6632,
+        "predicted_pairs": 4849,
+        "actual_pairs": 10503,
+        "precision": 0.7983089296762219,
+        "recall": 0.36856136341997525,
+        "f1": 0.5042991141219385,
+        "f_beta_0_5": 0.6473460650857888
+      },
+      "without_gender": {
+        "true_positive_pairs": 3852,
+        "false_positive_pairs": 1068,
+        "false_negative_pairs": 6651,
+        "predicted_pairs": 4920,
+        "actual_pairs": 10503,
+        "precision": 0.7829268292682927,
+        "recall": 0.3667523564695801,
+        "f1": 0.49951371328535304,
+        "f_beta_0_5": 0.6381075439817117
+      },
+      "f_beta_0_5_gain": 0.00923852110407719,
+      "f1_gain": 0.004785400836585463,
+      "precision_gain": 0.0153821004079292
+    },
+    {
+      "error_rate": 0.005,
+      "rows_flipped": 48,
+      "people_with_contradictory_gender": 34,
+      "true_pairs_contradicted": 140,
+      "false_pairs_eliminated": 308567,
+      "with_gender": {
+        "true_positive_pairs": 3895,
+        "false_positive_pairs": 1024,
+        "false_negative_pairs": 6608,
+        "predicted_pairs": 4919,
+        "actual_pairs": 10503,
+        "precision": 0.7918276072372433,
+        "recall": 0.37084642483100067,
+        "f1": 0.5051225521981585,
+        "f_beta_0_5": 0.6453162795321249
+      },
+      "without_gender": {
+        "true_positive_pairs": 3852,
+        "false_positive_pairs": 1068,
+        "false_negative_pairs": 6651,
+        "predicted_pairs": 4920,
+        "actual_pairs": 10503,
+        "precision": 0.7829268292682927,
+        "recall": 0.3667523564695801,
+        "f1": 0.49951371328535304,
+        "f_beta_0_5": 0.6381075439817117
+      },
+      "f_beta_0_5_gain": 0.007208735550413237,
+      "f1_gain": 0.005608838912805447,
+      "precision_gain": 0.008900777968950613
+    },
+    {
+      "error_rate": 0.012,
+      "rows_flipped": 89,
+      "people_with_contradictory_gender": 60,
+      "true_pairs_contradicted": 255,
+      "false_pairs_eliminated": 334860,
+      "with_gender": {
+        "true_positive_pairs": 3878,
+        "false_positive_pairs": 1030,
+        "false_negative_pairs": 6625,
+        "predicted_pairs": 4908,
+        "actual_pairs": 10503,
+        "precision": 0.7901385493072535,
+        "recall": 0.36922783966485767,
+        "f1": 0.5032768801505418,
+        "f_beta_0_5": 0.6434378629500581
+      },
+      "without_gender": {
+        "true_positive_pairs": 3852,
+        "false_positive_pairs": 1068,
+        "false_negative_pairs": 6651,
+        "predicted_pairs": 4920,
+        "actual_pairs": 10503,
+        "precision": 0.7829268292682927,
+        "recall": 0.3667523564695801,
+        "f1": 0.49951371328535304,
+        "f_beta_0_5": 0.6381075439817117
+      },
+      "f_beta_0_5_gain": 0.005330318968346459,
+      "f1_gain": 0.003763166865188794,
+      "precision_gain": 0.007211720038960756
+    },
+    {
+      "error_rate": 0.02,
+      "rows_flipped": 141,
+      "people_with_contradictory_gender": 93,
+      "true_pairs_contradicted": 398,
+      "false_pairs_eliminated": 371781,
+      "with_gender": {
+        "true_positive_pairs": 3879,
+        "false_positive_pairs": 1032,
+        "false_negative_pairs": 6624,
+        "predicted_pairs": 4911,
+        "actual_pairs": 10503,
+        "precision": 0.7898594990836897,
+        "recall": 0.3693230505569837,
+        "f1": 0.503308680420397,
+        "f_beta_0_5": 0.6433475967757987
+      },
+      "without_gender": {
+        "true_positive_pairs": 3852,
+        "false_positive_pairs": 1068,
+        "false_negative_pairs": 6651,
+        "predicted_pairs": 4920,
+        "actual_pairs": 10503,
+        "precision": 0.7829268292682927,
+        "recall": 0.3667523564695801,
+        "f1": 0.49951371328535304,
+        "f_beta_0_5": 0.6381075439817117
+      },
+      "f_beta_0_5_gain": 0.005240052794087013,
+      "f1_gain": 0.0037949671350439584,
+      "precision_gain": 0.006932669815396975
+    },
+    {
+      "error_rate": 0.05,
+      "rows_flipped": 348,
+      "people_with_contradictory_gender": 222,
+      "true_pairs_contradicted": 929,
+      "false_pairs_eliminated": 504538,
+      "with_gender": {
+        "true_positive_pairs": 3899,
+        "false_positive_pairs": 1060,
+        "false_negative_pairs": 6604,
+        "predicted_pairs": 4959,
+        "actual_pairs": 10503,
+        "precision": 0.7862472272635612,
+        "recall": 0.37122726839950493,
+        "f1": 0.5043332039839606,
+        "f_beta_0_5": 0.642572266719404
+      },
+      "without_gender": {
+        "true_positive_pairs": 3852,
+        "false_positive_pairs": 1068,
+        "false_negative_pairs": 6651,
+        "predicted_pairs": 4920,
+        "actual_pairs": 10503,
+        "precision": 0.7829268292682927,
+        "recall": 0.3667523564695801,
+        "f1": 0.49951371328535304,
+        "f_beta_0_5": 0.6381075439817117
+      },
+      "f_beta_0_5_gain": 0.004464722737692384,
+      "f1_gain": 0.004819490698607598,
+      "precision_gain": 0.003320397995268509
+    },
+    {
+      "error_rate": 0.1,
+      "rows_flipped": 752,
+      "people_with_contradictory_gender": 415,
+      "true_pairs_contradicted": 1834,
+      "false_pairs_eliminated": 747881,
+      "with_gender": {
+        "true_positive_pairs": 3835,
+        "false_positive_pairs": 1077,
+        "false_negative_pairs": 6668,
+        "predicted_pairs": 4912,
+        "actual_pairs": 10503,
+        "precision": 0.7807410423452769,
+        "recall": 0.3651337713034371,
+        "f1": 0.49756730457346743,
+        "f_beta_0_5": 0.6359656396139431
+      },
+      "without_gender": {
+        "true_positive_pairs": 3852,
+        "false_positive_pairs": 1068,
+        "false_negative_pairs": 6651,
+        "predicted_pairs": 4920,
+        "actual_pairs": 10503,
+        "precision": 0.7829268292682927,
+        "recall": 0.3667523564695801,
+        "f1": 0.49951371328535304,
+        "f_beta_0_5": 0.6381075439817117
+      },
+      "f_beta_0_5_gain": -0.00214190436776851,
+      "f1_gain": -0.0019464087118856166,
+      "precision_gain": -0.0021857869230158533
+    }
+  ],
+  "summary": {
+    "clean_field_true_pairs_contradicted": 0,
+    "shipped_rate_true_pairs_contradicted": 255,
+    "shipped_rate_gain_f_beta_0_5": 0.005330318968346459,
+    "positive_at_every_rate_swept": false,
+    "highest_rate_still_positive": 0.05
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-07-28T22:20:51+00:00",
+  "tables": {
+    "accused": {
+      "spec": "accused",
+      "table": "Accused.csv",
+      "rows": 7611,
+      "true_people": 3840,
+      "hidden_by_fragmentation": 3771,
+      "identities_found": 5284,
+      "results": {
+        "true_positive_pairs": 3878,
+        "false_positive_pairs": 1030,
+        "false_negative_pairs": 6625,
+        "predicted_pairs": 4908,
+        "actual_pairs": 10503,
+        "precision": 0.7901385493072535,
+        "recall": 0.36922783966485767,
+        "f1": 0.5032768801505418
+      },
+      "note": "No father's name, no address, no phone, no biometric key and no arresting officer on most rows. The hardest of the three, which is why it is the one the project is about."
+    },
+    "victim": {
+      "spec": "victim",
+      "table": "Victim.csv",
+      "note": "Carries CasteID, ReligionID and OccupationID, none of which is read. No arresting officer and no address, so this table has strictly less identifying information than Accused.",
+      "rows": 688,
+      "true_people": 544,
+      "hidden_by_fragmentation": 144,
+      "true_pairs_in_table": 200,
+      "candidate_pairs": 12004,
+      "true_pairs_in_candidates": 186,
+      "reduction_ratio": 0.949206,
+      "pairs_completeness_pct": 93.0,
+      "threshold_llr": 4.858242401202254,
+      "clusters": 688,
+      "identities_found": 688,
+      "signals_modelled": [
+        "name",
+        "temporal",
+        "spatial",
+        "modus",
+        "relational",
+        "gender"
+      ],
+      "contact_channels": [],
+      "signal_coverage": {
+        "name": 1.0,
+        "temporal": 1.0,
+        "spatial": 1.0,
+        "modus": 1.0,
+        "relational": 0.0,
+        "gender": 1.0
+      },
+      "results": {
+        "true_positive_pairs": 0,
+        "false_positive_pairs": 0,
+        "false_negative_pairs": 200,
+        "predicted_pairs": 0,
+        "actual_pairs": 200,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "results_at_equal_cost": {
+        "true_positive_pairs": 0,
+        "false_positive_pairs": 0,
+        "false_negative_pairs": 200,
+        "predicted_pairs": 0,
+        "actual_pairs": 200,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "threshold_llr": 3.4719480400823635,
+        "note": "The same model cut at posterior 0.5 instead of at the cost weighted boundary. Reported because the cost policy that lifts Accused suppresses this table, and both facts belong in the record. See ADR 028."
+      },
+      "oracle_diagnostic": {
+        "note": "Fitted from ground truth. Not part of the engine. It separates a feature problem from a fit problem, which a single F1 cannot do.",
+        "best_cut": 3.020927425026839,
+        "pairwise_at_best_cut": {
+          "precision": 0.5235294117647059,
+          "recall": 0.478494623655914,
+          "f1": 0.5000000000000001
+        },
+        "clustered": {
+          "true_positive_pairs": 90,
+          "false_positive_pairs": 82,
+          "false_negative_pairs": 110,
+          "predicted_pairs": 172,
+          "actual_pairs": 200,
+          "precision": 0.5232558139534884,
+          "recall": 0.45,
+          "f1": 0.48387096774193555
+        }
+      },
+      "verdict": "features adequate, unsupervised fit failed",
+      "guard": {
+        "table_carries_protected_columns": true,
+        "protected_columns_present": [
+          "CasteID",
+          "ReligionID",
+          "OccupationID"
+        ],
+        "raw_header_rejected": true,
+        "rejection_message": "raw Victim",
+        "projected_header_accepted": true,
+        "columns_permitted_into_features": [
+          "VictimID",
+          "CaseMasterID",
+          "PersonID",
+          "VictimName",
+          "AgeYear",
+          "GenderID"
+        ]
+      }
+    },
+    "complainant": {
+      "spec": "complainant",
+      "table": "ComplainantDetails.csv",
+      "note": "Carries an Address and a PhoneNumber, which Accused does not. The schema comments on that asymmetry itself. This is the easy table and Accused is the hard one.",
+      "rows": 5000,
+      "true_people": 3884,
+      "hidden_by_fragmentation": 1116,
+      "true_pairs_in_table": 1680,
+      "candidate_pairs": 628500,
+      "true_pairs_in_candidates": 1584,
+      "reduction_ratio": 0.94971,
+      "pairs_completeness_pct": 94.2857,
+      "threshold_llr": 4.362494609563953,
+      "clusters": 4995,
+      "identities_found": 4995,
+      "signals_modelled": [
+        "name",
+        "temporal",
+        "spatial",
+        "modus",
+        "relational",
+        "gender",
+        "phone",
+        "address"
+      ],
+      "contact_channels": [
+        "phone",
+        "address"
+      ],
+      "signal_coverage": {
+        "name": 1.0,
+        "temporal": 1.0,
+        "spatial": 1.0,
+        "modus": 1.0,
+        "relational": 0.0,
+        "gender": 1.0,
+        "phone": 1.0,
+        "address": 1.0
+      },
+      "results": {
+        "true_positive_pairs": 4,
+        "false_positive_pairs": 1,
+        "false_negative_pairs": 1676,
+        "predicted_pairs": 5,
+        "actual_pairs": 1680,
+        "precision": 0.8,
+        "recall": 0.002380952380952381,
+        "f1": 0.004747774480712167
+      },
+      "results_at_equal_cost": {
+        "true_positive_pairs": 447,
+        "false_positive_pairs": 290,
+        "false_negative_pairs": 1233,
+        "predicted_pairs": 737,
+        "actual_pairs": 1680,
+        "precision": 0.6065128900949797,
+        "recall": 0.26607142857142857,
+        "f1": 0.3698800165494415,
+        "threshold_llr": 2.976200248444062,
+        "note": "The same model cut at posterior 0.5 instead of at the cost weighted boundary. Reported because the cost policy that lifts Accused suppresses this table, and both facts belong in the record. See ADR 028."
+      },
+      "oracle_diagnostic": {
+        "note": "Fitted from ground truth. Not part of the engine. It separates a feature problem from a fit problem, which a single F1 cannot do.",
+        "best_cut": 13.611084078849027,
+        "pairwise_at_best_cut": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "clustered": {
+          "true_positive_pairs": 1608,
+          "false_positive_pairs": 0,
+          "false_negative_pairs": 72,
+          "predicted_pairs": 1608,
+          "actual_pairs": 1680,
+          "precision": 1.0,
+          "recall": 0.9571428571428572,
+          "f1": 0.9781021897810218
+        }
+      },
+      "verdict": "features adequate, unsupervised fit failed",
+      "guard": {
+        "table_carries_protected_columns": false,
+        "raw_header_rejected": null,
+        "projected_header_accepted": true
+      }
+    }
+  },
+  "combined": {
+    "person_bearing_rows": 13299,
+    "actual_people": 8268,
+    "rows_that_are_a_repeat": 5031,
+    "identities_found_by_sutra": 10967,
+    "invisible_relationships": 5651,
+    "statement": "Across Accused, Victim and ComplainantDetails, 13,299 person bearing rows collapse to 8,268 actual people, and 5,651 same person relationships exist that no join on the raw KSP schema can see."
+  },
+  "method": "Layers 1 to 5 imported from engine.block, engine.features, engine.linkage and engine.cluster. The same code path as the accused pipeline, with a different table projected into it."
+}

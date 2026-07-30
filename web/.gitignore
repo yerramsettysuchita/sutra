@@ -1,5 +1,12 @@
 node_modules/
-dist/
+# dist/ is deliberately NOT ignored. See the root .gitignore for why.
+#
+# Short version: Catalyst Slate serves this as a static site straight from the
+# repository, and it cannot run our build because `npm run build` shells out to
+# Python with numpy and scipy. So the bundle is committed.
+#
+# This line was the reason a deploy failed with "Unable to find the root path:
+# './web/dist'". The root .gitignore had been fixed and this one had not.
 
 # Copied from data/corpus by scripts/sync-corpus.mjs at predev and prebuild.
 # Build output, not source.
