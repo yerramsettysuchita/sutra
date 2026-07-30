@@ -24,30 +24,37 @@ import type {
 /**
  * Everything the client reads, all of it produced by the engine.
  *
- * `/corpus` is synced from data/corpus by scripts/sync-corpus.mjs.
- * `/data` is written by scripts/export_web.py.
+ * `corpus/` is synced from data/corpus by scripts/sync-corpus.mjs.
+ * `data/` is written by scripts/export_web.py.
  * Both land in public/ and are copied verbatim into dist/, so development and
  * production resolve the same paths.
+ *
+ * Every path here is RELATIVE, with no leading slash, and that is deliberate.
+ * An absolute '/data/eval.json' resolves against the domain root, so the
+ * bundle breaks the moment it is served under a subpath. A relative path
+ * resolves against the document, which under hash routing is always
+ * index.html whatever route the user is on. Verified by
+ * web/scripts/verify-dist.mjs, which fails the build on a leading slash.
  */
 export const SOURCES = {
-  manifest: '/corpus/manifest.json',
-  corpus: '/corpus/corpus_stats.json',
-  blocking: '/corpus/blocking_report.json',
-  evaluation: '/data/eval.json',
-  canonical: '/data/canonical.json',
-  routing: '/data/routing.json',
-  identities: '/data/identities.json',
-  network: '/data/network.json',
-  cases: '/data/cases.json',
-  profiles: '/data/profiles.json',
-  reconciliation: '/data/reconciliation.json',
-  hotspots: '/data/hotspots.json',
-  scale: '/data/scale.json',
-  vocabulary: '/data/vocabulary.json',
-  questions: '/data/questions.json',
-  persons: '/data/persons.json',
-  genderNoise: '/data/gender_noise.json',
-  runlog: '/data/runlog.json',
+  manifest: 'corpus/manifest.json',
+  corpus: 'corpus/corpus_stats.json',
+  blocking: 'corpus/blocking_report.json',
+  evaluation: 'data/eval.json',
+  canonical: 'data/canonical.json',
+  routing: 'data/routing.json',
+  identities: 'data/identities.json',
+  network: 'data/network.json',
+  cases: 'data/cases.json',
+  profiles: 'data/profiles.json',
+  reconciliation: 'data/reconciliation.json',
+  hotspots: 'data/hotspots.json',
+  scale: 'data/scale.json',
+  vocabulary: 'data/vocabulary.json',
+  questions: 'data/questions.json',
+  persons: 'data/persons.json',
+  genderNoise: 'data/gender_noise.json',
+  runlog: 'data/runlog.json',
 } as const
 
 export type LoadState =

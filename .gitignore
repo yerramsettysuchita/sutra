@@ -11,7 +11,22 @@ node_modules/
 web/node_modules/
 
 # ---- build output ----------------------------------------------------------
-web/dist/
+# web/dist is deliberately NOT ignored, and that is unusual enough to explain.
+#
+# Catalyst Slate deploys this as a static site from the repository. It clones
+# main and serves whatever sits at the Root Path, so the built bundle has to be
+# in the repository or there is nothing to serve.
+#
+# Slate cannot build it either. `npm run build` has a prebuild hook that shells
+# out to python scripts/export_web.py, which needs numpy, scipy, scikit-learn
+# and networkx. A Node build runner does not have those, so the build fails at
+# Install or Build every time.
+#
+# So the bundle is committed. Rebuild it before any deploy commit:
+#     npm --prefix web run build
+#
+# It is 4 MB of generated files and it will show up in diffs. That is the price
+# of a static host with no build step, and it is cheaper than the alternative.
 *.tsbuildinfo
 
 # ---- Python ----------------------------------------------------------------

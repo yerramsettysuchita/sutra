@@ -135,6 +135,48 @@ if (fonts.length < EXPECTED_FONTS) {
   )
 }
 
+
+/* ------------------------------------------------- absolute path detection */
+/*
+ * A bundle whose references start with a slash only works when it is served
+ * at the exact root of a domain. Served one level down it asks the domain root
+ * for its own JavaScript, gets a 404, never executes, and renders an empty
+ * root element. That is a white page with nothing in the console except a
+ * failed request, and it is a genuinely hard failure to read.
+ *
+ * It happened on the first Catalyst deploy of this project. This is the check
+ * that would have caught it before upload.
+ */
+
+const html = readFileSync(resolve(DIST, 'index.html'), 'utf-8')
+
+for (const [attr, re] of [
+  ['script src', /<script[^>]+src="(\/[^"]*)"/g],
+  ['stylesheet href', /<link[^>]+href="(\/[^"]*)"/g],
+]) {
+  for (const match of html.matchAll(re)) {
+    failures.push(
+      `index.html has an absolute ${attr} of ${match[1]}. ` +
+        `Set base: './' in vite.config.ts so the bundle works under any path.`,
+    )
+  }
+}
+
+// The runtime feed paths are plain strings that Vite never rewrites, so a
+// leading slash there survives the build and breaks data loading even when the
+// JavaScript itself loads correctly. That failure looks different: the shell
+// renders and every screen says the corpus was not found.
+for (const file of files) {
+  if (extname(file) !== '.js') continue
+  const content = readFileSync(file, 'utf-8')
+  for (const match of content.matchAll(/"\/(?:data|corpus)\/[a-z_]+\.json"/g)) {
+    failures.push(
+      `${rel(file)} fetches ${match[0]} with a leading slash. ` +
+        `Feed paths in src/data/useReports.ts must be relative.`,
+    )
+  }
+}
+
 /* ---------------------------------------------------------- external hosts */
 
 for (const file of files) {

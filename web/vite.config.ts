@@ -39,6 +39,20 @@ function corpusWatch(): Plugin {
 }
 
 export default defineConfig({
+  // Relative, not the default '/'.
+  //
+  // With an absolute base, index.html asks for /assets/index-xxx.js. That only
+  // resolves if the bundle is served at the exact root of a domain. Served one
+  // level down, which is what several static hosts do, the browser asks the
+  // domain root, gets a 404 or an HTML error page, never executes the module,
+  // and renders an empty <div id="root">. A white page with no error in it.
+  //
+  // './' makes every emitted reference relative to index.html, so the bundle
+  // works at the root, under a subpath, and from a file:// URL. There is no
+  // downside for this project because it is a single page app with hash
+  // routing, so index.html is always the document the browser resolves
+  // against.
+  base: './',
   plugins: [react(), corpusWatch()],
   server: {
     host: '0.0.0.0',
